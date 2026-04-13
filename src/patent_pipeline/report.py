@@ -110,7 +110,43 @@ def write_json_report(results: dict[str, Any], settings: Settings) -> Path:
     return path
 
 
+def _print_plain_ascii(results: dict[str, Any]) -> None:
+    """Assignment-spec console block — matches the PDF example verbatim."""
+    totals = results["totals"]
+    top_inv = results["q1_top_inventors"].head(5)
+    top_comp = results["q2_top_companies"].head(5)
+    top_ctry = results["q3_top_countries"].head(5)
+
+    print("================== PATENT REPORT ===================")
+    print(f"Total Patents: {int(totals['total_patents']):,}")
+    print(
+        "Top Inventors: "
+        + " ".join(
+            f"{i}. {row.inventor_name} - {int(row.patent_count)}"
+            for i, row in enumerate(top_inv.itertuples(index=False), start=1)
+        )
+    )
+    print(
+        "Top Companies: "
+        + " ".join(
+            f"{i}. {row.company_name} - {int(row.patent_count):,}"
+            for i, row in enumerate(top_comp.itertuples(index=False), start=1)
+        )
+    )
+    print(
+        "Top Countries: "
+        + " ".join(
+            f"{i}. {row.country}"
+            for i, row in enumerate(top_ctry.itertuples(index=False), start=1)
+        )
+    )
+    print("====================================================")
+
+
 def print_console_report(results: dict[str, Any], settings: Settings) -> None:
+    # Plain ASCII block first — matches the assignment's PDF example verbatim.
+    _print_plain_ascii(results)
+
     console = Console()
     totals = results["totals"]
     year_min, year_max = totals["year_range"] if totals["year_range"] else ("—", "—")
