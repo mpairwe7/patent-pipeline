@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtualenv / uv
+.venv/
+.env
+.env.local
+
+# Raw source TSVs are copied from data/sample/ at ingest time — regenerable.
+data/raw/*
+!data/raw/.gitkeep
+
+# The DuckDB warehouse is rebuilt from the clean CSVs on every `load`.
+data/warehouse/*
+!data/warehouse/.gitkeep
+
+# Clean CSV deliverables (data/clean/*.csv) ARE committed: the assignment
+# explicitly lists clean_patents.csv, clean_inventors.csv, clean_companies.csv
+# as submission artifacts.
+
+# Report deliverables (reports/*.csv, patent_report.json, figures/*) ARE
+# committed as reference outputs so a grader can see results without running
+# the pipeline.  They are also regenerable by `patent-pipeline run-all`.
+
+# Editor / tooling
+.vscode/
+.idea/
+*.swp
+.DS_Store
+.claude/
+
+# Streamlit
+.streamlit/secrets.toml

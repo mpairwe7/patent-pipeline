@@ -1,0 +1,33 @@
+company_id,name
+org:0000,International Business Machines Corporation
+org:0001,"Samsung Electronics Co., Ltd."
+org:0002,Canon Inc.
+org:0003,"Microsoft Technology Licensing, LLC"
+org:0004,Intel Corporation
+org:0005,"Huawei Technologies Co., Ltd."
+org:0006,Apple Inc.
+org:0007,Google LLC
+org:0008,Qualcomm Incorporated
+org:0009,Sony Group Corporation
+org:0010,Toyota Motor Corporation
+org:0011,LG Electronics Inc.
+org:0012,Panasonic Holdings Corporation
+org:0013,TSMC Limited
+org:0014,Tencent Technology (Shenzhen) Company Ltd.
+org:0015,"Amazon Technologies, Inc."
+org:0016,"Meta Platforms, Inc."
+org:0017,"Boeing Company, The"
+org:0018,General Electric Company
+org:0019,Siemens Aktiengesellschaft
+org:0020,Robert Bosch GmbH
+org:0021,"Ford Global Technologies, LLC"
+org:0022,NVIDIA Corporation
+org:0023,"Micron Technology, Inc."
+org:0024,"Hitachi, Ltd."
+org:0025,BYD Company Limited
+org:0026,Dell Products L.P.
+org:0027,"Cisco Technology, Inc."
+org:0028,Oracle International Corporation
+org:0029,SAP SE
+org:0030,ASML Netherlands B.V.
+org:0031,"Tesla, Inc."
