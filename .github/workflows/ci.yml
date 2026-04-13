@@ -5,50 +5,86 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   pipeline:
+    name: Lint · Tests · Smoke run
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+      UV_PYTHON_PREFERENCE: only-managed
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v5
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v4
+        uses: astral-sh/setup-uv@v7
         with:
           enable-cache: true
+          cache-dependency-glob: "uv.lock"
 
-      - name: Set up Python
+      - name: Set up Python 3.13
         run: uv python install 3.13
 
       - name: Install dependencies
-        run: uv sync --all-extras
+        run: uv sync --all-extras --frozen
 
-      - name: Lint
+      - name: Lint (ruff check)
         run: uv run ruff check .
 
-      - name: Format check
+      - name: Format check (ruff format --check)
         run: uv run ruff format --check .
 
-      - name: Run tests
+      - name: Tests (pytest)
         run: uv run pytest -q
 
-      - name: Smoke-test the full pipeline on the bundled sample
-        run: uv run patent-pipeline run-all
+      - name: Smoke-run the full pipeline on the bundled sample
+        run: uv run patent-pipeline run-all --log-level INFO
 
-      - name: Verify expected artifacts exist
+      - name: Verify expected deliverables exist
         run: |
+          set -euxo pipefail
           test -s data/clean/clean_patents.csv
           test -s data/clean/clean_inventors.csv
           test -s data/clean/clean_companies.csv
+          test -s data/clean/clean_relationships.csv
+          test -s data/clean/clean_cpc.csv
           test -s data/warehouse/patents.duckdb
           test -s reports/top_inventors.csv
           test -s reports/top_companies.csv
           test -s reports/country_trends.csv
           test -s reports/patent_report.json
+          test -s reports/figures/yearly_trends.png
+          test -s reports/figures/top_companies.png
+          test -s reports/figures/country_share.png
+          test -s reports/figures/cpc_sections.png
 
-      - name: Upload reports
+      - name: Verify JSON report matches PDF schema
+        run: |
+          uv run python - <<'PY'
+          import json, pathlib
+          r = json.loads(pathlib.Path("reports/patent_report.json").read_text())
+          for k in ("total_patents", "top_inventors", "top_companies", "top_countries"):
+              assert k in r, f"missing key: {k}"
+          assert isinstance(r["total_patents"], int) and r["total_patents"] > 0
+          assert r["top_inventors"] and {"name", "patents"} <= set(r["top_inventors"][0])
+          assert r["top_companies"] and {"name", "patents"} <= set(r["top_companies"][0])
+          assert r["top_countries"] and {"country", "share"} <= set(r["top_countries"][0])
+          print("JSON schema OK — total_patents =", r["total_patents"])
+          PY
+
+      - name: Upload reports artifact
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: reports
           path: reports/
+          if-no-files-found: error
+          retention-days: 14
