@@ -136,8 +136,7 @@ def _print_plain_ascii(results: dict[str, Any]) -> None:
     print(
         "Top Countries: "
         + " ".join(
-            f"{i}. {row.country}"
-            for i, row in enumerate(top_ctry.itertuples(index=False), start=1)
+            f"{i}. {row.country}" for i, row in enumerate(top_ctry.itertuples(index=False), start=1)
         )
     )
     print("====================================================")
