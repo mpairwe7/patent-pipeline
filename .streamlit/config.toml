@@ -1,0 +1,12 @@
+# Streamlit configuration for the patent dashboard.
+[server]
+headless = true
+runOnSave = false
+enableCORS = false
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#4c72b0"

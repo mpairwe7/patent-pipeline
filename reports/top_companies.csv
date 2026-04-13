@@ -1,0 +1,21 @@
+company_id,company_name,patent_count
+org:0012,Panasonic Holdings Corporation,51
+org:0015,"Amazon Technologies, Inc.",44
+org:0014,Tencent Technology (Shenzhen) Company Ltd.,44
+org:0010,Toyota Motor Corporation,40
+org:0018,General Electric Company,39
+org:0024,"Hitachi, Ltd.",39
+org:0017,"Boeing Company, The",37
+org:0029,SAP SE,37
+org:0022,NVIDIA Corporation,36
+org:0016,"Meta Platforms, Inc.",35
+org:0028,Oracle International Corporation,35
+org:0019,Siemens Aktiengesellschaft,35
+org:0004,Intel Corporation,34
+org:0009,Sony Group Corporation,34
+org:0007,Google LLC,33
+org:0005,"Huawei Technologies Co., Ltd.",33
+org:0026,Dell Products L.P.,32
+org:0011,LG Electronics Inc.,31
+org:0003,"Microsoft Technology Licensing, LLC",31
+org:0020,Robert Bosch GmbH,31

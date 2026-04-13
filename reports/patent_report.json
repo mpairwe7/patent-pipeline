@@ -1,0 +1,547 @@
+{
+  "total_patents": 1000,
+  "total_inventors": 1800,
+  "total_companies": 32,
+  "total_relationships": 2495,
+  "year_range": {
+    "min": 2020,
+    "max": 2025
+  },
+  "top_inventors": [
+    {
+      "name": "Alice Kumar",
+      "country": "US",
+      "patents": 6
+    },
+    {
+      "name": "Amelia Taylor",
+      "country": "US",
+      "patents": 6
+    },
+    {
+      "name": "Greta Rossi",
+      "country": "US",
+      "patents": 6
+    },
+    {
+      "name": "Hiroshi Ali",
+      "country": "US",
+      "patents": 6
+    },
+    {
+      "name": "Olivia Taylor",
+      "country": "US",
+      "patents": 6
+    },
+    {
+      "name": "Priya Garcia",
+      "country": "US",
+      "patents": 6
+    },
+    {
+      "name": "Ahmed Dupont",
+      "country": "US",
+      "patents": 5
+    },
+    {
+      "name": "Amelia Khan",
+      "country": "US",
+      "patents": 5
+    },
+    {
+      "name": "Anika M\u00fcller",
+      "country": "US",
+      "patents": 5
+    },
+    {
+      "name": "Carlos Sato",
+      "country": "US",
+      "patents": 5
+    },
+    {
+      "name": "Fatima Brown",
+      "country": "CN",
+      "patents": 5
+    },
+    {
+      "name": "Fatima Davis",
+      "country": "US",
+      "patents": 5
+    },
+    {
+      "name": "Ivan Rodriguez",
+      "country": "US",
+      "patents": 5
+    },
+    {
+      "name": "John Anderson",
+      "country": "CN",
+      "patents": 5
+    },
+    {
+      "name": "Luca Kim",
+      "country": "US",
+      "patents": 5
+    },
+    {
+      "name": "Marco Chen",
+      "country": "US",
+      "patents": 5
+    },
+    {
+      "name": "Min Rodriguez",
+      "country": "US",
+      "patents": 5
+    },
+    {
+      "name": "Min Sato",
+      "country": "US",
+      "patents": 5
+    },
+    {
+      "name": "Mohammed Johnson",
+      "country": "JP",
+      "patents": 5
+    },
+    {
+      "name": "Pierre Yamamoto",
+      "country": "US",
+      "patents": 5
+    }
+  ],
+  "top_companies": [
+    {
+      "name": "Panasonic Holdings Corporation",
+      "patents": 51
+    },
+    {
+      "name": "Amazon Technologies, Inc.",
+      "patents": 44
+    },
+    {
+      "name": "Tencent Technology (Shenzhen) Company Ltd.",
+      "patents": 44
+    },
+    {
+      "name": "Toyota Motor Corporation",
+      "patents": 40
+    },
+    {
+      "name": "General Electric Company",
+      "patents": 39
+    },
+    {
+      "name": "Hitachi, Ltd.",
+      "patents": 39
+    },
+    {
+      "name": "Boeing Company, The",
+      "patents": 37
+    },
+    {
+      "name": "SAP SE",
+      "patents": 37
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "patents": 36
+    },
+    {
+      "name": "Meta Platforms, Inc.",
+      "patents": 35
+    },
+    {
+      "name": "Oracle International Corporation",
+      "patents": 35
+    },
+    {
+      "name": "Siemens Aktiengesellschaft",
+      "patents": 35
+    },
+    {
+      "name": "Intel Corporation",
+      "patents": 34
+    },
+    {
+      "name": "Sony Group Corporation",
+      "patents": 34
+    },
+    {
+      "name": "Google LLC",
+      "patents": 33
+    },
+    {
+      "name": "Huawei Technologies Co., Ltd.",
+      "patents": 33
+    },
+    {
+      "name": "Dell Products L.P.",
+      "patents": 32
+    },
+    {
+      "name": "LG Electronics Inc.",
+      "patents": 31
+    },
+    {
+      "name": "Microsoft Technology Licensing, LLC",
+      "patents": 31
+    },
+    {
+      "name": "Robert Bosch GmbH",
+      "patents": 31
+    }
+  ],
+  "top_countries": [
+    {
+      "country": "US",
+      "patents": 671,
+      "share": 0.3815
+    },
+    {
+      "country": "CN",
+      "patents": 451,
+      "share": 0.2564
+    },
+    {
+      "country": "JP",
+      "patents": 157,
+      "share": 0.0893
+    },
+    {
+      "country": "GB",
+      "patents": 102,
+      "share": 0.058
+    },
+    {
+      "country": "KR",
+      "patents": 91,
+      "share": 0.0517
+    },
+    {
+      "country": "DE",
+      "patents": 66,
+      "share": 0.0375
+    },
+    {
+      "country": "IN",
+      "patents": 58,
+      "share": 0.033
+    },
+    {
+      "country": "CA",
+      "patents": 43,
+      "share": 0.0244
+    },
+    {
+      "country": "FR",
+      "patents": 42,
+      "share": 0.0239
+    },
+    {
+      "country": "SE",
+      "patents": 35,
+      "share": 0.0199
+    },
+    {
+      "country": "TW",
+      "patents": 34,
+      "share": 0.0193
+    },
+    {
+      "country": "NL",
+      "patents": 9,
+      "share": 0.0051
+    }
+  ],
+  "yearly_trends": [
+    {
+      "year": 2020,
+      "patents": 40
+    },
+    {
+      "year": 2021,
+      "patents": 117
+    },
+    {
+      "year": 2022,
+      "patents": 214
+    },
+    {
+      "year": 2023,
+      "patents": 328
+    },
+    {
+      "year": 2024,
+      "patents": 238
+    },
+    {
+      "year": 2025,
+      "patents": 62
+    }
+  ],
+  "top_ranked_inventors_by_country": [
+    {
+      "country": "CA",
+      "name": "Aisha Brown",
+      "rank": 1,
+      "patents": 3
+    },
+    {
+      "country": "CA",
+      "name": "Hans Sato",
+      "rank": 1,
+      "patents": 3
+    },
+    {
+      "country": "CA",
+      "name": "Isabella Petrov",
+      "rank": 1,
+      "patents": 3
+    },
+    {
+      "country": "CN",
+      "name": "Fatima Brown",
+      "rank": 1,
+      "patents": 5
+    },
+    {
+      "country": "CN",
+      "name": "John Anderson",
+      "rank": 1,
+      "patents": 5
+    },
+    {
+      "country": "CN",
+      "name": "Yuki Dupont",
+      "rank": 1,
+      "patents": 5
+    },
+    {
+      "country": "DE",
+      "name": "Min Wang",
+      "rank": 1,
+      "patents": 4
+    },
+    {
+      "country": "DE",
+      "name": "Alice Rossi",
+      "rank": 2,
+      "patents": 3
+    },
+    {
+      "country": "DE",
+      "name": "Fatima Tanaka",
+      "rank": 2,
+      "patents": 3
+    },
+    {
+      "country": "FR",
+      "name": "Alice Zhang",
+      "rank": 1,
+      "patents": 3
+    },
+    {
+      "country": "FR",
+      "name": "Fatima Hassan",
+      "rank": 1,
+      "patents": 3
+    },
+    {
+      "country": "FR",
+      "name": "Luca Park",
+      "rank": 1,
+      "patents": 3
+    },
+    {
+      "country": "GB",
+      "name": "Oliver Rodriguez",
+      "rank": 1,
+      "patents": 4
+    },
+    {
+      "country": "GB",
+      "name": "Sofia Miller",
+      "rank": 1,
+      "patents": 4
+    },
+    {
+      "country": "GB",
+      "name": "Pierre Conti",
+      "rank": 3,
+      "patents": 3
+    },
+    {
+      "country": "IN",
+      "name": "Isabella Suzuki",
+      "rank": 1,
+      "patents": 3
+    },
+    {
+      "country": "IN",
+      "name": "Liam Esposito",
+      "rank": 1,
+      "patents": 3
+    },
+    {
+      "country": "IN",
+      "name": "Ahmed Patel",
+      "rank": 3,
+      "patents": 2
+    },
+    {
+      "country": "JP",
+      "name": "Mohammed Johnson",
+      "rank": 1,
+      "patents": 5
+    },
+    {
+      "country": "JP",
+      "name": "Sofia Smith",
+      "rank": 1,
+      "patents": 5
+    },
+    {
+      "country": "JP",
+      "name": "Alice Garcia",
+      "rank": 3,
+      "patents": 3
+    },
+    {
+      "country": "KR",
+      "name": "Kenji Johnson",
+      "rank": 1,
+      "patents": 4
+    },
+    {
+      "country": "KR",
+      "name": "Hans Zhang",
+      "rank": 2,
+      "patents": 3
+    },
+    {
+      "country": "KR",
+      "name": "Priya Wang",
+      "rank": 2,
+      "patents": 3
+    },
+    {
+      "country": "NL",
+      "name": "Carlos Tanaka",
+      "rank": 1,
+      "patents": 2
+    },
+    {
+      "country": "NL",
+      "name": "Kenji Johnson",
+      "rank": 1,
+      "patents": 2
+    },
+    {
+      "country": "NL",
+      "name": "Ahmed Esposito",
+      "rank": 3,
+      "patents": 1
+    },
+    {
+      "country": "SE",
+      "name": "Mohammed Park",
+      "rank": 1,
+      "patents": 3
+    },
+    {
+      "country": "SE",
+      "name": "Pierre Wilson",
+      "rank": 1,
+      "patents": 3
+    },
+    {
+      "country": "SE",
+      "name": "Marco Ivanov",
+      "rank": 3,
+      "patents": 2
+    },
+    {
+      "country": "TW",
+      "name": "Anika Sato",
+      "rank": 1,
+      "patents": 4
+    },
+    {
+      "country": "TW",
+      "name": "Giulia Khan",
+      "rank": 2,
+      "patents": 2
+    },
+    {
+      "country": "TW",
+      "name": "Hans M\u00fcller",
+      "rank": 2,
+      "patents": 2
+    },
+    {
+      "country": "US",
+      "name": "Alice Kumar",
+      "rank": 1,
+      "patents": 6
+    },
+    {
+      "country": "US",
+      "name": "Amelia Taylor",
+      "rank": 1,
+      "patents": 6
+    },
+    {
+      "country": "US",
+      "name": "Greta Rossi",
+      "rank": 1,
+      "patents": 6
+    }
+  ],
+  "cpc_breakdown": [
+    {
+      "section": "H",
+      "label": "Electricity",
+      "patents": 212
+    },
+    {
+      "section": "E",
+      "label": "Fixed Constructions",
+      "patents": 211
+    },
+    {
+      "section": "A",
+      "label": "Human Necessities",
+      "patents": 194
+    },
+    {
+      "section": "G",
+      "label": "Physics",
+      "patents": 181
+    },
+    {
+      "section": "C",
+      "label": "Chemistry; Metallurgy",
+      "patents": 179
+    },
+    {
+      "section": "D",
+      "label": "Textiles; Paper",
+      "patents": 177
+    },
+    {
+      "section": "B",
+      "label": "Performing Operations; Transporting",
+      "patents": 171
+    },
+    {
+      "section": "Y",
+      "label": "General Tagging (Emerging Tech)",
+      "patents": 170
+    },
+    {
+      "section": "F",
+      "label": "Mechanical Engineering",
+      "patents": 161
+    }
+  ]
+}

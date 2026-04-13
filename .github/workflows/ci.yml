@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+
+      - name: Set up Python
+        run: uv python install 3.13
+
+      - name: Install dependencies
+        run: uv sync --all-extras
+
+      - name: Lint
+        run: uv run ruff check .
+
+      - name: Format check
+        run: uv run ruff format --check .
+
+      - name: Run tests
+        run: uv run pytest -q
+
+      - name: Smoke-test the full pipeline on the bundled sample
+        run: uv run patent-pipeline run-all
+
+      - name: Verify expected artifacts exist
+        run: |
+          test -s data/clean/clean_patents.csv
+          test -s data/clean/clean_inventors.csv
+          test -s data/clean/clean_companies.csv
+          test -s data/warehouse/patents.duckdb
+          test -s reports/top_inventors.csv
+          test -s reports/top_companies.csv
+          test -s reports/country_trends.csv
+          test -s reports/patent_report.json
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: reports/

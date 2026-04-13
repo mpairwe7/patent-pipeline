@@ -1,0 +1,75 @@
+[project]
+name = "patent-pipeline"
+version = "0.1.0"
+description = "Global Patent Intelligence Data Pipeline — ingests USPTO PatentsView data, cleans with pandas, warehouses in DuckDB, produces CSV/JSON/Streamlit reports."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12,<3.14"
+authors = [{ name = "Cloud Computing Mini Project" }]
+keywords = ["patents", "data-pipeline", "duckdb", "pandas", "streamlit", "uspto", "patentsview"]
+
+dependencies = [
+  "pandas>=2.2.3",
+  "pyarrow>=18.0.0",
+  "duckdb>=1.1.3",
+  "httpx>=0.28.1",
+  "tqdm>=4.67.1",
+  "typer>=0.15.1",
+  "rich>=13.9.4",
+  "pydantic>=2.10.3",
+  "pydantic-settings>=2.7.0",
+  "loguru>=0.7.3",
+  "pyyaml>=6.0.2",
+  "plotly>=5.24.1",
+  "matplotlib>=3.9.3",
+  "streamlit>=1.41.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.4",
+  "pytest-cov>=6.0.0",
+  "ruff>=0.8.4",
+  "pre-commit>=4.0.1",
+]
+
+[project.scripts]
+patent-pipeline = "patent_pipeline.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/patent_pipeline"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src"]
+
+[tool.ruff.lint]
+select = [
+  "E", "F", "W",   # pycodestyle + pyflakes
+  "I",             # isort
+  "UP",            # pyupgrade
+  "B",             # bugbear
+  "SIM",           # simplify
+  "N",             # pep8-naming
+  "RUF",           # ruff-specific
+]
+ignore = [
+  "E501",   # line length handled by formatter
+  "RUF001", "RUF002", "RUF003",  # ambiguous unicode (en-dashes used intentionally)
+  "B008",   # typer.Option in defaults is idiomatic in Typer
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-ra -q --strict-markers"
+pythonpath = ["src"]
