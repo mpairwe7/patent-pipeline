@@ -1,0 +1,34 @@
+name: keep-hf-alive
+
+# Hugging Face free-tier Spaces sleep after 48h of inactivity. This workflow
+# pings the dashboard's health endpoint on a schedule so the sleep timer
+# never expires. Each request takes <1s and counts as activity.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch:         # allow manual run from the Actions tab
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Probe HF Space
+        run: |
+          URL="https://landwind22-globalpatentintelligencedatasystem.hf.space/_stcore/health"
+          # Retry up to 3 times in case the Space is mid-cold-start (cold
+          # starts take ~30s; the retry handles that without failing the run).
+          for i in 1 2 3; do
+            code=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 60 "$URL" || echo "000")
+            echo "attempt $i: $code"
+            if [ "$code" = "200" ]; then
+              exit 0
+            fi
+            sleep 30
+          done
+          echo "::error::Space did not respond with 200 after 3 attempts"
+          exit 1
