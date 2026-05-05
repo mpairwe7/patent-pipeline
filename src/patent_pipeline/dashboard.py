@@ -249,6 +249,8 @@ def _persist_to_url(**kv: Any) -> None:
 PRESETS: list[tuple[str, int | None, int | None]] = [
     ("All time", None, None),
     ("Last 5 yrs", -5, None),
+    ("1970s", 1970, 1979),
+    ("1980s", 1980, 1989),
     ("1990s", 1990, 1999),
     ("2000s", 2000, 2009),
     ("2010s", 2010, 2019),
