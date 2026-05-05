@@ -373,7 +373,7 @@ def sidebar_filters() -> dict[str, Any]:
         log_scale = st.checkbox(
             "Logarithmic Y-axis (Trends)",
             value=log_def,
-            help="Compress large ranges on the yearly bar chart.",
+            help="Compress large ranges on the yearly line chart.",
         )
 
         if st.button(":material/restart_alt: Reset all filters", width="stretch"):
@@ -824,16 +824,16 @@ def tab_trends(f: dict[str, Any]) -> None:
     yearly["yoy"] = yearly["patents"].pct_change()
     yearly["cumulative"] = yearly["patents"].cumsum()
 
-    st.subheader(":material/bar_chart: Yearly volume")
-    fig = px.bar(
-        yearly,
-        x="year",
-        y="patents",
-        text_auto=True,
-        color="patents",
-        color_continuous_scale="Blues",
+    st.subheader(":material/show_chart: Yearly volume")
+    fig = px.line(yearly, x="year", y="patents", markers=True)
+    fig.update_traces(
+        line=dict(color="#1f4e79", width=2.5),
+        marker=dict(color="#1f4e79", size=7),
+        fill="tozeroy",
+        fillcolor="rgba(31, 78, 121, 0.12)",
+        hovertemplate="<b>%{x}</b><br>Patents: %{y:,}<extra></extra>",
     )
-    fig.update_layout(coloraxis_showscale=False, height=380)
+    fig.update_layout(height=380, xaxis_title="Year", yaxis_title="Patents")
     if f.get("log_scale"):
         fig.update_yaxes(type="log", title_text="Patents (log)")
     st.plotly_chart(fig, width="stretch")
