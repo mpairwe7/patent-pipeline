@@ -1,0 +1,49 @@
+# --- VCS / editor ----------------------------------------------------------
+.git
+.github
+.gitignore
+.gitattributes
+.vscode
+.idea
+.DS_Store
+.claude
+
+# --- Python build/test caches ---------------------------------------------
+__pycache__
+**/__pycache__
+*.py[cod]
+*.egg-info
+.pytest_cache
+.ruff_cache
+.mypy_cache
+.coverage
+htmlcov
+
+# --- Local virtualenv (we install fresh inside the image) -----------------
+.venv
+.env
+.env.local
+
+# --- Generated data: rebuilt during the warehouse build stage -------------
+data/raw/
+data/clean/
+data/warehouse/
+!data/sample/
+
+# --- Generated reports: rebuilt during the warehouse build stage ----------
+reports/*.csv
+reports/*.json
+reports/figures/
+
+# --- Local Streamlit secrets / personal config ----------------------------
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# --- Tests + dev-only docs (not needed at runtime) ------------------------
+tests/
+*.pdf
+*.zip
+
+# --- Container infra (avoid recursive copies) -----------------------------
+Dockerfile
+.dockerignore

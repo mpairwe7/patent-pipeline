@@ -1,3 +1,15 @@
+---
+title: Global Patent Intelligence Dashboard
+emoji: 🧪
+colorFrom: indigo
+colorTo: blue
+sdk: docker
+app_port: 7860
+pinned: false
+license: mit
+short_description: Interactive analytics over USPTO PatentsView 1976–2025.
+---
+
 # Global Patent Intelligence Data Pipeline
 
 A production-shaped, reproducible data pipeline that ingests USPTO **PatentsView Granted Patent
@@ -227,10 +239,36 @@ uv run pre-commit install     # enable git hooks
 
 ---
 
-## Data source
+## Container / Hugging Face Spaces deployment
 
-[USPTO PatentsView Granted Patent Disambiguated data](https://data.uspto.gov/bulkdata/datasets/pvgpatdis?fileDataFromDate=1976-01-01&fileDataToDate=2025-09-30)
-— public domain. Coverage: 1976-01-01 through 2025-09-30.
+The repo ships a **multi-stage `Dockerfile`** (Podman- and Docker-compatible) that:
+
+1. installs locked dependencies into `/app/.venv` via `uv sync --frozen`,
+2. runs `patent-pipeline run-all --use-sample` at build time so the image is shipped
+   with a fresh DuckDB warehouse already loaded from the bundled sample TSVs, and
+3. starts Streamlit on **port 7860** (the port Hugging Face Spaces expects) as a
+   non-root UID 1000 user.
+
+**Build & run with Podman** (or substitute `docker` — same Dockerfile):
+
+```bash
+podman build -t patent-dashboard .
+podman run --rm -p 7860:7860 patent-dashboard
+# → open http://localhost:7860
+```
+
+**Deploy to Hugging Face Spaces:**
+
+1. Create a new Space → **SDK = Docker**.
+2. Push this repo to the Space's git remote. Spaces reads the YAML frontmatter at
+   the top of this `README.md` (`sdk: docker`, `app_port: 7860`) and builds the
+   `Dockerfile` automatically.
+3. First build takes ~3-5 min (deps + pipeline); subsequent rebuilds are cached.
+
+The `docker-entrypoint.sh` re-runs the pipeline on cold start if a volume mount
+ever shadows the baked-in warehouse, so the dashboard always finds data to render.
+
+## Data source
 
 ## License
 

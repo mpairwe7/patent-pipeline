@@ -1,12 +1,21 @@
-# Streamlit configuration for the patent dashboard.
+# Streamlit configuration for the Patent Intelligence dashboard.
 [server]
 headless = true
 runOnSave = false
 enableCORS = false
+# HF Spaces serves the app through an iframe — XSRF would block POSTs.
+enableXsrfProtection = false
 
 [browser]
 gatherUsageStats = false
 
 [theme]
+# Professional 2026 light theme: navy primary, refined neutral surfaces,
+# Inter font for crisp UI typography.
 base = "light"
-primaryColor = "#4c72b0"
+primaryColor = "#1f4e79"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f5f7fa"
+textColor = "#1a202c"
+font = "sans serif"
+baseFontSize = 14
