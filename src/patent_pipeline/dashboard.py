@@ -545,7 +545,12 @@ def _fast_top_inventors(
     *,
     offset: int = 0,
 ) -> pd.DataFrame:
-    """Top-N inventors honouring filters; uses mv_inventor_total when no CPC filter."""
+    """Top-N inventors *within the active year window* (window-correct counts).
+
+    Uses ``mv_inventor_yearly`` (one row per inventor × active year) so the
+    SUM only includes patents inside ``year_range`` — fixes the previous
+    bug where lifetime totals were displayed regardless of preset.
+    """
     yr = f["year_range"]
     if f["sections"] or f.get("classes"):
         cc, sc, sj, extra = _build_clauses(f)
@@ -573,23 +578,24 @@ def _fast_top_inventors(
         ph = ", ".join(["?"] * len(f["countries"]))
         country_clause = f" AND country IN ({ph})"
         params.extend(f["countries"])
-    order_by_sql = order_sql.replace("patents", "total_patents").replace("name", "inventor")
+    order_by_sql = order_sql.replace("name", "inventor")
     return query(
         f"""
-        SELECT inventor, country, total_patents AS patents
-        FROM mv_inventor_total
-        WHERE last_year >= ? AND first_year <= ?
-              AND total_patents >= ?
+        SELECT inventor, country, CAST(SUM(patents) AS BIGINT) AS patents
+        FROM mv_inventor_yearly
+        WHERE year BETWEEN ? AND ?
               {country_clause}
+        GROUP BY inventor, country
+        HAVING SUM(patents) >= ?
         ORDER BY {order_by_sql}
         LIMIT ? OFFSET ?
         """,
-        (yr[0], yr[1], min_patents, *params, top_n, offset),
+        (yr[0], yr[1], *params, min_patents, top_n, offset),
     )
 
 
 def _count_top_inventors(f: dict[str, Any], min_patents: int) -> int:
-    """Cached total count for paginating inventors."""
+    """Cached total count of inventors with ≥ min_patents *inside* the year window."""
     yr = f["year_range"]
     if f["sections"] or f.get("classes"):
         cc, sc, sj, extra = _build_clauses(f)
@@ -617,11 +623,13 @@ def _count_top_inventors(f: dict[str, Any], min_patents: int) -> int:
         params.extend(f["countries"])
     df = query(
         f"""
-        SELECT COUNT(*) AS n FROM mv_inventor_total
-        WHERE last_year >= ? AND first_year <= ? AND total_patents >= ?
-              {country_clause}
+        SELECT COUNT(*) AS n FROM (
+            SELECT inventor FROM mv_inventor_yearly
+            WHERE year BETWEEN ? AND ? {country_clause}
+            GROUP BY inventor, country HAVING SUM(patents) >= ?
+        )
         """,
-        (yr[0], yr[1], min_patents, *params),
+        (yr[0], yr[1], *params, min_patents),
     )
     return int(df["n"].iloc[0])
 
@@ -634,7 +642,7 @@ def _fast_top_companies(
     *,
     offset: int = 0,
 ) -> pd.DataFrame:
-    """Top-N companies. Uses mv_company_total when no CPC/country filter."""
+    """Top-N companies *within the active year window* — see _fast_top_inventors."""
     yr = f["year_range"]
     if f["sections"] or f.get("classes") or f["countries"]:
         cc, sc, sj, extra = _build_clauses(f)
@@ -655,13 +663,14 @@ def _fast_top_companies(
             """,
             (yr[0], yr[1], *extra, min_patents, top_n, offset),
         )
-    order_by_sql = order_sql.replace("patents", "total_patents").replace("name", "company")
+    order_by_sql = order_sql.replace("name", "company")
     return query(
         f"""
-        SELECT company, total_patents AS patents
-        FROM mv_company_total
-        WHERE last_year >= ? AND first_year <= ?
-              AND total_patents >= ?
+        SELECT company, CAST(SUM(patents) AS BIGINT) AS patents
+        FROM mv_company_yearly
+        WHERE year BETWEEN ? AND ?
+        GROUP BY company
+        HAVING SUM(patents) >= ?
         ORDER BY {order_by_sql}
         LIMIT ? OFFSET ?
         """,
@@ -690,8 +699,11 @@ def _count_top_companies(f: dict[str, Any], min_patents: int) -> int:
         return int(df["n"].iloc[0])
     df = query(
         """
-        SELECT COUNT(*) AS n FROM mv_company_total
-        WHERE last_year >= ? AND first_year <= ? AND total_patents >= ?
+        SELECT COUNT(*) AS n FROM (
+            SELECT company FROM mv_company_yearly
+            WHERE year BETWEEN ? AND ?
+            GROUP BY company HAVING SUM(patents) >= ?
+        )
         """,
         (yr[0], yr[1], min_patents),
     )
@@ -728,13 +740,15 @@ def tab_overview(f: dict[str, Any]) -> None:
         companies_n = int(kpi["companies"].iloc[0])
         countries_n = int(kpi["countries"].iloc[0])
     else:
-        # Fast path: derive each count from a small materialized view.
+        # Fast path: derive each count from the per-year mvs so the figures
+        # reflect activity *within* the active year window, not lifetime.
         inv_q = query(
-            "SELECT COUNT(*) AS n FROM mv_inventor_total WHERE last_year >= ? AND first_year <= ?",
+            "SELECT COUNT(DISTINCT inventor) AS n FROM mv_inventor_yearly "
+            "WHERE year BETWEEN ? AND ?",
             (yr[0], yr[1]),
         )
         comp_q = query(
-            "SELECT COUNT(*) AS n FROM mv_company_total WHERE last_year >= ? AND first_year <= ?",
+            "SELECT COUNT(DISTINCT company) AS n FROM mv_company_yearly WHERE year BETWEEN ? AND ?",
             (yr[0], yr[1]),
         )
         if f["countries"]:
@@ -1168,13 +1182,19 @@ def tab_inventors(f: dict[str, Any]) -> None:
             (yr[0], yr[1], *extra),
         )
     else:
+        # Window-correct: sum patents per (inventor, country) inside the
+        # active year range, then rank within each country.
         win_df = query(
             """
-            WITH ranked AS (
-                SELECT inventor, country, total_patents AS patents,
-                       RANK() OVER (PARTITION BY country ORDER BY total_patents DESC) AS rnk
-                FROM mv_inventor_total
-                WHERE last_year >= ? AND first_year <= ? AND country <> '?' AND country <> ''
+            WITH counts AS (
+                SELECT inventor, country, CAST(SUM(patents) AS BIGINT) AS patents
+                FROM mv_inventor_yearly
+                WHERE year BETWEEN ? AND ? AND country <> '?' AND country <> ''
+                GROUP BY inventor, country
+            ), ranked AS (
+                SELECT inventor, country, patents,
+                       RANK() OVER (PARTITION BY country ORDER BY patents DESC) AS rnk
+                FROM counts
             )
             SELECT country, inventor, patents, rnk
             FROM ranked WHERE rnk <= 3
@@ -1690,9 +1710,11 @@ def _build_pdf_report(filters: dict[str, Any]) -> bytes:
     sections["section_label"] = sections["section"].map(CPC_LABELS).fillna(sections["section"])
     top_companies = query(
         """
-        SELECT company, total_patents AS patents FROM mv_company_total
-        WHERE last_year >= ? AND first_year <= ?
-        ORDER BY total_patents DESC LIMIT 15
+        SELECT company, CAST(SUM(patents) AS BIGINT) AS patents
+        FROM mv_company_yearly
+        WHERE year BETWEEN ? AND ?
+        GROUP BY company
+        ORDER BY patents DESC LIMIT 15
         """,
         (yr[0], yr[1]),
     )
@@ -1788,6 +1810,15 @@ def _build_pdf_report(filters: dict[str, Any]) -> bytes:
             color="#6b7280",
             transform=ax.transAxes,
         )
+        ax.text(
+            0.05,
+            0.04,
+            "Developer: Mpairwe Lauben  ·  mpairwelauben75@gmail.com  ·  "
+            "github.com/mpairwe7/patent-pipeline",
+            fontsize=8,
+            color="#4a5462",
+            transform=ax.transAxes,
+        )
         pdf.savefig(fig, bbox_inches="tight")
         plt.close(fig)
 
@@ -1864,7 +1895,7 @@ def _build_pdf_report(filters: dict[str, Any]) -> bytes:
         # ---- PDF metadata ---------------------------------------------
         info = pdf.infodict()
         info["Title"] = "Patent Intelligence Report"
-        info["Author"] = "Patent Intelligence Dashboard"
+        info["Author"] = "Mpairwe Lauben <mpairwelauben75@gmail.com>"
         info["Subject"] = f"USPTO PatentsView · {yr[0]}-{yr[1]} · preset {filters['preset']}"
         info["Keywords"] = "patents, USPTO, PatentsView, DuckDB, analytics"
         info["CreationDate"] = datetime.now(UTC)
@@ -2007,6 +2038,12 @@ def main() -> None:
             "**pandas** · **PyArrow**. "
             "Source: [PatentsView Granted Patent Disambiguated]"
             "(https://data.uspto.gov/bulkdata/datasets/pvgpatdis)."
+        )
+        st.caption(
+            ":material/person: Developer: **Mpairwe Lauben** · "
+            "[mpairwelauben75@gmail.com](mailto:mpairwelauben75@gmail.com) · "
+            "[github.com/mpairwe7/patent-pipeline]"
+            "(https://github.com/mpairwe7/patent-pipeline)"
         )
     with f2:
         report_bytes = _build_pdf_report(filters)

@@ -129,24 +129,34 @@ def _build_summaries(conn: duckdb.DuckDBPyConnection) -> None:
         """
     )
 
-    # ---- top-N per-year breakdowns (used for trend lines) -------------
-    # Limit to the 200 most-prolific companies / 500 most-prolific inventors —
-    # everything below is statistical noise for visualisation.
+    # ---- per-year × entity views (used for window-correct leaderboards) ---
+    # All 567 k companies × their active years.  ~5 M rows; lets the
+    # dashboard rank companies by patents-WITHIN-window (not lifetime).
     conn.execute(
         """
         CREATE OR REPLACE TABLE mv_company_yearly AS
-        WITH top_co AS (
-            SELECT company_id FROM mv_company_total
-            ORDER BY total_patents DESC LIMIT 500
-        )
         SELECT c.name AS company, p.year,
                COUNT(DISTINCT p.patent_id) AS patents
-        FROM top_co tc
-        JOIN companies c            ON c.company_id  = tc.company_id
-        JOIN patent_relationships r ON r.company_id  = tc.company_id
-        JOIN patents p              ON p.patent_id   = r.patent_id
+        FROM companies c
+        JOIN patent_relationships r ON r.company_id = c.company_id
+        JOIN patents p              ON p.patent_id  = r.patent_id
         WHERE p.year IS NOT NULL
         GROUP BY c.name, p.year;
+        """
+    )
+
+    # All 4.26 M inventors × their active years.  ~13.6 M rows; lets the
+    # dashboard rank inventors by patents-WITHIN-window (not lifetime).
+    conn.execute(
+        """
+        CREATE OR REPLACE TABLE mv_inventor_yearly AS
+        SELECT i.name AS inventor, COALESCE(i.country, '?') AS country, p.year,
+               COUNT(DISTINCT p.patent_id) AS patents
+        FROM inventors i
+        JOIN patent_relationships r ON r.inventor_id = i.inventor_id
+        JOIN patents p              ON p.patent_id   = r.patent_id
+        WHERE p.year IS NOT NULL
+        GROUP BY i.name, i.country, p.year;
         """
     )
 
@@ -300,6 +310,7 @@ def _build_summaries(conn: duckdb.DuckDBPyConnection) -> None:
         "mv_company_total",
         "mv_inventor_total",
         "mv_company_yearly",
+        "mv_inventor_yearly",
         "mv_company_section",
         "mv_decade_compare",
         "mv_country_halfsplit",
