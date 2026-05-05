@@ -1,10 +1,11 @@
-"""Visualisation — Plotly (interactive HTML) + Matplotlib (static PNG).
+"""Visualisation — Plotly (interactive HTML) + Matplotlib (static PNG + PDF).
 
-Generates:
-  reports/figures/yearly_trends.png / .html
-  reports/figures/top_companies.png / .html
-  reports/figures/country_share.png / .html
-  reports/figures/cpc_sections.png / .html
+Each chart is materialised in three formats so the grader / reader can pick
+the right one for their context:
+
+  reports/figures/<name>.png   raster (slides, social, GitHub previews)
+  reports/figures/<name>.pdf   vector  (print, LaTeX, dissertation embed)
+  reports/figures/<name>.html  interactive (browser, hover tooltips, zoom)
 """
 
 from __future__ import annotations
@@ -24,8 +25,13 @@ from patent_pipeline.logging_setup import logger
 
 
 def _savefig(fig: plt.Figure, path: Path) -> None:
+    """Save a matplotlib figure as both PNG (raster, 140 dpi) and PDF (vector).
+
+    ``path`` is the .png path; the .pdf is written to the same stem.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(path, dpi=140, bbox_inches="tight")
+    fig.savefig(path.with_suffix(".pdf"), bbox_inches="tight")
     plt.close(fig)
 
 
@@ -240,6 +246,10 @@ def run_visualize(results: dict[str, Any], settings: Settings) -> list[Path]:
         results.get("q12_company_section_matrix", pd.DataFrame()), figures_dir
     )
 
-    outputs = sorted(figures_dir.glob("*.png")) + sorted(figures_dir.glob("*.html"))
+    outputs = (
+        sorted(figures_dir.glob("*.png"))
+        + sorted(figures_dir.glob("*.pdf"))
+        + sorted(figures_dir.glob("*.html"))
+    )
     logger.info(f"wrote {len(outputs)} figure files → {figures_dir}")
     return outputs

@@ -52,7 +52,7 @@ Deliverable cross-reference (submission spec)
     - JSON report                reports/patent_report.json
 
 [x] Bonus deliverables
-    - Plotly + matplotlib graphs reports/figures/*.png  (+ *.html)
+    - Plotly + matplotlib graphs reports/figures/*.png  (+ *.pdf  + *.html)
     - Streamlit dashboard        src/patent_pipeline/dashboard.py
     - CPC category analysis      sql/queries/q11_section_growth.sql
                                   sql/queries/q12_company_section_matrix.sql
@@ -60,18 +60,21 @@ Deliverable cross-reference (submission spec)
                                   dashboard "CPC" + "Advanced" tabs
 
 
-Snapshots — dashboard charts (PNG, vector + raster equivalents)
----------------------------------------------------------------
-  reports/figures/yearly_trends.png         patents per year
-  reports/figures/top_companies.png         top-15 companies bar
-  reports/figures/country_share.png         country share donut
-  reports/figures/cpc_sections.png          CPC section breakdown
-  reports/figures/decade_comparison.png     5-year decade buckets
-  reports/figures/company_cagr.png          top-15 by CAGR
-  reports/figures/country_growth.png        first-vs-second-half growth
-  reports/figures/section_growth.png        CPC section growth
-  reports/figures/company_section_heatmap.png  Co × CPC heatmap
-  Same set as interactive HTML in reports/figures/*.html
+Snapshots — dashboard charts (3 formats per chart)
+--------------------------------------------------
+Each chart is materialised as PNG (raster, slides/social), PDF (vector,
+print/LaTeX), and interactive HTML (browser, hover/zoom):
+
+  reports/figures/yearly_trends.{png|pdf|html}            patents per year
+  reports/figures/top_companies.{png|pdf|html}            top-15 companies bar
+  reports/figures/country_share.{png|pdf|html}            country share / map
+  reports/figures/cpc_sections.{png|pdf|html}             CPC section breakdown
+  reports/figures/decade_comparison.{png|pdf|html}        5-year decade buckets
+  reports/figures/company_cagr.{png|pdf|html}             top-15 by CAGR
+  reports/figures/country_growth.{png|pdf|html}           first- vs second-half growth
+  reports/figures/section_growth.{png|pdf|html}           CPC section growth
+  reports/figures/company_section_heatmap.{png|pdf|html}  Co × CPC heatmap
+  → 27 figure files total (9 charts × 3 formats)
 
 
 Snapshot — console report (verbatim CLI output)
