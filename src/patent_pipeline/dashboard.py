@@ -1405,13 +1405,20 @@ def tab_advanced(f: dict[str, Any]) -> None:
         """
     )
     if not cgr.empty:
-        # Use float NaN (not pd.NA) — pd.NA's truth value is ambiguous and
-        # crashes Plotly's group sorting in px.scatter when colour-mapping.
-        denom = cgr["first_half"].astype("float64").replace(0, float("nan"))
+        # DuckDB returns nullable Int64 / String[pyarrow] columns whose pd.NA
+        # crashes Plotly's group-sort with "boolean value of NA is ambiguous".
+        # Convert every column the chart consumes into a Plotly-safe dtype.
+        cgr = cgr.copy()
+        cgr["country"] = cgr["country"].astype("object").fillna("?")
+        cgr["first_half"] = cgr["first_half"].astype("float64").fillna(0)
+        cgr["second_half"] = cgr["second_half"].astype("float64").fillna(0)
+        cgr["total_patents"] = cgr["total_patents"].astype("float64").fillna(0)
+        denom = cgr["first_half"].replace(0, float("nan"))
         cgr["growth"] = (cgr["second_half"] - cgr["first_half"]) / denom
         cgr["country_name"] = cgr["country"].map(lambda c: COUNTRY_LOOKUP.get(c, (c, c))[0])
+        cgr_plot = cgr.dropna(subset=["growth"])
         fig = px.scatter(
-            cgr.dropna(subset=["growth"]),
+            cgr_plot,
             x="first_half",
             y="second_half",
             size="total_patents",
@@ -1452,7 +1459,13 @@ def tab_advanced(f: dict[str, Any]) -> None:
         """
     )
     if not sg.empty:
-        denom = sg["first_half"].astype("float64").replace(0, float("nan"))
+        # Same defensive coercion as above — Plotly chokes on pd.NA values
+        # in any column it groups/sorts over, regardless of the active key.
+        sg = sg.copy()
+        sg["section"] = sg["section"].astype("object").fillna("?")
+        sg["first_half"] = sg["first_half"].astype("float64").fillna(0)
+        sg["second_half"] = sg["second_half"].astype("float64").fillna(0)
+        denom = sg["first_half"].replace(0, float("nan"))
         sg["growth"] = (sg["second_half"] - sg["first_half"]) / denom
         sg = sg.dropna(subset=["growth"])
         sg["section_label"] = sg["section"].map(CPC_LABELS).fillna(sg["section"])
