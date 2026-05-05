@@ -1,601 +1,199 @@
 location_id	disambig_city	disambig_state	disambig_country	latitude	longitude	county	state_fips	county_fips
-loc-0000	Zurich		CN					
-loc-0001	Amsterdam	NY	US					
-loc-0002	Zurich		CN					
-loc-0003	Seoul		KR					
-loc-0004	Munich		JP					
-loc-0005	Shanghai	NY	US					
-loc-0006	London		CN					
-loc-0007	Paris	WA	US					
-loc-0008	Zurich		GB					
-loc-0009	Zurich	TX	US					
-loc-0010	Tokyo		GB					
-loc-0011	New York		GB					
-loc-0012	New York	IL	US					
-loc-0013	Zurich		CN					
-loc-0014	Seoul	TX	US					
-loc-0015	Taipei		GB					
-loc-0016	Tokyo		DE					
-loc-0017	Paris		CN					
-loc-0018	Zurich		JP					
-loc-0019	Shanghai		JP					
-loc-0020	Amsterdam	MA	US					
-loc-0021	Shanghai	CA	US					
-loc-0022	Taipei		CN					
-loc-0023	San Jose		GB					
-loc-0024	Toronto		KR					
-loc-0025	Zurich		SE					
-loc-0026	Bengaluru		CN					
-loc-0027	Toronto		KR					
-loc-0028	Stockholm		GB					
-loc-0029	Tokyo	TX	US					
-loc-0030	Bengaluru	NY	US					
-loc-0031	Bengaluru		DE					
-loc-0032	San Jose	MA	US					
-loc-0033	London	IL	US					
-loc-0034	Bengaluru		CN					
-loc-0035	New York		CN					
-loc-0036	New York		JP					
-loc-0037	Munich		CN					
-loc-0038	Seoul		CA					
-loc-0039	Munich		NL					
-loc-0040	Toronto	CA	US					
-loc-0041	Shanghai		NL					
-loc-0042	Seoul		JP					
-loc-0043	Zurich	MA	US					
-loc-0044	Bengaluru		CN					
-loc-0045	Tokyo	CA	US					
-loc-0046	Munich		CA					
-loc-0047	London		DE					
-loc-0048	Seoul	WA	US					
-loc-0049	Taipei		CN					
-loc-0050	Bengaluru	NY	US					
-loc-0051	San Jose		NL					
-loc-0052	Stockholm		CN					
-loc-0053	London		JP					
-loc-0054	Seoul		CH					
-loc-0055	Zurich	WA	US					
-loc-0056	Stockholm		KR					
-loc-0057	Amsterdam		GB					
-loc-0058	San Jose		JP					
-loc-0059	Munich		TW					
-loc-0060	Toronto	WA	US					
-loc-0061	Amsterdam	NY	US					
-loc-0062	Bengaluru	NY	US					
-loc-0063	San Jose		CN					
-loc-0064	Paris	WA	US					
-loc-0065	Tokyo	TX	US					
-loc-0066	Shanghai		TW					
-loc-0067	Taipei		NL					
-loc-0068	Bengaluru		CN					
-loc-0069	Amsterdam		GB					
-loc-0070	Seoul		JP					
-loc-0071	Zurich		JP					
-loc-0072	New York		CN					
-loc-0073	Amsterdam		CN					
-loc-0074	Seoul		CN					
-loc-0075	Bengaluru		KR					
-loc-0076	Tokyo	NY	US					
-loc-0077	Zurich		TW					
-loc-0078	Shanghai		CN					
-loc-0079	Seoul		CN					
-loc-0080	Bengaluru	TX	US					
-loc-0081	Paris	WA	US					
-loc-0082	San Jose		CN					
-loc-0083	New York	IL	US					
-loc-0084	Zurich	MA	US					
-loc-0085	Tokyo		FR					
-loc-0086	Stockholm	WA	US					
-loc-0087	Taipei		CH					
-loc-0088	Shanghai		FR					
-loc-0089	New York		CN					
-loc-0090	Munich		GB					
-loc-0091	Zurich		CN					
-loc-0092	Toronto		JP					
-loc-0093	New York		CN					
-loc-0094	Stockholm	TX	US					
-loc-0095	Shanghai		KR					
-loc-0096	Stockholm		CN					
-loc-0097	New York		KR					
-loc-0098	Seoul		GB					
-loc-0099	Munich	CA	US					
-loc-0100	Shanghai		CA					
-loc-0101	New York	NY	US					
-loc-0102	Tokyo		CN					
-loc-0103	Zurich	WA	US					
-loc-0104	Bengaluru		CN					
-loc-0105	Paris		CN					
-loc-0106	San Jose	IL	US					
-loc-0107	Munich		CN					
-loc-0108	Seoul	TX	US					
-loc-0109	Paris		CN					
-loc-0110	Munich	MA	US					
-loc-0111	Toronto		DE					
-loc-0112	Taipei	MA	US					
-loc-0113	Munich		CN					
-loc-0114	Paris	MA	US					
-loc-0115	Bengaluru	MA	US					
-loc-0116	Shanghai		JP					
-loc-0117	Munich	MA	US					
-loc-0118	Stockholm	TX	US					
-loc-0119	Seoul	TX	US					
-loc-0120	Shanghai	CA	US					
-loc-0121	Shanghai	NY	US					
-loc-0122	Amsterdam		IN					
-loc-0123	Stockholm		CH					
-loc-0124	Stockholm	TX	US					
-loc-0125	Taipei	NY	US					
-loc-0126	Tokyo	NY	US					
-loc-0127	Taipei		CN					
-loc-0128	Zurich	CA	US					
-loc-0129	Amsterdam		DE					
-loc-0130	Stockholm	IL	US					
-loc-0131	Stockholm	TX	US					
-loc-0132	Tokyo		GB					
-loc-0133	Zurich	WA	US					
-loc-0134	Paris		CN					
-loc-0135	Shanghai		JP					
-loc-0136	Paris		CN					
-loc-0137	Bengaluru	IL	US					
-loc-0138	Amsterdam		CN					
-loc-0139	New York		CA					
-loc-0140	Toronto		JP					
-loc-0141	Seoul	IL	US					
-loc-0142	Tokyo	CA	US					
-loc-0143	London	IL	US					
-loc-0144	Taipei	NY	US					
-loc-0145	San Jose		GB					
-loc-0146	New York	IL	US					
-loc-0147	Tokyo	NY	US					
-loc-0148	Taipei		CN					
-loc-0149	Tokyo		GB					
-loc-0150	Tokyo	WA	US					
-loc-0151	Shanghai		GB					
-loc-0152	Stockholm		CH					
-loc-0153	London	IL	US					
-loc-0154	Paris		CN					
-loc-0155	Seoul	MA	US					
-loc-0156	New York	NY	US					
-loc-0157	Amsterdam		CN					
-loc-0158	San Jose	NY	US					
-loc-0159	Taipei		CN					
-loc-0160	Munich		GB					
-loc-0161	Stockholm		JP					
-loc-0162	San Jose		CN					
-loc-0163	San Jose	NY	US					
-loc-0164	Zurich	TX	US					
-loc-0165	Seoul	TX	US					
-loc-0166	Toronto	CA	US					
-loc-0167	Toronto	TX	US					
-loc-0168	Taipei		IN					
-loc-0169	Stockholm	NY	US					
-loc-0170	London	CA	US					
-loc-0171	Taipei		DE					
-loc-0172	Stockholm		CN					
-loc-0173	Amsterdam		CN					
-loc-0174	Zurich		CN					
-loc-0175	San Jose		CN					
-loc-0176	Shanghai	MA	US					
-loc-0177	Munich		DE					
-loc-0178	Munich	CA	US					
-loc-0179	Zurich	NY	US					
-loc-0180	Bengaluru	MA	US					
-loc-0181	Toronto		TW					
-loc-0182	Seoul		CN					
-loc-0183	Amsterdam		DE					
-loc-0184	Shanghai	IL	US					
-loc-0185	Toronto		CH					
-loc-0186	New York	IL	US					
-loc-0187	Amsterdam		CN					
-loc-0188	Tokyo		JP					
-loc-0189	Munich		JP					
-loc-0190	Shanghai		CA					
-loc-0191	Paris	CA	US					
-loc-0192	New York		CN					
-loc-0193	Toronto		KR					
-loc-0194	Stockholm	TX	US					
-loc-0195	Zurich	NY	US					
-loc-0196	Seoul	CA	US					
-loc-0197	San Jose	WA	US					
-loc-0198	Zurich	WA	US					
-loc-0199	London	CA	US					
-loc-0200	Munich		CH					
-loc-0201	San Jose		CN					
-loc-0202	Zurich	CA	US					
-loc-0203	San Jose	NY	US					
-loc-0204	Taipei		CH					
-loc-0205	Seoul		CN					
-loc-0206	Taipei		KR					
-loc-0207	Tokyo	TX	US					
-loc-0208	Tokyo		IN					
-loc-0209	Taipei		CN					
-loc-0210	Bengaluru		JP					
-loc-0211	Toronto	IL	US					
-loc-0212	Seoul		CN					
-loc-0213	Seoul		CN					
-loc-0214	Toronto		JP					
-loc-0215	Tokyo	NY	US					
-loc-0216	New York		KR					
-loc-0217	San Jose	TX	US					
-loc-0218	Toronto	CA	US					
-loc-0219	Paris	WA	US					
-loc-0220	New York		GB					
-loc-0221	Zurich		CN					
-loc-0222	Shanghai		CN					
-loc-0223	Seoul		CA					
-loc-0224	London		GB					
-loc-0225	Shanghai		DE					
-loc-0226	Seoul		CN					
-loc-0227	Toronto		CN					
-loc-0228	Stockholm		KR					
-loc-0229	Seoul	MA	US					
-loc-0230	London	NY	US					
-loc-0231	Taipei	NY	US					
-loc-0232	Stockholm		CN					
-loc-0233	Tokyo		KR					
-loc-0234	Bengaluru		GB					
-loc-0235	Shanghai		CH					
-loc-0236	Bengaluru	CA	US					
-loc-0237	Bengaluru	IL	US					
-loc-0238	London	WA	US					
-loc-0239	New York		JP					
-loc-0240	London	CA	US					
-loc-0241	Amsterdam	NY	US					
-loc-0242	New York	WA	US					
-loc-0243	Amsterdam	MA	US					
-loc-0244	Paris		CN					
-loc-0245	Stockholm		IN					
-loc-0246	Bengaluru		CH					
-loc-0247	Paris		CN					
-loc-0248	Shanghai		CN					
-loc-0249	Bengaluru		IN					
-loc-0250	Bengaluru		JP					
-loc-0251	Stockholm	NY	US					
-loc-0252	London	MA	US					
-loc-0253	Seoul		CN					
-loc-0254	Taipei	CA	US					
-loc-0255	San Jose		CN					
-loc-0256	Stockholm	IL	US					
-loc-0257	London	WA	US					
-loc-0258	Paris	WA	US					
-loc-0259	Bengaluru		KR					
-loc-0260	Shanghai	WA	US					
-loc-0261	Tokyo	NY	US					
-loc-0262	Toronto		CN					
-loc-0263	Seoul		JP					
-loc-0264	Shanghai	MA	US					
-loc-0265	San Jose		CN					
-loc-0266	Shanghai		JP					
-loc-0267	Toronto	WA	US					
-loc-0268	Bengaluru		FR					
-loc-0269	Stockholm		KR					
-loc-0270	Bengaluru		CN					
-loc-0271	San Jose		JP					
-loc-0272	Stockholm		KR					
-loc-0273	Shanghai		CA					
-loc-0274	Zurich	TX	US					
-loc-0275	Amsterdam	TX	US					
-loc-0276	Bengaluru		CH					
-loc-0277	Toronto		CH					
-loc-0278	Bengaluru		CN					
-loc-0279	Toronto		JP					
-loc-0280	Stockholm		CN					
-loc-0281	Paris	CA	US					
-loc-0282	Bengaluru	TX	US					
-loc-0283	Stockholm	CA	US					
-loc-0284	Toronto	NY	US					
-loc-0285	Bengaluru		CN					
-loc-0286	Bengaluru	CA	US					
-loc-0287	Munich	MA	US					
-loc-0288	Amsterdam	NY	US					
-loc-0289	Taipei	WA	US					
-loc-0290	Toronto		JP					
-loc-0291	San Jose	IL	US					
-loc-0292	Toronto		DE					
-loc-0293	Shanghai	MA	US					
-loc-0294	Seoul		CN					
-loc-0295	Munich	IL	US					
-loc-0296	Munich		DE					
-loc-0297	London	IL	US					
-loc-0298	Seoul		GB					
-loc-0299	Amsterdam		FR					
-loc-0300	Amsterdam	TX	US					
-loc-0301	Amsterdam	MA	US					
-loc-0302	London	WA	US					
-loc-0303	London	CA	US					
-loc-0304	Toronto		KR					
-loc-0305	Toronto	IL	US					
-loc-0306	San Jose	IL	US					
-loc-0307	San Jose		GB					
-loc-0308	Toronto	IL	US					
-loc-0309	Tokyo	NY	US					
-loc-0310	Amsterdam		JP					
-loc-0311	Stockholm		JP					
-loc-0312	Munich	MA	US					
-loc-0313	Taipei		CN					
-loc-0314	Stockholm	IL	US					
-loc-0315	Shanghai	CA	US					
-loc-0316	Taipei		KR					
-loc-0317	Munich		KR					
-loc-0318	Stockholm		GB					
-loc-0319	Bengaluru	TX	US					
-loc-0320	Zurich		GB					
-loc-0321	New York	MA	US					
-loc-0322	London	NY	US					
-loc-0323	Toronto		CN					
-loc-0324	Paris		CN					
-loc-0325	Amsterdam	TX	US					
-loc-0326	Munich		DE					
-loc-0327	Zurich		GB					
-loc-0328	Bengaluru		JP					
-loc-0329	Stockholm		TW					
-loc-0330	Seoul	WA	US					
-loc-0331	Seoul		KR					
-loc-0332	Toronto	NY	US					
-loc-0333	San Jose		JP					
-loc-0334	Munich		CA					
-loc-0335	Tokyo	CA	US					
-loc-0336	Tokyo		GB					
-loc-0337	Amsterdam	TX	US					
-loc-0338	San Jose		CN					
-loc-0339	Shanghai		KR					
-loc-0340	Bengaluru	TX	US					
-loc-0341	London	CA	US					
-loc-0342	London	WA	US					
-loc-0343	Munich	IL	US					
-loc-0344	San Jose	CA	US					
-loc-0345	Paris	CA	US					
-loc-0346	New York	WA	US					
-loc-0347	London	IL	US					
-loc-0348	Zurich	MA	US					
-loc-0349	San Jose	CA	US					
-loc-0350	Tokyo		KR					
-loc-0351	Bengaluru	MA	US					
-loc-0352	Taipei	CA	US					
-loc-0353	Taipei		CN					
-loc-0354	Paris	MA	US					
-loc-0355	San Jose		DE					
-loc-0356	Bengaluru	MA	US					
-loc-0357	Bengaluru	TX	US					
-loc-0358	London		DE					
-loc-0359	San Jose	CA	US					
-loc-0360	Stockholm		JP					
-loc-0361	Taipei	IL	US					
-loc-0362	Zurich	NY	US					
-loc-0363	Amsterdam		NL					
-loc-0364	Munich	MA	US					
-loc-0365	Seoul	MA	US					
-loc-0366	Amsterdam	NY	US					
-loc-0367	San Jose		DE					
-loc-0368	San Jose	IL	US					
-loc-0369	Seoul		KR					
-loc-0370	Munich	TX	US					
-loc-0371	Bengaluru	IL	US					
-loc-0372	Shanghai	WA	US					
-loc-0373	Shanghai		DE					
-loc-0374	San Jose	MA	US					
-loc-0375	Tokyo	NY	US					
-loc-0376	San Jose	CA	US					
-loc-0377	New York	WA	US					
-loc-0378	New York	CA	US					
-loc-0379	Zurich		JP					
-loc-0380	Munich		CA					
-loc-0381	Zurich	IL	US					
-loc-0382	Tokyo		CN					
-loc-0383	London		FR					
-loc-0384	Tokyo		CA					
-loc-0385	Paris		JP					
-loc-0386	Zurich	NY	US					
-loc-0387	Toronto		DE					
-loc-0388	Toronto		KR					
-loc-0389	Shanghai		KR					
-loc-0390	Amsterdam		CN					
-loc-0391	San Jose		CN					
-loc-0392	Paris		JP					
-loc-0393	Toronto	WA	US					
-loc-0394	Bengaluru	NY	US					
-loc-0395	Shanghai		JP					
-loc-0396	Taipei		IN					
-loc-0397	Shanghai	IL	US					
-loc-0398	Munich	MA	US					
-loc-0399	Bengaluru	WA	US					
-loc-0400	London		JP					
-loc-0401	New York	MA	US					
-loc-0402	Zurich	NY	US					
-loc-0403	Paris		IN					
-loc-0404	Paris		CN					
-loc-0405	Taipei		JP					
-loc-0406	Munich		JP					
-loc-0407	San Jose	WA	US					
-loc-0408	San Jose	CA	US					
-loc-0409	Taipei	WA	US					
-loc-0410	Taipei	WA	US					
-loc-0411	San Jose	TX	US					
-loc-0412	Munich		KR					
-loc-0413	London	WA	US					
-loc-0414	Stockholm		CN					
-loc-0415	Munich		CN					
-loc-0416	San Jose	CA	US					
-loc-0417	Shanghai	CA	US					
-loc-0418	Munich		KR					
-loc-0419	Stockholm	TX	US					
-loc-0420	Tokyo		CN					
-loc-0421	Munich	TX	US					
-loc-0422	Seoul		KR					
-loc-0423	Paris	IL	US					
-loc-0424	Shanghai		SE					
-loc-0425	Seoul		CN					
-loc-0426	Munich		JP					
-loc-0427	Zurich		CH					
-loc-0428	Shanghai		CN					
-loc-0429	London	MA	US					
-loc-0430	Stockholm		KR					
-loc-0431	Zurich	MA	US					
-loc-0432	Zurich		CN					
-loc-0433	Seoul	NY	US					
-loc-0434	Munich	NY	US					
-loc-0435	Tokyo		JP					
-loc-0436	Paris		CN					
-loc-0437	Shanghai		JP					
-loc-0438	San Jose	CA	US					
-loc-0439	Toronto		FR					
-loc-0440	Zurich	MA	US					
-loc-0441	Stockholm		IN					
-loc-0442	Seoul	NY	US					
-loc-0443	Amsterdam		CH					
-loc-0444	Tokyo	TX	US					
-loc-0445	Tokyo		CN					
-loc-0446	Stockholm	WA	US					
-loc-0447	Tokyo		IN					
-loc-0448	Shanghai		CN					
-loc-0449	Amsterdam		CN					
-loc-0450	Paris		KR					
-loc-0451	New York		CN					
-loc-0452	Zurich	CA	US					
-loc-0453	Seoul		GB					
-loc-0454	London	MA	US					
-loc-0455	Shanghai	NY	US					
-loc-0456	Bengaluru	NY	US					
-loc-0457	Paris	CA	US					
-loc-0458	Seoul		GB					
-loc-0459	Amsterdam		FR					
-loc-0460	Amsterdam	NY	US					
-loc-0461	Bengaluru	NY	US					
-loc-0462	Munich	NY	US					
-loc-0463	Zurich		TW					
-loc-0464	New York	MA	US					
-loc-0465	Shanghai		CN					
-loc-0466	Zurich	TX	US					
-loc-0467	Munich	MA	US					
-loc-0468	Bengaluru	WA	US					
-loc-0469	New York		CN					
-loc-0470	San Jose	CA	US					
-loc-0471	Tokyo	MA	US					
-loc-0472	London	IL	US					
-loc-0473	Stockholm	WA	US					
-loc-0474	Stockholm		CN					
-loc-0475	Stockholm	TX	US					
-loc-0476	Tokyo		TW					
-loc-0477	Seoul		JP					
-loc-0478	Amsterdam		KR					
-loc-0479	Zurich		JP					
-loc-0480	Paris		KR					
-loc-0481	Tokyo		TW					
-loc-0482	Seoul		CN					
-loc-0483	Taipei	TX	US					
-loc-0484	Amsterdam		CN					
-loc-0485	Munich		TW					
-loc-0486	Zurich		DE					
-loc-0487	Tokyo		CA					
-loc-0488	Stockholm		CN					
-loc-0489	Shanghai		JP					
-loc-0490	London		DE					
-loc-0491	Toronto		GB					
-loc-0492	New York	WA	US					
-loc-0493	London		CH					
-loc-0494	San Jose	IL	US					
-loc-0495	New York		CN					
-loc-0496	New York	MA	US					
-loc-0497	Toronto		DE					
-loc-0498	Zurich		JP					
-loc-0499	Tokyo		CN					
-loc-0500	Munich		DE					
-loc-0501	Zurich		FR					
-loc-0502	New York	WA	US					
-loc-0503	Amsterdam		CA					
-loc-0504	Munich	MA	US					
-loc-0505	Taipei	MA	US					
-loc-0506	Munich	IL	US					
-loc-0507	Munich		CN					
-loc-0508	Munich		CN					
-loc-0509	Munich	NY	US					
-loc-0510	Tokyo	CA	US					
-loc-0511	Stockholm	WA	US					
-loc-0512	Taipei	TX	US					
-loc-0513	New York		FR					
-loc-0514	San Jose	MA	US					
-loc-0515	Zurich	TX	US					
-loc-0516	Bengaluru	NY	US					
-loc-0517	Stockholm		CA					
-loc-0518	Tokyo	CA	US					
-loc-0519	Paris	CA	US					
-loc-0520	Seoul		JP					
-loc-0521	Zurich	WA	US					
-loc-0522	Munich	WA	US					
-loc-0523	Shanghai		CN					
-loc-0524	New York		KR					
-loc-0525	Stockholm		JP					
-loc-0526	Munich		CN					
-loc-0527	Munich		JP					
-loc-0528	Toronto	MA	US					
-loc-0529	London		DE					
-loc-0530	Taipei	TX	US					
-loc-0531	Zurich		JP					
-loc-0532	Shanghai	NY	US					
-loc-0533	London		CN					
-loc-0534	Zurich		CN					
-loc-0535	London	MA	US					
-loc-0536	Amsterdam	CA	US					
-loc-0537	Bengaluru		CN					
-loc-0538	Toronto		JP					
-loc-0539	London		CN					
-loc-0540	Tokyo	IL	US					
-loc-0541	Zurich	NY	US					
-loc-0542	Munich	TX	US					
-loc-0543	Bengaluru		DE					
-loc-0544	Taipei		CN					
-loc-0545	San Jose		GB					
-loc-0546	London	MA	US					
-loc-0547	Zurich		DE					
-loc-0548	Toronto	IL	US					
-loc-0549	Bengaluru	IL	US					
-loc-0550	Seoul		JP					
-loc-0551	Shanghai	IL	US					
-loc-0552	Tokyo	TX	US					
-loc-0553	Taipei	CA	US					
-loc-0554	Taipei		CN					
-loc-0555	Tokyo		NL					
-loc-0556	Taipei	TX	US					
-loc-0557	New York		CN					
-loc-0558	Paris		CA					
-loc-0559	Munich	TX	US					
-loc-0560	Amsterdam		NL					
-loc-0561	San Jose		CN					
-loc-0562	Toronto		IN					
-loc-0563	Toronto	TX	US					
-loc-0564	Paris	CA	US					
-loc-0565	Toronto	WA	US					
-loc-0566	Tokyo		JP					
-loc-0567	Shanghai	IL	US					
-loc-0568	Bengaluru	WA	US					
-loc-0569	Tokyo	WA	US					
-loc-0570	Taipei		FR					
-loc-0571	Taipei	MA	US					
-loc-0572	Paris	NY	US					
-loc-0573	Amsterdam		CN					
-loc-0574	San Jose		CN					
-loc-0575	Zurich	MA	US					
-loc-0576	Zurich		KR					
-loc-0577	Zurich		CN					
-loc-0578	London	NY	US					
-loc-0579	London		DE					
-loc-0580	San Jose		CN					
-loc-0581	London	MA	US					
-loc-0582	London	IL	US					
-loc-0583	Stockholm	CA	US					
-loc-0584	Paris		CN					
-loc-0585	San Jose		JP					
-loc-0586	London		CN					
-loc-0587	Paris		JP					
-loc-0588	Toronto		CN					
-loc-0589	London	CA	US					
-loc-0590	Zurich		SE					
-loc-0591	Seoul	IL	US					
-loc-0592	Seoul	TX	US					
-loc-0593	Munich		KR					
-loc-0594	Toronto		JP					
-loc-0595	Tokyo	TX	US					
-loc-0596	Munich	CA	US					
-loc-0597	Shanghai	CA	US					
-loc-0598	Munich	IL	US					
-loc-0599	London	WA	US					
+loc_us			US					
+loc_gb			GB					
+loc_cn			CN					
+loc_in			IN					
+loc_nl			NL					
+loc_fi			FI					
+loc_ch			CH					
+loc_il			IL					
+loc_se			SE					
+loc_my			MY					
+loc_lv			LV					
+loc_ar			AR					
+loc_ro			RO					
+loc_ec			EC					
+loc_id			ID					
+loc_vn			VN					
+loc_si			SI					
+loc_kn			KN					
+loc_kz			KZ					
+loc_jo			JO					
+loc_cl			CL					
+loc_am			AM					
+loc_cr			CR					
+loc_lk			LK					
+loc_uy			UY					
+loc_mu			MU					
+loc_cf			CF					
+loc_lb			LB					
+loc_bn			BN					
+loc_me			ME					
+loc_cy			CY					
+loc_mm			MM					
+loc_im			IM					
+loc_kp			KP					
+loc_ad			AD					
+loc_bo			BO					
+loc_gi			GI					
+loc_bw			BW					
+loc_af			AF					
+loc_sl			SL					
+loc_fo			FO					
+loc_cg			CG					
+loc_gh			GH					
+loc_et			ET					
+loc_hn			HN					
+loc_zm			ZM					
+loc_ne			NE					
+loc_tz			TZ					
+loc_la			LA					
+loc_ni			NI					
+loc_st			ST					
+loc_rw			RW					
+loc_lu			LU					
+loc_jp			JP					
+loc_sk			SK					
+loc_br			BR					
+loc_es			ES					
+loc_it			IT					
+loc_fr			FR					
+loc_ru			RU					
+loc_gr			GR					
+loc_co			CO					
+loc_za			ZA					
+loc_sg			SG					
+loc_nz			NZ					
+loc_ve			VE					
+loc_ee			EE					
+loc_cu			CU					
+loc_pt			PT					
+loc_tr			TR					
+loc_sy			SY					
+loc_ng			NG					
+loc_ke			KE					
+loc_do			DO					
+loc_zw			ZW					
+loc_tj			TJ					
+loc_md			MD					
+loc_bf			BF					
+loc_ma			MA					
+loc_ba			BA					
+loc_pk			PK					
+loc_bs			BS					
+loc_pa			PA					
+loc_vg			VG					
+loc_tt			TT					
+loc_lr			LR					
+loc_je			JE					
+loc_gd			GD					
+loc_pg			PG					
+loc_bb			BB					
+loc_mg			MG					
+loc_ss			SS					
+loc_na			NA					
+loc_pw			PW					
+loc_sr			SR					
+loc_bj			BJ					
+loc_bi			BI					
+loc_tg			TG					
+loc_gn			GN					
+loc_so			SO					
+loc_dj			DJ					
+loc_sb			SB					
+loc_de			DE					
+loc_ca			CA					
+loc_kr			KR					
+loc_sa			SA					
+loc_ua			UA					
+loc_dk			DK					
+loc_hr			HR					
+loc_at			AT					
+loc_hu			HU					
+loc_be			BE					
+loc_ph			PH					
+loc_no			NO					
+loc_pl			PL					
+loc_cz			CZ					
+loc_mt			MT					
+loc_cm			CM					
+loc_lt			LT					
+loc_kg			KG					
+loc_sc			SC					
+loc_qa			QA					
+loc_sv			SV					
+loc_kw			KW					
+loc_ge			GE					
+loc_ky			KY					
+loc_az			AZ					
+loc_dz			DZ					
+loc_tn			TN					
+loc_mc			MC					
+loc_sn			SN					
+loc_mk			MK					
+loc_lc			LC					
+loc_gy			GY					
+loc_al			AL					
+loc_sm			SM					
+loc_sd			SD					
+loc_to			TO					
+loc_gl			GL					
+loc_gt			GT					
+loc_sz			SZ					
+loc_py			PY					
+loc_ws			WS					
+loc_er			ER					
+loc_mw			MW					
+loc_vu			VU					
+loc_tc			TC					
+loc_fj			FJ					
+loc_ag			AG					
+loc_dm			DM					
+loc_gg			GG					
+loc_tw			TW					
+loc_ie			IE					
+loc_au			AU					
+loc_rs			RS					
+loc_mx			MX					
+loc_ir			IR					
+loc_bg			BG					
+loc_th			TH					
+loc_ug			UG					
+loc_pe			PE					
+loc_iq			IQ					
+loc_ae			AE					
+loc_bm			BM					
+loc_li			LI					
+loc_eg			EG					
+loc_by			BY					
+loc_tl			TL					
+loc_is			IS					
+loc_uz			UZ					
+loc_ci			CI					
+loc_ao			AO					
+loc_bd			BD					
+loc_np			NP					
+loc_ly			LY					
+loc_om			OM					
+loc_ye			YE					
+loc_bh			BH					
+loc_kh			KH					
+loc_jm			JM					
+loc_td			TD					
+loc_gw			GW					
+loc_ht			HT					
+loc_cd			CD					
+loc_ps			PS					
+loc_ga			GA					
+loc_mn			MN					
+loc_ai			AI					
+loc_ml			ML					
+loc_gm			GM					
+loc_tm			TM					
+loc_fm			FM					
+loc_bt			BT					
+loc_ck			CK					
+loc_bz			BZ					
+loc_mz			MZ					
+loc_cv			CV					
+loc_pn			PN					
