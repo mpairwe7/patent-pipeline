@@ -85,10 +85,17 @@ dashboard_snapshots/             19 PNG renders covering every dashboard chart
     18_advanced_section_growth.png      CPC section growth % (bar).
     19_advanced_company_section_heatmap.png Top 15 companies × CPC (heatmap).
 
-console_report/                  Outputs from `patent-pipeline analyze`
-                                 against the full real PatentsView corpus:
-    console_report.txt           Rich-formatted console tables.
+console_report/                  Outputs from `patent-pipeline analyze`:
+    console_report.txt           Rich tables in plain text (full real corpus,
+                                 9.36M patents).
     patent_report.json           Structured JSON of all KPIs and rankings.
+    01_console_overview.png      Screenshot of the formatted terminal panel:
+                                 KPIs, Top Inventors, Top Companies, Top
+                                 Countries (sampled corpus).
+    02_console_trends.png        Screenshot: per-year patent counts +
+                                 decade comparison.
+    03_console_advanced.png      Screenshot: top-5 companies by CAGR +
+                                 fastest-growing CPC sections.
 
 
 Headline numbers (from console_report.txt — full real corpus)
