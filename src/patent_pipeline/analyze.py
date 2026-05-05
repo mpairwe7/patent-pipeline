@@ -11,6 +11,7 @@ from patent_pipeline.config import Settings
 from patent_pipeline.logging_setup import logger
 
 QUERY_FILES = [
+    # Core (assignment-required) queries.
     ("q1_top_inventors", "q1_top_inventors.sql"),
     ("q2_top_companies", "q2_top_companies.sql"),
     ("q3_top_countries", "q3_top_countries.sql"),
@@ -18,6 +19,12 @@ QUERY_FILES = [
     ("q5_join_patents_inventors_companies", "q5_join_patents_inventors_companies.sql"),
     ("q6_cte_innovation_leaders", "q6_cte_innovation_leaders.sql"),
     ("q7_rank_inventors_window", "q7_rank_inventors_window.sql"),
+    # Advanced analytics — leverage the full 2010-2025 span.
+    ("q8_decade_comparison", "q8_decade_comparison.sql"),
+    ("q9_company_cagr", "q9_company_cagr.sql"),
+    ("q10_country_growth_rates", "q10_country_growth_rates.sql"),
+    ("q11_section_growth", "q11_section_growth.sql"),
+    ("q12_company_section_matrix", "q12_company_section_matrix.sql"),
 ]
 
 
