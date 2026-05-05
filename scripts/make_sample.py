@@ -1,30 +1,45 @@
 """Generate a realistic sample of PatentsView-shaped TSVs.
 
 The real USPTO PatentsView disambiguated dataset is multiple gigabytes. This
-script produces a small, deterministic sample that matches the real column
-layout so the pipeline can be run end-to-end without downloading anything.
+script produces a small, deterministic sample that matches the **2025-era**
+PatentsView column layout exactly, so the pipeline runs identically on the
+sample and on the real download.
 
-Output: data/sample/*.tsv (7 files, ~1,000 patents).
+Output: data/sample/*.tsv (5 files, ~5,000 patents at scale 1).
 
-Column layout mirrors the PatentsView "g_*" bulk files:
-  g_patent                 -> patent_id, patent_date, patent_title, patent_abstract, patent_type, ...
-  g_inventor_disambiguated -> inventor_id, disambig_inventor_name_first, disambig_inventor_name_last, ...
-  g_assignee_disambiguated -> assignee_id, disambig_assignee_organization, ...
-  g_location_disambiguated -> location_id, disambig_country, disambig_state, disambig_city, ...
-  g_patent_inventor        -> patent_id, inventor_id, location_id
-  g_patent_assignee        -> patent_id, assignee_id, location_id
-  g_cpc_current            -> patent_id, cpc_section, cpc_class, cpc_subclass, cpc_group, cpc_subgroup
+Column layout (matches data.patentsview.org 2025):
+  g_patent                 -> patent_id, patent_type, patent_date, patent_title, patent_abstract,
+                              wipo_kind, num_claims, withdrawn, filename
+  g_inventor_disambiguated -> patent_id, inventor_sequence, inventor_id,
+                              disambig_inventor_name_first, disambig_inventor_name_last,
+                              gender_code, location_id  (one row per (patent, inventor))
+  g_assignee_disambiguated -> patent_id, assignee_sequence, assignee_id,
+                              disambig_assignee_individual_name_first,
+                              disambig_assignee_individual_name_last,
+                              disambig_assignee_organization, assignee_type, location_id
+                              (one row per (patent, assignee))
+  g_location_disambiguated -> location_id, disambig_city, disambig_state, disambig_country, ...
+  g_cpc_current            -> patent_id, cpc_sequence, cpc_section, cpc_class, cpc_subclass,
+                              cpc_group, cpc_type
 """
 
 from __future__ import annotations
 
+import argparse
 import csv
 import random
 from datetime import date, timedelta
 from pathlib import Path
 
 SEED = 20260413
-N_PATENTS = 1_000
+# 5,000 patents spread across 2010-01-01 → 2025-09-30 (≈ 16-year span,
+# inclusive of the full previous decade 2010-2020 the assignment asks for).
+# Pass --scale N on the CLI to multiply the volume; useful for stress-
+# testing the chunked DuckDB pipeline at 50k+ rows without downloading
+# the real PatentsView bundle.
+N_PATENTS_BASE = 5_000
+START_DATE = date(2010, 1, 1)
+END_DATE = date(2025, 9, 30)
 
 SAMPLE_DIR = Path(__file__).resolve().parent.parent / "data" / "sample"
 
@@ -199,14 +214,15 @@ def weighted_choice(rng: random.Random, items: list[tuple[str, float]]) -> str:
     return items[-1][0]
 
 
-def main() -> None:
+def main(scale: float = 1.0, start_date: date = START_DATE, end_date: date = END_DATE) -> None:
     rng = random.Random(SEED)
     SAMPLE_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Pre-generate pools
-    n_inventors = 1_800
+    n_patents = int(N_PATENTS_BASE * scale)
+    # Pre-generate pools — scaled with the larger patent volume.
+    n_inventors = max(int(6_000 * scale), 6_000)
     n_companies = len(COMPANIES)
-    n_locations = 200
+    n_locations = max(int(600 * scale), 600)
 
     # Inventors
     inventors = []
@@ -272,14 +288,13 @@ def main() -> None:
     pat_asn_rows = []
     pat_cpc_rows = []
 
-    start_date = date(2020, 1, 1)
-    end_date = date(2025, 9, 30)
     date_range_days = (end_date - start_date).days
 
-    for i in range(N_PATENTS):
+    for i in range(n_patents):
         patent_id = f"{11000000 + i}"
-        # Skew the date distribution slightly toward more recent years
-        offset = int(rng.triangular(0, date_range_days, date_range_days * 0.7))
+        # Skew the date distribution slightly toward more recent years to
+        # mimic the long-tail growth in real USPTO grants.
+        offset = int(rng.triangular(0, date_range_days, date_range_days * 0.65))
         pdate = start_date + timedelta(days=offset)
 
         _section_code, theme, kw1, kw2 = rng.choice(TECH_AREAS)
@@ -301,52 +316,64 @@ def main() -> None:
             }
         )
 
-        # 1–4 inventors per patent
+        # 1–4 inventors per patent — emit one row in g_inventor_disambiguated.tsv
+        # per (patent, inventor), matching the modern PatentsView schema where
+        # the disambiguated link table inlines all inventor info.
         k_inv = rng.choices([1, 2, 3, 4, 5], weights=[30, 35, 20, 10, 5])[0]
         inv_sample = rng.sample(inventors, k_inv)
-        for inv in inv_sample:
+        for seq, inv in enumerate(inv_sample, start=1):
             loc = rng.choice(locations)
             pat_inv_rows.append(
                 {
                     "patent_id": patent_id,
+                    "inventor_sequence": seq,
                     "inventor_id": inv["inventor_id"],
+                    "disambig_inventor_name_first": inv["first"],
+                    "disambig_inventor_name_last": inv["last"],
+                    "gender_code": inv["male_flag"],
                     "location_id": loc["location_id"],
                 }
             )
 
-        # 0–2 assignees per patent (some patents have no assignee)
+        # 0–2 assignees per patent (some patents have no assignee).
         k_asn = rng.choices([0, 1, 2], weights=[5, 85, 10])[0]
         if k_asn:
             asn_sample = rng.sample(companies, k_asn)
-            for asn in asn_sample:
+            for seq, asn in enumerate(asn_sample, start=1):
                 loc = rng.choice(locations)
                 pat_asn_rows.append(
                     {
                         "patent_id": patent_id,
+                        "assignee_sequence": seq,
                         "assignee_id": asn["assignee_id"],
+                        "disambig_assignee_individual_name_first": "",
+                        "disambig_assignee_individual_name_last": "",
+                        "disambig_assignee_organization": asn["organization"],
+                        "assignee_type": "2",
                         "location_id": loc["location_id"],
                     }
                 )
 
-        # 1–3 CPC classifications per patent
+        # 1–3 CPC classifications per patent.
         k_cpc = rng.choices([1, 2, 3], weights=[50, 35, 15])[0]
         sections_used = rng.sample(list(CPC_SECTIONS.keys()), k_cpc)
-        for sec in sections_used:
+        for seq, sec in enumerate(sections_used, start=1):
             cls_options = CPC_SECTIONS[sec][1]
             cls = rng.choice(cls_options)
             sub = rng.choice(["A", "B", "C", "D", "K", "N"])
             pat_cpc_rows.append(
                 {
                     "patent_id": patent_id,
+                    "cpc_sequence": seq,
                     "cpc_section": sec,
                     "cpc_class": f"{sec}{cls}",
                     "cpc_subclass": f"{sec}{cls}{sub}",
                     "cpc_group": f"{sec}{cls}{sub}/{rng.randint(1, 99):02d}",
-                    "cpc_subgroup": f"{sec}{cls}{sub}/{rng.randint(100, 999)}",
+                    "cpc_type": "inventive",
                 }
             )
 
-    # Introduce a few messy cases the cleaner must handle
+    # Introduce a few messy cases the cleaner must handle.
     if patents:
         patents[0]["patent_title"] = "   Trimmed    title with inner   spacing   "
         patents[1]["patent_date"] = ""  # missing date
@@ -354,50 +381,49 @@ def main() -> None:
     if pat_inv_rows:
         pat_inv_rows[0]["inventor_id"] = ""  # must be dropped
 
-    # Write TSVs with real PatentsView column names
+    # ------------------------------------------------------------------
+    # Write the 5 TSVs that match the real PatentsView 2025 layout.
+    # ------------------------------------------------------------------
     _write_tsv(
         SAMPLE_DIR / "g_patent.tsv",
         patents,
         [
             "patent_id",
+            "patent_type",
             "patent_date",
             "patent_title",
             "patent_abstract",
-            "patent_type",
+            "wipo_kind",
             "num_claims",
+            "withdrawn",
+            "filename",
         ],
     )
     _write_tsv(
         SAMPLE_DIR / "g_inventor_disambiguated.tsv",
+        pat_inv_rows,
         [
-            {
-                "inventor_id": inv["inventor_id"],
-                "disambig_inventor_name_first": inv["first"],
-                "disambig_inventor_name_last": inv["last"],
-                "male_flag": inv["male_flag"],
-            }
-            for inv in inventors
+            "patent_id",
+            "inventor_sequence",
+            "inventor_id",
+            "disambig_inventor_name_first",
+            "disambig_inventor_name_last",
+            "gender_code",
+            "location_id",
         ],
-        ["inventor_id", "disambig_inventor_name_first", "disambig_inventor_name_last", "male_flag"],
     )
     _write_tsv(
         SAMPLE_DIR / "g_assignee_disambiguated.tsv",
+        pat_asn_rows,
         [
-            {
-                "assignee_id": c["assignee_id"],
-                "disambig_assignee_organization": c["organization"],
-                "disambig_assignee_individual_name_first": "",
-                "disambig_assignee_individual_name_last": "",
-                "assignee_type": "2",
-            }
-            for c in companies
-        ],
-        [
+            "patent_id",
+            "assignee_sequence",
             "assignee_id",
-            "disambig_assignee_organization",
             "disambig_assignee_individual_name_first",
             "disambig_assignee_individual_name_last",
+            "disambig_assignee_organization",
             "assignee_type",
+            "location_id",
         ],
     )
     _write_tsv(
@@ -405,46 +431,50 @@ def main() -> None:
         [
             {
                 "location_id": loc["location_id"],
-                "disambig_country": loc["country"],
-                "disambig_state": loc["state"],
                 "disambig_city": loc["city"],
+                "disambig_state": loc["state"],
+                "disambig_country": loc["country"],
                 "latitude": "",
                 "longitude": "",
+                "county": "",
+                "state_fips": "",
+                "county_fips": "",
             }
             for loc in locations
         ],
         [
             "location_id",
-            "disambig_country",
-            "disambig_state",
             "disambig_city",
+            "disambig_state",
+            "disambig_country",
             "latitude",
             "longitude",
+            "county",
+            "state_fips",
+            "county_fips",
         ],
-    )
-    _write_tsv(
-        SAMPLE_DIR / "g_patent_inventor.tsv",
-        pat_inv_rows,
-        ["patent_id", "inventor_id", "location_id"],
-    )
-    _write_tsv(
-        SAMPLE_DIR / "g_patent_assignee.tsv",
-        pat_asn_rows,
-        ["patent_id", "assignee_id", "location_id"],
     )
     _write_tsv(
         SAMPLE_DIR / "g_cpc_current.tsv",
         pat_cpc_rows,
-        ["patent_id", "cpc_section", "cpc_class", "cpc_subclass", "cpc_group", "cpc_subgroup"],
+        [
+            "patent_id",
+            "cpc_sequence",
+            "cpc_section",
+            "cpc_class",
+            "cpc_subclass",
+            "cpc_group",
+            "cpc_type",
+        ],
     )
 
     print(
-        f"Wrote {N_PATENTS} patents, {n_inventors} inventors, {n_companies} companies "
+        f"Wrote {n_patents} patents, {n_inventors} inventors, {n_companies} companies "
         f"to {SAMPLE_DIR}"
     )
-    print(f"  g_patent_inventor rows:  {len(pat_inv_rows):>6}")
-    print(f"  g_patent_assignee rows:  {len(pat_asn_rows):>6}")
-    print(f"  g_cpc_current rows:      {len(pat_cpc_rows):>6}")
+    print(f"  g_inventor_disambiguated rows: {len(pat_inv_rows):>6}")
+    print(f"  g_assignee_disambiguated rows: {len(pat_asn_rows):>6}")
+    print(f"  g_cpc_current rows:            {len(pat_cpc_rows):>6}")
 
 
 def _write_tsv(path: Path, rows: list[dict], columns: list[str]) -> None:
@@ -456,5 +486,23 @@ def _write_tsv(path: Path, rows: list[dict], columns: list[str]) -> None:
         writer.writerows(rows)
 
 
+def _parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument(
+        "--scale",
+        type=float,
+        default=1.0,
+        help="Volume multiplier (1.0 = 5k patents · 10.0 = 50k · 50.0 = 250k).",
+    )
+    p.add_argument("--year-from", type=int, default=START_DATE.year, help="Earliest filing year.")
+    p.add_argument("--year-to", type=int, default=END_DATE.year, help="Latest filing year.")
+    return p.parse_args()
+
+
 if __name__ == "__main__":
-    main()
+    args = _parse_args()
+    main(
+        scale=args.scale,
+        start_date=date(args.year_from, 1, 1),
+        end_date=date(args.year_to, 9, 30),
+    )

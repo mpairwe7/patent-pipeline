@@ -42,6 +42,10 @@ class CleanCfg(BaseModel):
     min_year: int = 1976
     max_year: int = 2025
     dedupe: bool = True
+    # When true, also emit data/clean/parquet/*.parquet alongside CSVs.
+    # Recommended for the real PatentsView dataset (5-10× smaller, faster
+    # for the load stage) — pointless overhead on the small sample.
+    parquet: bool = False
 
 
 class ReportsCfg(BaseModel):

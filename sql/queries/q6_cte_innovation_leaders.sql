@@ -3,7 +3,10 @@
 -- Step 1:  count distinct patents per company per year.
 -- Step 2:  use LAG to fetch the previous year's count.
 -- Step 3:  compute YoY absolute and percentage growth.
--- Step 4:  pick companies with ≥ 5 patents in the latest year, ranked by YoY %.
+-- Step 4:  pick the latest "complete" year (the most recent year where the
+--          warehouse-wide volume is at least 60 % of the peak year — this
+--          drops the tail of partial trailing years), then rank companies
+--          with ≥ 2 patents in that year by YoY %.
 WITH company_year_counts AS (
     SELECT
         c.company_id,
@@ -39,8 +42,20 @@ yoy AS (
         END AS yoy_growth_pct
     FROM with_prev
 ),
-latest_year AS (
-    SELECT MAX(year) AS y FROM patents WHERE year IS NOT NULL
+yearly_totals AS (
+    SELECT year, COUNT(DISTINCT patent_id) AS n
+    FROM patents WHERE year IS NOT NULL
+    GROUP BY year
+),
+peak_year_total AS (
+    SELECT MAX(n) AS peak FROM yearly_totals
+),
+ref_year AS (
+    -- The most-recent year whose volume ≥ 60 % of the peak — avoids the
+    -- partial-year tail that 2025 typically presents.
+    SELECT MAX(yt.year) AS y
+    FROM yearly_totals yt CROSS JOIN peak_year_total pt
+    WHERE yt.n >= pt.peak * 0.6
 )
 SELECT
     y.company_name,
@@ -50,8 +65,8 @@ SELECT
     y.yoy_delta,
     y.yoy_growth_pct
 FROM yoy AS y
-CROSS JOIN latest_year AS ly
-WHERE y.year = ly.y
-  AND y.patents_filed >= 5
+CROSS JOIN ref_year AS ry
+WHERE y.year = ry.y
+  AND y.patents_filed >= 2
 ORDER BY y.yoy_growth_pct DESC NULLS LAST, y.patents_filed DESC
 LIMIT 20;

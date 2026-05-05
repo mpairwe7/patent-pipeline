@@ -40,6 +40,12 @@ def write_csv_reports(results: dict[str, Any], settings: Settings) -> dict[str, 
         "country_trends": reports_dir / "country_trends.csv",
         "yearly_trends": reports_dir / "yearly_trends.csv",
         "cpc_breakdown": reports_dir / "cpc_breakdown.csv",
+        # Advanced-analytics deliverables.
+        "decade_comparison": reports_dir / "decade_comparison.csv",
+        "company_cagr": reports_dir / "company_cagr.csv",
+        "country_growth_rates": reports_dir / "country_growth_rates.csv",
+        "section_growth": reports_dir / "section_growth.csv",
+        "company_section_matrix": reports_dir / "company_section_matrix.csv",
     }
 
     inv = results["q1_top_inventors"].head(settings.reports.top_n_inventors)
@@ -53,6 +59,11 @@ def write_csv_reports(results: dict[str, Any], settings: Settings) -> dict[str, 
 
     results["q4_trends_over_time"].to_csv(out["yearly_trends"], index=False)
     results["cpc_breakdown"].to_csv(out["cpc_breakdown"], index=False)
+    results["q8_decade_comparison"].to_csv(out["decade_comparison"], index=False)
+    results["q9_company_cagr"].to_csv(out["company_cagr"], index=False)
+    results["q10_country_growth_rates"].to_csv(out["country_growth_rates"], index=False)
+    results["q11_section_growth"].to_csv(out["section_growth"], index=False)
+    results["q12_company_section_matrix"].to_csv(out["company_section_matrix"], index=False)
 
     for name, path in out.items():
         logger.info(f"wrote {name}.csv → {path}")
@@ -102,6 +113,28 @@ def write_json_report(results: dict[str, Any], settings: Settings) -> Path:
             results["cpc_breakdown"],
             {"section": "section", "section_label": "label", "patent_count": "patents"},
         ),
+        "advanced_analytics": {
+            "decade_comparison": results["q8_decade_comparison"].to_dict(orient="records"),
+            "company_cagr": _df_to_records(
+                results["q9_company_cagr"],
+                {
+                    "company_name": "name",
+                    "first_year": "first_year",
+                    "last_year": "last_year",
+                    "span_years": "span_years",
+                    "first_year_patents": "first_year_patents",
+                    "last_year_patents": "last_year_patents",
+                    "total_patents": "total_patents",
+                    "cagr": "cagr",
+                },
+                limit=15,
+            ),
+            "country_growth_rates": results["q10_country_growth_rates"].to_dict(orient="records"),
+            "section_growth": results["q11_section_growth"].to_dict(orient="records"),
+            "company_section_matrix": results["q12_company_section_matrix"].to_dict(
+                orient="records"
+            ),
+        },
     }
 
     path = reports_dir / "patent_report.json"
@@ -211,6 +244,62 @@ def print_console_report(results: dict[str, Any], settings: Settings) -> None:
                 "Patents per Year",
                 trend,
                 [("year", "Year"), ("patent_count", "Patents")],
+            )
+        )
+
+    # ------------------------------------------------------------------
+    # Advanced analytics — surfaced in the console for visibility.
+    # ------------------------------------------------------------------
+    decade = results.get("q8_decade_comparison")
+    if decade is not None and not decade.empty:
+        decade = decade.copy()
+        decade["share_pct"] = (decade["share"] * 100).round(1).astype(str) + " %"
+        console.print(
+            _table(
+                "Decade comparison",
+                decade,
+                [
+                    ("period", "Period"),
+                    ("patent_count", "Patents"),
+                    ("inventor_count", "Inventors"),
+                    ("company_count", "Companies"),
+                    ("share_pct", "Share"),
+                ],
+            )
+        )
+
+    cagr = results.get("q9_company_cagr")
+    if cagr is not None and not cagr.empty:
+        cagr = cagr.head(5).copy()
+        cagr["cagr_pct"] = (cagr["cagr"] * 100).round(2).astype(str) + " %"
+        console.print(
+            _table(
+                "Top 5 companies by CAGR",
+                cagr,
+                [
+                    ("company_name", "Company"),
+                    ("first_year", "First yr"),
+                    ("last_year", "Last yr"),
+                    ("total_patents", "Total"),
+                    ("cagr_pct", "CAGR"),
+                ],
+            )
+        )
+
+    sec = results.get("q11_section_growth")
+    if sec is not None and not sec.empty:
+        sec = sec.head(5).copy()
+        sec["growth_pct_str"] = (sec["growth_pct"] * 100).round(1).astype(str) + " %"
+        console.print(
+            _table(
+                "Fastest-growing CPC sections",
+                sec,
+                [
+                    ("section", "Section"),
+                    ("first_half_patents", "1st half"),
+                    ("second_half_patents", "2nd half"),
+                    ("growth_pct_str", "Growth"),
+                ],
             )
         )
 

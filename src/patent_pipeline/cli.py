@@ -11,7 +11,7 @@ import typer
 from patent_pipeline import __version__
 from patent_pipeline.analyze import run_analyze
 from patent_pipeline.clean import run_clean
-from patent_pipeline.config import load_settings
+from patent_pipeline.config import Settings, load_settings
 from patent_pipeline.ingest import ingest as run_ingest
 from patent_pipeline.load import run_load
 from patent_pipeline.logging_setup import configure, logger
@@ -27,6 +27,26 @@ app = typer.Typer(
 
 def _log(level: str) -> None:
     configure(level)
+
+
+def _override(
+    settings: Settings,
+    *,
+    year_from: int | None = None,
+    year_to: int | None = None,
+    parquet: bool | None = None,
+) -> Settings:
+    """Return a Settings copy with the requested clean-stage overrides."""
+    if year_from is None and year_to is None and parquet is None:
+        return settings
+    new_clean = settings.clean.model_copy(
+        update={
+            **({"min_year": year_from} if year_from is not None else {}),
+            **({"max_year": year_to} if year_to is not None else {}),
+            **({"parquet": parquet} if parquet is not None else {}),
+        }
+    )
+    return settings.model_copy(update={"clean": new_clean})
 
 
 # ---------------------------------------------------------------------------
@@ -48,24 +68,37 @@ def ingest(
         "--url",
         help="One or more URLs to download. Repeat flag for multiple files.",
     ),
+    force_refresh: bool = typer.Option(
+        False,
+        "--force-refresh",
+        help="Re-download every file even if the manifest says it is complete.",
+    ),
     log_level: str = typer.Option("INFO", "--log-level"),
 ) -> None:
     """Populate data/raw/ from bundled sample or download URLs."""
     _log(log_level)
     settings = load_settings()
-    run_ingest(settings, use_sample=use_sample, urls=url)
+    run_ingest(settings, use_sample=use_sample, urls=url, force_refresh=force_refresh)
 
 
 @app.command()
-def clean(log_level: str = typer.Option("INFO", "--log-level")) -> None:
-    """Clean raw TSVs → data/clean/*.csv using pandas (PyArrow backend)."""
+def clean(
+    year_from: int | None = typer.Option(None, "--year-from", help="Earliest filing year to keep."),
+    year_to: int | None = typer.Option(None, "--year-to", help="Latest filing year to keep."),
+    parquet: bool = typer.Option(
+        False, "--parquet/--no-parquet", help="Also emit Parquet alongside CSV."
+    ),
+    log_level: str = typer.Option("INFO", "--log-level"),
+) -> None:
+    """Clean raw TSVs → data/clean/*.csv (and Parquet) via DuckDB streaming."""
     _log(log_level)
-    run_clean(load_settings())
+    settings = _override(load_settings(), year_from=year_from, year_to=year_to, parquet=parquet)
+    run_clean(settings)
 
 
 @app.command()
 def load(log_level: str = typer.Option("INFO", "--log-level")) -> None:
-    """Load clean CSVs into DuckDB at data/warehouse/patents.duckdb."""
+    """Load clean CSVs/Parquet into DuckDB at data/warehouse/patents.duckdb."""
     _log(log_level)
     run_load(load_settings())
 
@@ -84,13 +117,29 @@ def analyze(log_level: str = typer.Option("INFO", "--log-level")) -> None:
 def run_all(
     use_sample: bool = typer.Option(True, "--use-sample/--no-use-sample"),
     url: list[str] = typer.Option(None, "--url"),
+    year_from: int | None = typer.Option(
+        None, "--year-from", help="Earliest filing year to keep (e.g. 1976)."
+    ),
+    year_to: int | None = typer.Option(
+        None, "--year-to", help="Latest filing year to keep (e.g. 2025)."
+    ),
+    parquet: bool = typer.Option(
+        False, "--parquet/--no-parquet", help="Emit Parquet during clean (recommended for real)."
+    ),
+    force_refresh: bool = typer.Option(
+        False, "--force-refresh", help="Ignore manifest and re-download every file."
+    ),
     log_level: str = typer.Option("INFO", "--log-level"),
 ) -> None:
     """End-to-end: ingest → clean → load → analyze (+ reports + figures)."""
     _log(log_level)
-    settings = load_settings()
+    settings = _override(load_settings(), year_from=year_from, year_to=year_to, parquet=parquet)
+    logger.info(
+        f"── pipeline start · sample={use_sample} · "
+        f"window={settings.clean.min_year}-{settings.clean.max_year} · parquet={parquet}"
+    )
     logger.info("── 1/4 ingest ──")
-    run_ingest(settings, use_sample=use_sample, urls=url)
+    run_ingest(settings, use_sample=use_sample, urls=url, force_refresh=force_refresh)
     logger.info("── 2/4 clean ──")
     run_clean(settings)
     logger.info("── 3/4 load ──")

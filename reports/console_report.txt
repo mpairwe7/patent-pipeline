@@ -1,0 +1,153 @@
+12:33:30 | INFO    | analyze:run_query — running q1_top_inventors.sql
+12:33:54 | INFO    | analyze:run_query — running q2_top_companies.sql
+12:34:06 | INFO    | analyze:run_query — running q3_top_countries.sql
+12:34:13 | INFO    | analyze:run_query — running q4_trends_over_time.sql
+12:34:13 | INFO    | analyze:run_query — running q5_join_patents_inventors_companies.sql
+12:34:29 | INFO    | analyze:run_query — running q6_cte_innovation_leaders.sql
+12:34:47 | INFO    | analyze:run_query — running q7_rank_inventors_window.sql
+12:35:09 | INFO    | analyze:run_query — running q8_decade_comparison.sql
+12:35:22 | INFO    | analyze:run_query — running q9_company_cagr.sql
+12:35:38 | INFO    | analyze:run_query — running q10_country_growth_rates.sql
+12:35:52 | INFO    | analyze:run_query — running q11_section_growth.sql
+12:35:58 | INFO    | analyze:run_query — running q12_company_section_matrix.sql
+12:36:15 | INFO    | report:write_csv_reports — wrote top_inventors.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/top_inventors.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote top_companies.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/top_companies.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote country_trends.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/country_trends.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote yearly_trends.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/yearly_trends.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote cpc_breakdown.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/cpc_breakdown.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote decade_comparison.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/decade_comparison.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote company_cagr.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/company_cagr.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote country_growth_rates.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/country_growth_rates.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote section_growth.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/section_growth.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote company_section_matrix.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/company_section_matrix.csv
+12:36:15 | INFO    | report:write_json_report — wrote JSON report → /home/distantlife/CloudComputingProjects/MiniProject/reports/patent_report.json
+================== PATENT REPORT ===================
+Total Patents: 9,361,444
+Top Inventors: 1. Shunpei Yamazaki - 6761 2. Kia Silverbrook - 4778 3. Tao Luo - 4336 4. Jonathan P. Ive - 2877 5. Kangguo Cheng - 2819
+Top Companies: 1. SAMSUNG ELECTRONICS CO., LTD. - 171,950 2. International Business Machines Corporation - 163,544 3. Canon Kabushiki Kaisha - 90,659 4. SONY GROUP CORPORATION - 62,649 5. FUJITSU LIMITED - 56,291
+Top Countries: 1. US 2. JP 3. DE 4. CN 5. KR
+====================================================
+╭─ PATENT INTELLIGENCE REPORT ─╮
+│ Total Patents      9,361,444 │
+│ Total Inventors    4,257,666 │
+│ Total Companies      567,568 │
+│ Year Range       1976 – 2025 │
+│ Relationships     24,985,193 │
+╰──────────────────────────────╯
+             Top Inventors              
+┏━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┓
+┃ Inventor         ┃ Country ┃ Patents ┃
+┡━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━┩
+│ Shunpei Yamazaki │ JP      │ 6761    │
+│ Kia Silverbrook  │ AU      │ 4778    │
+│ Tao Luo          │ US      │ 4336    │
+│ Jonathan P. Ive  │ US      │ 2877    │
+│ Kangguo Cheng    │ US      │ 2819    │
+└──────────────────┴─────────┴─────────┘
+                      Top Companies                      
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓
+┃ Company                                     ┃ Patents ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩
+│ SAMSUNG ELECTRONICS CO., LTD.               │ 171950  │
+│ International Business Machines Corporation │ 163544  │
+│ Canon Kabushiki Kaisha                      │ 90659   │
+│ SONY GROUP CORPORATION                      │ 62649   │
+│ FUJITSU LIMITED                             │ 56291   │
+└─────────────────────────────────────────────┴─────────┘
+        Top Countries         
+┏━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━┓
+┃ Country ┃ Patents ┃ Share  ┃
+┡━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━┩
+│ US      │ 5040423 │ 48.6 % │
+│ JP      │ 1595287 │ 15.4 % │
+│ DE      │ 623667  │ 6.0 %  │
+│ CN      │ 464541  │ 4.5 %  │
+│ KR      │ 431949  │ 4.2 %  │
+└─────────┴─────────┴────────┘
+ Patents per Year 
+┏━━━━━━┳━━━━━━━━━┓
+┃ Year ┃ Patents ┃
+┡━━━━━━╇━━━━━━━━━┩
+│ 1976 │ 70941   │
+│ 1977 │ 69820   │
+│ 1978 │ 70586   │
+│ 1979 │ 52484   │
+│ 1980 │ 66212   │
+│ 1981 │ 71112   │
+│ 1982 │ 63292   │
+│ 1983 │ 62019   │
+│ 1984 │ 72689   │
+│ 1985 │ 77276   │
+│ 1986 │ 77050   │
+│ 1987 │ 89591   │
+│ 1988 │ 84449   │
+│ 1989 │ 102719  │
+│ 1990 │ 99275   │
+│ 1991 │ 106891  │
+│ 1992 │ 107540  │
+│ 1993 │ 109933  │
+│ 1994 │ 113723  │
+│ 1995 │ 113954  │
+│ 1996 │ 121811  │
+│ 1997 │ 124181  │
+│ 1998 │ 163265  │
+│ 1999 │ 169252  │
+│ 2000 │ 176192  │
+│ 2001 │ 184172  │
+│ 2002 │ 184494  │
+│ 2003 │ 187104  │
+│ 2004 │ 181413  │
+│ 2005 │ 157829  │
+│ 2006 │ 196489  │
+│ 2007 │ 182978  │
+│ 2008 │ 185260  │
+│ 2009 │ 192052  │
+│ 2010 │ 244599  │
+│ 2011 │ 248101  │
+│ 2012 │ 277285  │
+│ 2013 │ 303658  │
+│ 2014 │ 327014  │
+│ 2015 │ 326969  │
+│ 2016 │ 334674  │
+│ 2017 │ 352587  │
+│ 2018 │ 341104  │
+│ 2019 │ 392618  │
+│ 2020 │ 390572  │
+│ 2021 │ 363829  │
+│ 2022 │ 360417  │
+│ 2023 │ 350093  │
+│ 2024 │ 373852  │
+│ 2025 │ 286024  │
+└──────┴─────────┘
+                   Decade comparison                    
+┏━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━┓
+┃ Period    ┃ Patents ┃ Inventors ┃ Companies ┃ Share  ┃
+┡━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━┩
+│ 2010-2014 │ 1400657 │ 1124247   │ 113700    │ 26.6 % │
+│ 2015-2019 │ 1747952 │ 1351189   │ 138756    │ 33.2 % │
+│ 2020-2025 │ 2124787 │ 1590413   │ 172543    │ 40.3 % │
+└───────────┴─────────┴───────────┴───────────┴────────┘
+                            Top 5 companies by CAGR                             
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━┓
+┃ Company                             ┃ First yr ┃ Last yr ┃ Total  ┃ CAGR     ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━┩
+│ LG ENERGY SOLUTION, LTD.            │ 2021     │ 2025    │ 2270.0 │ 336.94 % │
+│ HL MANDO CORPORATION                │ 2022     │ 2025    │ 371.0  │ 275.63 % │
+│ XIAMEN TIANMA DISPLAY TECHNOLOGY    │ 2022     │ 2025    │ 84.0   │ 247.6 %  │
+│ CO., LTD.                           │          │         │        │          │
+│ SIEMENS HEALTHINEERS INTERNATIONAL  │ 2022     │ 2025    │ 134.0  │ 242.0 %  │
+│ AG                                  │          │         │        │          │
+│ Shenzhen Lute Jiacheng Supply Chain │ 2022     │ 2025    │ 63.0   │ 242.0 %  │
+│ Management Co., Ltd.                │          │         │        │          │
+└─────────────────────────────────────┴──────────┴─────────┴────────┴──────────┘
+       Fastest-growing CPC sections        
+┏━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━┓
+┃ Section ┃ 1st half ┃ 2nd half ┃ Growth  ┃
+┡━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━┩
+│ H       │ 433527   │ 2297656  │ 430.0 % │
+│ G       │ 524247   │ 2401410  │ 358.1 % │
+│ A       │ 405348   │ 1085246  │ 167.7 % │
+│ B       │ 546742   │ 1179602  │ 115.8 % │
+│ F       │ 277845   │ 587443   │ 111.4 % │
+└─────────┴──────────┴──────────┴─────────┘
+12:36:18 | INFO    | visualize:run_visualize — wrote 18 figure files → /home/distantlife/CloudComputingProjects/MiniProject/reports/figures

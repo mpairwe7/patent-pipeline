@@ -1,21 +1,21 @@
 company_id,company_name,patent_count
-org:0012,Panasonic Holdings Corporation,51
-org:0015,"Amazon Technologies, Inc.",44
-org:0014,Tencent Technology (Shenzhen) Company Ltd.,44
-org:0010,Toyota Motor Corporation,40
-org:0018,General Electric Company,39
-org:0024,"Hitachi, Ltd.",39
-org:0017,"Boeing Company, The",37
-org:0029,SAP SE,37
-org:0022,NVIDIA Corporation,36
-org:0016,"Meta Platforms, Inc.",35
-org:0028,Oracle International Corporation,35
-org:0019,Siemens Aktiengesellschaft,35
-org:0004,Intel Corporation,34
-org:0009,Sony Group Corporation,34
-org:0007,Google LLC,33
-org:0005,"Huawei Technologies Co., Ltd.",33
-org:0026,Dell Products L.P.,32
-org:0011,LG Electronics Inc.,31
-org:0003,"Microsoft Technology Licensing, LLC",31
-org:0020,Robert Bosch GmbH,31
+d1d96a91-c5e6-4090-ba39-4af2494eb35c,"SAMSUNG ELECTRONICS CO., LTD.",171950
+6e80a706-ca3c-437b-8a9c-aae8b5efba57,International Business Machines Corporation,163544
+61d52265-4aea-4f20-b743-c4a9faef6860,Canon Kabushiki Kaisha,90659
+af1c1db8-dc03-4036-a732-d81d2ad09c0c,SONY GROUP CORPORATION,62649
+c9398d69-5dbb-4b06-b9ea-757038ca0ea3,FUJITSU LIMITED,56291
+a90e9fd0-52e6-43d3-b861-4a87a6e54cb8,Kabushiki Kaisha Toshiba,53435
+47cd060e-60ce-49ab-8623-caf34f5c3860,Intel Corporation,52744
+c743e7d8-5290-412a-aeeb-edef2348822a,General Electric Company,51895
+f71249de-0cfb-488f-8a27-f3861dc2d67b,LG ELECTRONICS INC.,49439
+6326da5f-8cb5-4e23-8929-4dd62cba64d3,"HITACHI, LTD.",46007
+cf4da630-d78e-4761-89a4-20c6736ac290,Mitsubishi Electric Corporation,45402
+95c789e7-1a6d-440a-8077-98c070f83c30,QUALCOMM Incorporated,40787
+2990770e-4c22-4129-b365-15bd95b30adb,TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY LTD.,40054
+efd2d42a-9faf-4c64-b194-5b0dc29cfa8e,TOYOTA JIDOSHA KABUSHIKI KAISHA,38663
+3e5cae88-ed9d-4912-8c9d-de81d98a05f6,Apple Inc.,38283
+bb7e5a8f-2c56-4a14-8b19-2c204b94a583,"Sumitomo Electric Industries, Ltd.",38236
+5add8615-963b-47fc-bd21-056c0f15b3fa,"Micron Technology, Inc.",37772
+5491322d-78a3-4b97-80d9-600f83ff75a7,NEC CORPORATION,35968
+41f7f170-9cb1-4b67-98bb-bad5de48d30f,SEIKO EPSON CORPORATION,33613
+44b5791d-e50c-4761-8c57-16bc85365122,"HONDA MOTOR CO., LTD.",31947
