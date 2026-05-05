@@ -1405,12 +1405,13 @@ def tab_advanced(f: dict[str, Any]) -> None:
         """
     )
     if not cgr.empty:
-        cgr["growth"] = (cgr["second_half"] - cgr["first_half"]) / cgr["first_half"].replace(
-            0, pd.NA
-        )
+        # Use float NaN (not pd.NA) — pd.NA's truth value is ambiguous and
+        # crashes Plotly's group sorting in px.scatter when colour-mapping.
+        denom = cgr["first_half"].astype("float64").replace(0, float("nan"))
+        cgr["growth"] = (cgr["second_half"] - cgr["first_half"]) / denom
         cgr["country_name"] = cgr["country"].map(lambda c: COUNTRY_LOOKUP.get(c, (c, c))[0])
         fig = px.scatter(
-            cgr,
+            cgr.dropna(subset=["growth"]),
             x="first_half",
             y="second_half",
             size="total_patents",
@@ -1451,7 +1452,9 @@ def tab_advanced(f: dict[str, Any]) -> None:
         """
     )
     if not sg.empty:
-        sg["growth"] = (sg["second_half"] - sg["first_half"]) / sg["first_half"].replace(0, pd.NA)
+        denom = sg["first_half"].astype("float64").replace(0, float("nan"))
+        sg["growth"] = (sg["second_half"] - sg["first_half"]) / denom
+        sg = sg.dropna(subset=["growth"])
         sg["section_label"] = sg["section"].map(CPC_LABELS).fillna(sg["section"])
         h1, h2 = st.columns(2)
         with h1:
