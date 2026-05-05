@@ -43,17 +43,59 @@ SAMPLE = ROOT / "data" / "sample"
 # real-world growth. Sourced from PatentsView aggregate counts; smoothed
 # slightly. Keep this updated when refreshing the sample.
 REAL_USPTO_GRANTS_K = {
-    1976: 71, 1977: 70, 1978: 71, 1979: 52, 1980: 66, 1981: 71, 1982: 63,
-    1983: 62, 1984: 73, 1985: 77, 1986: 77, 1987: 90, 1988: 84, 1989: 103,
-    1990: 99, 1991: 107, 1992: 108, 1993: 110, 1994: 114, 1995: 114,
-    1996: 122, 1997: 124, 1998: 163, 1999: 169, 2000: 176, 2001: 184,
-    2002: 184, 2003: 187, 2004: 181, 2005: 165, 2006: 196, 2007: 182,
-    2008: 186, 2009: 191, 2010: 244, 2011: 244, 2012: 277, 2013: 302,
-    2014: 326, 2015: 326, 2016: 334, 2017: 343, 2018: 339, 2019: 391,
-    2020: 388, 2021: 374, 2022: 343, 2023: 322, 2024: 318, 2025: 240,
+    1976: 71,
+    1977: 70,
+    1978: 71,
+    1979: 52,
+    1980: 66,
+    1981: 71,
+    1982: 63,
+    1983: 62,
+    1984: 73,
+    1985: 77,
+    1986: 77,
+    1987: 90,
+    1988: 84,
+    1989: 103,
+    1990: 99,
+    1991: 107,
+    1992: 108,
+    1993: 110,
+    1994: 114,
+    1995: 114,
+    1996: 122,
+    1997: 124,
+    1998: 163,
+    1999: 169,
+    2000: 176,
+    2001: 184,
+    2002: 184,
+    2003: 187,
+    2004: 181,
+    2005: 165,
+    2006: 196,
+    2007: 182,
+    2008: 186,
+    2009: 191,
+    2010: 244,
+    2011: 244,
+    2012: 277,
+    2013: 302,
+    2014: 326,
+    2015: 326,
+    2016: 334,
+    2017: 343,
+    2018: 339,
+    2019: 391,
+    2020: 388,
+    2021: 374,
+    2022: 343,
+    2023: 322,
+    2024: 318,
+    2025: 240,
 }
 PEAK_PER_YEAR = 200  # cap at the highest-volume year so the sample stays small
-MIN_PER_YEAR = 25    # floor so even the smallest year has enough rows for charts
+MIN_PER_YEAR = 25  # floor so even the smallest year has enough rows for charts
 
 PEAK_REAL = max(REAL_USPTO_GRANTS_K.values())
 PER_YEAR_TARGET: dict[int, int] = {
@@ -68,9 +110,7 @@ con.execute("PRAGMA threads=4")
 # Materialise the per-year quota as a small DuckDB table so we can JOIN
 # against it instead of building a giant CASE WHEN.
 con.execute("CREATE TABLE per_year_target (year INTEGER, n INTEGER)")
-con.executemany(
-    "INSERT INTO per_year_target VALUES (?, ?)", list(PER_YEAR_TARGET.items())
-)
+con.executemany("INSERT INTO per_year_target VALUES (?, ?)", list(PER_YEAR_TARGET.items()))
 
 PQ_PATENTS = (PARQUET / "patents.parquet").as_posix()
 PQ_INVENTORS = (PARQUET / "inventors.parquet").as_posix()
@@ -140,9 +180,19 @@ total = con.execute("SELECT COUNT(*), MIN(year), MAX(year) FROM sampled").fetcho
 print(f"  → {total[0]:,} patents selected ({total[1]}-{total[2]})")
 print(
     "  per-year preview:",
-    {y: n for y, n in con.execute("SELECT year, COUNT(*) FROM sampled GROUP BY 1 ORDER BY 1 LIMIT 6").fetchall()},
+    {
+        y: n
+        for y, n in con.execute(
+            "SELECT year, COUNT(*) FROM sampled GROUP BY 1 ORDER BY 1 LIMIT 6"
+        ).fetchall()
+    },
     "…",
-    {y: n for y, n in con.execute("SELECT year, COUNT(*) FROM sampled GROUP BY 1 ORDER BY 1 DESC LIMIT 6").fetchall()},
+    {
+        y: n
+        for y, n in con.execute(
+            "SELECT year, COUNT(*) FROM sampled GROUP BY 1 ORDER BY 1 DESC LIMIT 6"
+        ).fetchall()
+    },
 )
 
 # Per-country synthetic location_id so the cleaner can join inventor → country.
