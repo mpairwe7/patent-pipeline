@@ -1491,16 +1491,6 @@
         "cagr": 0.0
       },
       {
-        "name": "Intel Corporation",
-        "first_year": 1997,
-        "last_year": 2023,
-        "span_years": 26,
-        "first_year_patents": 1,
-        "last_year_patents": 1,
-        "total_patents": 29.0,
-        "cagr": 0.0
-      },
-      {
         "name": "Kabushiki Kaisha Toshiba",
         "first_year": 1992,
         "last_year": 2024,
@@ -1515,6 +1505,16 @@
         "first_year": 1991,
         "last_year": 2025,
         "span_years": 34,
+        "first_year_patents": 1,
+        "last_year_patents": 1,
+        "total_patents": 29.0,
+        "cagr": 0.0
+      },
+      {
+        "name": "Intel Corporation",
+        "first_year": 1997,
+        "last_year": 2023,
+        "span_years": 26,
         "first_year_patents": 1,
         "last_year_patents": 1,
         "total_patents": 29.0,

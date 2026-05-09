@@ -1,3 +1,2714 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:54919a23dcd08fcd067a0259eaf579f5c2fc87aedad8316d99cc56cefe549e73
-size 172352
+company_id,name
+340cd6f3-5f06-4877-8cd7-dce3dc2a26bc,Alibaba Group Holding Limited
+e3b70562-48ab-42d1-8eb9-8d6df80eed07,Hewlett Packard Enterprise Development LP
+14454bd9-b004-4fbd-b342-0adfb69320f7,Japan Display Inc.
+7a8a77db-c087-42c1-997d-90e4cbc473ae,GlobalFoundries Singapore Pte. Ltd.
+f38ef8e1-8d19-4807-8514-6d2391ad9b9c,OPTOMIND INC.
+e736e54f-4268-499d-bb87-6514dd58716d,"Applied Materials, Inc."
+03d7fd68-496e-4c55-92d0-a379a2fe053f,"CHANGXIN MEMORY TECHNOLOGIES, INC."
+5add8615-963b-47fc-bd21-056c0f15b3fa,"Micron Technology, Inc."
+8850ec3a-83bd-46a5-8baa-9f972a61cede,"MI-JACK PRODUCTS, INC."
+2a025d0a-7394-445b-b7d3-22cc59049929,"Mita Industrial Co., Ltd."
+0e4c51ba-c3b1-44db-a7d3-eb3a57a0209a,Kansas State University Research Foundation
+b55ed82a-f68f-4029-80a5-f759e156e8ee,Fluke Corporation
+82cb0b36-97d4-4278-a7f5-b7f3482fde9e,"Trijicon, Inc."
+78dfa89f-5912-41de-a76a-d677792e0b51,Nortel Networks Limited
+6dd08da2-41e1-4260-b6e8-7c38bc19ac58,"Xoucin, Inc."
+e423a100-102f-4bf5-8777-634fa33dae8a,"Magic Earth, Inc."
+6e80a706-ca3c-437b-8a9c-aae8b5efba57,International Business Machines Corporation
+df6d5e3d-5ce0-4993-8350-d2aac669f1ef,SHARP KABUSHIKI KAISHA
+59f8708e-8198-4bca-b8bf-30f7428bff94,Symantec Corporation
+c01d2a23-e89e-42df-aa98-ce4b9e753093,"Beijing BOE Optoelectronics Technology Co., Ltd."
+32825791-bb05-4601-9f5d-88053925f5ec,BROTHER KOGYO KABUSHIKI KAISHA
+b96c2294-68a9-4d23-923c-18c34b551e51,KYOCERA Document Solutions Inc.
+228b4487-ce15-4a98-9cf4-450f1f628f0b,Grundfos Holding A/S
+ba1c1c18-cacc-4c23-a5a7-32daef49e569,"PAYPAL, INC."
+e4d71e7c-f387-4cdb-bf91-167fe48d0d04,Eligo Bioscience
+4ba491bb-12be-45b0-8638-7dc5fd8e06f9,EDDYFI CANADA INC.
+56ce6a78-4874-44f8-8ba9-b1003a512c90,Phillips Petroleum Company
+dc5f6e80-f97e-4fb9-ba2f-94e0bbc60c27,LUCENT TECHNOLOGIES INC.
+ad74b8d4-b659-4fff-b248-b8013f2ec4c3,AOS HOLDING COMPANY
+8fdddeb9-5676-4575-814d-086bed885ec6,TDK CORPORATION
+21ccd3d2-04d6-4e23-90c4-b387585785ac,"Medtronic, Inc."
+ba4267ad-d17f-46ae-af7f-f080db393f6f,"ARKRAY, Inc."
+b14dc2ef-d8a4-4d1b-b78d-993236cfe375,VICTAULIC COMPANY
+48403be8-645b-44cc-96df-da4f7dcf8257,KIA MOTORS CORPORATION
+da6acf35-1f95-4ced-9d0e-3eb062ecf2ef,Pod Trackers Pty Ltd
+a0cd79ce-d22d-47e5-8edb-2921432401fd,"ISM Saddles, LLC"
+98f02e39-60d5-46b1-91f1-11c45a245fc9,FLOS S.P.A.
+e554ac6f-bab1-45f0-b676-b5be2cf34299,"BAYOTECH, INC."
+88e1007a-d4e2-4921-a744-e881256f5fa7,"PROTEGRITY US HOLDING, LLC"
+6342e541-a73e-41f3-8931-58789be23dd1,Caterpillar Tractor Co.
+66acbc21-618e-4b2a-960b-37660f64b7b1,Vsesojuzny Nauchno-Issledovatelsky institut Gornospasatelnogo Dela
+94735297-cb32-4616-bd2b-a9128bc342b0,"STMICROELECTRONICS, INC."
+eac4f375-a793-4eec-b6e4-3b66e50e7a13,Armor Inox SA
+c6caae19-9385-4147-909b-00827b841b00,"VANNER, INC."
+0e3e9e67-656c-457b-a0c2-c00e693df9f6,Kyocera Kinseki Corporation
+6edbd897-ae17-4fb0-94ee-ec31f5f40fda,Kyocera Kinseki Hertz Corporation
+29ff5bfb-ccbe-4f68-b7b4-486e2391416c,Telefonaktiebolaget LM Ericsson (Publ)
+d6840bcc-8dba-44fd-b48b-938bfaa73d9c,"Hanchett Entry Systems, Inc."
+f85bbab4-10d9-4254-b7dd-80aef1f5f60a,"NOVASOLIX, INC."
+ec6b7137-2004-4ed9-8eef-f7335676af03,"Alex Global Technology, Inc."
+901a9bdb-733c-48ba-b135-11dcc4c63573,HELMUT FISCHER GMBH INSTITUT FÜR ELEKTRONIK UND MESSTECHNIK
+0b222265-5036-4cae-9447-c28273baa819,Kent State University
+6bccac9b-e6ad-40ee-a1e7-79bdd68bcf4e,"Qingdao Hollyren Cosmetics Co., Ltd."
+a680a5d0-5e5a-411c-b65f-8db0e67fa031,BLACK & DECKER INC.
+c85c4cb1-3a70-4920-9acb-cb96db71bc12,"U.S. Pole Company, Inc."
+154995ba-e748-4228-94d3-2941f7102180,BLACKLINE SAFETY CORP.
+4d6a6a6e-147f-457b-8bb9-574f55d8002b,INNOVHEART S.r.l.
+f8938403-7f40-4d39-9b37-922d6bc3df79,Dornier System GmbH
+5943e169-2d90-4847-9259-9b8c2e2f2668,NIPPON HOSO KYOKAI
+3c67377a-3be9-4498-a2e7-6f519e2bf399,NCR Corporation
+54693776-6f4c-4bc1-9879-d3c783dac569,E.I. DU PONT DE NEMOURS AND COMPANY
+34e363a7-2d3a-467e-b4cb-a005f2d4e5dc,Grapha-Holding AG
+61c99746-b4fe-4e68-b1ab-1a2152bb71c1,Ann Arbor Machine Company
+6dd6f885-eda1-4f15-8c40-df8d8bdadf84,University of British Columbia
+39dda882-e8c8-4f54-a263-2cbb23088c1f,"YAIZU SUISANKAGAKU INDUSTRY CO., LTD."
+d019761f-e1be-40c8-8544-b05f2d9b91d4,"S.R. SMITH, LLC"
+528d32f0-658a-4c7f-83c6-d8e3d9d1e601,"PepsiCo, Inc."
+788681fe-9640-4e06-8152-9d4cf49baad3,NVIDIA Corporation
+c74e0ba6-d8bb-4576-9636-5dc38b0c3e7e,"Elkhart Brass Manufacturing Company, Inc."
+ba5c969c-1fdd-48ce-8649-6c44af10390a,GENEFORM TECHNOLOGIES LIMITED
+fcd53deb-b8d9-490f-8365-521238bd7079,REALTEK SEMICONDUCTOR CORP.
+3cbd0e04-001d-46a5-986d-456478d9e140,"Semiconductor Energy Laboratory Co., Ltd."
+fe43d72c-a676-4ee8-b5c1-74212ed9e911,SONOVUM GMBH
+069afbd1-fdbc-4950-9de9-63e0203d5591,Bemis Manufacturing Company
+74460275-97cc-44a3-9cfb-ffb50e8a24c6,ExxonMobil Chemical Patents Inc.
+3c4ac829-12bf-4815-a73c-04f6d51b5948,"Batesville Services, Inc."
+c80989e1-5b54-443b-92e2-5da94452ce5b,Dow Corning Corporation
+c01a186d-e3a6-406b-b436-e076116358f7,DENSO CORPORATION
+a4ca8c34-393f-4b21-8c8d-2a56de3d2ff7,"NetApp, Inc."
+3a859236-fdc6-4fa1-97ad-6a912f0f50db,"Bastion Technologies, Inc."
+20e63ece-1b0a-4684-bee9-5d9685873cf9,Google LLC
+46259d20-47e1-4159-8842-9d754e4feca9,"ARDENT SOUND, INC."
+6d44406c-65cc-4795-97e4-550c2dc525af,Enco Die Casting Co.
+db83f4f1-5b05-4777-a3b2-dd8b9cb2dd1b,"Kikkerland Design, Inc."
+1428fbe0-dc77-4fd7-91ea-d5a862b6ae11,"Evoshield, LLC"
+aa6d8c39-a7bb-415d-85cf-41f4fd53e0ff,"DOVETAIL GENOMICS, LLC"
+b0164c0a-229a-4067-b0bf-8db7c1cf7b45,"CONTEMPORARY AMPEREX TECHNOLOGY CO., LIMITED"
+55bb857f-324b-4b62-978b-ab1886c52ce7,Nippon Gakki Seizo Kabushiki Kaisha
+adc17b1c-035c-4f38-805a-ed7642c33230,"Teledyne Industries, Inc."
+3267f491-5d2d-4f31-9485-d47ccae88b24,Krupp Polysius AG
+f7224586-4f13-4554-a3a0-f871bf2d1cb3,"Actisystems, Inc."
+9f201c2c-d362-4f0d-87c5-230ee7572985,Larry A. Fisher
+8778f818-a8a9-498d-ba80-b100aa390930,Advanced Sensor Technology Limited
+77124515-6005-4cb9-866e-15ebf4ade80d,ST. JUDE MEDICAL AB
+a5f51519-e2c3-4d33-84a6-9d4f060bb8b1,SPTS Technologies Limited
+6ae7339f-37cf-4ea8-8a20-4fc6d636e9d7,VALE MILL (ROCHDALE) LIMITED
+96d22c0c-3354-4490-84ba-035e3a405ba8,Novo Nordisk A/S
+9244b827-1743-4177-ba25-c59e6b6c4adf,"Zike, LLC"
+4cbe7866-6475-4b8d-b92c-2c88286e2e70,API HEALTHCARE CORPORATION
+f42f155b-35db-40b8-8408-79709f2d02fa,INDIANA UNIVERSITY RESEARCH AND TECHNOLOGY CORPORATION
+a072459d-75e1-4b50-9057-74903f489764,Vivint LLC
+c7e3bbd2-018e-4c24-9599-a6435b0b5684,Ivoclar Vivadent AG
+d1a5510c-76f8-454f-8248-3b3179cae0ec,"PAODONG (XIAMEN) TECHNOLOGY CO., LTD."
+9869f621-59bc-474a-9b6e-2ea9a27e080b,"RICOH COMPANY, LTD."
+a76e2985-8651-4345-b68a-6f050fcd2dcd,Washington University
+84cdbaf1-4dc2-4a43-8251-74d1cccfca97,Peregrine Semiconductor Corporation
+b0bab306-374c-4efb-87ad-be555ba9a191,"Submar, Inc."
+b1bb2072-1785-4568-a9a9-6a1a01eef369,"Analog Devices, Inc."
+15fd46b4-a656-44e3-ba5f-b8deef0d0cb0,"VARIAN MEDICAL SYSTEMS, INC."
+b4b2d3b0-3f1b-4dcc-bdce-9965c223b57d,BALL CORPORATION
+9ec0daca-4386-450e-86b7-38c82515474f,"SPRINT COMMUNICATIONS COMPANY, L.P."
+d86f884d-e238-4668-be30-f5c2078c23bb,"Ballogy, Inc."
+3c6b1357-c8fd-43ba-bfc3-cc3f44cee9b0,"Huawei Technologies Co., Ltd."
+44bd57a9-3d7e-4900-817e-2b0c87b4b5a8,Didier-Werke AG
+93de77f4-f003-4578-ba6a-c9d2053aa76e,Multifoil B.V.
+9f45b3d0-ebb6-486a-8d7c-ce3111ff8191,BASF SE
+a33b69e6-22a2-4b43-8c91-65ac87994d4d,"NISSAN NORTH AMERICA, INC."
+b5623d2f-2637-4eb1-b9e5-3b00f91bc404,Renault S.A.S.
+1e2a3542-78c9-4f2f-bcea-0495caa837c9,"Gemmy Electronic Co., Ltd."
+c8b2fc9b-7d37-4fb4-aefe-e0faeee6410b,"ETERNAL MATERIALS CO., LTD."
+21ef7111-f3ba-4b84-87ea-085636d0ba4e,Fairlane Mint Ltd.
+b97481ef-924b-4476-8ee9-2891f59e452d,"Hortech, Inc."
+d7a9b8ad-b8af-4ac4-815b-f8a2c0b4b1d8,Fujikura Ltd.
+8a7fca01-61b3-408e-bfb5-f4d27ff6f5de,"FUJI XEROX CO., LTD."
+1ee09f66-8bba-41b3-b313-5706f69cc200,VITESCO TECHNOLOGIES GMBH
+e80f72f8-6399-4690-b53d-cc2d61acdce4,Chih-Ching Huang
+117542c8-90cc-4cd4-b4fa-8eed3bb7c57b,FLSmidth A/S
+61895dfb-da34-4ff2-9290-710c6b9562e8,"UCHICAGO ARGONNE, LLC"
+2789e781-e17a-476c-9ae5-1e096bd71d7b,Karl Lautenschlager GmbH & Co. KG
+bb5e219c-e400-45a0-ac01-61f84276f171,"Varco International, Inc."
+5e1e92bb-e741-4008-8e7e-044b3c05e04b,Novo Industri A/S
+f43749d4-8652-42b3-a00c-5a45d94bf353,Hitoshi Ohtsuka
+13f455a9-6f1d-470e-814e-2e337bb16be6,GlaxoSmithKline Intellectual Property Development Limited
+995976a0-3d51-46fa-9170-7c9bba98176c,Cooper Technologies Company
+58b1963a-10c1-424e-ac44-def065d0f47a,"CLARION CO., LTD."
+f90fa94b-573d-4e8c-9443-b3ae1ae88e5d,"King Slide Technology Co., Ltd."
+40fe0e1f-a6f3-496d-a7c0-8526137385da,"TAIZHOU NUOJIU TRADING CO., LTD."
+3ac52395-c9e4-4371-a33a-adb6f536e4cd,LeddarTech Inc.
+c93f29fd-d064-4184-b2f3-96823b88e922,"GUTTERGLOVE, INC."
+aa237f8e-7ec3-4c2d-bf67-2e1918bff590,İstanbul Üniversitesi Rektörlü{hacek over (g)}ü
+2989aec8-c15c-4415-9c68-5423f0eb339a,"Olema Pharmaceuticals, Inc."
+61f07e37-03d7-462a-a90e-94bbaeaa09ec,Kabushikigaisha Sekogiken
+78f4be4a-8e2d-42b7-a070-7798a7d08ece,UNITED MICROELECTRONICS CORP.
+4691d1c8-2955-40f6-9b89-166e3f7ed713,"Nippon Columbia Co., Ltd."
+24d7f58d-4bef-4d1c-ae78-15d2addb552e,Thomson Licensing
+2ef1cc38-6029-4e1c-8610-45bbae03a8f1,CORNING INCORPORATED
+530febe4-bfc1-456e-856f-6344a4a3bddb,"ASTRA CO., LTD."
+200b1e60-f973-4758-92df-61faf29260df,Hella GmbH & Co. KGaA
+28f51f96-d947-472a-aa04-3b51907e8550,Lutron Technology Company LLC
+06c03e5b-b7af-451c-92b4-c469e245e45f,KMG Systems Limited
+210d0ac9-f833-4ec6-9d2e-28bc5775c86c,Tae-Won Noh
+8b53b853-c816-41e1-8120-60cdb2f0e147,"Rohm Co., Ltd."
+3fa525db-d1e5-4455-9111-389cdda45e1e,I3 Ventures
+9474534d-a8aa-41c0-8447-089a78b95975,Lee Valley Tools Ltd.
+73b1c924-134c-4f9b-938a-5e08bbe62b78,3M INNOVATIVE PROPERTIES COMPANY
+08874b12-fb5b-4ebf-a973-a735401e7a42,"Guangzhou Fengsen Machinery Co., Ltd."
+cc34f43e-1678-4247-8f4c-954db92e628c,"Shin Yeh Enterprise Co., Ltd."
+b6770230-bebe-4256-8a77-13b4b0b5af44,Scentisphere LLC
+c6e95a9d-52aa-46dd-a0d7-26d7cac7118d,EELUME AS
+dde2979f-c6a1-48b3-bca2-8b0c783fd8a3,SKW Trostberg Aktiengesellschaft
+f09a33f5-c158-4e04-93fa-c7219ee424e6,Sasktel
+a488777a-6e9e-43a1-9b7b-abade1c76f43,Chrysler Group LLC
+5cb84f37-2e46-487e-a5e3-f6f99293cd49,Asahi Denka Kogyo K.K.
+06236703-6c40-43ca-bf04-db0ba9dec029,Entrelec S.A.
+dcc4475d-d2a3-435f-9a6b-23aa2deb1847,Honeywell Limited
+cf4da630-d78e-4761-89a4-20c6736ac290,Mitsubishi Electric Corporation
+769d642a-2f28-4c42-8dac-9e632c120f6f,"NEI, Corp and Kennedy"
+5299d0f5-264b-4874-9121-f2abd0d3d4ba,Marvell World Trade Ltd.
+b92e0236-7aba-4104-9c17-b1d58c472bdc,"HITACHI CHEMICAL COMPANY, LTD."
+3a4364d7-b4dd-446c-bbea-4ab8c535b149,KENNAMETAL INC.
+9a9f50c6-eddb-4e68-aaf1-5a6f6e278701,Fisher & Paykel Healthcare Limited
+47f858d6-7e6a-4e3f-a795-2b32cb38512c,KOREA INSTITUTE OF SCIENCE AND TECHNOLOGY
+968d3004-6d49-4e04-80ec-a6dd5c4e49d5,Cummins Inc.
+d9e56acb-69c4-4200-847e-937e11baf92e,Loic Le Ribault
+3ac54133-26da-428f-b583-a27fca9b23b7,"Infometrix, Incorporated"
+a571535a-64af-4fee-a90c-a9ec80a7ad5f,Shin-Ichi Suzuki
+ca117646-a3b4-450c-a369-1bba5cfe45b2,Endress+Hauser Inc.
+3b24a3e2-a993-437c-bb19-52bb97a09f85,Gneuss Kunststofftechnik GmbH
+22c0eed1-b98f-4e42-8f1d-0d96dfbacae1,"DARAMIC, LLC"
+5540e375-0d1b-402f-b432-ebde2b7811b0,Cederroth International AB
+a990a7a8-b15b-417f-9573-6f032e87b61d,"Positec Power Tools (Suzhou) Co., LTD."
+181e615a-8f18-47c6-bbba-2f4446ec3c20,Aesculap AG
+9079b4f6-2dc9-40b2-ad0e-fb3f8319b642,DEKA Products Limited Parternship
+879a5537-c2d2-4cee-bbca-9c732c3181d4,Daimler AG
+ac0d59f1-c41f-47a1-891c-854a99a3e4d2,ETO MAGNETIC GMBH
+40f17acf-60b4-4edc-8d79-b8d7e2b843d4,Camplas Technology Limited
+114959ef-77eb-4622-b174-afc5319514ae,"Kent's Bromeliad Nursery, Inc."
+1c5c97fb-d030-4801-a95e-9fe9ddcc7809,BEEKENKAMP PLANTS B.V.
+ec7f040a-b271-48bb-8bb2-ca43c2940e06,ADIMMUNE CORPORATION
+925a7daf-e578-4095-9027-eef47a7d8efa,"VIASAT, INC."
+9788e336-81cb-439e-b1b4-799e42626c91,Regents of the University of Minnesota
+d0949d50-42b4-492f-8999-c0a189d687ad,Gas Research Institute
+09c58426-faa3-4ad7-9021-bc5855f117f3,"CENTRAL GLASS COMPANY, LIMITED"
+383e972d-884d-4d1a-a9e2-2d8f86cf327c,"Whitemetal, Inc."
+fa9ef009-5297-4402-abef-e91d3fecf557,Allegheny Ludlum Corporation
+f0b177b1-fac0-44a3-9489-a6bfad165f8c,Molins PLC
+4a379374-0f43-4e52-8501-6d10a356bebe,FUJIMI INCORPORATED
+fe53a279-78f5-4e78-b6b6-e7e29b458289,Lorraine Moore
+35b416a1-4a20-4ad0-b6eb-2e0810c33cbe,"Minolta Co., Ltd."
+bb487b28-f821-4b55-8825-977c8dec3044,"Eveready Battery Company, Inc."
+63feb610-4764-4294-a770-74a3ab2d1098,"JARLLYTEC CO., LTD."
+71d8c2c1-31fc-42d8-94cb-1beda5e308f3,"Baker Hughes, a GE company, LLC"
+24976d09-23bc-4129-9c83-d17c81e3f6e5,C & J CLARK INTERNATIONAL LIMITED
+bdeb6187-82c3-4e04-bec6-b6bbd06c99cc,Verizon Patent and Licensing Inc.
+64af9642-54df-4657-8998-b1fa6afeeeac,"Avid, L.L.C."
+e085ed9a-dfa5-46e8-bd71-01b53c654e8d,"Aixtron, Inc."
+cf6ee0c5-5950-40db-a7d9-c7839691f886,ZYMOGENETICS INC.
+6605e063-c0c7-4a43-8478-7a231fbea22a,"Juniper Networks, Inc."
+7eeb2b25-957f-4f30-a366-0ea755267985,Hilti Aktiengesellschaft
+143401d6-486f-4b02-a218-cad2d1dd34a4,"Oakley, Inc."
+2c92f6cd-eec8-4259-bb5f-c552671b3f3c,Saverglass
+a19decc9-1536-494f-a79d-9384f6116d61,Worcester Polytechnic Institute
+40f7686a-ba7e-47b6-b1f2-05f544d60400,B. Braun Avitum AG
+23200c3d-c323-44de-910f-a826bf2691cc,SEB S.A.
+6a2738fb-6a5f-4181-ab63-2bf3cde7a208,Nalco Chemical Company
+1e5fcac7-8a26-4fab-ba20-e20c8cdb126c,USUI KOKUSAI SANGYO KAISHA LIMITED
+4215acd9-1387-4c01-aa8e-e14bb47acef5,"ACCURI CYTOMETERS, INC."
+a26db0a6-701b-464d-ab41-b33d1a7297e1,"Chiun Mai Communication Systems, Inc."
+5fc086ac-17b5-4f6f-97b4-c91d0f3edc14,"Cree, Inc."
+00b054c2-92d6-46f1-8a00-0c0fe50b4c39,Sealed Air Corporation (US)
+25fc2dc5-9d39-4b02-af00-8029f260b66d,GUANDONG OCEAN UNIVERSITY
+2a6fb26d-ee82-4171-81e1-160806ebaf0e,Jungers Verkstads AB of Goteborg
+42b8216d-a936-4d44-ad3c-61eb08706cd2,The Pillsbury Company
+a91e0552-7d86-4ef6-ad25-78e6264b4d0a,AZ Electronic Materials USA Corp.
+ab722099-9bef-4155-8972-c53530faefa1,"Grupo Rayma, S.A."
+cf111617-4894-43f8-890a-a2a60dac145e,Brolaz Projects (Proprietary) Ltd.
+e28a7982-43be-4358-8e4c-ad5dfa253d10,"Provivi, Inc."
+51580e10-1ca3-4c02-97ac-6a3082964769,NATIONAL HEALTH LABORATORY SERVICE
+196dbae1-6a54-4158-b866-63de7dd7f680,Techo SRL
+5564675f-88f6-41a3-8621-ad7644caf16b,"NICHIMAN CO., LTD."
+bdfd998c-54dc-4a2d-a162-8e76c3416ace,New Jersey Institute of Technology
+15cdf589-b891-4a70-9bae-890644866764,"SUMITOMO CHEMICAL COMPANY, LIMITED"
+0d55ffcd-07ec-41f2-84c8-a04cec122407,"nuArc Company, Inc."
+568e33e4-c142-46c8-8c17-449ce96c6d2c,"Biomet Biologics, LLC"
+c0b4e575-8581-4bc2-84e0-abb2b59f361c,ALBIS PLASTIC GmbH
+98e00a36-ccd7-4166-8388-73361fb4c344,"Expose Retail Strategies, Inc."
+77d4668e-b391-4266-bcd1-95ff256eab7c,Thule Sweden AB
+c6637843-74cb-4e7f-bb3a-6e56c65dfcac,"LINCOLN GLOBAL, INC."
+96bbbf65-15b1-4c56-a534-fd21c2249798,"Oncam Global, Inc."
+66f1b5d5-b0ab-4ac7-89c8-2c28a91f1249,"X-Card Holdings, LLC"
+94b2a468-dc27-4208-bc14-a4ffe5c29538,GULFSTREAM AEROSPACE CORPORATION
+1d75bd90-2c18-4f69-aec8-20447535c1f6,"Draeger Medical Systems, Inc."
+43937c85-d964-4c37-8986-66b63001f1cc,Volkswagenwerk AG
+115bb0b2-543c-4da8-b80d-5775bd110360,"Parke, Davis & Company"
+3c8caddf-636a-4432-8020-50f26f9d70cb,UNION CARBIDE CORPORATION
+23c56e2e-c589-4e4a-bf4b-571ade37233d,"Shimizu Construction Co., Ltd."
+96fd6179-b76f-4f2f-8a10-a6fefc2e3bd3,"PC Mirage, LLC"
+3c3a34c4-87f7-428b-8219-0adbfb444dca,"Hydra Biosciences, LLC"
+4ae153e2-b36d-4207-8e2a-5a9bd8ad0246,"WAL-MART STORES, INC."
+220616ef-6d1b-4f71-97a6-db8c6b300456,MITSUBISHI JIDOSHA KOGYO KABUSHIKI KAISHA
+b97ff841-1c97-4d94-b439-f3650d6d9d5a,Biogen MA Inc.
+76de14a0-a5dc-45b9-a561-f17614cddb58,PEGAVISION CORPORATION
+9cc08c61-12c7-49a0-8ae6-e7a39a8df2f9,Nylon Line Cutters (Pty.) Ltd.
+05062d70-30e2-4aaf-9ac9-36472cddccb4,Metal Box Public Limited Company
+386f1469-ff1d-419d-b3ac-1d1fda65ab94,Tisma Machinery Corporation
+1838a0ae-cdfa-4b7a-8fb7-cea4a96b688e,Moli Energy (1990) Limited
+1f2702dd-f971-4ae3-9642-14c01f896433,"HarvesTech, LLC"
+3511e740-e421-471c-a919-c25c0c121b42,NTN CORPORATION
+a350ed62-9619-4685-9fba-10dedae9a99c,LUMINATION LLC
+ffa94077-470c-4a54-9f8f-b85fe6516b43,Time Warner Cable Inc.
+0b750e6d-0114-42ed-b142-df0e33adb3bb,Zamtec Ltd
+dc2650b1-9b86-4fe2-bfb2-bb6bdbc4239a,TRUMPF LASER- UND SYSTEMTECHNIK GMBH
+5dfebf8e-9363-43bb-ac66-f8632f0fa7d8,Eastman Chemical Company
+bbd6ec3e-0433-4b62-ac82-462c7151ecab,"JOULWATT TECHNOLOGY (HANGZHOU) CO., LTD."
+b5992861-b0b2-4829-adc8-54dc70a8a5e5,"Stirling Technology, Inc."
+24b81d82-ad23-4a01-8344-eeac9e7df1c5,Gemplus
+367fc648-b4d3-40a0-90f0-1944955f324c,Matsushita Refrigeration Company
+f3a4c3c1-01bc-4520-aa18-7c740effc9e3,Kohler Co.
+61cd9de7-9a5f-4858-abd2-70afa8df4c1a,"Bridgestone Firestone North American Tire, LLC"
+6b4234f0-ff13-4e92-ae27-853787e29a81,ZOJIRUSHI CORPORATION
+13a88a2b-b3c0-4507-af03-26a571f0cbe1,MEDVET SCIENCE PTY LTD
+d99595b2-9871-4d28-94b2-870d895349e8,"HYUNDAI MOBIS CO., LTD."
+061a8fdc-d058-454f-8531-8621e10e8b20,Albert F. Kronman
+b6026c87-0b77-41b4-a042-437aa90c66fa,Margot E. Peters
+5eee4d30-49b4-45e8-9aed-bf4a321fa96d,"Gill Athletics, Inc."
+a82ed179-3287-4d17-b83e-4c2ac3a2e8ed,"BHC Consulting Pty., Ltd."
+38b63792-598d-424c-bb44-e54092952c66,"PHYNEXUS, INC."
+ee2d5fba-14e1-4650-bc44-dc84d6c64b8b,FUJITSU TEN LIMITED
+0192d176-058e-4487-be22-7a4f1d16fbc8,"Newtonoid Technologies, L.L.C."
+249080b3-6e7a-479b-8eb8-83854389b6c7,Societe pour l'Etude et la Fabrication de Circuits Integres Speciaux E.F.C.I.S.
+aa7b829c-8270-421a-b6c6-3d6f80da1dbf,"SANYO CHEMICAL INDUSTRIES, LTD."
+28f0f173-cd2a-4486-abf5-faf9f604acb8,SATAKE CORPORATION
+af13d108-775f-450f-90ce-d41f69dd5a24,Sabic Innovative Plastics B.V.
+ff70e82a-3b92-46af-be46-9db9cd6b1521,Cole Taylor Bank
+ffe8a12d-59e9-4c2e-934a-94a7622ff217,"Miraisens, Inc."
+c6bf5572-c7f5-4f24-b7ef-e1c07c62d48e,"Biochar Now, LLC"
+55c4a89d-026a-49ad-bc59-24df7380042d,Cluaran Associates Ltd.
+f81b43ea-5e6d-4da2-9ca7-eb4a6788bcb2,"Albion International, Inc."
+ac0d549b-0dc5-4f65-a7b7-717782efc537,"Coherent, Inc."
+b49a7572-20c0-43af-9409-0e34b0cce970,FANUC CORPORATION
+f03b055d-490c-4a02-b18d-5827f6f5cfb1,PsiloQuest
+79d0a0b6-8a83-4bd2-87ab-0bd0b2ef1d7d,"HILLS, INC."
+54ac381b-8a94-40b1-8d91-ec37a176ca94,Simco Automotive
+b0c389ad-f8a8-4bef-ae6a-f77f50fd53d3,BlackBerry Limited
+cbe02509-f03e-4b7c-9449-aa1ef4e24600,Avago Technologies General IP (Singapore) Pte. Ltd.
+210c7c86-78fb-4cd3-88f9-af09fa42d941,"4-Tell, Inc."
+b931a660-7bb9-496e-b4a1-29de584094a3,University of Hong Kong
+2ddb67b2-0641-4a04-a255-d16f34ea2a50,Compagnie Generale des Matieres Nucleaires
+552c8fa7-98ec-444f-b4d5-d217aa8488f8,MTU Motoren-und Turbinen-Union MÃƒÂ¼nchen GmbH
+8f6117ce-0730-4bf1-8a97-b28814a2f9b7,"APS Technology, LLC"
+93aeeef0-a0e7-4e0b-9c2e-df24a4371e38,No. 3 Transportation Engineering Perambulation and Design Institue of Ministry of Traffic
+3786790e-0c51-4729-b2d9-b714f734908c,Marvell International Ltd.
+f31f40a2-82c1-42d1-9cf8-e745fb2237da,Design Institute of America
+91d51144-8577-441b-9d43-345cdbbde946,Marana Unique Products Inc.
+e3f3911a-d8ff-4006-974c-ccc1fe1839a4,"Concept Laser, GmbH"
+75968dda-1284-4252-9848-033e9a60f33e,"ARCHERY INNOVATORS, LLC"
+7618d8ad-da0d-4b33-b40b-2c269e3dee95,"Nant Holdings IP, LLC"
+45f5ddda-9055-4115-ab52-9e6b33a7a852,Kureha Kagaku Kogyo Kabushiki Kaisha
+b5185830-1b8c-4271-b418-04a1ae45ebff,TESSERA LLC
+3d2f6bb9-f7f6-403d-bfd4-ff83e361be92,"Lawrence Livermore National Security, LLC"
+0ad49644-ca7e-41b7-8b7c-3a631a7c63d5,"OptumInsight, Inc."
+49ef1960-84cd-42f3-9a90-aa39ce115412,Wisconsin Alumni Research Foundation
+04f035c0-3a3b-447f-838d-28d735f08a6f,MICHELIN RECHERCHE ET TECHNIQUE S.A.
+aab8b734-0c82-4599-8b2d-d2dd0a84477d,"Bomatic, Inc."
+504ff142-c2d6-4773-9568-502ae16ae1f1,"Rust Innovations, LLC"
+b22408d8-6e32-497e-9ea2-e090a96386d5,"Tableau Software, Inc."
+2451d49c-4681-4272-b167-ae77ffbe92a5,Quaker Plastic Corporation
+075f5d13-9bba-44a5-8de4-213dcb756ff0,Hoechst Celanese Corporation
+bac5edd7-e7f8-4483-96b5-4c401c87ede9,"Dynabrade, Inc."
+8deba270-ab34-4659-8d35-c9a26cad6080,"Ovonic Battery Company, Inc."
+64c513a5-8304-4a6a-a6ed-8148b717fdbd,"Siemens Medical Solutions USA, Inc."
+a612a965-7503-43da-aa48-4c81edb94373,AGILYX CORPORATION
+bfd06606-0747-435a-87d2-3522a2cfef99,Partecipazioni Bulgari S.p.A.
+aae4b20b-4b8e-496c-859a-8b0611fda182,KABUSHIKI KAISHA PILOT CORPORATION
+7bbf70e2-5295-4c54-a101-5c255765a8ce,DISCO CORPORATION
+d3a19b90-6283-4f65-8d45-3485d4eb7c32,"EARTH ENERGIES, INC."
+9652fb69-f364-4a76-aeaf-45025c4bdf03,"Congruens Group, LLC"
+1ffb03e0-30f0-41b8-9e1a-e29676ed6391,SUNALLOMER LTD.
+e79326a0-0196-4804-a65e-b810fe403098,FP Corporation
+3edd466a-1134-41c6-bf3f-822ac810b823,"Thermodynetics, Inc."
+5329274e-0f7d-4fca-a05f-c40721c38a02,Superba
+52e4ea58-1428-4e0c-b855-a8b643ee9138,Buehler Motor GmbH
+851d0176-7413-4135-93bd-c735d4d54ab6,JAKKS PACIFIC INC.
+b97d3f96-73d9-4491-85d7-867222e662b4,TNR Industrial Doors Inc.
+d76f6800-b729-4e6c-b336-81e352aff289,BRANDEIS UNIVERSITY
+a14a7b4f-79e8-45b7-9c9c-f974043249a8,The Sherwood Group
+5d98ea1f-4795-4326-b2d1-40358d9ae350,"Nippon Seiko Co., Ltd."
+2627b43f-083b-4227-b6c3-62a655756a91,THE JOHNS HOPKINS UNIVERSITY
+785e84ee-1f8b-4094-aa64-03f0a30c77cd,MEDIATEK INC.
+d00c89c3-8d42-40ce-bf26-86f7b5f15eaa,BSH Bosch und Siemens Hausgeräte GmbH
+883ae633-4de2-4615-9f1c-2980c7409ef1,TIME WARNER CABLE ENTERPRISES LLC
+cd3b966c-a82a-4619-a36a-0efd2b6cb42a,"CYTOKINETICS, INC."
+6cafa8fc-b986-4bb3-aaa3-bb8e7593c494,"ANGEL PLAYING CARDS CO., LTD."
+1a02bc84-101e-4806-8613-a09585b43e8e,"LogRocket, Inc."
+d828c437-871a-4989-a81f-ee4e9df6871e,"Rick Hamilton Golf Co., Inc."
+23720ec7-dcb5-4c2e-b3da-60ee74804e1b,Daimlerchrysler AG
+70a83a21-785e-424c-814b-40e7c90c352c,"BG Medicine, Inc."
+2b859f79-499b-4872-bcf7-08d071cc423e,artsbrains. co. Ltd.
+862a2516-8300-46bb-97b4-60daad463ccc,ANTHURA B.V.
+9890d103-d46f-464d-913a-54439581297d,NINGBO GEELY AUTOMOBILE RESEARCH & DEVELOPMENT CO. LTD.
+a086c648-7bab-440b-ad6e-4fbc559cd62d,TE Connectivity Co. Ltd.
+371ae892-0c2d-440c-93a0-c0bfc470b952,SHENZHEN KIWI INSTRUMENTS CORPORATION
+25ece5b7-5582-4d27-8b66-34424bb6ac82,"Lawrence Peska Associates, Inc."
+a771a2e0-304b-403c-b12e-7150231da486,Minilife A/S
+db056340-d3f7-463a-90fa-fce957b0adaf,"KTV USA, Inc."
+a401036b-6a3a-4c8b-ac43-f4684dba7006,Arm Limited
+e3ea8ca4-58a8-4b11-9a7b-5ef6eb6b68d2,"FormFactor, Inc."
+4ad37f83-d7d6-4f25-8207-755e3f11ef39,"Quadratec, Inc."
+e1467491-4058-40ff-abee-d4f4efa0134f,ABLIC Inc.
+e8e61434-a74d-40b5-ad30-9067327fc492,Krone Corporation
+50790de0-8812-42f6-99b4-39a3bcb1d464,"Mechanization Systems Company, Inc."
+3662ec75-b1d7-4143-89ac-a6142dccd060,C.R.F. SOCIETA' CONSORTILE PER AZIONI
+f24f4da9-239f-46ec-ad51-55fdf547f5bd,"Jakwang Co., Ltd."
+0f7b7e54-da56-48d1-ab22-aad70fdef56e,Alcatel Lucent
+b857cf4f-636d-4899-8a2d-ef55f33d4b59,LUCAS AUTOMOTIVE GMBH
+a19beb99-7a41-436d-bc76-84c4798769b8,Kabushiki Kaisha Kobe Seiko Sho
+2be20492-db42-4c05-ada1-53aab9147930,Novozymes A/S
+93a8b9fe-0a3f-4189-81f0-f8d647114262,"BIOMIST, INC."
+f980043a-708d-4ebc-995a-eb415da967b7,AVNERA CORPORATION
+7757be80-581b-4f61-a989-c4473a6c37a3,"Optum, Inc."
+70f1d665-7072-4719-af42-f6c0686a501d,"Cornell Research Foundation, Inc."
+a7dcb7cb-b0af-4241-89ef-0bcef7727bc5,The Board of Regents for Oklahoma State University
+f9ea6044-cc1d-4da4-bcb8-da1650f58125,Roquette Freres
+0a89ce38-546b-4520-96f7-4d8e5aece068,"LG INNOTEK CO., LTD."
+0db59f41-9b23-43a9-91b7-ed62baf3d0eb,"HITACHI CONSTRUCTION MACHINERY CO., LTD."
+68d856cb-6b08-4d48-8e6a-26a8d63f4456,"Flexterra, Inc."
+545ba4a2-bc47-46de-aa09-bca5298c5936,"FUJIAN INSTITUTE OF RESEARCH ON THE STRUCTURE OF MATTER, CHINESE ACADEMY OF SCIENCES"
+c4dea9f9-3e42-428e-9c8e-f28b32e92256,FG Innovation Company Limited
+0f003917-79b4-4240-bd57-996382c294b4,Texaco Inc.
+bb460f76-c150-43cb-bc2d-e61bb9284664,"Sugatsune Industrial Co., Ltd."
+90f925c4-cedf-4f58-b00e-96e6341350d9,Bristol-Myers Squibb Company
+9865ec32-f5d3-4a55-af34-206e8146ab5e,Schefenacker Vision Systems Germany GmbH
+63d9d6dc-dc69-4d03-a468-9ea108732feb,Tai-1 Microelectronics Corp.
+68f85f12-29b1-413c-91fc-51f2c72af34c,NATIONAL UNIVERSITY CORPORATION MAGAOKA UNIVERSITY OF TECHNOLOGY
+6f8947bd-e9c8-4e5d-80b3-1197409e578e,"Shiseido Company, Limited"
+80f25017-5de3-4282-a852-5b8d7656a6ea,Ford Motor Company
+3e79bdaf-93a1-4ac6-8e20-868f66ad9e4e,THE MEDICINES COMPANY
+04220a0e-d47e-4d59-9d21-88c45bd722bf,"HAPPY CABINET, LLC"
+7c8ffb81-02d4-49e8-bcc2-d3607de5129b,HUNTSMAN INTERNATIONAL LLC
+424cd134-10ac-48b6-9b8f-54e4148ee914,"Maddoc Medical Products, Inc."
+aa6f9ca7-44a4-4032-b0e8-3572dac9efea,GE Aviation Systems Limited
+4f03d60e-d10c-47b3-89fd-d6f58561e1d0,DANFOSS A/S
+436de659-48bb-47f6-b065-ce02a2ac0e9e,MITSUBISHI KOGYO KABUSHIKI KAISHA
+7f7ea42e-7a37-43d5-bc15-644a9d5ffc1c,Mitsubishi Metal Corporation
+ff2c34a0-3f9f-45d8-8feb-08f6bcbf3e2e,Alfred Teves GmbH
+3fc0f069-f70d-4ed3-911b-50c08458e515,BADGER LICENSING LLC
+bb852e94-172f-4c3d-9f6e-a16421ef41ea,"Force Control Industries, Inc."
+54a242ed-d561-49e2-a9bf-4db8c1aac70e,"Nuance Communications, Inc."
+ce1b9f92-f4a5-4885-b7cc-5976a8ec172c,Cupp Computing AS
+738e6afb-ce5a-43ae-9ebd-43fd98f3bc7d,Gilbarco Inc.
+73495201-cee1-471a-b692-c161bfb09e9c,"Ivanti, Inc."
+24efc504-b197-4c38-900b-5d170ec91c23,"AGILENT TECHNOLOGIES, INC."
+b1f26cd1-ab36-4c41-8906-ddc42549659a,Aluminum Pechiney
+900094a1-fcf9-45bb-a96a-fedff8bba85f,Rockwell International Corporation
+84419203-e63c-4e90-8497-c3918fd10eea,"Instituto de Medicina Tropical &#8220;Pedro Kouri&#8221;"
+024f2d31-d776-437a-a4ad-be1017b85ed3,Molonlave Group LLC
+dcde1a25-6f04-4aeb-a15f-ecc7a9f72024,HITACHI KOKUSAI ELECTRIC INC.
+13d45d49-3b34-418e-b715-257601dca8dd,SHOPIFY INC.
+c74c4ba4-b1c1-4146-a670-5a3ccbef176e,"SUMMIT CASING SERVICES, LLC"
+ab5a3b2e-2c80-4752-bcaf-779d15384cfc,"Visual Information Institute, Inc."
+4c8f00e9-3ac7-44cc-98e3-25e626e23e57,HORIZON GLOBAL AMERICAS INC.
+46963927-c1ae-4160-b79f-9afce2c9fc31,Arntz Beteiligungs GmbH & Co. KG
+f5f7e5e5-1f5b-40ba-8978-c179ac7dad98,"Info-Chem, Inc."
+953bc0d9-6b11-43c0-bea8-67991860dc12,"ONO PHARMACEUTICAL CO., LTD."
+337fd4f8-1cac-47e7-9858-30a9c2f7cfd7,Asahi Kogaku Kogyo Kabushiki Kaisha
+3ea9a8ee-7dbc-4195-92f6-69fd11c55f56,GRIFFITH UNIVERSITY
+d37d6733-653f-4daf-bb27-08d6414d11a7,LSI Logic Corporation
+8928319c-4c58-4d5e-8b85-272791fd36d6,"SHINKO ELECTRIC INDUSTRIES CO., LTD."
+7a7a7da2-2c98-45ca-9708-46d666208c65,ATI International SRL
+bd5a4641-bf2c-40ba-8970-e00c16676212,"SUMITOMO METAL INDUSTRIES, LTD."
+48844b68-755f-494b-9686-1796485e1763,Connoisseur Products Corp.
+4d2d4486-edec-40f7-80fd-64e6639e865e,Rehrig Pacific Company
+2a87c2bb-0530-428c-8e40-112fcb6168fa,CoreMedia GmbH
+4b746bda-2aa3-4e66-a441-6a5afbab7f99,YELLOWPAGES.COM LLC
+1ab061e0-b987-469e-b746-753a96b6bb9f,The Gillette Company LLC
+5563f969-5f33-4349-9757-18fa5c4c3f80,"International Fruit Genetics, LLC"
+c61bc742-7328-428b-b48f-cce6a14724f9,SECURE-IC SAS
+5b446ee3-da16-4198-8d58-ea59430f3eca,Narumi China Corporation
+b81707f2-a3bf-461b-a7e3-cbcecaa80ef4,GTE Communication Systems Corporation
+1ae59aa4-6891-49c7-a2d5-ec8fc6eea1c1,Lescha Maschinenfabrik GmbH & Co. KG
+19b138db-f5c0-401c-9d5b-d22cf6ea4b35,Charles Mockler
+ddad652d-729c-4501-867b-bad146bcc853,Oerlikon Textile GmbH & Co. KG
+e4bb7c0c-11ff-423e-916d-16deefa94c6f,"DONG YANG PISTON CO., LTD."
+29bf7a03-4d8b-4aad-ba80-a7dc1021902c,"Arvin Industries, Inc."
+3c6a8883-a850-442a-96c8-6c27849137b4,DRVISION TECHNOLOGIES LLC
+104e0716-6d4a-4f65-a6ae-94ef341cb79d,"The Coleman Company, Inc."
+fdcc23c5-d533-4221-ad6f-93225b261dd8,"BROTHER INDUSTRIES, LTD."
+dea0719c-c561-4526-939e-98e5af9b81de,"Bridgeport Fittings, LLC"
+ec58dfe4-59fb-48a5-ad57-895d8d15959d,"PerkinElmer Informatics, Inc."
+b836c739-deaf-4ea0-ba17-0993a7ed6476,Sony Interactive Entertainment Inc.
+6b402632-dec3-49b5-918c-527cc94266f7,"VIZIT LABS, INC."
+50e6b6ee-b6a3-49d9-8dc4-e1c2f1ce3682,"Bender Machine Works, Inc."
+ff0f0a94-8d5e-4e08-891b-3f3002c53e4c,Garrett Corporation
+4cd590f6-6b4e-4302-933d-ae6a5fe7a404,Virtual-Eye.COM
+807e2e40-bedb-4edb-9e80-62a4e3e5c955,"Orincon, Corp."
+c8b6415c-41cc-4370-9deb-9d70826fccc0,Siemens Elema AB
+a7504814-c2f2-47ab-aed6-a3961f7887ed,Catem GmbH & Co. KG
+754d0331-00a3-4b47-9aa9-dbd18853e6c5,Lenovo (Singapore) Pte. Ltd.
+383bc3d7-fec3-4921-a5ee-6cb90333c94f,"CHINA NATIONAL MEDICINES GUORUI PHARMACEUTICAL CO., LTD."
+ba2e5a91-d65b-4a13-aaa3-05649b5562b5,SHANGHAI INSTITUTE OF PHARMACEUTICAL INDUSTRY
+3f396705-d038-476b-ad8a-735a495b83e2,"Beyond Innovation Technology Co., Ltd."
+b5f7dba8-963a-4b1f-bc7b-43565069972e,"MSA Technology, LLC"
+741f3f60-dc0b-42e5-8da3-071066692165,"GUANGZHOU HAOYANG ELECTRONIC CO., LTD."
+47890ab8-5ccd-4100-b830-693b1623367c,Autifony Therapeutics Limited
+33cded83-1e56-466c-85c5-8d3fffd765bd,Engelhard Minerals & Chemicals Corporation
+a1d9f3a0-4407-4b58-b35a-53377a686c8f,John H. Best & Sons
+f7b2a3b6-85f3-4177-b68e-5fcef7d64436,"Partnership of Mario E. Manzo, Stan Parrish and Mark Hurst"
+5c8f5831-1655-481e-83f3-5b64c18a1896,Nicholson Manufacturing Ltd.
+a526ecb4-1206-4dbd-999e-11beba98d28c,"FRANK'S INTERNATIONAL, LLC"
+03d68663-a140-4aa1-8806-b629c3ae2c3f,C.E. Niehoff & Co.
+b76dc9bc-adc1-4c23-830f-e2bff2a7640f,"I-TEK METAL MFG. CO., LTD."
+37fca15b-64a6-436a-b169-12b30493d835,"Advance Watch Company, Ltd."
+2987bc09-7008-4ce3-80e3-a259e351b5dd,SI-Bone Inc.
+cd01e40e-0e6b-4e41-a2e4-1df70e545ce8,Nashua Corporation
+f117863b-10f7-4aa7-8136-8cad0e6c2ae4,Hy9Corporation
+d0387ed7-9770-461a-a516-a163b7f120ea,"Rockwell Collins, Inc."
+d0745ce2-5e0f-4b32-ab42-d38b1e7fbe0b,"MITSUI MINING & SMELTING CO., LTD."
+9c1ca1ae-b753-4c92-a23c-251197a616c1,ST-ERICSSON SA
+1439316f-bb79-4b81-a8b8-dbc739c4f5ea,University of Notre Dame du Lac
+e8e997ce-8912-4de4-8626-97121d8d77a3,GRAMMATECH INC.
+d49cb190-7e0d-4b0a-adc4-6b93c3d10bc8,Kernforschungsanlage Lulich Gesellschaft mit beschrankter Haftung
+d58198f4-790d-4027-b349-8ab49e628e10,"Fuji Photo Optical Co., Ltd."
+683fe93c-5527-4ad2-b8c6-c66f6e996fab,BAE Systems Information and Electronic Systems Integration Inc.
+0591ecb6-fb95-4e9b-aa44-ef689d328945,Nucor Corporation
+15ac0685-7340-4d02-87d7-51d7f13bdf10,"Intevep, S.A."
+92f243ff-7a27-4948-a56b-acff38c2020d,POCHET DU COURVAL
+fac1fcac-7abe-4041-8730-a6170fff5e05,"Apriva, LLC"
+25c2acc6-d198-4327-a8d9-c7b15f1df9bd,"APART AUDIO, NAAMLOZE VENNOOTSCHAP"
+de6d7185-fb42-4141-8558-55c613580046,Carl Zeiss Stiftung
+c0c79bfa-0d4f-49d4-a669-06f7bb805f6c,"Sartomer Company, Inc."
+8a80e272-d067-45c2-825e-5ffb7e6793a1,Lockheed Idaho Technologies Company
+257c72f6-43b5-4064-af02-f2d3385b772b,Metso Paper Inc.
+02db0fe9-dcdd-4548-9123-cb54ad769192,Cabinet Cabinet Erman Sarl
+cc0bbf83-6632-406c-aa81-4f4c1511b6e0,"SPI Electronic Co., Ltd."
+daef81b1-ab98-43da-aeab-f17ef3cf0fa7,MAKOR ISSUES and RiGHTS LTD.
+628e046e-880d-47f5-9c09-aa97b011d6da,"Spinal Elements, Inc."
+25ad7170-b37b-4b3c-9188-a92f029a0460,PROFOTO AB
+996d0390-c253-495f-8992-a4a3b1e13e85,"Teradyne, Inc."
+ee498a3c-1abc-4661-99d4-feb8028f7c14,"HANMI PHARM. CO., LTD."
+ad441aef-24d2-4315-8357-677d0c48f684,ALFA LAVAL CORPORATE AB
+832f0bf2-fcb5-41ba-bb2c-e3d86da32d9c,"PROFOOT, Inc."
+380a4b1b-8bbc-4e05-9fc7-a169311f9277,Steve Jolin
+14577a57-8fe9-4c0a-b351-bec6a744b84e,"GE Video Compression, LLC"
+df69df45-b991-4674-b385-674840c38f16,"PRIME PLANET ENERGY & SOLUTIONS, INC."
+27114d52-b7f0-4364-9b34-2e58dcb19d27,Alfa Laval Inc.
+c2932354-8320-4ef8-8000-3d4168f65b0a,New Transducers Limited
+98a978fe-4b24-4bbb-9e1c-4cc14f3123cd,"Rockwell Electronic Commerce Technologies, LLC"
+1661b146-5141-4e66-9638-01c8c611a985,UNIVERSITA DEGLI STUDI DI PALERMO
+833d134e-6568-4cf6-b36a-9d3c5c18f6d4,THE TEXAS A&M UNIVERSITY SYSTEM
+88c18da0-55e8-490b-a7ba-4a0b93451ac5,"Audyssey Laboratories, Inc."
+b099e027-3bac-4904-9984-8e65929a8d88,"Voyetra Turtle Beach, Inc."
+696e9239-9338-4b18-b348-bc5a0db7e490,CYTIVA SWEDEN AB
+35206caa-6c55-4b88-8c6b-1c546801001a,"TD Ameritrade IP Company, Inc."
+4515ca77-2c06-48bc-906c-57da920d9d01,TOSOH CORPORATION
+ed526db6-ba9d-4a05-b84d-f6146fcd3a28,"Lever Brothers Company, division of Conopco, Inc."
+06ada775-8017-4eb2-9e79-1622680f54ff,LTS Lohmann Therapie-Systeme AG
+ed064d10-3db6-4ca6-8e3d-48c8a897c4d1,L'Oreal S.A.
+2e24c9a7-6180-4493-92a2-23478f84b07f,"ALPHABET ENERGY, INC."
+3664ac79-246b-4adb-9857-7aa2d95c1f4d,"QBase, LLC"
+21d92c35-7806-4cd4-8265-16879bacf2a8,Shimadzu Corporation
+11d94b67-99c5-48d7-84ad-e6b61fbb1d9e,ATI Technologies ULC
+54cfddee-25cb-460a-8451-2a504595b79b,"SHENZHEN YINWANG INTELLIGENT TECHNOLOGIES CO., LTD."
+a30e0645-0d66-4bdb-a9c7-5673f4ec86b3,Bendix Limited
+2c21ed5d-400f-419c-8cc0-e0c4647d34b0,American Newspaper Publishers Association
+ca0d3ebe-e6d1-4a9c-94c7-63c9cadb1895,"HITACHI MAXELL, LTD."
+5243fe1e-ba2b-4d5b-9207-2dd74afcd655,Menachem Kraus
+d6fedb11-4979-46a4-8435-a699dfea2b8a,FERAG AG
+2c9bba34-26e2-472d-8461-6b5ea59bc81c,Evets Corporation
+412833fa-1496-4bd6-a749-adf61ad0bfd2,"Meta Platforms, Inc."
+0d3bfd3b-f262-46de-bfaf-a092aa1cc5ef,"DoorDash, Inc."
+457825bb-6205-4096-8e48-bb62e997b74c,"Apoptosis Technology, Inc."
+4f92a1e8-d31d-4cd0-9cc7-b69be49b4e72,"New York Blood Center, Inc."
+2637e83e-8353-46c4-a126-ca232c0c4b33,LITEL INSTRUMENTS
+df12a034-0ad8-4ef3-b73d-0b8bacab61d3,"Dow Corning Toray Silicone Company, Ltd."
+1a68f9fc-c363-41f5-a137-07e67875e9dd,"GE Medical Systems, Inc"
+fe13c3f5-1d44-4483-9bc2-d49840acb233,"iCopyright, Inc."
+b4fbde6f-14a9-4d63-be36-fa7d2d01e188,Oliver Joen-an Ma
+f2087f72-1c15-429a-ab11-5d56eeee8229,"Nivalis Therapeutics, Inc."
+558a4902-694b-45c1-a266-6f2df09d73b9,The Dial Corporation
+74b56fa3-bd69-4a9d-91ec-494491d5e559,Accusoft Corporation
+eb7460fc-20d8-47c8-8190-4468e921bf72,"Cass Informations Systems, Inc."
+ae69e967-6390-4b61-b4f1-22e22b484854,BorgWarner Inc.
+75bef3b9-bd99-49b5-88d0-88b104dde2c0,BRAGI GmbH
+565737db-cd82-4086-9e12-421a46a42566,NATCO PHARMA LIMITED
+14dd8c15-04fd-4a29-9297-ece6ad6170cf,"Acra-Plant, Inc."
+353be7cf-0b71-4a9e-a13c-74b4784d167d,Micro Linear Corporation
+f53c28ea-30ca-4d89-9459-264aec6f37f8,"BioNumerik Pharmaceuticals, Inc."
+c7f66a77-2e97-40b9-9c25-a45010715a10,"CogniPower, LLC"
+75297d6e-8d23-4ecb-872d-efee9470454c,TSINGHUA UNIVERSITY
+947b51e0-87c3-42ea-b4f0-5eec6a7f241e,SAP AG
+53468bc0-8451-4b17-828d-dc22dcac3117,BIOTRONIK SE & Co. KG
+f14432d5-6f94-4aeb-9520-fc8f9ee15f28,F.M. Products Inc
+13bf760a-76b9-416a-a50b-bf15157d5245,Shenzhen Reno Information Technology Limited
+a632cfe5-3b5b-4582-ae45-ce260cfc11c4,DUCHESNAY INC.
+b747c081-3458-44c4-9d2c-44a4899a0e10,"Pathovacs, Incorporated"
+5656e117-4cbf-4768-a033-c00d75683c5a,James C. M. Li
+ff17550d-b19a-4479-8c72-cdc9cc2cfc1c,TAKATA-PETRI AG
+30c07cbd-d96a-4aac-9089-7c65c38b7eb2,CGGVERITAS SERVICES S.A.
+b291a3f7-3487-4586-a930-d70fc305e03a,Empire of Sports Developments LTD.
+bf11d39e-6bf5-4ee3-b6ab-66318896a8e3,ABBOTT DIABETES CARE INC.
+0c7538f4-cf03-429f-9655-33d65794fd90,PURDUE PHARMA L.P.
+869131da-5ae3-4343-b2cd-eba915473ce6,APPLIED MICRO CIRCUITS CORPORATION
+cb5ce0eb-6806-4188-ab49-a1a1327fc054,Henkel AG & Co. KGaA
+6650c742-fddc-460a-a630-d2e27315f66e,"ALPINE ELECTRONICS, INC."
+b2d74ba4-7204-45e0-beee-1cd483aadc78,SFS Group Germany GmbH
+8eaf7951-d04b-49b8-aeeb-da394245a0b9,Onto Innovation Inc.
+341ce5ad-9ceb-4c28-b861-2d6448948280,"Saviano, A.G."
+89501b86-5310-44cb-b774-e8010db5c0c4,Diane E. Miller
+49ade357-4144-4243-9ad7-9a76a68a92fb,"Varian Semiconductor Equipment Associates, Inc."
+2de8178b-78f2-4641-a31e-1c8e33c3aaf4,Hitachi Data Systems Engineering UK Limited
+94e117d3-10a9-4e6d-86dd-3ccae335839f,"Prince Industries, LLC"
+d1291473-377e-4175-96a8-8ebe5a9b852f,"TANGOE US, INC."
+3561637f-fbed-4925-9e38-d0642848f91a,"IMMUNOLIGHT, LLC"
+f8788a1a-72fc-4d4f-b795-39c00d1bd5ab,"ARCHERDX, LLC"
+a521623e-9997-4b7e-9217-c8f3c9685f0a,Branson Ultrasonics Corporation
+6eb64057-be35-4f23-8444-2637f7474758,"AMADA CO., LTD."
+ce638439-078d-4e9c-9a36-3603a20d9bfa,"OTSUKA PHARMACEUTICAL CO., LTD."
+78212567-0e6d-4660-ab67-886204387321,"YIENN LIH ENTERPRISE CO., LTD."
+3e42a4ce-f066-420e-a29a-c82475fb1e35,Ekornes ASA
+be1fd41c-d4e0-4ee2-90e4-5cf244e91829,"Akron Polymer Systems, Inc."
+c3f9b825-c184-4994-a759-6c053cd907fa,"Popular Metrics, Inc."
+4da0c071-46b4-400f-b8af-fc024183f7b9,Michael Valencia
+04e60108-26d6-4305-99f0-58873665309f,Zuri International Inc.
+13baef31-a88a-44f2-b163-24497e4afe78,"Matrixx Software, Inc."
+f031488f-375b-403e-9ea9-9f789974cc80,Siny Corp.
+107701a7-8754-4795-94cf-6c8fa53cf85a,Gewerkschaft Eisenhutte Westfalia GmbH
+9222afc1-85f4-4c2a-a882-b786fc5b46aa,SIG Schweizerische Industrie-Gesellschaft
+06729a65-2a5a-4ccf-9197-b4ec201a7eda,"Bell Communications Research, Inc."
+08ddc1d4-09a0-4d16-a321-fe8435045ad2,IWKA Balg- u. Kompensatoren-Technologie GmbH
+818136b2-73aa-47bd-8d7e-f1a2ed6a35e4,"Datex-Ohmeda, Inc."
+0dcceebb-af15-4b5c-818b-7b6cb3791efe,"NEC LCD Technologies, Ltd."
+7df7e781-36f6-420f-acc4-33b3011aa75a,Orfist AG
+0138fce8-6a34-4dff-9eb4-7e96167a0b02,BRITISH TELECOMMUNICATIONS public limited company
+b76d38e6-4542-434c-bfea-8ae0efad8552,Knauf Fiber Glass GmbH
+2e60fb4e-2f43-4ac6-8307-328c696e7890,"Subtron Technology Co., Ltd."
+dec95ca3-6102-4358-9006-dcd1826d33e4,OPEX Corporation
+a2b02496-6bc5-49b4-9b1b-23c9a723753c,Dialight Corporation
+a3032fed-46b5-4738-b827-caeaad786d31,X Development LLC
+2dec32f4-d891-408f-bdab-9b76463bf26f,"MARS, INCORPORATED"
+78e4e861-ebf0-4280-b32b-d13432fc6cab,"VIA Technologies, Inc."
+1a68c66b-9d09-47f0-86d0-796ed3f92227,F. Hoffmann-La Roche AG
+1a026716-b0b8-4990-8614-b44ca1016d0f,AGC INC.
+e1b11abc-43df-4238-95c1-8bb9547f2425,Federal Home Loan Mortgage Corporation (“FREDDIE MAC”)
+0988a26e-925a-4233-97c0-a3854dd859a0,Invention And Collaboration Laboratory Pte. Ltd.
+53e27ac7-1f5e-415b-b000-37a71e3b990e,"Etron Technology, Inc."
+1b0a10a6-abb2-4efc-9ff4-fbc4f3d2a537,"The Tuway American Group, Inc."
+6656309d-1f6e-4278-896e-37f50ade7caa,"Yamato Scale Co., Ltd."
+9b62d2b7-86a8-425f-8985-23fad0068395,"American Telephone and Telegraph, Co."
+cbdd45c5-5541-4d6e-b522-7b4127c35ff2,"Donald J. Geisel & Assoc., Inc."
+f01fa323-42a6-4cf0-8477-ff1ff00fef89,Giga-Byte Communications Inc.
+d39aa1dd-9b72-4f17-b8f8-89ff36d0905c,"Tipping Point Group, LLC"
+bbaa7291-f282-48f4-b308-b0da35149f0c,LESAFFRE ET COMPAGNIE
+318b61c1-6101-4c70-8dbf-0630b4f7247f,"Ooma, Inc."
+ef1ddf2c-a29c-4fe8-a99a-9b8bca00aa14,VERIZON MEDIA INC.
+fd49ec3c-0263-4dca-8bf5-bede6b1e93c2,Robert Hacco
+69df2e94-8fa6-4faa-91cf-601518576345,"Allen-Bradley Company, LLC"
+95c3e797-9642-415d-8048-6e0ba7ac3d80,"FUNAI ELECTRIC CO., LTD."
+812caf11-e29a-4ca9-bd62-7fef75d934b5,Silverbrook Research Pty Ltd
+64ad558c-e5dc-4eff-a301-12d8ada83d52,BIOCRINE AB
+515636d2-9f2d-4b1f-86d0-12580b02d150,"Brammo, Inc."
+4b663a82-5cd2-43d1-818f-c2c41a036114,"DIAMOND INNOVATIONS, INC."
+22ba6662-dc3b-43cb-af85-8e89590270c7,EOLP LLC
+d971b4a8-cd08-4b48-8dc2-8cfefc74645b,"Conopco, Inc."
+805e06bf-db1f-4359-a7f7-5d9344533a01,"Rosco, INC."
+e2aff957-7344-4de4-8106-e37aff4d4188,Ohio State Innovation Foundation
+3744e6b3-3c18-4179-8402-317f8ce11f19,"R2 Solutions, LLC"
+26d4e8a2-ce48-499a-b957-78f70fa370bb,"BION ENVIRONMENTAL TECHNOLOGIES, INC."
+905d1db8-3a49-42d7-b715-fb8632ca958b,"Atlas Spine, Inc."
+836db9f0-1c72-4c0a-9779-982180270285,"The Provost, Fellows and Scholars of the College of the Holy and Undivided Trinity of Queen Elizabeth Near Dublin CNT IEX COD 03"
+de6f7cfd-3a12-45be-9bf5-1e5d3b92f9f1,Man Gutehoffnungshutte Aktiengesellschaft
+89c2cd94-5877-403a-845a-39bff6b466ab,Chemische Betriebe Pluto GmbH
+432d8eb5-ec48-42e7-800a-0a7ee3075aaa,Crown Cork & Seal Technologies Corporation
+c7197e55-3fd1-4b89-a327-0e7d2da9868b,"AERPIO THERAPEUTICS, INC."
+445e64c1-afcf-48e6-af01-26e30804fbb9,DET International Holding Limited
+9f4b00b8-377c-4735-b900-d9c6a486551f,DOW AGROSCIENCES LLC
+5dbb420d-a34e-46cd-84b9-fc00c8143794,King Abdulaziz University
+ba5f93aa-fa09-4851-933f-d06472c3183b,Virginia Commonwealth University
+243cd8db-4ca2-490a-92d6-82e7611a654e,Petrolite Corporation
+8086c793-4b47-41cc-9307-1beab9cbdfe6,"The Scopas Technology Company, Inc."
+62f41750-82b0-4d2c-afe2-e3f506e209cd,Forschungszentrum Jülich GmbH
+feb106ec-bbaf-4a79-ad7b-d8f1580262e0,HERAEUS QUARZGLAS GMBH & CO. KG
+71d54d64-a303-42d4-96ff-e794d705fe7f,KABUSHIKI KAISHA TOYOTA JIDOSHOKKI
+f877f11a-cbdb-4ff2-ad27-c7ce4a8e2a17,"S. C. JOHNSON & SON, INC."
+24b1f9c1-5138-49e7-8e34-3f99c95e9ed7,GDC TECHNOLOGY LIMITED
+fb034d4e-cf8f-49f6-85e4-26a0a53104f6,"Nutanix, Inc."
+20a5f2aa-6ccb-4db3-9ce9-7160867d1b9a,J&P Invesco LLC
+9e5b916c-f062-4375-9ce6-ecdf79131a1b,Ziemer Ophthalmic Systems AG
+83f8a09e-0e15-47b8-a987-4ffe6fcae0c3,Supra Aktiebolag
+7c4975d7-f7b0-4230-93fa-12a98d6de549,TECHNICAL CHEMICAL COMPANY
+d146ef55-b28f-4f1d-8e01-209972af0f79,"Valence Technology, Inc."
+e8717b98-08ba-4264-a56c-21989013a6ce,RAG AKTIENGESELLSCHAFT
+c85d96af-e70b-4d81-8012-91f3b1133935,Landmark Graphics Corporation
+665b727a-dff0-4e2c-948c-1151ef88855f,Placer Dome Technical Services Ltd.
+80d63cf5-3f0b-4dc2-bd5a-15440cd1ced8,"Ortho Organizers, Inc."
+fd15b2bd-24ec-4106-bb75-fc7f2ea8f443,"OSAKA SODA CO., LTD."
+14184c1f-ccde-4180-9eb0-fd6eda4f2c03,VORWERK & CO. INTERHOLDING GMBH
+f6a2b59f-04be-4a2b-9748-f84301478fdc,SHL Medical AG
+a3872cb6-7aee-4586-bba6-d5bb899fd861,"Wells Fargo Bank, N.A."
+091f9b94-4c2c-49b7-a58f-4f6baa0d4df2,"REGENERON PHARMACEUTICALS, INC."
+c86a9e79-285f-477b-85d7-3c965fd13406,"INSPUR ELECTRONIC INFORMATION INDUSTRY CO., LTD."
+b0e1d77c-cc1b-4f51-97d9-1e2fb2c17b17,Hydragraphix LLC
+1f94d1c0-19bf-46dd-9a81-09c5eed8cd16,Sandoz AG
+ac53596b-dbe1-4e93-ad15-95dd3654e9c5,Jebron Limited
+a7061663-7fca-4bc6-a0ce-a51ec067f298,NITTO DENKO CORPORATION
+10f1fe4b-2e37-46d9-aac8-e1fb484b61a5,Chartered Semiconductor Manufacturing LTD
+ca588b5c-4753-488c-956e-846244684889,"St. Jude Children's Research Hospital, Inc."
+b6235f56-d610-4345-b438-277f133eb272,TEXAS INSTRUMENTS INCORPORATED
+11769375-597e-4f32-a75b-559ff95b7483,"HON HAI PRECISION INDUSTRY CO., LTD."
+00776440-d3e7-43cd-ab21-aae20a5aa8a2,HOYA CORPORATION
+dbe23f51-c77e-49bb-bd1e-35ec005390ca,Allgotech AB
+6542e6be-f87a-440a-a924-18b0fc5a73f8,TAIPEI MEDICAL UNIVERSITY
+3ef0cb9d-1f5e-4c1f-af34-d941a03a4486,NATIONAL INSTITUTE FOR MATERIALS SCIENCE
+b680fb78-14fa-4cc2-9806-8b222383e3d8,Guehring KG
+49698922-e5a7-4974-bc1e-94a3f7882cfb,NICHIA CORPORATION
+f7cf7c89-c39f-421c-a1e5-e3d403782dc7,Industrial Technology Research Institute
+0faac459-e020-44e0-9a27-487c12910cd0,Westvaco Corporation
+c049aef8-d75f-4975-8521-c8d31c140622,Lear Corporation
+0b2b091c-a8d4-48dc-93a4-73b118364ac5,NEC Electronics Corporation
+3c00f7f6-4f76-42f5-a1d5-73fba49aa341,Spansion Israel Ltd
+febfb0ff-ea4f-43cc-98fc-751ceb05b066,"JPMORGAN CHASE BANK, N.A."
+98d68db9-b2e2-45d6-a35f-79f3b6dfbc74,Metrolight Ltd.
+22aa640c-37cb-4432-82fe-d89bb9d007bf,"AT&T Intellectual Property I, L.P."
+410b9029-5ccd-4772-ae2a-98ec6cd32947,"KONICA MINOLTA LABORATORY U.S.A., INC."
+de14837c-a39b-46d7-926a-06cbe30db145,Deere & Company
+b980525f-6da4-4e12-94f8-2d156de5c8f0,"Fulian Precision Electronics (Tianjin) Co., LTD."
+97c66c00-b0d6-40cb-b7ff-351080ba6f38,"HAIER SMART HOME CO., LTD."
+b7aac4b6-f174-448b-ad25-ee0df84ec36c,Otto Dunkel GmbH Fabrik fur elektrotechnische Gerate
+fe1a49b2-e027-48e8-a1b1-817a853aac89,Fiat Ferroviaria Savigliano S.p.A.
+4dc8497d-6c15-418b-b1f1-b04f5e015cea,Mitsubishi Kasei Corporation
+e9544a10-c765-4651-99fd-d2a56ce4f288,YAMAHA CORPORATION
+a471552d-2d4b-425e-ab54-f870f5e2b08c,The Boeing Company
+e0370a6c-441f-4e93-8ef9-c8a740dab55f,"Appplied Materials, Inc."
+a90e9fd0-52e6-43d3-b861-4a87a6e54cb8,Kabushiki Kaisha Toshiba
+bab5f42a-e3d2-41de-a119-500a8f8496ad,"ALPS ELECTRIC CO., LTD."
+e3b2767a-c11b-4e35-9582-e5dc7f938946,Saied Jamshidi
+f71249de-0cfb-488f-8a27-f3861dc2d67b,LG ELECTRONICS INC.
+1b963bcc-5744-4969-8754-00f729ec4c95,"Tektronix, Inc."
+bf17981e-e6e4-4363-8775-1f22a59d6760,"KEYSIGHT TECHNOLOGIES, INC."
+628b7ab0-d79a-47e5-b2f8-6831bc9658f5,Dunlop GmbH
+cb74ea33-b61d-4377-ba75-104f10995ff5,"Dynamic Promotion Co., Ltd."
+ce7e3333-1889-4c84-a242-a4c5761d3fdc,HAUSBRANDT TRIESTE 1892 SPA
+46a081ee-ea84-4236-a117-3b2a820fa364,Siemens Healthcare Limited
+dad1cb0d-0ed1-4818-b46a-4b4621646a78,ABB Power Electronics Inc.
+c9398d69-5dbb-4b06-b9ea-757038ca0ea3,FUJITSU LIMITED
+d32c1254-f3d2-4810-b96d-6b8e067b28f2,"KRAFT FOODS HOLDINGS, INC."
+ec039c62-9821-4926-8113-d6a4fd4df1cd,Murata Kikai Kabushiki Kaisha
+5491322d-78a3-4b97-80d9-600f83ff75a7,NEC CORPORATION
+824c64c3-e082-487a-b351-2a6fcfae19db,"NETECH, INC."
+83bd079f-c06b-4e6e-9c61-52a0c9f71a4a,"Boston Scientific Scimed, Inc."
+300e5463-d13c-4e69-9342-465b56948cfb,Bayer MaterialScience AG
+f5090c75-fc94-4271-b003-2196f9d430a3,"Freeescale Semiconductor, Inc."
+52ec12a7-f416-4eff-83c1-32cedc9e91f1,"Physio Technology, Inc."
+76dd2c48-b753-4b57-9a3e-d541896627e8,"Bruker Nano, Inc."
+4acd1d69-104c-44da-aa55-aa3b2da64faa,CHARGEBOX LTD
+68d6cfc2-000a-48ba-a215-2373538048da,Oracle International Corporation
+1b7d2e30-c1a4-481f-9793-148aed5fe1b1,VOLKSWAGEN AKTIENGESELLSCHAFT
+ce32f042-d0ae-454e-bbd2-d7dfbf2b14b3,Laeis-Werke AG
+012cb554-f915-47ae-94c2-75c8425a64f4,Tamglass Ltd. Oy
+ef1f0c3a-7026-4a1f-a24a-41097cd7bc44,"The Yokohama Rubber Co., LTD."
+c41afa37-b0fd-4738-a6d0-685e503ffaf2,"Commercial Display Systems, LLC"
+94c87be1-85ca-4d2f-90f0-44715cb951e9,"3SI Security Systems, Inc."
+3f01bf65-602f-4e58-a43e-bf92fac9862c,"Network Equipment Technologies, Inc."
+9a96c7e7-15e3-4990-8279-72c23c283afc,"CELL SIGNALING TECHNOLOGY, INC."
+b59cf43b-e780-48c5-9ee5-abbad103a3cb,Autoliv Development AB
+f9b5bc92-4f85-44e7-9d1f-cdef0270a5fe,The Technology Partnership PLC
+87f1d518-2fa5-4cbd-a1a2-1359903dad89,"Global Trademarks, Inc."
+a1a6d883-d295-46e6-ad1f-04d427cecfe7,American Cyanamid Company
+407fb43f-c832-46e1-84ef-8d66dd1c3859,"ASAHI GLASS CO., LTD."
+154076ba-ad2c-4bbc-83a9-cc436c2b63b1,"Nissan Motor Co., Ltd."
+b10fabd9-d3ab-49d5-a579-3e3a3d127dc0,SHELL OIL COMPNY
+528bbf36-9da0-46c7-addf-6a56d3b28c3d,"Alpha Security Products, Inc."
+0a6dfe9d-63c8-4994-bf95-993b29ee63a6,ZHEJIANG LAB
+a43fb026-46a7-4f91-b6a7-7db4cc6294fd,"Daktronics, Inc."
+77231c29-0742-4586-9b34-8f853cfd573b,University of Houston System
+05d75fe3-b85e-4e9f-92d3-8f8cc2728466,The Board of Trustees of the University of Illinois
+3568da9b-e883-4aff-aca2-3659be04e7d4,ASM IP Holding B.V.
+5d684560-5442-4b4a-a780-6021788a39a7,NEW STEEL GLOBAL N.V.
+5f5f64da-edf5-4040-bd2f-bf844e64bc26,ROLLS-ROYCE plc
+e8c56839-5627-4f93-b7f6-44039c1b8d42,VMware LLC
+d02211a4-5a3d-48ed-85f2-7340f8831422,"Live Nation Entertainment, Inc."
+55859fbf-2b2d-4478-b3cb-f2952ad8b6d2,SOCIETE BIC
+683d96a8-ebca-4dea-a3d8-8186a095dc13,AT&T Bell Laboratories
+63ffe5e7-dd84-490d-98e2-13c679c024c1,"VLSI Technology, Inc."
+677a72b7-bfb6-4ea1-88a8-e223e8eb4e19,"Owens-Corning Fiberglas Technology, Inc."
+28eba891-7c38-4d15-9c70-754aae4622f3,Research Development Foundation
+91a394be-db9e-4fdd-b797-3bc80aa87e38,Barbieri S.N.C. Di Barbieri Nadia E Kalman
+f77994d2-dde4-4c61-9d8b-97b219d91a0c,Illinois Institute of Technology
+b080c36f-b9ac-4c02-a8b2-d6bf09399ef3,Appercut Security Ltd.
+e7a384c7-fb18-4895-9f93-6022766128d2,FILMOP S.R.L.
+597d8d58-0ea5-402d-86b9-5ec3a778ec09,"Himax Display, Inc."
+b08f4f78-207d-4c9f-b20c-773bf661b205,JOLED INC.
+756a13bd-7d9c-4f6c-aeee-66c0af101b7f,Enerpac UK Ltd
+249d63bd-eb42-4f81-997d-308f6ce9b896,ebm-papst St. Georgen GmbH & Co. KG
+7b87b654-f902-4f5e-a7ec-954988150405,"Industra Products, Inc."
+7e0a2b20-4839-48f3-849a-9b44cd84af9a,"Fujisawa Pharmaceutical Co., Ltd."
+3ceff6ff-e104-45e0-add6-2c268222cc4e,AISIN SEIKI KABUSHIKI KAISHA
+89865df5-40df-4e99-b2e5-efeec49010b8,Yasutaka Ishii
+dbeca3ef-a01b-4940-8d5d-c24f33502e20,"Vivant Medical, Inc."
+a0f6a28a-bed5-4a42-93d2-10ce78cb0ec2,Cypress Semiconductor Corporation
+c645ee1f-daa2-4665-83dd-bdf222f59683,Robert Bosch GmbH
+047ac163-fbca-4ddd-bab9-2e5706fdbb58,"SEKISUI PLASTICS CO., LTD."
+bbef667e-2dff-4db9-8fc8-d20ac7185766,Acushnet Company
+724cd28f-5d6a-4218-8b46-be6478a7a333,"DAIKIN INDUSTRIES, LTD."
+2dd72c0e-da50-4328-a7fd-65e3d0ed5e5e,"Mitsui Toatsu Chemicals, Incorporated"
+b044c8f8-e618-471f-84e5-803dba8bd3c0,"Adaptec, Inc."
+36a8f725-faa1-459f-b75d-8c12f691b847,Degussa AG
+ace8f279-1a58-4560-9c1e-3bd63fd85821,Brooks Automation GmbH
+67bf89e5-a2d5-4c05-8278-b96765e9eb82,Desport Limited
+7a0c3f0e-3899-49a4-958a-f4e5b1235f5f,"King Slide Works Co., Ltd."
+f3ead92f-e54e-452f-b6ce-7310243e0ffd,Hoffmann-La Roche Inc.
+2dc181aa-506b-4b86-9ced-0198e920426b,SHIMANO INC.
+55b3b809-acb2-4695-8229-22562e0db27a,"LG Philips LCD Co., Ltd."
+d24fa680-b168-4fbd-81b3-f137a0d1891e,"PowerGenix Systems, Inc."
+8a6917ad-4c9d-467b-9da5-6c3f09aee277,Tagawa Kikai Ltd.
+dc8c6c42-b50f-452d-b653-d139fc24a5dc,The Sherwin-Williams Company
+6a4c68a5-b4c6-4ebe-88a9-13b12d44d999,MIKUNI CORPORATION
+a411bc03-a52c-458f-ade2-468cfad6a778,"Oki Electric Industry Co., Ltd."
+bef1c6ee-15b0-4caf-87b6-4eea7db8d9ba,SIDEL PARTICIPATIONS S.A.S
+4ce4bcc9-d29f-461d-ab3a-af9579e72fc1,Mayo Foundation for Medical Education and Research
+23f54638-a0c0-4757-b251-3852ce1fb9a9,"Cisco Technology, Inc."
+a35f8706-a4db-4daf-b053-ea4dd6433ae7,Epistar Corporation
+ea2f0aef-e247-4567-98ee-12f6c1063e33,The Goodyear Tire & Rubber Company
+2f56ceea-2cc9-4fdd-b9db-0e19772c9212,Atlantic Richfield Company
+3bd92de3-ccd2-4675-aadf-00585fe554dc,"Logix Fusion, Inc."
+3df41299-60d6-472d-8a0d-6c41fff37c11,"Western Digital Technologies, Inc."
+b8ca1dae-5575-410e-ae5c-29b5713ac199,Allied Chemical Corporation
+362d4197-705d-42ca-af15-37d81fe0efa1,Calvin Espy
+91c236ea-91c8-45b5-9904-00c8f29586ee,GAF Corporation
+3a21b22c-897c-4923-b34d-7a55181ea61c,Henkel Kommanditgesellschaft auf Aktien
+f9f31378-2796-49e0-ace9-199373e358a5,"Image Technology International, Inc."
+8d9dca1b-ed8e-4a36-8622-fe427e476db3,Exxon Research and Engineering Company
+c9e4830c-ad53-4dc8-85d6-cd4c8fa46f6a,Atotech Deutschland GmbH & Co. KG
+7489f6ad-fcd9-4317-8a0f-a0dba602541a,BBN Technologies Corporation
+f4b5818f-c9f1-4ddb-8b0d-5226274aef03,The Penn State Research Foundation
+4e6d7c72-6994-4e02-8230-e816c7f2bcd2,"GemVax & KAEL Co., Ltd."
+179028df-dfcf-4146-abcb-34aa1b972d36,ResMed Sensor Technologies Limited
+09cf865a-680b-4ffb-80e7-0d4dc995c447,"Shoko Kiko Co., Ltd."
+98844244-406e-42d5-8e7e-2d745d025618,"IOWA STATE UNIVERSITY RESEARCH FOUNDATION, INC."
+bd6b22cc-46aa-488a-a24c-3c0d529479fa,Monsanto Company
+66d847fd-1622-424e-8937-65f8e19ce13c,"YAMADA CO., LTD"
+429e8834-1c79-4ab3-8ed6-c52621c006de,Japan Energy Corporation
+e98ca914-9592-49bb-8f72-8da0f94e4de3,"Codexis, Inc."
+12df5792-bc71-4a81-834e-2047bf84499f,Jenks Consultants Inc.
+0d6a6bd7-f5ed-49a7-953a-3322cf371a0d,DIGITALGLOBE INC
+c6780544-2ba8-4ab6-9809-766ace34a1de,"IronRidge, Inc."
+b3a54346-da18-4659-8d35-bc02a4121b26,"John D. Brush & Co., Inc."
+731a1c00-0e31-4f3e-91e0-aa29ba556ef2,LONGSAND LIMITED
+eb0b0377-646d-47d0-af14-1c0d6db39586,"Qorvo Biotechnologies, LLC"
+90066f09-951e-4bf7-adc6-bfcac3c6dd2f,ELI LILLY AND COMPANY
+a8da4f06-312f-4149-9be7-84ef28da80ef,Highland Orthopedic Center
+73f8f6d1-982f-4393-bc75-0b912fd2ec7e,OPTON Co. LTD.
+140b29c7-57d3-41cc-ae15-02c316cac641,SILVERLIT LIMITED
+45abda4e-e43d-4675-b865-caad29af5059,"MIYAKOSHI PRINTING MACHINERY CO., LTD."
+bb43619a-b996-4206-a0ae-60299351851a,KYOCERA Corporation
+f0442b90-6458-42cc-95af-f9194e0aa9d5,Dow Technology Investments LLC
+4e4568ad-c12a-4c5c-9729-cac1335d227f,"LG CHEM, LTD."
+cf1098dd-0ff7-4828-a879-114e2a7e67b6,GARDEN GENETICS LLC
+cd7f3b29-3870-4667-90c0-402e06f1b23b,Philip Morris Products S.A.
+55f51831-18f9-4f3b-8278-5106f2b0ba46,"MAYEKAWA MFG. CO., LTD."
+405d8944-aa67-4038-b644-d0ebd1e49b39,Max-Delbrück-Centrum für Molekulare Medizin in der Helmholtz-Gemeinschaft
+5a08d41d-4860-4f26-821f-88bc62677d1f,"T-Mobile USA, Inc."
+114189b0-b67e-4ab2-8b82-a241ce989f89,COMMISSARIAT A L'ENERGIE ATOMIQUE ET AUX ENERGIES ALTERNATIVES
+1bae01f9-dd3f-4557-8907-34048bddf900,BUNDESDRUCKEREI GMBH
+0cfa90b7-b934-493e-982b-61931058213d,Leifeld GmbH & Co.
+e7f711e3-ef20-4057-984f-bed15eb5b53c,"Audio Navigation Systems, Inc."
+b04f52f6-3222-4cc1-80fd-e3a84f01d118,Inmarsat Limited
+61c2face-2346-4040-b13f-928a4a7eef7e,"New Century Pharmaceuticals, Inc."
+c354fdcd-0f22-4d97-9d57-01fbf1a0a6f5,"Ceres, Inc."
+db408d39-220f-4dc4-bacd-9a55c18213a8,Rushe Golf LLC
+e600d057-99ce-448b-9abd-0d58b3a3eb19,QUANTA COMPUTER INC.
+3fbbf886-3d5f-4999-8335-195586f37032,TURBOMECA
+2d41dd94-8711-4c03-86e2-2cfc216753f8,"STRONGVIEW SYSTEMS, INC."
+a82d99f6-0e15-4ca9-b307-10202cac9106,"Siemens Industry, Inc."
+f850a617-d2aa-4980-a65c-c808f36ddd61,WATKINS MANUFACTURING CORPORATION
+c69bcaa2-2ce6-4a73-a214-060dcf5817a4,Brunswick Corporation
+043a3afb-6a32-414c-b994-fcd3f60ef9c2,"Educational Health Products, Inc."
+d7aefd59-9bfc-4017-9689-05bea973185d,THE DOW CHEMICAL COMPANY
+c53d4a13-6cd1-4aa9-a276-28f4336728d1,Digital Equipment Corporation
+44959cbd-5fc9-480c-a83b-6deb767ccd23,Dade Behring Inc.
+ad3d8edc-9ee3-4a03-a792-7d7d1b951927,OHIO STATE UNIVERSITY
+deac4900-810c-4dc6-a403-7215621049d0,"SECO Manufacturing Company, Inc."
+b7988b4b-2f4f-4be7-8fc6-2ee4a10325fc,"DePuy Products, Inc."
+cd3fd322-5e0a-405c-972f-d9f6c38287f7,"Round Rock Research, LLC"
+48fc775c-b0a0-4e1b-b02a-de50523cbe6c,AGCO Corporation
+4a83fce0-3f69-4c7d-b38f-bafed1a25a10,"ALBEO TECHNOLOGIES, INC."
+1f3027c0-ce01-40f0-84ba-3b8531232511,"ZHONGSHAN KINGWAY IMAGE TECH CO., LTD."
+0b24994c-bb1e-4446-9df3-6adab8391ccd,"Firestone Industrial Products Company, LLC"
+8d2ada0c-e0db-4685-8c8e-dd14cf2f7e73,Essilor International
+bd050e99-29a5-4a18-a331-0f9041858ba7,Covestro LLC
+6a2553fa-d7c1-4843-8f55-2ac8b241e7d1,SUMITOMO ELECTRIC HARDMETAL CORP.
+75063710-df3b-43ce-83c4-18ade98fa978,TELIA COMPANY AB
+a32733d9-4115-405f-8952-c33cbacb50b5,"Theragen, Inc."
+8b90799d-f528-4386-b7ba-c9070fe49577,Revlon
+6384b19d-a61d-4568-b1eb-24c1be8326c4,"HITACHI POWDERED METALS CO., LTD."
+3e9cc0a0-f86e-4b0d-8089-2e4dc1009a73,SIGMA-TAU INDUSTRIE FARMACEUTICHE RIUNITE S.P.A.
+616491e2-12c5-4f1d-a407-8495852e21d3,"Soliton, LLC"
+39d6afb7-ba55-443d-9d86-fcbdb63f8520,"Synaptic Tan, Inc."
+a1f305b7-404c-4545-8a02-8ed008458e6d,"PGS Americas, Inc."
+29130a2a-3bd7-4dd3-b027-235327e1c7c8,University of Southern California
+c2ed10a7-9e0a-41f2-aa5d-cce9919bb1ed,SOUTHWEST RESEARCH INSTITUTE
+82f11ba3-b2ec-4901-a1d0-ad2badaab0fd,"TruSeal Technologies, Inc."
+f3dc46e5-affa-42ca-8b0b-ae54402dcea8,The Board of Trustees of the Leland Stanford Junior University
+bfa009c3-d49f-48a0-a969-6fab3c214e82,"SHIUN JIUG INDUSTRIAL CO., LTD."
+2811eeb8-8792-48f5-9b89-66222e3e929a,ABB TECHNOLOGY AG
+b4cefcfb-3e70-49df-8e7d-678e4908f907,"Hendrickson USA, L.L.C."
+c09f49d8-9286-4733-89ee-79dbd6a081b7,"AMAZON TECHNOLOGIES, INC."
+22be378a-1025-4c7e-8bb8-fed09f053054,"Skechers U.S.A., Inc. II"
+19d1ee44-cba9-44a0-8397-00a341e448b6,ACCENTURE GLOBAL SOLUTIONS LIMITED
+35aa0c99-f86a-4e3f-9747-45559f2eb178,United Services Automobile Association (USAA)
+dc3b2ac6-577d-4c85-aa4f-4c0b68104151,Novatek Microelectronics Corp.
+de905fb4-afa6-4531-83ce-af006b687320,EQUIPMENTSHARE.COM INC
+93dd39f9-7b0b-4bb2-a742-c8f7674defe0,TMEIC CORPORATION
+69eb26e4-c09c-4136-85e4-89bddddabe57,Synaptics Incorporated
+7d44cbc5-c001-4095-843a-49509fce5e7b,The Kendall Company LP
+3c4a1c37-200b-4255-afef-9a99d8c148a7,"Rampon Products, Inc."
+260f24d3-0c57-4c33-93e8-e320866c74f8,President and Fellows of Harvard College
+dc5a745c-a180-473e-8467-711fc1a244bc,International Superconductivity Technology Center
+450d21f0-9b29-4a33-9f42-57aa578d9288,TRW Limited
+c0925d9c-8857-4e14-a4cf-faf6195e9009,"BRPP, LLC"
+68d6ba23-aed1-40be-a53e-b27e57c50889,Covidien LP
+abc2cc26-64ab-4029-8cfd-3441319bec83,Johan Willem Pieter Marsman
+64cc962e-d735-4d4c-92ea-7de39fe38fa3,Noble Systems Corporation
+73cac1d9-a44f-48ad-8111-d2f9baf1cfa3,"Amkor Technology, Inc."
+30d2316b-d5b8-4fe0-a706-1d3603be74b2,Genzyme Corporation
+dcefb10d-4cf5-4913-8a63-1fdf6650099b,Converse Inc.
+eaa07212-f502-467c-8c62-7a0e2a7ee1ca,"Shenzhen Longzhiyuan Technology Co., Ltd."
+a43a6116-0e94-444d-9648-4d873714bcac,"NISSIN MANUFACTURING CO., LTD."
+7e0382f5-5d4a-4ba0-bac7-2313aaaeef74,THE PROPHET CORPORATION
+2f08321d-d837-46d1-9aed-2b854e50736d,"Emerson Climate Technologies, Inc."
+7fc30c24-9892-495d-a24d-4b529e535b51,"IDEMITSU KOSAN CO., LTD."
+9f90367e-b324-475f-b468-52f900a93002,Thyssen Industrie AG
+37cad973-d21f-4666-bb4e-44c0635444cd,General Atomics
+7c853c5a-2e54-485a-a270-c75cb2d2f429,Getrasur
+2e3fc622-cc69-4b6b-bef5-fc759b5046a3,ADVANCED CERAMIC X CORPORATION
+fb8e75ce-1619-4838-8a44-104a4b7e3e33,Brunob II BV
+0876d9b5-4786-4226-a472-b397c27cfc21,GLAXOSMITHKLINE BIOLOGICALS SA
+ba616612-382d-4784-aa6b-576561c23c96,AirWatch LLC
+8dbf843c-9c09-498e-bfc8-13b8098cfb16,"SK PLANET CO., LTD."
+2763ea9f-9b82-423b-a9d3-7f9cd1b25c45,SAUDI ARABIAN OIL COMPANY
+b418af9d-a157-4c53-874e-04a6ba6c8645,TOTO LTD.
+e79bb39a-d73d-41e8-a269-40cfb86a9ed3,SEALITE PTY LTD
+0ae06b49-63c7-4ead-9b70-bd5c6496045c,KENNEDY VALVE COMPANY
+9785aeaf-1a1d-4ff7-8bec-c218c7a324ae,Palantir Technologies Inc.
+95927d7b-e8e6-47da-b396-54ddf27b1ecb,W. R. Grace & Co.
+522ef447-a7a9-4c43-9007-88138473cee7,"NIPPON SOKEN, INC."
+be36e3b5-74de-4a23-ba90-53c34488ad8c,"Cardiac Pacemakers, Inc."
+fef36b1f-ccfc-4b51-b234-7be4081e315a,Magnatrax Corporation
+67f2f8c1-67f1-4931-b426-fb901eac338e,Johns Manville
+579249c0-6275-42de-93ff-15bcfaadf5f6,"ChipPAC, Inc."
+5fdb3b27-b902-4d0d-85b6-9814b324b666,Tursiop Technologies LLC
+7081a090-ff7a-450b-bd59-a6eaf28559b9,"IBIDEN CO., LTD."
+4ffabb4e-3f0e-4e49-a2d3-6b9030d54476,"JAPAN AVIATION ELECTRONICS INDUSTRY, LIMITED"
+9a119ff3-8e49-455a-9387-3ed7fa45aae4,Purdue Research Foundation
+6813bd32-9d02-4152-be8b-bf8442e48588,ELUCID BIOIMAGING INC.
+ac8c812e-30b8-489e-9a35-eab722e00e2e,Panduit Corp.
+621672ca-e120-4180-8766-b5c0c234c071,"Johnson & Johnson Vision Care, Inc."
+e68f2a38-62bf-46b7-a845-f01090300000,Robinair Manufacturing Corporation
+3b680640-b8d3-4a04-b672-318d000407ea,ILLINOIS TOOL WORKS INC.
+a4c784cd-4212-40ed-ae70-7bbe6093f625,"Ashland Oil, Inc."
+4cc17953-40ff-47fa-932d-12efc8ac91fc,Michael R. Kennedy
+b4e1a77d-0ea3-46f8-9d69-fccafaf5431b,"The United States of America, as represented by the Department of Health and Human Services"
+0029b30f-a216-4c4b-84c2-3a33a9569f28,"Affymax, Inc."
+fb040de3-2ea2-41e8-b3e6-d5639c1f2081,Banner Engineering Corp.
+d6a91c80-2c99-47d8-9cd5-a0f024c87d51,"Mutual Pharmaceutical Company, Inc."
+e0e2c057-3c70-4711-8d93-7c9e6d98a5c7,"SSI Power, LLC"
+4100d3a1-dfd0-4217-9f68-dbee4eb30338,CHIMEI CORPORATION
+bf8136c0-be98-41da-a125-088f3f3e918e,VCVC III LLC
+6ef917b5-a1cd-43d5-a0aa-494a48a93b25,"Kimberly-Clark Worldwide, Inc."
+0e4b660f-1539-4601-ae60-249be39a667c,Hydro-Gear Limited Partnership
+eb0bdc43-b53a-43af-8e23-74512e4d9bc6,"Correlated Magnetics Research, LLC"
+d19d1188-ba59-45fb-b079-222080225e7a,Verizon Telematics Inc.
+d68f29f6-861b-4279-9370-c754751ef91b,"Hunan Kukai Electromechanical Co., Ltd"
+6cd908a0-4f8b-4398-9cd1-ee3807ac2361,Zenith Oilfield Technology Limited
+22af9d27-f62b-4300-95a3-7221f0752bd2,The Rockefeller University
+5a3597dd-7732-48e7-901f-0f52217777b5,CRISPR THERAPEUTICS AG
+3c1f5e25-90b3-48f6-9cda-4b08d1b3eec0,Walter Todd Peters
+e983af76-d881-40df-aadb-37d42aa2e0be,SIEMENS VDO AUTOMATIVE AG
+c2d2cd8c-cb6f-4d09-9a94-342c7566ab99,Ingersoll-Rand Company
+00b6e5b3-e92a-4ad2-bb1b-b933720d2f1c,Adobe Systems Incorporated
+cc30416e-416a-4ed5-a4f3-553817670530,"Experian Marketing Solutions, LLC"
+acbd187a-e9af-43d4-bfec-20baae360619,Merck Patent GmbH
+5d13f55a-69f7-407c-bb93-f953809b6623,NIDEC CORPORATION
+833a39e4-5cb6-43d6-840b-f4495386340c,"Design Ideas, Ltd."
+fc132f45-437c-484e-9118-8315355d24af,Zhuhai Shichang Metals Ltd.
+7043e136-721f-4642-a237-937d57c88e94,"Turn 5, Inc."
+324bd894-e67d-40ce-896b-0b634d208221,FotoNation Limited
+b58328ed-55de-480c-a51c-f3ebf92cbc14,Spark Connected LLC
+af62fe94-232b-43a0-9758-f0b5745e731b,Bosch Rexroth Corporation
+a05f0964-eaac-4c2a-a682-70b95eed66f7,"Bally Gaming, Inc."
+70c3e087-073f-4948-9936-c4be2696c83d,Syngenta Crop Protection AG
+fe03f54d-88bc-4148-a8ac-e3d026a19eae,"Kodak Alaris, LLC"
+bf4b7640-39e5-4c91-a7df-4379e52eaced,"PETIT ELIN CO., LTD."
+82b439f6-fc27-4d7c-ab86-867993c29cbe,"EH Atochem North America, Inc."
+155eb261-3125-42f8-bae2-69901dafc885,TECHINT COMPAGNIA TECNICA INTERNAZIONALE S.P.A.
+0dbb9287-3960-40e5-9e50-84438c59f51b,Adaptsys Limited
+890ea0a2-9c9f-4101-9119-d96701e92533,Aptina Imaging Corporation
+5bca762e-6a2e-4faa-90e3-1e23631bb717,"Willis Electric Co., Ltd."
+3d0749a4-36dc-4277-ad44-c4739a1810ee,"The Nisshin OilliO Group, Ltd."
+fa6418a0-8a9d-4f7e-9556-9804694bbf0c,"SINTOKOGIO, LTD."
+e4455ba1-e69e-4def-8df6-bc35eb891fd5,Givaudan AG
+a265f2b5-7fe1-4a3e-8e1e-9ac10fdab0ce,Lisco Inc.
+f2460210-f53d-4dd5-b627-ce591758751a,SKF Industries
+57c56b65-aba4-4a73-8196-92f0ba5a8a84,Shanhai Zhenhua Port Machinery Co. Ltd.
+8b811ea3-e223-4735-ad15-15f3959403d6,Crytek GmbH
+8ebc2c49-23b3-41ca-a867-c1595a7b1486,NEXRF CORP.
+033b36e2-f7b0-484b-96eb-54740c7c3aa2,NIFCO INC.
+436dc229-9c3d-4742-82f2-82aae5c398a6,France Telecom Etablissement Autonome De Droit Public
+71aa463a-6448-4fc9-8a79-b6913d4c5f86,Bertrand Faure Equipment SA
+1848f8b2-cc94-4b7c-a53e-38ad57b67930,Alpine Stormwater Management Company
+1e8c1ef8-694c-4b47-9636-9ff56fccadce,"Sentech, Inc."
+0d24383d-851c-4881-8afa-81fd08d385be,Fitel USA Corp.
+804e900f-5d1b-4629-94fb-535766034824,Endress+Hauser Flowtec AG
+76322834-629f-432d-b527-b481fe09c5a6,"SIEMENS ENERGY, INC."
+16466926-080f-4520-99f2-f08383636b42,Zarlink Semiconductor (US) Inc.
+cfd9d35d-a692-4cc6-99a0-fb1c598efd6d,"Tegic Communications, Inc."
+198d4386-2c29-4dd9-804d-49f7b4554e0e,SAINT-GOBAIN CENTRE DE RECHERCHES ET D'ETUDES EUROPEEN
+8dd38997-5dce-4022-8d7b-70be86039288,0971065 B.C. Ltd.
+6ac51500-f917-4e79-9f9e-1f4d95fd2f3c,"Rutgers, the State University of New Jersey"
+49bbc411-08b0-430d-a705-736b6e534719,"Tyler Truss Systems, Inc."
+a35e938d-8010-4f11-8613-c1a7d0b4579c,Henny Penny Corporation
+01e2fd75-42c5-4506-bfb4-1055f355daa0,SYNOLOGY INC.
+d20edc3f-8cf9-42c3-9c48-03129ad83e01,SCHLUMBERGER TECHNOLOGY CORPORATION
+42ba62f9-7aba-4e86-a276-e8e327c8b577,Hubbell Incorporated
+d5d1fb9f-635b-4de4-948d-92a2466fd43e,Howmet Turbine Components Corporation
+43a4ad94-9ebf-45f0-8b73-17e8f8a3ba13,Stepan Chemical Company
+de488352-517b-43b0-89cf-f7dff55db1e3,Dolby International AB
+c085978b-9250-44a5-8964-cf7739ef28b7,SYMRISE AG
+aa38b328-3a9b-46bb-94bb-355f366e6bfd,Mobrey Limited
+e04e48c3-e55d-4198-b1e9-21526cd431a0,Hatch Ltd.
+ec8152e0-0cbe-40d7-9faa-12b83951186b,"Procore Technologies, Inc."
+b5980750-361c-4175-b35a-ec4001873c06,"VLT, Inc."
+22f9de6d-9074-44ee-8a99-1785212bdfba,The University of North Carolina at Chapel Hill
+7f29ac01-d785-4ffa-9fa7-040de568fdd4,"Century Products, Inc."
+2acd4fac-f30b-4d35-80d6-916beb94dc3c,Westinghouse Electric Company LLC
+c6eca277-3d28-48ab-bbb6-2c8bbcd705df,Children's Medical Center Corporation
+2ac19623-b19b-4808-8390-9caac2008609,VDO Luftfahrtgeraete Werk GmbH
+b2c30a5d-0990-45c5-a69c-c31897aca48f,SMS DEMAG LLC
+b32c811a-d4e6-42c8-a3f6-d450a4b777e1,AVENTIS PHARMA S.A.
+122929d4-6996-40af-bd0d-914f6d9e2d4e,SORIN CRM SAS
+5d50a74c-0c74-4f94-add5-49c312eb9eb7,Tongyu Technology Oy
+b8e33dcd-828d-4322-b248-7b82be7337c3,CANON MEDICAL SYSTEMS CORPORATION
+ba2f4663-6328-4fc8-9899-714038419c1b,"Simpson Strong-Tie Company, Inc."
+ed8e0427-92c9-4376-8bfe-c5f439dc21e6,MERKLE INC.
+eb7fbf01-5e54-4d2a-9a8f-c2390714ea3b,OFFICE NATIONAL D'ETUDES ET DE RECHERCHES AÉROSPATIALES
+2419b251-d2c3-49ae-a2ed-9872ed86f95c,"SMITH INTERNATIONAL, INC."
+52d654e0-9463-412a-90b9-9e8d88d69861,"RN2R, L.L.C."
+baf67d9b-cd74-4a83-912c-96defca70f60,"PPG Industries Ohio, Inc."
+f1c0d6ea-76f9-4f58-9d9d-a31b380dc281,EEMS Asia Pte Ltd
+7abd9547-7289-4a37-999c-d1a56c50320c,Integrated Sensor Technologies Inc.
+dbdb7ea4-5d13-406b-b5e2-94249c3146b9,"NIHON NOHYAKU CO., LTD."
+6c1c27ce-dc1f-4884-8f9d-94ecf95cc4d4,"Viratec Thin Films, Inc."
+3ca6e130-ef96-4c89-937b-0688f1900b75,Ryoji Kuroda
+1a132f7a-0eed-4033-9afe-c031c35c428c,"YONGKANG CHUNKAI IMPORT & EXPORT CO., LTD"
+1e52a4b4-bb19-4c30-9e11-cec05a0a76b4,COLORADO STATE UNIVERSITY RESEARCH FOUNDATION
+e75a4096-3b0f-4825-a248-332a2b3d10cc,BOARD OF REGENTS OF THE UNIVERSITY OF NEBRASKA
+922fb4de-eb17-419f-bfc9-442e2a9a05de,RTX CORPORATION
+4ee26232-4123-4d8e-a796-35e131e924ed,Fleissner GmbH
+928acaf8-26f2-4dce-bae8-9eaa14dda2a6,"Ichikoh Industries, Ltd."
+a82d713a-d993-478f-87fb-b580724a906c,"SHANGHAI INSTITUTE OF MATERIA MEDICA, CHINESE ACADEMY OF SCIENCES"
+20114b4c-a886-4d01-a725-09f75062d398,"CHICONY ELECTRONICS CO., LTD."
+619cbdd6-d295-4b83-b57a-1e6284744fbb,"M.S. Technologies, L.L.C."
+869de6f0-3aa4-427f-ae52-a2e213195ee0,TRUSTEES OF BOSTON UNIVERSITY
+61bf94d4-d8f9-4a07-8179-9d78d279c520,Indian Oil Corporation Limited
+68944cd9-e1a3-4f11-9dc6-e583767387a1,"Laboratorio Farmaceutico Quimico LaFarquim, S.A."
+027933c9-8760-42c9-88ae-21550f808a35,"Kentek Information Systems, Inc."
+7db4a7ec-82dc-4ffc-a704-04b7b55840d4,SKF France
+07f06c7e-226f-47e9-87b0-d3aacffdca82,FOKKER AEROSTRUCTURES BV
+8fbcc92c-8364-4f3f-9694-26409b04aa6c,Esytec Energie—und Systemtechnik GmbH
+1bacae80-8258-4547-b9b8-a3aca3f716c9,"Nanogen, Inc."
+ad35ef8c-6a28-498f-b6b9-6707c72fc655,Hideaki Yukawa
+0a4401d3-f871-41b3-80d5-9b39346e9762,Kandou Labs SA
+1a0c9d82-1081-4fb4-8dd0-3f6acae790f9,"TIMCO Aviation Services, Inc."
+f52bca09-168c-43ee-973a-56076acd2a92,Bell Helicopter Textron Inc.
+98dca183-76ff-49a4-8de8-1ef3ffe9b53e,"Guangzhou Boju Information Technology Co., Ltd."
+b177d9d5-0c7e-4cf0-baba-f6d2fb498f06,ZOBELE HOLDING SPA
+ac056966-05da-422a-88ba-cde413b9620f,Bendix Commercial Vehicle Systems LLC
+fece0a6b-ba93-4cc1-85d9-5eecad0fb5e2,INSTITUT NATIONAL DE LA RECHERCHE AGRONOMQIUE
+05e2afc7-462e-4732-80fd-5ce14e32d8ed,BOARD OF SUPERVISORS OF LOUISIANA STATE UNIVERSITY AND AGRICULTURAL AND MECHANICAL COLLEGE
+2d170e54-663d-4b95-bc91-da1c47fd1053,"HITACHI CABLE, LTD."
+f11d44e6-f740-464d-b373-b7bbf26a8335,CHEIL INDUSTRIES INC.
+ea545dfc-dbe7-41cc-b5b0-26db3f1537fa,INDUSTRY-ACADEMIC COOPERATION FOUNDATION GYEONGSANG NATIONAL UNIVERSITY
+fe619521-e9c5-44a9-a295-6a75ab8f9d77,E.J. BROOKS COMPANY
+bccbc881-361e-4315-9922-1f15fc3180d8,Katalco Corporation
+8a9ac4c3-b84d-4ca2-bb6b-9c84a01e20bf,Alcatel Radiotelephone
+6a6b48eb-ac73-4b07-a211-6ebb58739b3c,"Genesys Telecommunications Laboratories, Inc."
+7eb47dcf-98d5-42bc-b572-5b00987fd222,"Magna Powertrain of America, Inc."
+0658196d-49c8-461e-9a09-11feb984ff28,Linear Technology Holding LLC
+0758b9cb-0462-4857-91a0-a5977363f027,"Paradigm Spine, LLC"
+92a35e9e-8d22-4dfe-9029-b3b68ce5f07c,"Pleotint, L.L.C."
+1f08d5bd-8a61-498c-8e9b-30d9ca8d5778,"A Classic Time Watch Co., Inc."
+6bba009a-92e1-4477-9c00-1a81e3c1768f,Texas Recreation Corporation
+a17efc27-d32f-41fc-8df9-7735d02aa439,HALDOR TOPSØE A/S
+cf2f73b2-73c3-47fa-a92b-284acf69bbaa,AKTIEBOLAGET SKF
+db40fc53-9df0-4a71-ad5c-feb36fc2f3d5,"Rivian IP Holdings, LLC"
+e4e6d247-4232-4790-823e-a95c30c9d94b,Diamond Shamrock Corporation
+71214420-cd8c-41a1-90a5-f830d8aef271,Taas-Israel Industries Ltd.
+d639c0e4-7021-4ec9-a0eb-044ef21bbc8e,Decoma International Inc.
+64f248b7-abc1-40c0-ae4c-7b01511d0789,Avocent Corporation
+05af2e76-cd66-4c48-9cb9-1c0efed580c1,Linak A/S
+d6bc014f-1b84-409b-871e-ed7a76db3580,"Scheduling.com, Inc."
+b880247c-8468-4741-8939-a93e7e552da0,SATO CORPORATION
+76bb658d-e571-4c6a-8286-de58f36668b5,Abb Vie Inc.
+bc4648d3-92bf-403e-bbb2-29f737d451f2,"The Good Stuff Company, LLC"
+54063465-9673-4fb6-989b-97f9263f818e,"SPIGEN KOREA CO., LTD."
+434452ce-e01a-4d51-9a95-d23b64f8a8d3,"Zhuhai ACCESS Semiconductor Co., Ltd."
+b9c80204-0288-4006-b65e-92e52db42933,"GREEN REFRIGERATION EQUIPMENT ENGINEERING RESEARCH CENTER OF ZHUHAI GREE CO., LTD."
+fa50c1f8-a087-45b7-b6eb-7d0bb73f12bb,Halliburton
+5e18c5a1-3dce-4f73-b8e7-d2dab87d1c4a,"Ebauches, S.A."
+f0e2e670-5a40-46b6-90f7-50ebeeb3b641,Blaupunkt-Werke GmbH
+629275f7-adb6-46b4-baf3-1c99acf43967,DSM N.V.
+b2196341-32f8-4258-82d5-462779f16296,RUBYCON CORPORATION
+7b89d351-6bba-4c1a-9367-b5cc1ae7f483,"NEA Electronics, Inc."
+c1d354f9-b923-4c45-bd7a-8ea622a94ef6,Zenon Environmental Inc.
+86ea6832-188c-4b41-af50-df85a43f5daf,EIGHT HOLDINGS LLC
+b0101df2-ed37-4616-a2a7-6508a74fe35d,"Serious Materials, Inc."
+81dd4305-9c51-4d12-bad1-b8a17c188089,LSI
+97153f08-a9e1-4648-8ffa-46ffd1245615,Bruker Biospin GmbH
+7e9763b5-8be9-4de2-90d2-53ee6f01a618,QUANTA FLUID SOLUTIONS LTD.
+fb65d73b-7bbe-4fbd-9d1b-2f54ea2c656c,"Zhongshan Xinann Technology Co., Ltd."
+be6a7b39-b8a3-4c93-8e25-49e52f6fab03,"WARN Automotive, LLC"
+7a9196b5-5716-4719-948d-060d12756b25,"KINPO ELECTRONICS, INC."
+0373e325-858d-4983-a6b7-3555aee3698a,"FLIR Systems, Inc."
+885f4785-47ff-4bd1-8534-db943a1772ad,JEOL Ltd.
+f5366297-e5e2-4c0f-86d4-c8640c8cda7e,BEIJING SUPERSTRING ACADEMY OF MEMORY TECHNOLOGY
+6eb6ea98-b57c-49f5-9b8d-c58c56f7f5eb,Hauni-Werke Korber & Co. K.G.
+9e67e07b-74a2-47c8-80e9-3958deb3ce58,Baxter International Inc.
+f1062171-fc36-4017-887f-9bd7052a3c3a,VANDERBILT UNIVERSITY
+1aecc21c-0e3b-40d0-8e13-462d34b7bce7,"LG Display Co., Ltd."
+b415a1ba-2a94-4203-a346-3b7ce38e64fb,Timothy J. Flynn
+e11ff985-2779-474d-bb34-7cc097922cd2,OpiFlex Automation AB
+9980cebd-df24-439f-b9fa-6f8bf82e38d7,"SHENZHEN GUANKE TECHNOLOGIES CO., LTD"
+4060f7bb-7a6c-4576-ac4b-b67b03be913f,"LockState, Inc."
+a4344151-a312-417c-8e56-47a80f587da8,HITACHI HIGH-TECH CORPORATION
+a0bdde07-5411-482c-866b-2887f6af88db,United States Cellular Corporation
+6a6f29da-b95d-4fb7-b860-fd1ea9812f71,CENTRO DE INGENIERÍA GENÉTICA Y BIOTECNOLOGÍA
+f6f7f6d1-b538-46d1-b972-be979188361c,Sagem SA
+e7a2084e-2e75-42fd-aad7-8911253f9bad,Verizon Services Corp.
+60a315f2-eb42-4dfe-a41f-45c91ce178c7,Revotar Biopharmaceuticals AG
+63ae87b7-62cc-47a1-87d9-5d17c06be3e5,Bionomics Limited
+3053c8ad-51e8-4119-bd7b-82e32f855893,Jackpen Limited
+4c8f5d40-1e37-48b9-8de1-56482301c08b,Apple Computer Inc.
+9cd5f2b2-2dfd-4bf9-aa57-2222486e862a,"Leviton Manufacturing Co., Inc."
+5fa075a3-d8f2-45cb-94d4-e4b7e4e13bb0,"Novellus Systems, Inc."
+2c978938-a1ab-476e-9668-2fde1b38244c,"American Telephone and Telegraph Company, AT&T Bell Laboratories"
+90105447-22bf-4f82-bf18-baca35d6a5f4,"Johnson & Hayward, Inc."
+959fabe1-3eef-4b68-aef4-d58920e636e0,"Dongbu HiTek Co., Ltd."
+05c8bdac-f1a2-454c-a15e-9c0dbd8540a0,VOLTAIRE INCORPORATED
+72e0e927-e31a-49b3-bbd2-dcd3fac04bfc,ARJO WIGGINS FINE PAPERS LIMITED
+c16a9164-bdf6-4a5a-a466-9d5ac233bf08,Power Bingo Ltd.
+ec125862-6103-4dbf-ba7c-94a63d19f53f,PRIMAX ELECTRONICS LTD.
+7d555389-0657-42af-af98-c83549b20ac1,GAMBRO LUNDIA AB
+67f02209-0f57-4670-9491-51b5f9356664,"Switch Tech, Inc."
+37e7735b-1418-474e-8855-2234b5dfbe1e,"MCI, LLC"
+37e357b4-2bb8-4c5a-8186-18b2e070c005,"Believe, Inc."
+b8b719ec-06fd-42e6-a917-ea32deebdb8c,American GNC Corp.
+d7a559e3-25a0-48e3-9c24-1e50574d372b,"STATS ChipPAC, Ltd."
+88af1e05-d17e-4ab4-9fab-b88f03d33537,Hilt LLC
+de6f12b3-f58f-4534-97ae-f765181ae65e,GSI Technology Inc.
+58c01f86-edc9-45b9-8d9b-12f0b2a65a81,GF LINK
+fc6af832-3d69-4681-91ff-802260149af6,"HINO MOTORS, LTD."
+d7d5654a-1dc4-4b4c-ac11-5e9ea7b93b79,"International Truck Intellectual Property Company, LLC"
+34f924d6-e816-4760-bff7-e145476253eb,RCA Corporation
+6e0b532c-5628-4f9c-8582-360f62c8ef88,"Celerity Research, Inc."
+1c89555d-fe5a-42d3-a713-2aab9a2c2039,"Meritor Light Vehicle Systems, Inc."
+3dd2f692-e8c6-49bb-80fe-d33fc270bc87,Meyer Intellectual Properties Ltd.
+9135ce08-6afd-4254-b902-d1e56013fd3d,AUDI AG
+3c09baee-0c61-430a-8069-937fae91dadf,Lummus Corporation
+2938853f-83d6-4c46-a504-a496d875827e,"Amerimas Home Products, Inc."
+5b6906eb-ff1b-4be0-8c30-c592d67c828d,IMMUNEX CORPORATION
+a71035b3-1d53-4000-b6b4-ad8bf1bdba88,"Mia Com Eurotec, B.V."
+ac71d5e4-0f6b-40e9-8846-b65b4f2c282e,"NIDEK CO., LTD."
+c807db37-1f0e-4268-a420-18a565f6e0b0,"Genworth Financial, Inc."
+bbb05e0e-8fc0-4430-aa5b-6057aa06a800,"QINGDAO HAIER JOINT STOCK CO., LTD."
+4a94bcbd-3170-44ad-8044-f24f274bd4d4,"University of Florida Research Foundation, INC."
+01bf30cc-1fb8-401a-8b2c-eeaa2ae0799c,STATE GRID HENAN INFORMATION & TELECOMMUNICATION COMPANY
+de6e6a52-9cb8-4428-bab4-f59be3d71320,"INFORMATION AND COMMUNICATION BRANCH OF STATE GRID FUJIAN ELECTRIC POWER CO., LTD."
+0f26e7b0-79ff-4531-be2d-b6666ae840d7,"Burroughs, Inc."
+25f51cd0-a872-4806-957c-b8bc069478a0,3Com Corporation
+14607eab-f67b-486a-a6b4-994866c9a156,"Cymer, LLC"
+99baab48-e013-4791-b031-917de70837ec,VALINGE INNOVATION AB
+0e41f372-6583-42eb-b6ab-2583e9a151d4,Swiss Reinsurance Company Ltd.
+1f2f018e-0808-4076-8fcb-2484e4fe2a38,"MOTOROLA SOLUTIONS, INC."
+6fd61957-9adc-4550-8fcd-76baffb03e3c,"Dong Guan Bright Yinhuey Lighting Co., Ltd. China"
+c33342eb-37ba-409b-bc44-47a7643e26aa,Weiss KG
+6a96637d-572a-4561-b7e2-d9f7531961a9,"OPower, Inc."
+6eff993a-77f0-4e8a-b9c9-671ae4f7390d,"Industry-Academic Cooperation Foundation, Chosun University"
+f84df99a-5b1f-4973-844e-75a89f8f6cd9,KAWASAKI JUKOGYO KABUSHIKI KAISHA
+44728d4f-0d92-4fba-8c83-6e56d7cd65ee,"Istari Digital, Inc."
+551b1380-8902-41d8-a4fc-a87898538778,Les Cables de Lyon
+3235eedb-0309-46b9-8b26-f1964712aed0,Japan Synthetic Rubber Corporation
+b6bf178c-95f1-4be6-8f36-1b57dc94a25b,Wolff Walsrode AG
+26b8e9ab-bffc-4d29-8190-b5004cf0e93d,"MITSUBISHI PENCIL COMPANY, LIMITED"
+644c6e0e-5fb6-4251-8965-d13e0f7d8682,RHODIA CONSUMER SPECIALTIES LIMITED
+6dd90c13-6d90-46ec-8131-66c5fac09642,"United Video Properties, Inc."
+e2f1c221-4489-4265-bf10-94f68f3fd34c,"SHIN ZU SHING CO., LTD."
+1b74ea9e-f247-4c33-a6c8-6aa14f0b6d2b,CHUNG ANG UNIVERSITY INDUSTRY ACADEMIC COOPERATION FOUNDATION
+d975fb8e-16af-4aa9-bc18-7abc521f009b,The Secretary of State for Defence in Her Brittanic Majesty's Government of the United Kingdom of Great Britain and Northern Ireland
+72dab566-812e-43b6-951f-d8edca73eaf4,Personal Products Company
+372bea58-cb60-4c1b-9184-01303053d2c5,EBARA CORPORATION
+3e9ba893-baf5-4e6d-bf23-26fbd5d7be13,EchoStar Technologies L.L.C.
+729d1696-ec10-4334-97f4-4a7339ca29c4,Monsanto Technology LLC
+29387a1e-6176-470f-a03d-685634542cea,"INFOPIA CO., LTD."
+2b5a57e5-23ed-4d23-a340-0a3cc8e6a79c,ALLTOP ELECTRONICS (SUZHOU) LTD.
+36cedc33-17f8-4821-8808-03d418a0f289,DAHER AEROSPACE
+69e796bb-8b95-4c0d-9d95-03d70abc7220,Wonderland Switzerland AG
+03f9e842-e12c-4b99-9c34-6fe065e21bfe,"Dx Resources, LLC"
+0a6be66b-fa89-4acb-834d-249ad867f01c,Discovision Associates
+e6e25dd2-876a-46f5-bd43-9933052729ba,Melinda K. Lazzeroni
+52a0ec3a-fd65-4ff4-b182-fef327a3ab72,"XILINX, INC."
+8607d502-29fa-41d7-b009-7079e15b2944,McGill University
+a0e0f43e-f826-4cdb-92ce-880e80e61f77,"Indugas, Inc."
+ceb64c40-d533-4410-8ad0-e1a221a77884,MITSUBISHI PHARMA CORPORATION
+ab6506af-1547-4a21-8013-0fdc5bb0fab0,Kankyo Semi-Conductors
+a791731e-ce05-4b61-ba18-2893b5c0324f,"Litton Systems, Inc."
+1cb8e206-e3b5-4fb5-9c9d-543cfd58f3f1,"Authenex, Inc."
+b852cd31-84e3-4c47-8808-55bdb518743d,SUMIDA CORPORATION
+4a783ffa-0d7c-47f4-9b7b-749ede7e94a2,"DIRECTV, LLC"
+0be25c91-0105-4305-be4c-c97ac3988353,Finstruct (Proprietary) Limited
+0d2c9d29-8d9b-4055-a233-faaa407633d8,SharkNinja Operating LLC
+58450f1e-5aaa-4540-a228-32d7ba36974a,KING FAHD UNIVERSITY OF PETROLEUM AND MINERALS
+fddc2ee9-f673-4875-b61b-eccccf3de159,Canada Square Management Ltd.
+6548b5e1-2730-48e9-855d-c0f8706cef49,Beloit Corporation
+33f24d25-ce69-421f-9cdb-52a1f645da60,"Shenzhen Baoshijie Technology Co., Ltd."
+bb729ceb-c9ae-4d5e-ac9b-bedcda0f53a1,"YouCopia Products, Inc."
+526ca009-1e4f-4682-83ec-f78f39ff4ec6,"QUALITY INTERSTATE SERVICES, L.L.C."
+74236059-7661-4721-9f82-55a4e5bc7213,"Hydrocarbon Research, Inc."
+0454b349-2453-4f90-8944-be279f3256f2,LUDWIG INSTITUTE FOR CANCER RESEARCH LTD
+226598ae-991c-47e0-a806-ec898f1b0971,SCHERING CORPORATION
+7a3d4133-c79e-4215-b091-829dd76126a0,"TACHI-S CO., LTD."
+f3dfb8a7-4815-4f3f-ba71-1723c7b900b0,Innovative Gaming Inc.
+f0f56869-7982-4ca3-873f-5a27426a2afd,Emhart Glass S.A.
+4514eef7-5848-41d8-b902-65c0c191ddba,"HOSPIRA, INC."
+0b0a8eae-201b-4f48-b9a0-c26acf5a8919,Conair LLC
+cda8aa0d-c77e-4145-8d3f-5b5c9f21f4a3,Geoffrey Nicholas Maksym
+fbef97c1-df12-454d-a4c0-9960c2306e2d,PIXART IMAGING INC.
+2760c3ce-780d-4564-ad35-37bb1651eccb,"TS TECH CO., LTD."
+b3cea0fe-d76a-4aa9-baed-ab4fdae8b176,"Camelot Systems, Inc."
+7cdc728a-2e65-4c70-8af7-6a4f009172ce,GEA Farm Technologies GmbH
+8668a2f4-45eb-4352-b67e-855cbc264372,Cartier Creation Studio SA
+ec279dd4-1f2c-4731-8e32-e8a4e56be3f5,"Tula eTechnology, Inc."
+421169f3-4f22-4a2f-996d-4a0e2b022f51,ZeniMax Media Inc.
+709ba4bc-ebf8-4f8d-ab3f-5e1bf99ada49,"Aerojet Rocketdyne, Inc."
+fd11099b-42f8-409d-b364-cae2bf5e3a8f,Aluminum Company of America
+c458d541-f8b7-44ba-8f6b-c9900fc48b02,VDO Adolf Schindling AG
+14333b43-6dbb-495d-82cd-960c26db5846,Electronic Arts Inc.
+c808ca11-45f0-46e6-8015-96cbdca587e2,Arkema Inc.
+41adddd1-0d32-45e3-9c3c-eff401149453,"Lew Childre & Sons, Inc."
+b99bed28-0308-4cf5-a7b0-6a0f55b6c09c,NEOPERL GMBH
+3c099413-c66f-4edb-b0d9-f142d304bbea,"SHENZHEN TIG TECHNOLOGY CO., LTD"
+ae57ea92-f453-4549-a6b6-55611c6217ba,"BULLFROG INTERNATIONAL, LC"
+4c01ff77-9bb7-4d77-830c-a724eafc1e72,Kabushiki Kaisha Suwa Seikosha
+b32a9bba-7afd-415a-ba02-941fce138033,The Pullman Company
+d06e6740-30fe-437d-ab3b-5567e45245fa,Novamont S.p.A.
+7a1f6afb-ff8d-4d7a-8c67-cdda9cf15073,"Suki AI, Inc."
+9671a763-ab7a-49ad-b180-5f2b9593acf7,AB Resmastservice
+ae7f63e8-4cb5-4bbc-9578-e6847a5cbdf3,Daimler-Benz AG
+06b54b3c-c9d2-442e-beb0-e4e452045280,Bar-Ilan University
+6c2f747f-e1de-4f25-865d-2a4274b0507f,"IBC Pharmaceuticals, Inc."
+9b284332-3b3f-48a3-902f-c0914f10875e,Voxer IP LLC
+9e25ba37-bdb1-408a-acbb-4e0eb2b7d1aa,Hampton Roads Sanitation District
+6e09b9d5-321b-40e2-a712-eff432cdd98b,Women & Infants Hospital of Rhode Island
+5fc3f13c-9ba5-4acc-8af3-cd5ff3cce747,Altera Corporation
+e359d9db-ffcc-478b-8eeb-d28f14beadb7,ZHEJIANG UNIVERSITY
+a54db767-79bb-475e-8258-e5faa133bdf0,"MACOM Technology Solutions Holdings, Inc."
+895a5153-b773-43b5-9f4f-461ccd311104,NEXCHIP SEMICONDUCTOR CORPORATION
+83f7dab5-9832-484d-88c9-1c5a6acba271,"Urschel Laboratories, Inc."
+ec092011-5dd0-4aee-adaa-f32ebe8b6b53,JIANGSU CONTEMPORARY AMPEREX TECHNOLOGY LIMITED
+01c34b07-c4ec-4b8f-9ea0-73eab40cd22e,GOODRICH CORPORATION
+11b1767e-6672-43f3-9f14-ebf1a0c65478,James E. Reith
+ca3c25ce-7739-4f20-9130-836f79d86e40,"Colorado vNet, LLC"
+d68ef627-0628-4e84-a455-a3248ebf6046,"DCG Systems, Inc."
+7daa9856-4ad8-4434-9d81-af8ac64ad39e,MITSUBISHI TANABE PHARMA CORPORATION
+818feae1-0242-476e-97ca-ae018f3b1aeb,Donsco Incorporated
+75a36998-cc52-4cd9-8316-a85980710549,FONTEM HOLDINGS 1 B.V.
+4f95ea6d-5f82-4e71-873e-b523482677aa,"Becton, Dickinson and Company"
+b15d4f41-2a93-4d90-a08e-1d1ee6a898b1,"The Saunders Group, Inc."
+6bf52816-64c6-4b2f-907a-481e7ed3b415,GDS Group Limited
+69cdaf70-84cd-416e-b6c3-701c7735961f,Bombardier Aéronautique
+aa6009aa-9672-4549-81fc-236bfdc8d301,Smartvue Corporation
+ab608f1d-8ddc-4b8b-8ba5-c28c38dc7b91,The Board of Regents of the University of Texas System
+d5a6ad5a-ea38-44c3-b47d-d7afd31a0a38,BIOTRONIK VI Patent AG
+4b352a96-621c-40ac-8d9a-86d9dc519718,"A9.com, Inc."
+ff95afb0-0f28-4c7b-b081-7945713566f4,Illinois Railway Equipment Company
+559fe171-a3b7-463d-853f-a2d4d48b9241,Kabushiki Kaisha Daini Seikosha
+bb7b1b3a-34e8-456c-8bbf-b410934eaa16,VAPOR CORP.
+9fd6ebb6-4c30-4358-bc90-cf17fb447065,Glaxo Group Limited
+7d82002f-a43b-42bd-918c-00def4e32df7,Tohoku Pioneer Electronic Corporation
+b389eef7-eb93-4e6e-8c56-59e2f2004742,Pioneer Electronic Corporation
+5394834d-059f-454b-a194-7d597bfe9a78,William Zachary Ward
+407ec9c5-a8fd-4d53-bcf4-90f6d426a973,CP Kelco ApS
+0577b601-8b4e-4f0e-a664-8fde913848a8,Milliken & Company
+05b7866b-4304-44f7-b411-2eefa785524b,NATTOPHARMA AS
+9b112061-0bdc-4645-816f-6ba681e7bc2e,EMC Corporation
+3346a720-d0b1-40c5-b9e2-8daa28e893f1,Peter Mallett
+00a5960f-c622-4084-8bf8-59624f12186e,Turn Inc.
+b4616567-e51d-41bf-a1f8-0f9538f0103f,CALOR
+931a96ce-4bc4-436b-bed7-dc3dd35ddb8a,SCHNEIDER ELECTRIC IT CORPORATION
+d5430c67-7832-4d7a-982e-d84ea79982a6,China Agricultural University
+3fdd8dfc-d449-4450-a018-e76d1277f761,"Siemens Medical Systems,Inc."
+69483750-d3df-4aca-9c09-4bcc558aa59e,"Iolon, Inc."
+99255cd6-0fd1-4db7-9ea7-d7932b06639e,"Salesforce.com, Inc."
+87c8ab5f-7142-4463-beec-143fa016a0a0,"GOGORO, INC."
+23d5e4c8-d273-4ebb-9c3c-789cba88956b,"Seminis Vegetable Seeds, Inc."
+cfddd94f-fec1-42df-a8f6-9921015a6714,J. A. Henckels Zwillingswerk AG
+8f3437b4-9223-43a4-99bc-d405f899fbb3,Nokia Mobile Phones Ltd.
+08096b11-9852-4a79-b14b-b2e7ef948779,"Pigeon Networks, Co."
+e69193e5-3036-48c1-be77-f8c34eb16499,"POUL CHANG METAL INDUSTRY CO., LTD."
+5281ef5a-270c-4565-82c7-49d24dfbd240,KING FAISAL UNIVERSITY
+90102c12-c51c-40fe-8ff3-271b7c57bd4b,"C. van der Lely, N.V."
+515063bb-0c37-4bb5-968f-d7fa9aa1ead0,"NIPPON ZOKI PHARMACEUTICAL CO., LTD."
+40b7b46b-c831-4658-b431-d7e3056c0d5b,Hewlett Packaged Company
+2537578e-fa3e-47de-b431-c9b1312bcf93,"Outer Circle Products, Ltd."
+6f4b8be1-8252-4cf9-b874-ca439d4051d9,"PACIFIC INDUSTRIAL CO., LTD."
+8fc00624-a1d5-42a9-80d0-335d03a9c1dc,Dongguan Shichang Metals Factory Ltd.
+90af53d7-d6f1-4823-babd-f3ada3c4aec4,"Interface Technology (ChengDu) Co., Ltd."
+9b9d2906-c557-46ce-9c5d-1021a0dea583,"Interface Optoelectronics (ShenZhen) Co., Ltd."
+a23c6ef2-8905-45c2-9bb3-ca580d2591f5,Outokumpu Oyj
+d1d1893a-2a3b-4c4b-9122-d5b5b3b754cf,Precision Guesswork Company
+62095c48-f6b0-46ef-9d01-e1fd0663e434,"Radiant Medical, Inc."
+778a050f-b92b-4c4c-aeff-0ca4935ec952,Takeda Pharmaceutical Company Limited
+59188c67-914b-429a-9be5-3c0581dd5e3d,Continental Automotive Systems Inc.
+9fa36659-ad17-4ef8-80df-b38e540f5ad9,"Sandisk Technologies, Inc."
+98ab8b5a-43d6-43a3-b142-cca20b6bbe4a,"Kingkar Eco-technologies Co., Ltd."
+29d1242e-3169-4c21-b3c3-8f1761a33256,KUKA Deutschland GmbH
+a65d4581-ff28-4536-b020-e1e0775c406b,"Toyo Seikan Co., Ltd."
+d91a83ea-efcb-49bf-bdda-dacc544db8a9,"NextNav, LLC"
+d2306799-fd1e-4527-9fff-b20dc3ff945d,"JPK STARTUPS, LLC"
+4f70fc73-5f2f-44f4-bfc3-e5b7f3e3faa8,"Toa Nenryo Kogyo, K.K."
+0c32f7da-a10a-4315-89ca-66413040dd69,"The United States of America, as represented by The Secretary of The Interior"
+6512c300-3bf1-44c9-87d0-f3ac78d9b6ce,H-Squared Technologies
+063f30fa-db5a-491c-91ef-7bfb888f536a,"Endocare, Inc."
+fed80a8c-0ac7-4928-9466-d3e9ff77539c,"ELN Group, LLC"
+6ae2de96-4e22-40fc-891c-e4f2de8347eb,"PTC THERAPEUTICS, INC."
+119173c4-47eb-42b2-b43f-8744351d3e4f,AZIENDE CHIMICHE RIUNITE ANGELINI FRANCESCO—A.C.R.A.F. S.p.A.
+89b95bea-9801-403d-b14b-c38b2d92b866,"SAF-Holland, Inc."
+2e650f10-656c-4c00-a46d-0bb0dc18a1bd,ARRIS Enterprises LLC
+4297b491-fac8-41cd-bf7c-f815de7f0c77,"SEOUL VIOSYS CO., LTD."
+6d1d3fa6-09d1-4aea-a206-735b3c0a5af2,Deutsche Forschungs- und Versuchsanstalt fur Luft- und Raumfahrt e.V.
+dd2fe470-edea-43f0-8109-4ec0e1c84f83,MAN Roland Druckmaschinen AG
+79b4ba1d-bdde-48c3-9dd9-abcbe6669f52,"Doskocil Manufacturing Company, Inc."
+32d2f393-50be-49b2-97b8-ae1fff6248d4,AVT Anlagen- und Verfahrenstechnik GmbH
+93089b82-1ce7-47cd-b346-63f419b2bd5b,"Jerome Foods, Inc."
+7579b168-a03c-4a3b-9f6d-da6431e03a77,"Malessa Partners, L.L.C."
+2026ccda-7931-4c40-bd5f-70578386a4d9,"ScienBiziP Consulting(Shenzhen)Co., Ltd."
+9800acb5-0052-4c15-b9b3-8fe31b2c39ea,MASONIC MEDICAL RESEARCH LABORATORY
+dc442178-2a48-4676-a859-0e76b0079cfe,"Beth Israel Deaconess Medical Center, Inc."
+158e11f5-46e4-49dc-9560-f07a5d2f1a10,Hitachi High-Technologies Corporation
+e66edff2-0f49-4984-a22a-0b6a2aff8e6d,Colgate-Palmolive Company
+7482ecf9-27c9-4d76-ad76-31fe4a788f70,"CHARGEPOINT, INC."
+14de71e7-af33-4d3b-95eb-ff0dbed64f9b,"ULTRADENT PRODUCTS, INC."
+15cc2477-6e33-4207-8334-307153843e23,"ShowingTime.com, Inc."
+79ff4f43-2938-4ba9-8080-11cda7231e1c,"Wuxi Biocity Biopharmaceuticals Co., Ltd."
+6f342d90-4ced-4740-8ea8-c43ca062014e,Allen Organ Company
+e331dc4d-0f08-4c25-a663-b1df9a9d2d73,"Image Communications, Inc."
+32e745e6-2c9c-4aa3-8749-8ddaddd169f3,"Cincinnati Microwave, Inc."
+e68c66cf-79c5-4936-bc31-347062bee290,Claas KGaA
+0f24f5e7-0d2e-456a-b826-a873bd7ca5b1,SII NanoTechnology Inc.
+b8a0b964-006f-4820-92f1-f0109df1540b,UOP LLC
+76b6e277-54f5-4cff-a1d4-bf0acaccbc8c,"A.I.L., Inc."
+7748ee0b-4c08-417c-a3ed-3c24b182ac35,STYROLUTION EUROPE GMBH
+05d24fc7-dc74-4603-a357-e790a88e3e3e,The United States of America as represented by the Administrator of NASA
+d80ad938-3c94-4100-ba39-b5c7fa3a489c,Balenciaga
+1970c86b-2bc4-47fc-af12-39cf3ecd9c2e,"Under Armour, Inc."
+2766f478-d865-4ac9-8377-8470021c02e0,Mieczyslaw Mirowski
+3a0f2b8e-b7d6-4d1c-ab19-923e36db775f,Carlo Erba Strumentazione S.p.A.
+33c7a941-372b-4fc9-9d37-e79c234ee1a1,"SoloPower, Inc."
+91556ed1-01df-452b-803e-589b194bfc8c,KONINKLIJKE PHILIPS ELECTRONICS NV
+1ced73cb-3630-4854-addc-ae02d868547a,"KTFreetel Co., Ltd"
+9c96895e-fa7a-455e-83a0-72f23f558295,"SK Telecom Co., Ltd."
+c44d8e5c-ac37-4fdb-9e5c-682837bd6bf1,"DONGGUAN SAIENCHUANGKE TECHNOLOGY CO., LTD"
+2487afd3-82df-4a30-85d9-70a38d273d2c,"Stakmore Co., Inc."
+02995dc5-c6d8-447a-b7bc-36ac20ba4344,OGET INNOVATIONS GMBH
+b5b9d111-b7b7-4900-a503-adc231836c14,Ironburg Inventions Limited
+4d87239d-535f-4c79-95f3-1236c6bfd173,Ordnance Survey Limited
+a66c0163-f9fd-4a5e-b606-073bf02b5d47,QOMPLX LLC
+9ca3230b-da70-4dc0-8655-cce7ebda652b,"KORENS RTX Co., Ltd."
+052f5f07-bdeb-4590-a836-2e8061ea6319,HARSCO CORPORATION
+6d1b5430-c789-44df-b5ec-2253d7f03bdf,University of Waterloo
+6d30926f-020b-4296-9ce0-c3f2f73bc1ea,"TGK CO., LTD."
+52ba192d-45b0-4fdb-aa21-430b55a1f999,Omya S.A.S.
+d1d96a91-c5e6-4090-ba39-4af2494eb35c,"SAMSUNG ELECTRONICS CO., LTD."
+95435618-ddf1-494e-808a-ba65ecbe3fc6,"Kyndryl, Inc."
+6f85af50-d97d-446f-968e-be9cd06db100,JT International SA
+b235b1c7-f0d3-4025-a2ba-07c1cc875f89,Lever Brothers Company
+86ba8c22-7d1e-4fa1-a0eb-95203e64676d,"Superior Electron, LLC"
+5e11993a-f58d-45c7-9aa8-02cb419adcb4,"Motorola, Inc."
+0fa6c1d0-3eb9-432d-a05a-71f91c574dc7,"World Communication Systems, Inc."
+d13c42c1-696b-4846-ae34-809e7b99ad8b,G.D. Searle LLC
+9e75ea62-5e23-4d09-b267-08220d967b16,University of Tennessee Research Foundation
+64102832-9d3e-415e-a227-6966840f52d6,"Neomax Co., Ltd."
+85b6803c-8205-4191-809a-6911c3942f0d,"Cadence Design Systems, Inc."
+c51eb866-9d83-42bd-be3a-4d344c107f14,"Cosco Management, Inc."
+4f52a48d-3cbd-449e-8d7f-d27adc914c32,"ASAHI INTECC CO., LTD."
+cd2fd42a-5e3c-4775-84f8-8ad6beb914be,"Materialytics, LLC"
+b13d7435-54dc-4bc9-9630-07eb3bdeb25c,"Asientos Esteban, S.L."
+b95d9b52-3391-4079-836f-6ecdea875a92,"CSI CELLS CO., LTD."
+71b1b0f3-e11a-445d-bf55-805fc0bf98f3,JFE Steel Corporation
+481c402f-5f8c-41a9-af10-926fa918b17d,Schaeffler Technologies AG & Co. KG
+21d5652e-36e5-4c16-bf1a-5f8f8e27d3f7,Uniroyal Ltd.
+021862f4-61f8-46c7-9c83-79e223c1118c,Heidelberger Zement AG
+724e7f5f-534e-4547-bf26-a75ac683f3b0,Wide-Lite International Corporation
+513c24dc-4f1e-4ec0-a822-8efca7eb5016,Crystallume Corporation
+61d52265-4aea-4f20-b743-c4a9faef6860,Canon Kabushiki Kaisha
+9107a5d7-4563-475a-9830-e4d0a3e67f1b,PIERRE FABRE MÉDICAMENT
+0ce0b9ee-76a8-442e-b7ff-2bb2219ce3a8,"Advanced Micro Devices, Inc."
+6062b47d-f687-4ce7-a8cd-654e47a63010,"Ando Seisakujo Co., Ltd."
+a20299e5-0685-46f9-a189-b1b2fc6d2739,"Hitachi Displays, Ltd."
+ce183c1e-e412-4ff6-a1ae-09854da030a1,"MICROSOFT TECHNOLOGY LICENSING, LLC"
+bfce8d6c-0a43-4aee-b6db-418ed0b99fef,Excelsior Medical Corporation
+9b22451c-dea6-4628-8db0-dc5ece019a74,"ROBOTIS CO., LTD."
+53d0f7a2-b4ea-41e7-8898-ad84e2c87160,The United States of America as represented by the Secretary of the Army
+6086b106-fb21-42f3-8f96-00470976ed4d,Arizona Board of Regents on Behalf of the University of Arizona
+efd2d42a-9faf-4c64-b194-5b0dc29cfa8e,TOYOTA JIDOSHA KABUSHIKI KAISHA
+bb7e5a8f-2c56-4a14-8b19-2c204b94a583,"Sumitomo Electric Industries, Ltd."
+af1c1db8-dc03-4036-a732-d81d2ad09c0c,SONY GROUP CORPORATION
+caa9bf89-a9fa-4cf5-82d4-7719fab5cad1,"GENESIS INDUSTRIES, LLC"
+32255fcc-d486-4660-a8e5-bd0418a19f92,Karsten Manufacturing Corporation
+d1285693-0a1b-4fad-990f-b58b43617cab,"Fleetwood Enterprises, Inc."
+9bf84559-4d93-47bf-851d-f1708cf9951d,Old Mill Brick LLC
+3680df9d-ba09-4cda-887a-982db861ad31,"PANASONIC INTELLECTUAL PROPERTY MANAGEMENT CO., LTD."
+3194882c-1fee-4a09-91b1-ffb6f29f6f98,Nantong Beca Machinery Technology Co. LTD
+86b2504f-f496-4270-8a14-73e4e6c0a9f5,General Motors LLC
+37902c8c-7e8e-4e50-855f-f9ad6ff5c01c,MITSUBISHI PAPER MILLS LIMITED
+501897e2-7be3-4ba0-b26e-3be33dd3ed0f,AMP LLC
+20972d47-857a-4274-a5e4-c0592ff9314d,Sundstrand Corporation
+138a9855-d77a-45ec-ac01-01da9d939bb6,EASTMAN KODAK COMPANY
+cf25459e-aa65-4651-b834-4851f756ea55,HONEYWELL INTERNATIONAL INC.
+8354c0c0-9c54-4808-acdb-c98b47a46fe9,"NIPPON VALQUA INDUSTRIES, LTD."
+3a4b181e-12ed-4aa6-86af-e1d82778b0e2,"Globus Medical, Inc."
+87f765c3-f0b7-4dbb-8145-22175305e31b,YAZAKI CORPORATION
+15849bab-4cd5-463f-8240-351f19a1454c,"PIONEER HI-BRED INTERNATIONAL, INC."
+d109d480-1bf5-4c9c-9696-113e378ec029,"GUANGDONG OPPO MOBILE TELECOMMUNICATIONS CORP., LTD."
+3fae44ab-4f16-46bf-90c8-eb55a5993936,KANEKA CORPORATION
+de91167f-16cd-48db-9f33-0ebbe14ff8f8,"BAIDU ONLINE NETWORK TECHNOLOGY (BEIJING) CO., LTD."
+a04d7440-299a-488e-8f04-0ef6c6350629,Milwaukee Electric Tool Corporation
+2dd9d304-5e59-45c8-9397-37ece60b669f,"8x8, Inc."
+e38f9144-d178-4f2d-b06d-599aae856b40,University of Puerto Rico
+697cc614-9588-4f2d-9f1d-c9cce5b84899,Socionext Inc.
+f59d4e9d-fb7b-4e5f-9d47-fc4194b885d2,"G.B. Boucherie, N.V."
+4f65f1d4-8dd3-4b04-a82e-1d25a2e619eb,"Cameron Product Specialties, Inc."
+93ab6a7a-9434-4a0c-8ce9-3967a749f37c,"Duramax, Inc."
+bb1c6741-c1b1-4bf6-8a37-b6569045a1c0,"Ciphergen Biosystems, Inc."
+9e8542bf-1e3f-45ae-8584-6a6bbdce5021,Raytheon Company
+bcfef097-0122-4d53-9adb-ac49fe308754,"IMAGENICS CO., LTD"
+d4733f97-7b44-444e-83ea-0a2f6002ca24,KOREA ADVANCED INSTITUTE OF SCIENCE AND TECHNOLOGY
+7ea1d546-faad-4c9e-a5ac-b95574c642eb,"Goodrich Lighting Systems, Inc."
+9f6f9fab-908a-45cf-9078-cc447c11435c,Full Audio Corporation
+5cbf6cf6-08d1-41e2-aba6-46b689895c03,Microsoft Corporation
+e04deb17-2605-477b-9733-b72be8c062c1,Bayerische Motoren Werke Aktiengesellschaft
+44b5791d-e50c-4761-8c57-16bc85365122,"HONDA MOTOR CO., LTD."
+7238a1b4-3c09-4ef7-adeb-9f3c8418fabc,Etablissement Public de Diffusion dit: Telediffusion de France
+1716fd05-fb68-49cf-b789-363863d1bbc2,GRADCO JAPAN LTD.
+2ddbd31b-309f-4aa6-bdb2-64930f69446e,Minnesota Mining and Manufacturing Company
+7431e391-f111-45a9-8f5f-dc6d1f704a04,The Regents of the University of Colorado
+7f0acbce-302c-4f1a-8f01-a51cc90f6f31,"Nanosolar, Inc."
+86031dfa-e664-49f2-9d19-e0c19adfbbb3,Aristocrat Technologies Australia Pty Limited
+969f8b6c-6ec7-44e6-aa53-b0632ca97cbc,"ALLWAY TOOLS, INC."
+b5f4f873-7513-47e7-aa00-94a41a7008e4,"LIM Innovations, Inc."
+b67ee024-8732-41f6-bceb-4faf71b19f88,RCM Enterprise L.L.C.
+b897148d-4eab-4eac-8830-7880b147dd80,Koseki Medical K.K.
+62d9fc6e-5027-4622-b034-f547a7bdaa3b,STANDARD CAR TRUCK COMPANY
+dbeaf77d-54d5-4a5f-b521-1b8ab62d5ea7,iTool Equipment Holding LLC
+e677513c-9f4e-48fc-a4f0-98d574557893,KONINIKLIJKE PHILIPS N.V.
+40397972-9b64-48a7-b5dc-2ef6b66e7cc7,RAYTHEON TECHNOLOGIES CORPORATION
+140a996d-60b7-4efc-8861-b8f5148198a9,CENTRE NATIONAL DE LA RECHERCHE SCIENTIFIQUE
+16f6e730-1ef4-4f94-98da-03667ea3ea2b,UNIVERSITÉ DE HAUTE-ALSACE
+470a0d03-5770-477a-a80d-fab867fd8a1e,James A. Donovan
+3ada816c-a895-4e9a-ab4c-576e3fa6b916,SK hynix Inc.
+310e86d9-01ed-44e6-a5eb-eed7e06e654c,RAVENBRICK LLC
+2b0d7490-9336-4c44-858d-8aae03eb8a62,RESEARCH IN MOTION LIMITED
+4558e01c-7929-4f83-bf5b-7bf7dc8271d3,"The Burchell Nursery, Inc."
+7d3e3bf7-2a76-4e6c-b01c-e3ae50d003fe,Quest Diagnostics Investments LLC
+80b348c8-c753-4115-89a2-6cf403708bd0,CONTINENTAL AUTOMOTIVE GMBH
+e8a728b9-c196-4093-a02e-21a38a4ba270,32Health Inc.
+e4889c8b-f342-4cd1-98a6-d53791e249c2,NATIONAL UNIVERSITY CORPORATION KOBE UNIVERSITY
+633e0c88-dc75-47a2-927a-4a73d69bdcfa,OJI HOLDINGS CORPORATION
+6f183520-3eb9-43c9-9ee5-07ef4514d7e7,MEMCYCO LTD
+9ed2f3fa-8ed5-4f0e-8466-bdcbb79110b8,Rohm and Haas Company
+8229e98d-d4a2-49c6-b456-416b0dbd478d,"Bradley Company, LLC"
+3a69fe0a-5a6f-427f-9cfc-128ffe31ba21,"ISC Technologies, Inc."
+8c8d1e6f-eb99-42c7-ae65-d17aea482f80,"Showa Seiki Co., Ltd."
+30ba4fbe-c4dd-49e7-a187-b1cae420d19a,THE PROCTOR & GAMBLE COMPANY
+7e94461a-d884-43a2-bde1-3a48aa8b49e8,"GEORGIA-PACIFIC RESINS, INC."
+0e192234-6467-4a0e-9a03-50f8986da092,"DAICEL CHEMICAL INDUSTRIES, LTD."
+28c99712-fa05-4d0d-b314-2328fb89e113,The Regents of the University of California
+b5197bdc-ab40-4bae-b151-05942c73fca0,Cancer Research Technology Limited
+bcb8ae56-dae0-4fa6-9300-a00d754cb7fb,The Procter & Gamble Company
+61b09fa4-cd65-4daf-9945-0584c6b74120,"OmniVision Technologies, Inc."
+3bb0fa04-9176-4fc2-b5d2-ff81abb02b07,LABORATORIOS DEL DR. ESTEVE S.A.
+074544f0-a1c0-41e6-8468-acc61c102dc6,"Allergan, Inc."
+392d542b-c429-4e8b-8794-8e69457a6e7e,"GREE HOLDINGS, Inc."
+194f812a-5ebc-4dce-af17-ac348b84bb1b,LEMONEX INC.
+c03effbf-c96a-4974-919a-fe2b23381573,"Guangzhou Metro Design & Research Institute Co., Ltd."
+847b5a05-2cf3-4518-a1fa-1360ed2e4567,W. Schlafhorst AG & Co.
+caaeb9d0-4da3-44a1-b5f2-4265e80c55a7,RCA Licensing Corporation
+bd3ba1a5-a1c2-4c14-a22a-14b7915aae35,OKAMURA CORPORATION
+a1ef9ac1-b7da-41cd-9f1d-9834782386e5,"Genaissance Pharmaceuticals, Inc."
+8ffbf507-a9ea-40a0-baea-83fcfd3e36e5,Dyax Corp.
+01ac821f-2d69-4765-9c43-9aec8f7e450a,"Chi Mei Communication Systems, Inc."
+df95683e-abff-4a46-a0be-a2d605ce1153,FUJIFILM Corporation
+e4dfe1dd-4a48-4494-8b2e-c3aeb696ad32,"Wilson Offshore & Marine (USA), Inc."
+fb433257-1ef2-4cb4-9cc2-ab573d2f45cf,"INTELLECTUAL DISCOVERY CO., LTD."
+6e27b252-de21-4ea4-ba29-53683b1e50c0,"KOBELCO CONSTRUCTION MACHINERY CO., LTD"
+146c3b5b-a43b-4cd9-acf4-90c432b39ffe,Aurigene Oncology Limited
+5c1ad7d8-55ac-4dce-a7dc-86a17840321e,A.G. fur Industrielle Elektronik AGIE Losone bei Locarno
+41cceeec-05c1-4a3a-92d3-2758ac0a4f3b,Square D Company
+1704c609-4b93-45e0-be39-bea4a75fc201,SKW Stickstoffwerke Piesteritz GmbH
+28291a49-552c-40bd-86bd-5e9f847dcf66,Howmet Research Corporation
+c603e0a9-3fc3-4766-92d0-8db7969700df,Synaptic Pharmaceutical Corporation
+e9ee17f2-4471-48d0-8115-6644fcb2f9f3,"Stratos Lightwave, Inc."
+4acabddc-144d-4eec-bd62-7ed43fa04546,Sport-Service-Lorinser Sportliche Autoausrüstung GmbH
+9dc7d069-b759-446f-87e0-231ae05ad003,Airflo Europe N.V.
+1ece19df-da0a-45b2-adaf-40f6b2fb113c,"OTSUKA CHEMICAL CO., LTD."
+8a3853e3-b83f-433f-82d6-c4f87c6d6c5a,LEXTAR ELECTRONICS CORPORATION
+bbf0749c-b93d-46a4-80be-07a914b2ec98,Ricktek Technology Corporation
+86072c5a-22e4-4d26-b4d5-2cde6987f15e,"Zoeller Pump Company, LLC"
+76e96b91-41ae-434f-8b11-02fc4d0faa03,"Church & Clark, Inc."
+1924e292-2c8f-41c6-a7a2-c222b3d3f8f4,Ciba-Geigy
+2867086f-b337-4d41-b5ef-fb24d2551549,Foster Wheeler Energy Limited
+82bfaa91-4e7b-4302-9526-5bfa20d2a746,Sclavo SpA
+9bbb64ae-66c4-4ca9-84c1-9eefd172414f,Siemens Nixdorf Informationssysteme AG
+f2376fe3-050e-401a-a65d-f82f65398b4e,"Hitachi Software Engineering Co., Ltd."
+9808060b-deb1-4595-8dab-ba6958d0112e,Lam Research Corporation
+103020d3-046f-49f2-b918-7a9b23b7985f,"Ethicon Endo-Surgery, Inc."
+2211a763-8f56-4d29-a248-ef44bb503bb8,"Piatto Technologies, Inc."
+504a6da6-56c7-4099-a0f2-15dceb47cc03,RIKEN
+88107e53-2bbd-44ae-b9b0-e2d17ad902df,Toyo Tire Corporation
+a55cd5aa-8357-46c8-8645-4823a7fb6349,Dr. Ing. h.c. F. Porsche AG
+63b3460a-37f5-4380-8a55-2ab326166018,Johnson Controls Tyco IP Holdings LLP
+14cb1a53-92d4-4e52-a8b5-11e98431758e,Pechine Ugine Kuhlmann
+6df75b60-5473-45d9-888c-6eb383d33150,Sohler Airtex GmbH
+6d782cd7-63fc-4f8f-8604-3fd36ff3295e,Yoest-Alpine Aktiengesellschaft
+5ec0c18b-8d36-443a-9c5b-732a02bfbbeb,"Nisshinbo Industries, Inc."
+589add05-e657-4a50-a3f0-51199188dea8,"ELECTRONICS FOR IMAGING, INC."
+394e97e1-1026-45e4-962e-1ca47269d1d4,Banjo Corporation
+1f5e192b-d7a1-4016-9306-a300f204adb6,Digimarc Corporation
+3bb3979a-592b-4eda-97af-c4255b291022,LINTEC CORPORATION
+2b4dd1b6-d15d-496f-b68f-a7bd5ad101e6,UNIVERSAL DISPLAY CORPORATION
+5f68f93d-2cc9-43bf-ac5a-934e28ce291c,AEROJET-GENERAL CORPORATION
+6b3165a4-cc4c-43e1-8e26-a9edc60627ad,ChipMOS Technologies Inc.
+4fb136ae-ad28-41ca-8367-a74c8c601546,"EnGen Bio, Inc."
+47087acf-76d4-43a6-967d-4239576ebf73,Federal-Mogul Powertrain LLC
+2a9c3ae2-ca2e-48ae-b07e-a02c3ff86209,INNOVATE PHARMACEUTICALS LIMITED
+5f9afd92-afdf-4c70-a723-84bfcfd1e236,"CFPH, LLC"
+26eb8f14-e076-492a-b016-39575c43029c,Curiouser Products Inc.
+3686ee61-bc07-453e-a69a-132641c523c7,SAFRAN LANDING SYSTEMS
+c1a44576-1899-439b-8c4e-fe78f1208044,"KANEBO, LIMITED"
+247cc5e2-0486-42f7-b687-2fefb4ba1b46,"Varian, Inc."
+6ef20a28-7c8c-491d-b439-3e4d917c8ad2,Cera International Limited
+2768111f-7c23-49f9-9479-a30dd553b819,"Molex, LLC"
+f7ff2f8d-2c88-456a-a69e-bca3cecf58c3,Dutchmaster Nurseries Ltd.
+0da1ed26-d4e9-407e-a5ae-3c1f2063959d,"Telios Orthopedic Systems, Inc."
+254c756b-78da-4cb5-9253-39a5d136cef4,Seiko Instruments Inc.
+ca0b6358-eb88-41bd-920e-8811a9ebc0fd,Weatherford Canada Partnership c/o Weatherford International Ltd.
+7b30a450-82e1-4a40-b6f4-853010e3d5f8,WISTRON NEWEB CORP.
+cb8deeb0-4def-4731-830e-bd0ef71cdb78,HERE GLOBAL B.V.
+f442c099-be21-4506-887f-10292fcf4e40,"MITSUI CHEMICALS, INC."
+0f7ebbdb-f01c-4047-89cb-7e629de0a995,INPHI CORPORATION
+d7a74a3d-dff8-40b2-9c29-5b8ed755955d,DIPL.-ING. H. HORSTMANN GmbH
+2829503d-efb3-4700-99e9-7dfdf3847923,"Lumicell, Inc."
+1e82593c-2224-4d7f-85cd-ed4dc63aceb3,SAFRAN
+132a88e0-2817-4e55-8dc9-9d525994904a,NOKIA TECHNOLOGIES OY
+615b7455-1c5e-4f0c-bef4-9c115fa01e01,Compagnie Internationale pour l'Informatique
+8ea8f29a-3897-4a55-80a9-579e39725345,Siemens Aktiengesellschaft
+ca57c26b-b58c-44f8-a30f-91ad691cb1bf,Zinser Textilmaschinen GmbH
+4e3a1bd8-b639-4c4d-ae8b-d41027fd561f,"Bio-Rad Laboratories, Inc."
+4af359b5-a421-4029-83a0-21e7db31d81f,"Enlink Geoenergy Services, Inc."
+b2b27017-d188-410f-a18d-fa1f2fa6220f,STMicroelectronics SA
+5bad8b49-fa6a-4405-8b88-1ad840e2261d,Edison Opto Corporation
+7c265275-ad1d-4ed3-81d7-e13e742d3555,"NTT DOCOMO, INC."
+6c4186d7-ff46-46a7-b619-396b2c37f083,"MITRALIGN, INC."
+85689f8b-ca8c-4f39-99d4-0809a027092e,"Shockwave Medical, Inc."
+848d6c52-f1f5-44b2-9d44-e78e19f6b44a,The Simple Grill Inc.
+272dfb0c-1161-4d41-b826-fe889204c8ca,Sun Patent Trust
+a27424a8-cf0c-4c4a-a638-af7700d337c5,CellaVision AB
+efc97b2f-85ff-4165-9447-2350990b2bba,"Binks Industries, Inc."
+070e8294-66b2-42e2-8762-5d48657c9678,Essex Group LLC
+059f6d14-14ba-4ee1-9262-e2df678c9f7e,Burndy LLC
+8bc9c640-4f7a-4f76-b47b-d00201e48f15,United States of America as represented by the Secretary of the Air Force
+298cc1f1-b19e-4f95-b289-ec2e90e21fbf,NIKON CORPORATION
+96cee6d4-8507-4a76-92e1-b5780e1c351e,Wurtec Elevator Products & Services
+a87c76e4-70d6-42af-aa1f-b25372bae916,Tyco Healthcare Group LP
+bd5657c1-e50a-4cab-8b39-ff31fdc1a031,Textron Innovations Inc.
+7597ece6-b1c6-4e44-9000-e290d18e63ce,Cambridge Enterprise Limited
+bae81dd5-67ec-4bbb-8721-07155cd5fbd9,"NVH KOREA, INC."
+48931dbd-26d7-4d03-ad0f-06dea2aac313,LUCASFILM ENTERTAINMENT COMPANY LTD.
+a5f5372e-f058-48a3-9277-c3291bafd134,Storm Electronics Company Limited
+d03c6075-014e-454c-aecc-c93afcc9e591,CoverUpGirlz LLC
+cd6519fa-ef8f-42cf-a300-61c381a17788,FIBERBUILT MANUFACTURING INC.
+a61bfa1f-931f-4ef6-9ab3-54db975e626c,International Electronic Machines Corp.
+8d88d30d-0917-4e8d-879e-d1089d9b8dc2,"Facebook Technologies, LLC"
+b3534fbc-e6cc-4137-b729-ea18e5cdeda7,OLYMPUS CORPORATION
+5064ecd7-ffdd-40d7-b962-4b372624192f,"Phanes Therapeutics, Inc."
+401257cd-a971-4fa3-be16-33451be4d21a,KIRA INC.
+abb0ae0f-7cd6-4612-8309-f467013dec55,ZUVA INC.
+17a1cc4d-e8f5-4cc5-a68a-910f164e4858,"JIANGXI GAIA ENVIRONMENTAL SCIENCE AND TECHNOLOGY CO., LTD."
+4388fc07-1b14-4f6e-af0a-d1d4e6e11714,BLUEALP INNOVATIONS B.V.
+4bf9ef80-b838-43b2-8bad-8481be02f32e,WARNER-LAMBERT COMPANY LLC
+3ffb759f-750a-449e-bcfe-5882c7ad33b0,"Camco Manufacturing, LLC"
+96f08098-037d-468a-a04d-4a6766830ef5,"Coretek, Inc."
+5812419e-fc02-4dde-a39a-b7e2a6009c01,Agere Systems Inc.
+f8d7b115-f0fd-4492-8013-00b8d5b6c22c,"FATS, Inc."
+8e585633-4a02-4046-be5c-30667a3067ad,"Pentron Clinical Technologies, LLC"
+51ec6aba-3aa4-4dba-adc9-512700bbc378,"Everett Laboratories, Inc."
+f7a30321-2e82-4bdb-8d43-da52ea2d1ea4,THE UNIVERSITY OF CHICAGO
+cfc14630-2df5-40f9-b0b2-79b459982cff,ThyssenKrupp Elevator Innovation Center S.A.
+f45b0f74-8334-42cb-a34f-fe4bd7c7fb61,"KONICA MINOLTA, INC."
+3744e29b-348c-4b2e-8fb2-0d1f2f6d2f64,Yoshinori Kidani
+5a0aa874-d02d-4836-94ef-ac74d81bf426,"Tokico, Ltd."
+e734e44a-2a2a-41fd-9451-4cf60a9e268e,"TOHOKU ELECTRIC POWER COMPANY, INC."
+130b651f-b061-404d-be6c-ee69ef2b0089,Candescent Technologies Corporation
+6a5d1dfe-91e3-456c-8e2a-7b1b4a2b7175,Webasto Vehicle Systems International GmbH
+56b6e79f-199e-4f33-b8a6-0903973e7dcb,DALSA Corporation
+a1bd7b30-fd6b-479e-b678-95d71c2ab354,LA TERMOPLASTIC F.B.M. S.R.L.
+97c93332-c9ba-47e2-8217-65dfc0d48792,"Ortho-McNeil Pharmaceutical, Inc."
+bc4d1c11-0a63-4a46-a76e-e2bad37b8adf,Carl Zeiss SMT GmbH
+c541aed4-f3e7-443f-b04b-e3413982a6f4,WD MEDIA (SINGAPORE) PTE.LTD.
+ac2a921b-6133-4073-b8e9-5294c2d639d7,ebm-papst Mulfingen GmbH & Co. KG
+44521c71-50f1-4953-aa5d-c4ea985f5db5,EVONIK DEGUSSA GMBH
+ba736e4c-c77f-46c9-8d06-91db3aff1b48,"The United States of America, as represented by the Secretary, Department of Health and Human Services"
+e67dec77-623f-4a4e-8c89-59c0210537e1,CENTRE FOR THE AIDS PROGRAMME OF RESEARCH IN SOUTH AFRICA
+59ea921a-c3a9-4752-9296-8b95df12ffe0,SCOTT AUTOMATION & ROBOTICS PTY LIMITED
+addf5407-7864-4c2b-87b4-39b505a68fe4,IDEXX LABORATORIES INC.
+d413cf2c-5128-4f06-8970-d213de591b5d,FREEPORT MINERALS CORPORATION
+d71bc2ee-5e7a-4aa4-8fa7-f258b4c3c2f9,"SANYO ELECTRIC CO., LTD."
+02b3fb2f-7a1f-4a68-b45e-6367ce35647f,KOMATSU INDUSTRIES CORPORATION
+eab64b8d-9451-49a7-a5d2-042f70dddcfe,NEXANS
+d7e7a8e0-31ec-4a2f-bfbe-9ea809f15cfc,Oregon State University
+83a72fd2-dbde-4fd6-9675-bdba333c7017,Evolution Engineering Inc.
+68684976-eee4-41d3-b9c5-f73d230e4a2f,Sperry Corp.
+34febec3-cf60-48fe-9ba8-8e506607a48f,"Nippondenso Co., Ltd."
+6807e85b-863f-4c80-8a1d-436da8608d50,U.S. Philips Corporation
+e83cca37-771f-4f2d-900d-851f599b206e,"VARCO I/P, INC."
+378910ec-bfb8-4ed8-b7c6-b7a8a1f3f6e3,NSK LTD.
+f4e5bb02-40dd-4f12-8d84-0ef4e85ebba1,Meir Ibguy
+dd278cbc-265e-4348-9680-3d3e475f9a8b,PRATT & WHITNEY CANADA CORP.
+7a4ab337-43ff-47af-8b58-61147ad088f7,Boise State University
+65a87cf0-fc9a-45a2-951a-63ec783dba94,COMPAGNIE GENERALE DES ETABLISSEMENTS MICHELIN
+b8374796-01a9-46c7-8be1-31d9eee0ac0d,BiSN Tec Ltd.
+a4b541c0-703d-4ebe-8756-b2e707455667,RED BEND LTD.
+921f1eae-eec5-47e4-8df5-b58000ad8f8c,"JESS-LINK PRODUCTS CO., LTD."
+05c220ee-6b92-4a88-af87-ef41396d7a90,"North Atlantic Imports, LLC"
+1328a286-75c9-400a-8396-d96a7983b1df,The BOC Group plc
+6f27dab5-8f9a-45b3-92c9-a6d7b9606790,Alcatel Mobile Communication France
+e7d5f700-7ffb-4b0d-97f5-2528858e0e14,"PI Medical, Inc."
+dc2f2155-d137-47e9-b160-aca5dc32ced3,Chiron Corporation
+c4d1b33f-e785-4282-9cdd-e22c1481db43,RHODIA CHIMIE
+95783378-68cb-41df-ae80-2b7618cf8c72,Karl Storz GmbH & Co. KG
+ba51dd29-8743-434f-9ad1-df568b122ec8,Analog Microelectronics Inc.
+40c0613b-aff5-4474-89da-c766706b8bdf,"SHIMA SEIKI MFG., LTD."
+38965194-542d-4d24-b02d-244a89222a02,Joan M. Brennan
+a385c3c5-9b24-4dbb-a038-cc3d2a6f9d2d,Wood-Mode Incorporated
+66d35e31-dd50-45dd-b427-45faf6fa3b6f,"Biocurv Medical Instruments, Inc."
+7087203b-4c51-49c8-80ba-c157e42f9691,"CHENG UEI PRECISION INDUSTRY CO., LTD."
+3335a6d4-fbaa-4948-98fe-46fa647babab,"LG HAUSYS, LTD."
+0c990ffa-e0f4-4ed5-ae3c-87bb41bbff9e,ndd Medizintechnik AG
+2dc4640c-4de8-4df1-a0d8-b879a090b388,WiTricity Corporation
+0692ec4a-ca93-4235-b020-14e21861b4ae,TENCENT AMERICA LLC
+36ef71d3-11d8-4460-9fa3-59b91db5bbff,General Dynamics Corporation
+2381951f-aa59-43ce-88de-ab5ef05917d9,"InSTEP, LLC"
+0db50b46-a2ef-4462-9dde-4cb253370942,"Samsung Display Devices Co., Ltd."
+cadbb053-13c3-4fbb-91b2-7191cba1fbce,LuK Lamellen und Kupplungsbau Beteiligungs KG
+f3307aa5-74eb-4da6-b471-8ea930ff6ab3,SPEED TECH CORPORATION
+ce8192fa-809a-4aa8-bff4-bf04c7208c26,ASSA ABLOY AB
+1bfb95d8-db97-43b3-9d0e-4fa892ec903b,CHEVRON U.S.A. INC.
+9ad51e7b-e1f9-4096-b0be-d8d94869bf17,Nagasaki University
+5e7724af-7e5a-4961-a9af-f672c7272d01,Magnetic Controls Company
+52a48559-3fac-49c7-9ca0-2316cead9c08,"Jay-Y Enterprise Co., Inc."
+cdf2a766-095c-494e-bfa6-388c774edadd,Hamilton Sundstrand Corporation (HSC)
+109fe45a-32ed-4faf-b77e-1e46d03f19ba,Lee Heydenreich
+b0d1e7e6-fc59-4977-954a-b27b98395e2a,GENERAL SAFETY COMPANY LTD.
+ed56cd97-ba3b-49dc-a2d7-aeb0d45f44d1,SGS-Thomson Microelectronics S.A.
+24f564fb-eab8-4b40-be34-d41cd7b204c6,"RAM Technologies, LLC"
+b146b05c-957d-4c3b-be94-4576dae45118,BELLEVUE INVESTMENTS GMBH & CO. KGAA
+a03c7492-6643-4d15-94bf-c20de209a6f1,McCamley Ltd.
+015602aa-a2b9-469d-8f4f-824b373d5393,Medway Plastics Corporation
+3e9c1c51-4b7c-4129-a204-a19f5974dab7,"AGNI-FLARE CO., LTD."
+38ea59a2-f852-45c4-85b6-c79cc5c96d3e,Lattice Semiconductor Corporation
+e3a49a36-0ac1-4dfd-a0ad-8b1d88546c61,"Olympus Optical Co., Ltd."
+1317c913-906e-4dff-962d-d419bebbd2ae,Hughes Aircraft Company
+ab90c44f-d500-4b2e-bd7e-e30b9b202a4f,"Genentech, Inc."
+8dc3e2e1-db0b-4c3b-82e7-0956dc15713f,"APLUS FLASH TECHNOLOGY, INC."
+eda06c5b-cd17-4da9-8fcf-bbfaec96c47f,Vertex Pharmaceuticals Incorporated
+1e51d434-8dbf-4bb1-94d8-2e6cc4a81b13,National Institute of Advanced Industrial Science and Technology
+898563c9-26ea-4b48-a0ca-7801f788c67c,"Vocollect, Inc."
+7c6383dd-d70a-4c56-89bb-8faf82318154,Christian DeCamillis
+49b9a3e6-5248-4296-b46e-5d070747ff6e,"DermBiont, Inc."
+30a9b5ed-3b02-4552-b082-65f935b0c311,Kimberly-Clark Inc.
+764ac3f9-84b1-45e5-8d3d-7f55b488d191,Hyundai Electronics Industries Co. Ltd.
+93a8c1fb-cfe5-417a-a7e0-36f7b2c73b8a,Telephonic Equipment Corporation
+1f6579b2-eb25-4006-90c5-f473fd0bd5ae,"Keithley Instruments, LLC"
+384cf28b-7eff-4335-a9ad-c6aa09999d93,ALi Corporation
+711c57e9-4cf9-4f79-a511-ff94d3e85544,"VICTOR STANLEY, LLC"
+368dae0f-5ee9-45e0-ab6e-b386e2798ad9,POLTRONA FRAU S.P.A.
+c6c5ad3b-8f1c-4954-945c-e62a2819b364,"Nicira, Inc."
+56726576-7145-4168-8e2c-4026fb3d8aca,TEIJIN LIMITED
+0eb9031a-af99-47ee-8665-60acd01f8f11,Analog Devices Global Unlimited Company
+7df57f5d-57ad-4668-b6be-9ff3cfadfe0d,WATSCO VENTURES LLC
+8b90b7a5-a1c8-40c1-b882-3be8a16b88c4,ams-OSRAM International GmbH
+ea510169-7dd8-42cd-99fd-b55ca94c2e98,"Johnson & Johnson Clinical Diagnostics, Inc."
+8d73710a-4444-4879-b58d-1b9dd399e68c,Seco Tools AB
+10499564-9a6a-4777-ae93-9a31f1f71f4f,Masco Builder Cabinet Group
+f9944956-454d-4f3b-b892-016b9e11df5b,"Synactive, Inc."
+9acbe14a-8875-4cdf-ab46-579c477416b0,OCTIO AS
+03ab4547-b3e8-4c1b-9a81-c4bf6932bf0a,W.L. Gore & Associates GmbH
+c83e9917-99a8-478b-9506-2c91c136cd26,RichWave Technology Corp.
+38113ddc-8b38-40e1-a35c-650391f8f898,"NantOmics, LLC"
+d0bf8fc1-00d3-4074-920d-04a1d3de65cf,GM Flow Measurement Services Limited
+5dc31d13-7560-49e9-81d0-b1d192b1cca5,Lateral Research Limited Liability Company
+6f67f6bc-3a85-44af-a2f7-4c267d512721,Braodcom Corporation
+5665f80d-d40b-47eb-ab42-603d157bb034,George Mason University
+21c126fa-7cff-486e-a132-e53b33c93000,EMORY UNIVERSITY
+0b8f3a7b-848a-4a15-a1ef-e585df1807ff,Bank of America Corporation
+b339af38-16c7-4124-9ae9-b0556b46dd9d,Elumens Corporation
+c88ab280-4dca-4ab8-aa08-981dd1a25ae9,"Mitsubishi Gas Chemical Company, Inc."
+4f95c321-5f18-456f-9b05-6cd1ea526afa,Plessey Overseas Limited
+807ae78c-3cf7-4c14-8e40-d8d569d421fe,"Ricoh Research Institute of General Electronics Co., Ltd."
+83e52fb6-a2ba-445e-b972-571c7225e035,Feco Engineered Systems Ltd.
+ba0e4010-551d-456d-aa9b-f44866f84361,ITT MANUFACTURING ENTERPRISES LLC
+02246b0e-8612-45b7-9741-01818c6767b7,Euro-Celtique S.A.
+b2cb4fe2-7bb6-40ab-a7ef-7c35e65b4bb9,"Snow Solutions, LLC"
+0d150a29-22c7-4a73-ada5-d7f7b5516b34,Merck Sharp & Dohme LLC
+87221534-c2b3-4909-8b51-8d51c5ce453a,"Roche Diagnostics Operations, Inc."
+b279037c-24d4-413a-ae25-9cebb505cc53,"Omnicell, Inc."
+253d0062-6d08-4098-bb49-b7c7cc29c718,NICE LTD.
+564c1b77-9c88-497a-90cd-dfd7849c9385,ITOCHU CERATECH CORPORATION
+592ad683-8ee1-4b8f-b4c6-b07ce645cd1b,Adient US LLC
+88e11146-d508-4943-a523-4ee0a6de9925,GLYCOSTEM THERAPEUTICS B.V.
+0cc13495-b2e3-4452-a387-845a5c582d21,Singulos Research Inc.
+7160da35-3d3f-4ae5-8fe0-8358e45cbfa6,"M&T Chemicals, Inc."
+f0cb6966-f27a-4379-9ec8-ecfd76cc79aa,Pel Associates
+a9daca3f-39f3-4484-ad42-1938d747ed70,"Dynamic Foam Products, Inc."
+6914b179-862e-4f10-85c8-c4eb40f95b3d,MAZDA MOTOR CORPORATION
+eb545832-b0fa-4982-b29f-4214d97495a6,Oxford Magnet Technology Limited
+a55a0c7c-c0e4-4b1a-9968-dcaa609f03af,HALLA CLIMATE CONTROL CORP.
+d7c0d1c4-98de-408b-a3fd-ede4a35ef9f0,The Wistar Institute of Anatomy and Biology
+ad761263-2e68-4720-b650-90f8ee02def7,Dedee R. Dart
+a51ce172-6c99-44aa-a755-5281def3651d,"CYNOSURE, LLC"
+39b9f7f1-f736-4ef0-9254-3f15fb654dad,"Hilmar Lumber, Inc."
+f433d7a9-6cd3-4a3c-9e8e-c68a731d79be,Elwha LLC
+ca466890-ef01-4713-aa77-8bce81002cc8,"ALL-LOGIC INT. CO., LTD."
+f66bb2c4-7709-45d9-9583-ce7b86c5d44b,Immatics Biotechnologies GmbH
+6cf6241e-6853-42e5-97d2-e6d8bcc43eca,TOTAL RESEARCH & TECHNOLOGY FELUY
+4cb8c868-090d-455a-a8b1-98c3b6233753,Hinoman Ltd.
+b1f92964-d635-4699-b9cb-88f5d798568b,"TAIYO YUDEN CO., LTD."
+5a37f891-b902-403a-8b12-97ef1f39ef57,"Zoox, Inc."
+c1c09e61-13cb-4565-9e20-a0ff7aa38bee,"Amphenol Commercial Products (Chengdu) Co., Ltd."
+765de756-1aa2-4b12-86e7-f8cb7fa512ae,Teratech Corporation
+0bee828d-b704-424b-9368-7723a6a62c1d,"Fusion Lighting, Inc."
+361ef8a7-3658-45b9-84aa-0c3896efaf4e,Anelva Corporation
+926bb15f-a2f5-481f-b306-7b2ff48eef6d,"Integrated Device Technology, Inc."
+4b521a49-0082-4f43-b3d0-14bfc239d5f1,"Ariad Pharmaceuticals, Inc."
+8d6d2d86-e5f9-4b3c-9e1f-c25df0b4eef8,"Monolith Materials, Inc."
+9f703e2f-d608-4bd4-b2c5-f7d2dfe9f565,Canon Anelva Corporation
+d0dd45da-d0d2-4f6c-8abd-76166612408d,Yoti Holding Limited
+1c07d1ee-7e13-4a97-9d87-654704b89779,Department of Energy
+4b31a493-0773-43a9-b987-92cc76cc4b13,Leiras Oy
+e5a141a7-f6bd-4e6d-9bb1-3ac1fbf09259,Stora Feldmuhle AG
+f2e0247d-4057-427b-9eb5-4882638ba60d,"America Online, Inc."
+ba56b048-d0be-43eb-a2a9-8f4360e42876,ASML Masktools B.V.
+0c0289bc-4464-4e64-8a6b-7e8ed09becfd,"Foshan Naibao Electric Co., Ltd."
+9a4a2baa-d6f4-4ef5-b7a0-a02c602b9460,"SHIRE-NPS PHARMACEUTICALS, INC."
+747ee3ba-0f4b-430a-8314-9d0c69b329a1,"IN-SITU, INC."
+dc374dff-aa64-4b71-80f5-6149e90163bc,GEZE GMBH
+a9b856b5-2cea-4cf1-a189-57a146766475,"General DataComm Industries, Inc."
+8f0af8b6-029a-4ae4-bf28-75887884c045,Westinghouse Savannah River Company
+9115a5de-91ce-4ca2-9b99-72d50668d7a2,"Delta T, LLC"
+7c4da79b-5253-4211-af08-309a100d0f87,Galapagos NV
+74daf0fb-b9e2-4820-9208-0a110573b25e,"Lumen Biomedical, Inc."
+84057c90-c05d-4250-ad91-777079df2814,"Panasonic Liquid Crystal Display Co., Ltd."
+cba92327-a81d-4156-9d04-b0b3806c0190,SEPHORA
+d3e68815-3d4d-402e-8951-bdd4412a87e0,"MARKLYN GROUP, INC."
+985a570b-b677-4a5c-98a7-668d721e16b3,Magna Exteriors Inc.
+913d9707-32cf-4a4c-9185-43a32e69a20e,United States Postal Service
+f3148c02-3141-4122-b552-a09f2a52c735,General Electro Mechanical Corp.
+c31a707d-4b79-4ca7-b6fa-5cf8a649e087,"SAWAFUJI ELECTRIC CO., LTD."
+7fe4a148-6b26-49ba-9d2b-fb4c8e95df6d,Schulte-Schlagbaum Aktiengesellschaft
+b9911070-31c5-440b-809b-b9f0d4441276,MAQUET CARDIOVASCULAR LLC
+6ca45e5f-88da-4eab-9ea6-969a3c7a8953,"SHIONOGI & CO., LTD."
+219190d6-06fb-4f2a-a6e8-457ea8aaafe9,KOBE STEEL LTD.
+67f366b0-4363-439f-bb66-14761a697d5f,Cognex Corporation
+854e347b-bc1c-45fc-aaf5-157037af4269,Optyl Eyewear Fashion International
+ee2bc193-0815-4d28-9c0a-17c603ef5f67,Wobben Properties GmbH
+772cae3e-d935-4cf3-9588-76e3eb8633d0,GLOBALFOUNDRIES U.S. Inc.
+1316d76d-559f-4390-bb86-4d7ad39b9e5d,Hwin Technologies Corp.
+f52fc0d1-8f54-40bf-b202-1e6c51ef0a66,"Wellstat ImmunoTherapeutics, LLC"
+4b2e0eaa-2409-4fcc-8348-4123eea2f01b,CAMTEK Ltd.
+bb7468ed-a327-485a-90df-666047b26c41,AT&T Mobility II LLC
+f34ad513-9b38-4e36-8102-7754c1c124a2,Moog Inc.
+4b3fcb2d-9168-4356-9180-bf63f7fb496b,Relign Corporation
+682cbc43-8ee0-4c3d-b9f1-0087f7835bdf,VELANIDI TECHNOLOGIES LLC
+3b57bc1c-554e-4780-8676-46669327f119,Yutaka Kimura
+ac55a2bb-cc3c-42ce-8117-7951158c3e73,WASEDA UNIVERSITY
+acccaad6-7f84-4cc1-83b4-40744cb52db8,"Interneuron Pharmaceuticals, Inc."
+c37b0206-1178-4ad5-b700-45cc34da1f2a,"GE Medical Systems Global Technology Company, LLC"
+b911da7b-3229-42c7-99fd-f7567fde1c42,"COLD STEEL, INC."
+a3f51090-2240-4c70-bd12-f63628151f23,Blackhawk Industries Product Group Unlimited LLC
+6ff1964a-185d-4774-8ee8-bc1eee36cdf2,"GIGA-BYTE TECHNOLOGY CO., LTD."
+de31360b-8796-450d-91c3-12842b6fdc3e,"American Competitiveness Institute, Inc."
+47a9937e-ff94-44f3-ab90-0f67d18ab874,"Elechem Co., Ltd."
+8ad2f683-9f97-4a5c-9049-339c39ae22d1,JULIUS BLUM GMBH
+35a0c5e7-2f1d-40d0-85e1-3f9deae8eb75,Knuerr GmbH
+db4e8b9a-02ef-4374-8579-778dbecc27ad,Wallenius Water Innovation AB
+ac4f0637-3dec-4f5d-af2b-fd6052d1217d,"Adrian Rivera Maynez Enterprises, Inc."
+35740e21-3108-42ae-98d7-8106a3cfe71d,TAURUS Gumiipari Vallalat
+df39c6e5-4b9b-4a6e-8a6f-b8cc11693b86,"HRL Laboratories, LLC"
+530ab988-ca9e-4ef0-ba72-e215b1b08a61,Emulex Design and Manufacturing Corporation
+193e78ff-4d6f-4a38-9164-b3d7fde3d8c0,"CASIO COMPUTER CO., LTD."
+0cfaf616-b966-4de2-885c-1859b5abdd8d,"Elo Touch Solutions, Inc."
+64f9fc56-9c01-4e14-b689-5fae2c256fa2,"Invensys Systems, Inc."
+a835b108-fa76-4db2-a2e1-a923c3fc35c3,"CS DISCO, INC."
+15352200-9518-4dd1-8060-2ba9a2f9d7dd,Kathleen T. Baker
+e6185742-a1f1-4dc9-b879-40b8009685f2,DuPont Canada Inc.
+5ee77ffc-e89c-43be-9363-406d9cc665b7,"Kyoto Daiichi Kagaku Co., Ltd."
+1ca9c132-6438-4f6a-9d12-37e07d79ae47,Inductotherm Corp.
+8831f271-36e3-4bb1-87e8-2fff59214392,"Kwik Products, Inc."
+61235005-5340-4037-8da2-c186edd58d81,CHINA STEEL CORPORATION
+d4fd6839-ff91-4593-9db7-675ba792af7f,"Triumfant, Inc."
+0df1c36c-9bb9-4945-8361-86cbd102f1a2,"SHENZHEN CARKU TECHNOLOGY CO., LIMITED"
+3facdb50-029d-4544-b432-5ffe35227655,SawStop Holding LLC
+ef57154a-6704-4351-bc01-2aa9ccd31f58,National Chain Company
+d58916df-c171-4a12-bdb1-ff5a9e25b09f,"YANGTZE MEMORY TECHNOLOGIES CO., LTD."
+2be80f43-bcd6-4ee9-85fd-3ab5982f800f,Rambus Inc.
+66391b57-59e2-4984-ae29-769f620fe32b,Philip Morris Inc.
+7efaa23f-045e-48e6-8b4c-92a2a95da41b,Passat-Maschinenbau GmbH
+98f1f146-88ad-409a-9f4e-fd1f55a8217f,"Kokusai Denshin Denwa Co., Ltd."
+1fd312b8-e8d5-483d-85da-c3463ac4ef7c,Duracell Inc.
+191cc770-699d-4003-9dc5-97cd856e4da1,"Fairmont Homes, Inc."
+fcf47914-83e4-4270-be46-a74ef7dd5d43,E.D. Bullard Company
+8d6feea4-bd08-4458-8267-2889f70b9e5e,TOHOKU UNIVERSITY
+d4ed3adf-c2ea-408c-93c6-ac48941c7038,JAGUAR LAND ROVER LIMITED
+1b93d3eb-8382-4e15-9025-187f83459f73,RICHEMONT INTERNATIONAL SA
+8c7aea0a-979b-4319-8c9a-df7bfe2953c0,Rosemount Measurement Limited
+e5f2c653-72f4-4a81-9d04-0192e1cbc1b8,CAILabs
+039c791b-f38f-48b8-ae7e-ad693ffd8f5f,Hazco Development Inc.
+54fdede1-b8b5-463a-a25a-9ab9df84863e,Biopure Corporation
+faf2d7e8-d1e2-4c05-a205-d28cb430c358,Sun Microsystems Inc.
+8cbd1c98-0524-454a-aad3-1c50b45a0c09,NINGBO FUTAI ELECTRIC LIMITED
+76127aac-e685-47ea-ae26-b7f0185415e4,ACADEMIA SINICA
+feae98d1-e710-41d5-bd76-a4b711d7da57,"CES Advancements, LLC"
+f3355ca4-a333-4524-8b51-3e1e714db0c6,ARCHER-DANIELS-MIDLAND COMPANY
+c2f48156-5655-4a6d-a371-1a636aafb15a,"Nanohmics, Inc."
+4d06bdb7-0bf2-4f35-8784-0be267832320,"Metal Powder Works, LLC"
+461b7024-1002-4c90-954e-a9d6fc1ee6f7,Technofilm S.p.A.
+24e4f89b-8c8c-40c0-8b6b-480be0dacbe9,Callaway Golf Company
+f9471161-e8aa-4c08-b701-23add46d775e,May Patents Ltd.
+99078513-b563-4612-8151-99512638e650,Rebound Therapeutics Corporation
+b48fb934-e93d-45c8-a5e6-d89b0f56d0a7,"Beijing Zitiao Network Technology Co., Ltd."
+94151a46-2df3-43d4-89cd-fa28f64e3eb1,BISSELL Inc.
+5cb23c22-487c-4255-90fa-83e8336fb911,Standard Oil Company (Indiana)
+be1140d0-b001-4b2a-b1e9-f91cf8dd63d8,"Iwatsu Electric Co., Ltd."
+d1f0aafa-2fb0-4409-9677-752b8bd6023c,Societe Alcyon Analyzer S.A.
+5ceecd70-4d3d-45cf-b134-47527615401f,Mitsubisih Denki Kabushiki Kaisha
+240a3381-a9ee-4d32-83b4-848c62486d52,"Hon Hai Precision Ind. Co., Ltd."
+4c5bc1b2-a666-4d3c-8e97-0dada9eaf069,Kathy Nalven
+84669e94-af9a-416a-bfbf-dae14e806a9d,Kyoto University
+e5c0b383-f8a6-4dbb-a77e-0e6b74d644bf,ACER INCORPORATED
+f9cf0aab-9e7f-49ce-a09c-47fc2057e143,Celanese International Corporation
+5c92decd-0908-4f8a-a3b4-efc6fa103613,Defond Componets Limited
+98a8ae89-c61d-4918-8553-0dfe68933129,ABC Tornilleria S.A.
+4a335895-4dbe-4d9a-b4c2-7e268d2a15e0,STC.UNM
+67ece4a0-e113-4979-997f-1ed549a7b68d,"PLASTPRO 2000, INC."
+a88f61f0-9a66-4a37-b28f-27061877b2a0,SOITEC
+1b347a5f-7847-4c53-812c-d7c2dbd9d32e,Emerson Electric Co.
+288c2f7b-7381-4d95-b096-ec426cd7fe53,"Kanzaki Paper Manufacturing Co., Ltd."
+ca6e21ea-e06d-434f-8fb2-1cd6a5311a4c,Charles C. Worth Corporation
+7244a953-4bf4-46c3-8cd4-85796bad25d5,"Adaptive Materials, Inc."
+befad7bd-0d44-4e37-80ee-711f1806eca5,"Medtronic Vascular, Inc."
+c3900272-1324-4b02-90e7-fdb0faa0098c,"FELLOWES, INC."
+6b863325-fbc1-4578-bfef-d0d9f6c4b87a,LDL TECHNOLOGY SAS
+2bba8dd3-5a2b-4d06-864d-430285a1e82b,"Magic Leap, Inc."
+6e49052c-386e-40c5-825d-cfdc7e62b7f4,"STATE GRID BLOCKCHAIN TECHNOLOGY (BEIJING) CO., LTD."
+78307d9d-0e06-4cda-b87b-b098d53d1aba,"STATE GRID XIONG'AN FINANCIAL TECHNOLOGY GROUP CO., LTD."
+7c12216a-cfe1-4cdc-9a5a-26100b6abca3,CLEMSON UNIVERSITY RESEARCH FOUNDATION
+8a028476-2ba8-459c-a07a-d550070918df,Technology Licensing Corp.
+0b9bf410-15de-4fc9-a9ef-bce86b428114,DIGNITY SCIENCES LIMTED
+d213a85d-79bf-41ee-8539-23f176a3b7a7,Myosa Pty Ltd
+fb46a861-a568-466c-910e-5a5c0b155220,Parallels International GmbH
+002acb0d-ac48-420d-a0cd-58b3249cdd87,IMEC VZW
+78d4459b-acbe-4035-a6a3-52432ecbd0e7,GLORY LTD.
+4a85ce36-ca9c-4434-8539-1d1e9917ba10,"NISCO CO., LTD"
+42bf12b2-dc54-4dea-b93a-25f588d429f6,Techtronic Cordless GP
+27b94cda-8820-42e0-86f6-5d0485a5f36b,"SkyBitz, Inc."
+1dc2228d-7f7e-4bec-aef0-2a0ec7dafb6c,"Lalouette Design, LLC"
+35b2222a-cbd6-45ec-b716-310db852c764,ZTE CORPORATION
+52643b16-7229-4189-9591-e33a3aba0b62,"iLumisys, Inc."
+a330dbba-8b26-442a-b73d-c7b7e861819f,"SAMTEC, INC."
+223b2496-eb3d-4df1-ab8e-b26df1e49600,Rosemount Aerospace Inc.
+d32ff5ab-4154-4976-b7bb-ae2d19a029a8,"GROUP CBS, INC."
+3b3898b6-20af-4164-902f-834bfdcf158f,"ALLIED CONSULTING, INC."
+cf3abc57-3837-4bac-be36-48570ecc958b,Hoover Limited
+f974b942-1570-4dea-9f86-11a1dd25deb7,"KEY SAFETY SYSTEMS, INC."
+d05e2cc8-8002-4a2e-8ed2-1121ec5c14e3,UDC IRELAND LIMITED
+83af60a3-b5fd-4a64-bf0a-c94e76910ea0,MAN Truck &Bus AG
+a7f11b83-af1a-425d-9628-3e8ded082b35,John J. Lazzeroni
+897f23a1-1eae-4e5d-986d-734fba4e498b,Aisa S.P.A.
+34d9cc3b-6056-44aa-8409-5a990f87ee53,"Gravity Jack, Inc."
+0b4e9502-0aa5-4da3-8d05-152c5d3ea627,"HK TURBINE CO., LTD."
+bd3bb375-5d6d-4e11-afbb-884c6afd7cc5,Sulzer Chemtech AG
+3f146c55-37a0-4380-bf1d-48fc2b448c5b,"Flair, LLC"
+f5df81fd-4775-4e60-b037-e31e3f38b2d5,Adaptive Biotechnologies Corporation
+6e67e33b-05f0-4bf6-9f13-04aa523eb02f,"International Test Solutions, LLC"
+b6cccd29-1852-4a8f-ab0d-e25fdd782d8d,"AvicenaTech, Corp."
+e63f00ee-1305-4a43-8983-05d7dd08a1a5,"ADVANCED SEMICONDUCTOR ENGINEERING, INC."
+0e0164c8-a21d-4e48-9839-3e1aed1ad2fd,"CITIZEN WATCH CO., LTD."
+da7c3fa9-4ac3-4b29-b9ba-7144ef50bfba,Doralyn Ann Hardy
+be1a71b8-c282-44cf-ae7b-a82d30a93619,Cetus Corporation
+50e73ced-0f52-4fad-a4b3-f3d27ae25ca7,"Hollinworth Fund, L.L.C."
+634585ca-b411-4c51-a24b-3417f5915a16,"AERase, Inc."
+14265618-4de3-4aab-8670-b5ad8d754a12,"Government of the United States, as represented by the Secretary of the Air Force"
+9a448e37-2b1a-48ab-bb9c-af529238ac64,"Fuze, Inc."
+dc9dfc1a-7a44-4062-84b9-4ca201599607,"SZ DJI TECHNOLOGY CO., LTD."
+53e3a204-ec84-463f-bc93-f695f0adbe1e,Allis-Chalmers Corporation
+26283ac4-48ea-45e9-99c2-2da744f0efdf,Advanced HiTech Corporation
+23922b56-d761-4fe1-a59d-3ffaa5233b84,McMaster University
+047917e2-6438-41b1-b3a2-a25bb4a0aac1,"NLT TECHNOLOGIES, LTD."
+fec9119f-be11-42a2-b0a9-0cbd2e155f87,"Corbin Russwin, Inc."
+4650407a-cbea-4e3c-84a4-f397d49f1c46,Anthony Earl Ratajczak
+5817c188-e918-422d-8695-c299b0103bcc,Thomas Florian Schuessler
+808f79a8-f1f3-488e-bff0-fb07b078ffb3,Pascal Poirier
+8bb0ac04-9d67-4851-a403-0e0ef85418d0,THE UNIVERSITY OF TOKYO
+30216a99-f090-41db-9cc5-b0c1b3dc7046,"Maxim Integrated Products, Inc."
+a0ffba9e-287a-49ad-92d2-92ad96ebf0f3,Dynamit Nobel GmbH
+07d5fc87-34eb-4658-a123-169fc020d5cc,Unisys Corporation
+f9bab18a-bbab-4762-850f-f612f36153fa,"INHIBITEX, INC."
+a68b27ea-4808-421d-9f86-20ee3dd8d9b8,STRECK LLC
+61e2e33b-1a48-4180-8d2f-765828cebf3d,ASTRAZENECA AB
+49740326-2813-4d45-84e0-3cabdf3bf0df,Techspace Aero S.A.
+eb22b522-7bbd-4260-b12c-837bf8cbc498,Johnson Controls Technology Company
+3993ff18-8d19-4dc1-9300-fa726dd90539,BANYAN LICENSING L.L.C.
+84b0e740-200f-428f-92d1-88643fc6670f,"CHUNG TIN INTERNATIONAL, INC."
+6bc78e3b-468f-4410-a2dc-bf59a1cfe51c,Lamplight Farms Incorporated
+09d260cc-5013-43d8-8c3a-f5ee792c9ac3,"Visteon Global Technologies, Inc."
+ac8d6244-0438-4ef5-b519-833910cd2181,"LINGSEN PRECISION INDUSTRIES, LTD."
+c27cb27c-93fb-4159-8246-fd6c6723eee2,GEMA SWITZERLAND GMBH
+b9e6dc35-4c7b-44a0-99b1-f3a6e2990735,Century Wrecker Corporation
+224a2706-7c08-4511-b7cf-2b7a879fb7e1,Compagnie Generale d'Electricite (Societe Anonyme)
+6ef520f7-5018-4164-b52b-6fea7e6dd820,TRI TOOL INC.
+f6f7234a-1ddc-4d11-af1d-bfab6bf4c462,HUTCHINSON
+211a3ee5-bd44-4578-ad58-0e33c8613dcf,The United States of America as represented by the Administrator of the National Aeronautics and Space Administration
+78d66d50-5e9b-428c-b693-4c24d0a5c2f5,"Arms Research Concepts, Inc."
+48cce3e6-154b-4189-aec6-9b53ad3ec076,"SYNOPSYS, INC."
+4cba2227-79c6-42c0-b9c8-2644b64d887f,"Smiths Medical ASD, Inc."
+c111e70d-783e-441e-9cca-7873bf326c98,"SEMICONDUCTOR COMPONENTS INDUSTRIES, LLC"
+06280fa0-0008-4130-a85e-bdaca6a4c70c,OTIS ELEVATOR COMPANY
+fe297a6f-596c-4e1e-8d3d-3bbb582ea139,Ilpea S.p.A.
+2222bf49-01a7-414e-b89d-c176515da97f,Joan Bergstrom
+b03c54ea-b1b3-4d95-8156-a8d1681f201a,The French National Institute of Health and Medical Research (Inserm)
+ceb579b1-16d8-48c1-a240-c749849ac6b7,"Hitachi Device Engineering Co., Ltd."
+bb03464d-c99e-408b-a7a6-8c97283ff150,PEPPERL+FUCHS GMBH
+9d2b8f49-4570-4c10-a4c9-07c330a3a10f,"FU DING ELECTRONICAL TECHNOLOGY (JIASHAN) CO., LTD."
+166a9ccd-013b-4072-9eb9-328d33ec8be4,Seville Classics Inc.
+5da9dea7-ecee-41f3-aaa0-2b290864678a,F.S.KOREA INDUSTRIES INC.
+71574631-571e-45ec-a866-3be7d0a6f8d2,"PERSIST MARKETING, LLC"
+c729fa74-d246-4c7c-b272-f92687270b1c,Nordischer Maschinenbau Rud. Baader GmbH & Co. KG
+8b4cc861-595d-4861-a913-05648d2fcc8a,"SHINDENGEN ELECTRIC MANUFACTURING CO., LTD."
+5a159b6a-2bc8-4e91-8d70-45d009f603c1,National Instruments Corporation
+ffe5d01f-3688-4cf9-9de6-620d88259584,EPCOS AG
+4e21f0b6-83bf-44b3-b0dc-23d9903cd974,Photoquip India Ltd.
+a510e905-2af4-496c-866a-754e5b902f18,"JANSSEN BIOTECH, INC."
+2ade7d4b-fcb0-4011-af43-08cc99c8eb2b,"WILLIAM TOOLS CO., LTD."
+64643373-bca8-4785-9d7f-7099d667e69a,William Marsh Rice University
+f809b94c-0a8e-433e-8e02-f81f0e53960b,Fossil Energy Research Corp. (FERCO)
+364f826c-aabb-4623-93ad-f2e148b233d2,"LIFETIME PRODUCTS, INC."
+047b2bd7-faf3-44ec-9b0d-f46553c98aa0,INSTITUTE FOR INFORMATION INDUSTRY
+394c94f4-8754-4c10-8cc2-6c0009d2e034,HERBERT WALDMANN GMBH & CO. KG
+8f1a19c6-c90b-4fcf-ae1d-daf11e2ae699,Deutsches Krebsforschungszentrum
+b7b8738e-713b-4b84-a630-6bcabe9a6bad,"Hint, Inc."
+279d104e-86ca-469a-83f8-b463ec8970f1,A.I.W.M. CHRISTIAENS HOLDING B.V.
+e2c6d53a-ad35-47f9-a387-0fc72d486d36,Fisher Controls LLC.
+2308083c-7098-4f33-989d-9cb68bd19177,Pharmacia & Upjohn Company LLC
+b87128ef-283c-42e9-b246-4578c840bb51,Oclaro (North America Inc.)
+86dfd786-a525-4e11-8be3-eca188716577,Urological AS
+e0038f75-e777-4984-8b6b-4270283ccb13,"Barracuda Networks, Inc."
+a71f628b-a493-4ed5-9ad8-92198c800436,ASP Global Manufacturing GmbH
+676c21c7-9928-455d-b81b-296dcc45c02f,Merrell Dow Pharmaceuticals Inc.
+1bfb7b7e-a84d-4883-9abb-1eba2a4ff5a8,Arjo Limited
+c0426d22-5268-4b3f-a3b5-da6691a8e4f6,"Vought Aircraft Industries, Inc."
+78002213-6148-4df8-8c90-a1d018f93a73,"Opnext, Inc."
+b64ebdd9-d3a6-41e1-9faa-8eb57bf4b3a3,"Konica Minolta Business Technologies, Inc."
+4ad05114-61fc-491e-a5a9-c4278f23a4ea,"WMS GAMING, INC."
+72e4e05b-ba8d-49d6-9528-95b76f046c31,SHIZUOKA PREFECTURE
+dfbb9701-94f0-4c97-8fb3-beca477ebb97,NIPPON TELEGRAPH AND TELEPHONE CORPORATION
+54e61212-b64e-4e1e-9721-f8fa4b59c931,Kordsa Teknik Tekstil Anonim Sirketi
+e7121cb7-3c32-4bc1-a8fa-dbb94ef3864f,PFU LIMITED
+8523751e-5b2b-4a3f-ae3c-1eaaaff24320,Fiat Societa per Azioni
+6592855f-35d6-4c5e-b4e2-6105536f0de9,M P H I S.A.
+31a34a18-d0cc-4ddf-ac7d-d4cae2b6cc18,Thoratec Corporation
+e02f6001-abef-4d41-83a9-5d786bc43dfc,MAQUET GMBH & CO. KG
+efff503b-0a1e-4a3a-bf56-9bc1fd061bdb,"Frito-Lay North America, Inc."
+e2878289-407d-445f-bfca-fa3b1c3c28b0,"Red Hat, Inc."
+f76dced9-4d6f-4145-842f-195d67c1e3dc,Garrett Transportation I Inc.
+9fbb1186-8cb9-49ce-825e-cc41d47441d1,KAIJO CORPORATION
+21d536ec-8081-4060-adad-e3f8ef775925,TELEBOX INDUSTRIES CORP.
+72c171a5-1a94-4c89-9c43-e1ff78bfdb15,Marinko Sarunic
+ff68ac3e-59f6-461b-a4e6-8d75cdf77556,"CAPITAL ONE SERVICES, LLC"
+95bb04a7-a7c0-4844-9981-37d1233d73a6,AO Kaspersky Lab
+037793fa-2e38-483c-ad5a-3444d577312b,Greenlane Holdings LLC
+d3de1525-c47c-4b47-b00f-8a8ae053949a,"Belanger, Inc."
+d7e2ed1b-9ba8-4b48-99fa-45a39f8460f7,Agfa-Gevaert NV
+5946f53e-3e62-491b-b321-69aa0e8ea5e0,Sarnoff Corporation
+e2250221-12c0-47bd-9395-53e12278ae64,Evoqua Water Technologies LLC
+35a82eab-c4f3-49e7-9e1d-aa9b35e3c7b4,"L&K BIOMED CO., LTD."
+ddd6e73a-011b-4f7c-85b9-9f92ba7f51a3,"MINKA LIGHTING, INC."
+51063089-4764-4c22-a3ae-69b8c1d58ba1,Hunter Douglas Inc.
+2d149a2f-a2aa-4a94-bf8b-4653c301a50b,"Pacific Electro Dynamics, Inc."
+aad10050-d62f-4c3b-a933-bb24d3918b04,Butina I/S
+0cc3b3f8-097a-4e55-9a8f-f63ec88a8c08,Societe Nationale d'Etude et de Construction de Moteurs d'Aviation - S.N.E.C.M.A
+81e603ae-45ef-4e81-9e31-fc989f8ce2e1,CONSIGLIO NAZIONALE DELLE RICERCHE
+64f8c7e1-643b-4eaf-ac04-da158bc9a904,epicRealm Operating Inc.
+554676ef-a049-4558-9e74-7a98c57ee177,Tera Logic Ltd.
+c0c5dcaf-79fe-41b4-a7e5-fc4fe3d98221,"Rainmaker Technologies, Inc."
+9a67c80b-f118-47be-9232-5c21c3c6c7c2,"Picanol, N.V."
+c51f02db-4c38-4ddd-8742-864443bab130,Brigade (Holdings) Limited
+bfbad8e1-3ad4-4ea6-a7f0-18a974174fd4,"Shenzhen Breo Technology Co., Ltd."
+641aace7-fa28-4774-a2c6-ebc21c350a3c,"IFETCH, LLC"
+995888c5-a168-4d94-9587-88a5507467d8,"HCMed Innovations Co., LTD."
+4d290ee9-3c0f-4d5e-add6-8f9ecf159bea,"FLOWBELOW AERO, INC."
+98744ca4-a764-4197-91be-8c407f5b4fab,SAGEMCOM BROADBAND SAS
+b572bbc7-49cd-42d6-b047-763c7e69ca6d,"iControl Networks, Inc."
+d2b595b3-b859-479c-8c85-5d30d82a2b44,Santa's Best
+cde21d4f-0256-418d-bd6b-99c7af97e0c5,"D.J. Geisel Technology, Inc."
+e087ff4c-69fc-445d-8d91-8368e7b90d50,Project Innovation LLC
+59099d44-dc3e-4ac5-82fe-d151cba48d9a,"IRONWOOD PHARMACEUTICALS, INC."
+cbf1eb71-53e1-4e7d-a34f-a48b59431720,"PPIP, LLC"
+33b2b9ac-a7bc-4e5f-ba92-b4b97a22dc83,I.M.A. INDUSTRIA MACCHINE AUTOMATICHE S.P.A.
+31f6e585-0ad6-4cc5-8764-db5b9770e4dd,Terumo Kabushiki Kaisha
+51b6486f-a270-48f1-bfd2-b2063fc655da,"Ningbo Albert Novosino Co., Ltd."
+5c67beac-df1a-4348-b5c7-1a94bceb6c88,Moise N. Hamaoui
+706b437b-b1d8-4798-bd7d-22c95f39c7e8,Halfon N. Hamaoui
+7d82255a-54e5-4003-92f0-7418c9f28f8a,ESCO GROUP LLC
+eefa606b-a93c-4f38-9452-30f5fdb6ccf6,North American Philips Corporation
+24aa626f-62d3-4703-88b3-d6b772aba05e,Microtechnic
+d200275e-620f-47c9-b714-5021abcc97b5,Plus Orthopedics AG
+e4f999a5-dab5-4bdb-9c17-83fc255d2e2c,"Graphic Packaging International, LLC"
+256b4995-c996-4ba1-bc55-0d6ec691ed3e,SMR Patents S.à.r.l.
+deb7b706-5b7d-4dcc-a939-4214c60232e7,Archemix LLC
+ed2efdbd-d8c3-436f-a78f-d47efc11c562,"MIMAKI ENGINEERING CO., LTD."
+546265cb-9d41-45bc-87c7-63125a41761a,KOREA AEROSPACE RESEARCH INSTITUTE
+a8967073-66be-4aa7-a6cd-c05e4401b401,Baylor College of Medicine
+bf58d1dc-9e6a-429b-a9fa-d007a825987f,"Tanaka Seiki Co., Ltd."
+719fbeba-516d-47dc-821f-075c4a7c3e48,Technion Research & Development Foundation Limited
+d7b1cd35-c1e2-4530-8559-8f05a34f99ae,"MIPS Technologies, Inc."
+ae7309da-11dc-4f91-9701-c1fbe79c81eb,"PCB Associates, Inc."
+5325898e-f564-4bb7-a73e-ef50631f7492,"Kabam,  Inc."
+41780113-6978-41e8-b594-fbbe54140702,"GridPoint, Inc."
+16960f05-cf59-4a7a-8043-19fb55bcb0a8,NATIONAL FEDERATION OF AGRICULTURAL COOPERATIVE ASSOCIATIONS
+084b7fe2-4ee3-4c45-86bb-82c09b0b2d87,"LISNR, INC."
+435c6a89-41c3-4df7-94fe-a7fdf978f3fe,"Victor Company of Japan, Ltd."
+b0275311-5722-4803-9fb7-f6bd3a8671f7,Solavolt International
+01352afc-52f6-4322-9238-277150fb7fea,ALCATEL
+bf5efbda-30a4-48b6-8473-a2641ff43a92,Atmel Automotive GmbH
+9f04cc26-e994-408a-a7b7-562025ab44b8,Silicon Laboratories Inc.
+a1bea993-1d96-45fb-a409-dba242d4250c,Qwest Communications International Inc.
+1e1394b5-f692-4d28-9e27-24a206e521d9,"Elfster, Inc."
+3256d8ae-0993-401f-9b45-3a20a8d4ff53,"TOWER PARTNERS SEMICONDUCTOR CO., LTD."
+cb26b315-8376-467e-9a4d-f45e615e5047,BIALETTI INDUSTRIE S.P.A.
+10d713c0-ae5e-4c5d-9162-64c42e9a5ae3,GENTEX CORPORATION
+68223d64-f4c8-44b3-b027-45634c12172c,TECHNISCHE UNIVERSITEIT DELFT
+e84103a8-51d7-4914-80d5-7f7fdbded91a,Conti Temic microelectronic GmbH
+14734f22-3f3e-4f13-ba28-9021785c133d,Linde GmbH
+d75ea146-74c8-4900-9cb7-b7aa96425a9f,E. Bruderer Maschinenfabrik AG
+a955188b-9e03-43ca-b666-e08818ab6c1c,"DMT HOLDINGS, INC."
+c7db9974-27b8-4453-83a2-78b3a464740a,"Location Based Technologies, Inc."
+0f69ea90-adb6-41cd-9c67-fd41c37afabd,"NXP USA, Inc."
+0441a8fc-35ce-4dc1-9e77-b1c39bff1202,"HYUNDAI INFRACORE, INC."
+9844b584-946d-4f31-8b56-a402f3b5baca,"BOE Technology Group Co., Ltd."
+8f0c7ab0-f2aa-4c5d-8d6e-a81ec3ea37fc,OTTOBOCK SE & CO. KGAA
+bfd8c9d0-9707-4c56-ac14-e3ba11a21b7f,Tokyo Shibaura Denki Kabushiki Kaisha
+a1503aa4-50da-4493-aef3-515c3f0dbd66,"MURATA MANUFACTURING CO., LTD."
+70902166-5406-45eb-93d7-5cfa58e4d5f4,"Hewlett-Packard Company, L.P."
+5799245a-113b-4668-b712-5927a324750c,Scitex Inc.
+2a45d113-3607-4439-b4f8-0331d8e1220a,"SAMSUNG HEAVY INDUSTRIES CO., LTD."
+afd796bf-7430-44cf-84c9-25385142aae9,"Brookhaven Science Associates, LLC"
+5a2bc0f2-de57-46bc-b383-c80cbfa5c882,ATOM MEDICAL CORPORATION
+b8f4a73a-df61-4b9a-9d36-dbd88683891f,"DAINIPPON SCREEN MFG. CO., LTD."
+6326da5f-8cb5-4e23-8929-4dd62cba64d3,"HITACHI, LTD."
+a80321ca-82e6-4100-8817-9e92b9fdecb1,"Uniroyal Chemical Company, Inc."
+f1df6e64-87a8-4026-9558-9403978aa46b,LUPIN LIMITED
+47cd060e-60ce-49ab-8623-caf34f5c3860,Intel Corporation
+41f7f170-9cb1-4b67-98bb-bad5de48d30f,SEIKO EPSON CORPORATION
+1177679d-d7ea-4a87-9af2-71c44db92ad0,TENCENT TECHNOLOGY (SHENZHEN) COMPANY LIMITED
+62877db3-fb0a-4da8-81c8-98a4365f9e31,OLYMPUS MEDICAL SYSTEMS CORPORATION
+74b2f2a1-a389-45b9-ac40-2be508cd7f22,YAMAHA HATSUDOKI KABUSHIKI KAISHA
+e167fdbc-0bfd-4502-8b0e-17864efd238d,PANASONIC HOLDINGS CORPORATION
+078870f0-8bb9-4922-851c-c16d0585e479,"Vermont Juvenile Furniture Mfg., Inc."
+2990770e-4c22-4129-b365-15bd95b30adb,TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY LTD.
+77ede7a2-5055-4105-910e-5231dd3b5ba5,Wirtgen GmbH
+3a3d6028-9ff9-409c-a7af-decc6e934d25,"FUJI ELECTRIC CO., LTD."
+c227e67e-c6e0-4d31-9377-aebcc1e62e23,USM Holding AG
+c29be1a9-6be7-4624-a9ce-b8e83ab40010,Mazda Motor Manufacturing (USA) Corporation
+c9cb3248-f25d-42d6-b676-48fe1bb5d7f9,HERCULES LLC
+0c68fcd4-5f2f-4005-b0c6-3bdf9d2ff7de,PACCAR Inc
+21875870-55c5-46e4-b22f-b12c77ac8fdf,CALIFORNIA INSTITUTE OF TECHNOLOGY
+2be19b95-39cb-480d-94a1-5e95d306cac6,"Lexmark International, Inc."
+63c34feb-8c72-4f82-8404-dbfac2d94dba,"IGF Oncology, LLC"
+74245b1a-4bba-417a-9605-e7b8f0e0cde0,GM GLOBAL TECHNOLOGY OPERATIONS LLC
+7f6890da-532c-414e-919c-ecca40e70543,Intuit Inc.
+c7243cc4-b130-4aaa-afdd-a55ec7dab877,CPS Technologies
+b825eb56-8002-4212-b663-d64fc9ce418d,"CITIC Dicastal Co., Ltd."
+6acb4187-6a8b-450e-84b9-b847e54169c0,KIA CORPORATION
+d28dbe5d-9678-4499-aa4c-2e14661a044c,HYUNDAI MOTOR COMPANY
+1b352dea-ef89-4a49-8648-b1cd31de42fb,"QINGDAO HAIER REFRIGERATOR CO., LTD."
+cb0f0dd8-9868-4068-89b1-a1383d0f3fb3,Felt Products Mfg. Co.
+61e72a02-e086-45fc-ad6e-38b2856a3872,A/S Kjaettingfabriken
+2b4c29a6-1f5c-4fdf-ab96-849736eae57e,SONY ELECTRONICS INC.
+44070849-eea3-4dfc-a16e-cad81dc9443a,Pioneer Corporation
+b0186ba3-3b0b-4313-9795-12738367c48a,"Team Smartypants!, Inc."
+373e0d82-6f7c-4131-b3dd-83f05ca457fa,NIPPON STEEL CORPORATION
+b944b242-d163-4d20-8178-e8e24168e002,Swimways Corporation
+630fee4c-d634-4267-92ef-f79c72a93638,L-3 Communications Integrated Systems L.P.
+1abcc1f1-40ca-405d-8248-ed39ff74ce89,"Ford Global Technologies, LLC"
+0184151d-d6c9-4aef-b05d-b280cedddca7,"Load Lugger, LLC"
+e3177668-a2e6-45b8-8f55-354bc200628d,SAP SE
+60cdc61e-8271-4a71-904a-475bdc4c1260,Stryker Corporation
+d41085e5-3602-496c-a14d-92e40aadab58,Rinnai America Corporation
+115b5e88-c8a5-4ab2-a222-cd6491d70fc6,A.E. Staley Manufacturing Company
+ed792278-12a3-416f-aab5-e1825c3f37dc,Wicks and Wilson Limited
+c743e7d8-5290-412a-aeeb-edef2348822a,General Electric Company
+c9840a6b-d150-4246-98c0-2eb804621d9a,"Vonage Network, LLC"
+300cda66-3b6d-4154-afc9-3e31bf2d431b,Broadcom Corporation
+ad17f951-3a59-4696-a3e5-e586cc5879fd,Tomey Corporation
+5270304f-e284-40ed-98c6-f016fb643907,"Elevance Renewable Sciences, Inc."
+bb1d2ed0-eca8-4d1f-9790-cccf45eee29b,"NIKE, Inc."
+ed516418-9f36-40b3-b065-efda4b9388e1,Intelligent Energy Limited
+46880acc-0cad-40bd-bbfc-afecc11e7da2,Panasonic Intellectual Property Corporation of America
+dae1813b-101b-41e7-b86c-5182af8f6d2e,EVOM
+c824f284-2fd8-4986-ba05-f4b07b4ddd86,"Silicon Storage Technology, Inc."
+c5177591-0d4c-46d3-aad1-95561518c24a,"SUMITOMO WIRING SYSTEMS, LTD."
+1624cc72-5b3d-4293-a28b-43e48e537ed8,"Meshnetworks, Inc."
+88288889-fbea-42ef-818c-62d683c90767,"HEWLETT-PACKARD DEVELOPMENT COMPANY, L.P."
+c91b9d56-dd72-4660-aa7e-9ec4fdca3c47,Seagate Technology LLC
+dc3df6eb-f4ba-4fa7-a865-eb43b6c6da7e,CNH Industrial America LLC
+6be3306d-5b29-4e39-97b2-624bae5c4887,NEWFREY LLC
+6a330b67-83da-4874-b4aa-8ed39ca9b882,"POINT ENGINEERING CO., LTD."
+f09fcc9b-feed-4a8a-893e-782c50d0f64e,NURVV LIMITED
+8b8ef6af-82a0-473e-96e7-7bf599f2b8e0,Oil Lift Technology Inc.
+95c789e7-1a6d-440a-8077-98c070f83c30,QUALCOMM Incorporated
+8935f434-769d-45a1-9716-7f1215d13495,L'Oreal
+b1bc4418-4290-4aa4-abec-5e1b4f852684,International Harvester Company
+5c2b6e29-0552-4dce-bc84-5d180a11179c,The Standard Oil Company
+1890401f-bfe7-4877-ba67-6fec75038429,UNITED TECHNOLOGIES CORPORATION
+8010cb66-3f67-4f35-919f-ce57df12b2c2,Caterpillar Inc.
+283b3b61-fcd4-4db1-a9f2-f32128d0db02,Mannesmann AG
+d1fd6fde-3661-4c9c-bce5-06379aaf5429,K.T.I. Group B.V.
+06cbb3b6-bf0d-4cbf-b73f-386601e6b2f2,Optibase Ltd.
+36399588-e211-4414-aed9-504004d249b3,BAUSCH & LOMB INCORPORATED
+58544803-d848-419f-90af-1727c6d9185f,Allied Products Corporation
+3bf76be6-981f-4ddf-ad10-520939e7dd7d,RESEARCH & BUSINESS FOUNDATION SUNGKYUNKWAN UNIVERSITY
+d6dc6458-715a-4faf-a9ba-aa4b460e59c6,DELTA FAUCET COMPANY
+267568b9-41a8-494f-8f1a-3e44adf77add,QNX Software Systems Limited
+70d213f4-20e2-43b8-b167-3319a953a831,CHINA ACADEMY OF TELECOMMUNICATIONS TECHNOLOGY
+d76a7bca-5ae9-496d-a647-c4ccc5182f93,DILO ARMATUREN UND ANLAGEN GMBH
+262ffa67-0530-4db2-9429-d0707a978ebb,MINEBEA MITSUMI Inc.
+33fd4f24-28ae-44d2-b46c-fe2ce17ba21d,Memorial Sloan Kettering Cancer Center
+c5427d03-d235-498b-bfe5-716e006018df,"Fortify Technologies, LLC"
+7f60b559-0312-46ab-b631-90deb80a953d,Abbott Laboratories
+dee01bc1-1f4c-4db1-8b57-14b3e90f6f16,Alcatel Transmission Par Faisceaux Hertziens A.T.F.H.
+6e439813-f098-4341-8b82-4e5920a3298e,"NISSHA PRINTING CO., LTD."
+616ad4d9-595f-4c06-af4d-469cc18eb0b5,Dreier Lasermesstechnik GmbH
+6061bc06-e19c-4621-8921-fde11a32f39a,Avery Dennison Corporation
+a3e89e3d-bdcd-4409-a7ba-b9cfc1cea3bf,Laub Biochemicals Corp.
+ba305831-c719-449c-8431-bb244a25a65c,Tyco Electronics AMP K.K.
+815b95fe-c9be-4de3-b191-f663520078e5,Delphi Technologies
+68ae61e9-eeae-4955-9a17-f028ad3e9d5f,NXP B.V.
+becab538-753f-4466-9871-52b485e77740,Bridgestone Bandag Tire Solutions
+2586ab9a-b32c-4c93-9396-719f6d081dbf,NEW YORK UNIVERSITY
+c1c2ccf7-e978-431c-bcf2-79ba3b07c896,3FISH LIMITED
+3ed10bd9-2bed-4d06-bee4-e1b8859f07b7,TELECOM PARISTECH
+334952a8-7c34-4801-b50e-8bad4b4bad0b,"Clearfield, Inc."
+71d1dc9a-16cb-410d-94a5-c4dc27bd564f,"Koyo Seiko Co., Ltd."
+1944ffe3-4070-41f1-bbb0-8e920f5e7eb6,"MagnaWand, Inc."
+c65df695-1358-47f0-be48-9e59276a31ca,Infineon Technologies AG
+c0ae70f1-82c3-43e6-b7c9-94c4cb4dd94a,Guardian Industries Corp.
+e52834a1-027a-476d-b154-0b025ee2575e,VARIAN MEDICAL SYSTEMS PARTICLE THERAPY GMBH & CO. KG
+e942cd5f-736b-447e-84a5-8446b9c1bed5,"NEC Laboratories America, Inc."
+3bdb4fa6-3449-4fdd-aac4-3fb2c4ac897f,Precision Planting LLC
+4f334148-9724-48e6-a07d-b69e74241fa6,Real Action Paintball Inc.
+952d6e68-48ca-458d-8814-86e8c6682580,BRIDGESTONE CORPORATION
+ff102693-d28a-454f-877c-77233ccb8fe8,MANN+HUMMEL GmbH
+f0363989-f876-4c23-98a6-b6d9eaeffa5b,WHIRLPOOL CORPORATION
+d536b029-1bd9-4e61-b840-2d8bcd588f73,PFIZER INC.
+f451f350-09f3-4ec8-80b6-e70f4f168188,KLA-TENCOR CORPORATION
+4458f845-5987-4e35-99a5-e8b9cc283952,"Halliburton Energy Services, Inc."
+c4a4b482-8d85-4d7d-b23b-96e33e63fdc5,"TOYOTA MOTOR ENGINEERING & MANUFACTURING NORTH AMERICA, INC."
+297f78ac-c7b4-46be-b50d-ca2d879e3c9d,Alimetry Limited
+b36be1d5-fe3f-4eb5-9859-5d594f7f591a,SABIC GLOBAL TECHNOLOGIES B.V.
+03fccbc1-b777-4867-8853-2b2a2f7ba2af,SILTECH CORP
+2bbc1631-ae5c-4665-84cf-189a963b02ff,Kodak Polychrome Graphics Company Ltd.
+9385f27e-6272-4e3c-a938-fad76c527126,SILENTIUM LTD.
+f24a72dc-b7d1-45f9-99be-34729d414303,Pulmonx Corporation
+c1baf1b6-7a8f-4132-a3dd-1b6fd5ddded9,"Curt G. Joa, Inc."
+d7a617d7-6bc1-468a-8a3e-aec4aa9e3d62,Epic Lift Systems
+fb308a7b-80bc-4334-9db7-cea19a6e15be,Dell Products L.P.
+20c83e86-b13e-497b-8ec6-5dcb448b4533,Reebok International Limited
+0d1f8f01-37bd-4f51-8cd3-9be8cfe9176a,MEDI GMBH & CO. KG
+19e39335-09b6-4dc2-9f64-e0fc3409b896,Thermo Fisher Scientific Inc.
+44a56f93-406f-4792-a8a8-84728d366422,Ushio Denki Kabushiki Kaisha
+3e5cae88-ed9d-4912-8c9d-de81d98a05f6,Apple Inc.
+40742533-5468-4d6c-a3ad-6ed3003883b6,Mobil Oil Corporation
+72ff6964-5600-470f-beca-cf3a95de6ab2,"Takayama Reed Co., Ltd."
+d483d838-f476-48ca-978d-3821b6959628,"Novell, Inc."
+aca059e4-a5e9-4dca-89e5-6983a5e3357a,"Signal Pharmaceuticals, LLC"
+eb1972ed-20da-433b-830d-1cdab52aafc6,Dümmen Group B.V.
+0742c957-dafb-4412-a07d-3dc328e146f8,AIRBUS OPERATIONS LIMITED
+98d989cc-fb62-4b7a-a488-de9d8a992322,"SAKAMOTO ELECTRIC WORKS CO., LTD."
+8b9562b4-e6fb-48db-b133-b0029d44adee,Axis AB
+a1cebcd0-7b31-45bc-a66e-bedc29240e18,VOLVO CAR CORPORATION
+f816435b-0d4b-49f3-bfca-b84e9012c427,"GRACENOTE, INC."
+73d59d9f-833e-44f6-a179-fd3131c64379,The Slope Indicator Company
+0b876e40-1b59-4829-b1ba-d03f241bd65f,Wella GmbH
+9c84a51d-ddda-4c3b-a6d7-4ffb7beef49d,"VASCA, Inc."
+494274fc-47b0-4d78-b370-dd38581bc693,Nokia
+c24668a9-8a53-4661-b3c0-c651967316f5,"EasyOnMe, Inc."
+191f1f42-0e88-4c3b-b293-516c91634422,CELENO COMMUNICATIONS (ISRAEL) LTD.
+97287843-daee-4d0f-865f-0a24f3375a67,SEALY TECHNOLOGY LLC
+cdde5d4c-4e79-4985-9182-e51e2feb4e4b,Infinity Systems Inc.
+3dfc3c4d-a694-4e20-941b-8d7572283dc7,"Specter Ops, Inc."
+aa7bb45f-5b38-4e99-ab48-5300e4fe8285,MCI Communications Corporation
+5dadb870-d6fc-4858-b958-b7d3cfeea0a9,CAMBRIDGE UNIVERSITY TECHNICAL SERVICES
+1b0acd6c-01d8-4760-ae9e-21465d66ae65,"Fenwal, Inc."
+167dd982-3181-4d43-b538-a87c1e3f9deb,eBay Inc.
+b5d9d0f2-36e6-47d3-806d-8031d674b645,SONY COMPUTER ENTERTAINMENT INC.
+2159dfc6-01ca-4159-b7f0-158fef6ee41e,Guohua Cheng
+0ec2a255-86ae-4852-ad42-2087403bb45a,Polaris Industries Inc.
+305d8228-4993-4d1d-9207-a9327e1c6f1d,"InterDigital Patent Holdings, Inc."
+a186355b-a7cb-47f6-831c-0e3fd62edb6e,Rene Nardou
+cc97cf30-1197-42cb-a9d7-c1c87fe15cc2,Michel Bonnaval-Lamothe
+d71d8fda-bdd0-4a2d-90f9-9420ccddf3af,"Roche Dianostic Systems, Inc."
+a4fdc575-92ce-40e6-b5b4-cfdce7095af4,Hutchinson Technology Incorporated
+37b1bec9-9e62-4806-8bec-f909774e4802,Arthur Knowles
+1e3c2b5e-a287-4229-b561-08a09472978b,"FRX Polymers, Inc."
+34e7035d-569d-4235-a775-8f75c47fc32c,FAIRCHILD SEMICONDUCTOR CORPORATION
+3193dbb7-b5b4-44fa-a619-6244519a3180,ThyssenKrupp Bilstein Suspension GmbH
+016ffc54-ac6c-42eb-8243-cc4bf6216bc0,RENESAS ELECTRONICS CORPORATION
+aeb7dba0-b3d5-492f-9936-2a55b746cee5,"ROHR, INC."
+56d9e1f2-fb3f-487b-ae1a-dbd57fc6a2ca,"BILLIE, INC."
+873c956d-952c-49cd-8e10-0c9663141e2f,Helmholtz Zentrum München Deutsches Forschungszentrum für Gesundheit und Umwelt (GmbH)
+96f66a77-0c45-40b9-ac7c-55ae1ea8f3ff,"McAfee, LLC"
+0a763750-728a-489b-93ff-ddcc322f99c4,EXEDY Corporation
+c8b13519-3930-4ad3-abaa-d2ab77d6afca,"Hasler, Inc."
+26a3af10-c7a8-4cfb-9758-7f87dea614ee,Dainippon Screen Seizo Kabushiki Kaisha
+c2921527-98cf-4763-9d0e-4bf9691431de,University of Cincinnati
+ad38a161-9f04-4f06-80c9-3ee8305d23c6,COMMONWEALTH SCIENTIFIC AND INDUSTRIAL RESEARCH ORGANISATION
+b8abf05e-67c5-45b1-bc18-7f22d0ab7dfd,Cedars Sinai Medical Center
+9aaa90bf-bec4-4e85-9142-4d0bd7171509,"Air Systems, Inc."
+bbbca11c-1ec5-45a7-bbba-9c3c3b4bcb9e,"Horizon IP Tech, LLC"
+d1976b81-e8dc-4324-84c9-2166f8e72263,"XIAMEN SAN'AN OPTOELECTRONICS CO., LTD."
+7d01f03b-e226-49f9-9971-350f8ae43a6c,OKINAWA INSTITUTE OF SCIENCE AND TECHNOLOGY SCHOOL CORPORATION
+3edc5277-5925-4de4-83bb-299b576b23d9,SNAP INC.
+fa734650-c07f-4198-b82f-7c39ebd07d83,Sherritt Gordon Mines Limited
+c93ea5df-cb3e-4ec1-8ce3-068fddd94cbc,"Builders Concrete, Inc."
+fc184baa-2e40-4bcb-a149-a7c2de93ce43,"L'Air Liquide, Societe Anonyme Pour l'Etude et l'Exploitation des Procedes Georges Claude"
+7465f820-f145-404a-aa4c-ab4b78bfa52e,"Bray International, Inc."
+0698c04c-f9f5-4ff6-b5b7-d06cd5d77bdb,Sit La Precisa S.P.A.
+0b31da3e-2e27-4417-beeb-0471eae55c7e,EMD Millipore Corporation
+4d7b1f04-97ae-43b0-97c7-421c7838964b,Dynamics Inc.
+21bdc9ab-f98d-42ea-97d8-816d8ab4ab7e,SpineX Tec LLC
+50ad17f8-a750-4936-b758-dbcb360d0f9d,"Acheson Industries, Inc."
+b7e86841-f07f-44e5-839a-98b0fcfa76ec,"Monogram Aerospace Industries, Inc."
+f52ed275-3443-4298-b7ba-2bc1e7d4a6c6,A. Ahlstrom Corporation
+e0310277-17c6-44fd-8558-582702563de4,Avaya Technology LLC
+804260ed-9495-4a90-ad5b-403fcea0df98,Elf Antar France
+6a2f64b9-ec0e-430a-9b17-7edfb09470d9,LES LABORATOIRES SERVIER
+d9ae8416-ae34-4605-b754-6dcca9c93df1,Sony Ericsson Mobile Communications AB
+80e6d5f3-3c4f-4619-86d8-f20f42edffff,"ORIGIN ELECTRIC COMPANY, LIMITED"
+1c2d676b-499b-4b84-afe0-9f53036e8488,Repkon Machine and Tool Industry and Trade Inc.
+52c81187-86b1-4802-900c-f0d6cbb3c4d8,"KCI Licensing, Inc."
+7081ae3a-5fc8-4224-954f-729e8d0f0488,"Versata Development Group, Inc."
+2d7b9776-e823-47ff-9402-f98c1e640344,"HRB Innovations, Inc."
+2a86a896-3704-4af0-8fb8-43f50a86487b,"Sayatva, LLC"
+2b783bf3-c10a-4470-acb5-61deee7e7180,"Miyagawa Kasei Industry Co., Ltd."
+ec3e5f22-ee3e-4982-b49f-8b854352aa54,Hoechst GmbH
+90e7b25a-7798-4eaf-9df2-f2da0f4fff8c,Pitney Bowes Inc.
+082fac83-8851-40e9-99b0-ee630f5fe5d9,ELC Management LLC
+34e1c7d4-e345-4f47-adf9-2dce757cc3ae,GlobalFoundries Inc.
+0e91ab97-cbae-427f-9330-d7ae090ab6b8,"SUMITOMO RUBBER INDUSTRIES, LTD."
+1edbb0e6-5cec-4782-8af3-da811a4d4f84,"SEKI PRESS CO., LTD."
+659b68d4-45b3-4691-b3f8-526d4051e683,"UNIVERSITY OF THE WITWATERSRAND, JOHANNESBURG"
+f38ce948-dcff-4c97-a227-84386ac49a73,The Trustees of Columbia University in the City of New York
+a00edb11-326f-4305-9da6-3272a2804aaf,The Lubrizol Corporation
+f8748887-00f3-4966-89de-58204b93d00d,EMC IP Holding Company LLC
+2a214fc3-045c-40ea-b358-5aa1769a04b2,ROYAL DUYVIS WIENER B.V.
+18d6cac1-d8a7-4a4d-aa71-bbae899445d4,"Domus Tower, Inc."
+5f8b02c6-bb1b-43f1-a78b-457d56559e35,Fargo Mfg. Company Inc.
+4ebf32ae-a91c-44bb-b366-010b61d6121d,J. I. Case Company
+92300e8b-88fe-4d6a-8c0a-c5c4df1798ee,"Envirex, Inc."
+417aba05-ff61-4562-bb19-1eb772690871,"Headway Technologies, Inc."
+ae0d3f1c-44e0-420b-acbf-e892ac2a4db7,"Energy Conversion Devices, Inc."
+7f81f560-aae0-4142-a384-f3fe19a4580b,Hanuman LLC
+1932eca2-f353-42ec-926b-682108abca23,Limiter Power Management System (PTY) LTD.
+b8709f32-78da-43e2-848a-9ff7269e3c3d,William-Macrae and Company
+84e1298b-2104-4e9b-9fc5-2a43f523b057,Societe des Produits Nestle S.A.
+1ef5ff81-9d94-4852-a63f-44f4ae93c592,"Chengdu BOE Optoelectronics Technology Co., Ltd."
+5d5f98aa-a554-421c-809b-a0838c218388,"Alcon Laboratories, Inc."
+25fad25b-d1c7-4733-af11-2c5c3fe03002,Great Lakes (UK) Limited
+4edbaed2-e80f-41c7-8b48-4c324020903c,"ESI-Pyrophotonics Lasers, Inc."
+c09dc545-043a-4d75-b25c-c47bac3de94f,"M & C Innovations, LLC"
+52f71620-dc14-41a7-865b-fd39a8d5f38b,UMBRA LLC
+fefc5146-ca88-4b37-9304-5c7db85c56f4,"Woodward, Inc."
+d94b3a92-6af2-40b2-8322-f8cb75b242bf,"KYOSAN ELECTRIC MFG. CO., LTD."
+17488992-f9ce-482b-8fa6-cafd19d2a3fd,Girling Limited
+4240d96d-221e-42be-88c6-29ba52db866b,John Wyeth & Brother Limited
+53465aac-f310-44f7-98aa-f90414be5063,BAYER HEALTHCARE LLC
+78dd78f5-b5eb-467f-90b7-4d396699a4cb,Atsugi Motor Parts Company Ltd.
+477d5e96-496c-4f2a-ba1a-3d81b0f2a34c,Los Angeles County Sanitation District
+07d129e1-ffa8-4f2f-b16e-3fa562819b91,Linear Instruments
+145dc0bd-b46f-4f7e-a4f0-731c3be73c95,HUETTINGER Elektronik GmbH + Co. KG
+83e80df6-45e1-45fe-a9c2-8cfccae719d1,Continental Teves AG & Co. OHG
+71523ddb-c213-4fad-9f46-cd77f9b75f90,"ClearView Diagnostics, Inc."
+d978dfdd-086e-41f1-a507-8b4f5dde1bcb,"Hughes Network Systems, LLC"
+bb242bf5-9c78-4cd3-99d5-596639466875,J. C. Bamford Excavators Limited
+02f40f37-e984-4683-8eb6-a1d888257447,"Williams-Sonoma, Inc."
+0a3ce615-0ba0-4c59-a5cd-aecf5cb252cf,"inVia Robotics, Inc."
+f1e6e73c-add6-4f91-8708-99995e9d9347,MESSIER-HISPANO-BUGATTI
+1ecebd75-4322-49c1-82ff-7cd1810378d6,ERICSSON GMBH
+2e4f5390-e882-407d-9c3b-adc0e682d1e4,"Oldenburg Cannon, Inc."
+c28140a3-b18a-421b-bd6f-d704b07e27d7,"Advantage Logic, Inc."
+bd1adcf0-9516-4c24-a5e5-2186f934ac84,Grass GmbH
+8830d202-56cb-4320-b020-32ed5a00988f,FIH (HONG KONG) LIMITED
+95b4bbe0-e98d-49d3-b70d-660685702e6f,"Con-Wal, Inc."
+e4a89b16-1718-4682-9666-c63dcb539ea3,The Babcock & Wilcox Company
+6e1827b0-7812-4215-920f-9df02b16cb5f,CSEM CENTRE SUISSE D'ELECTRONIQUE ET DE MICROTECHNIQUE SA—RECHERCHE ET DÉVELOPPEMENT
+29eb9e5f-242d-4bca-a55f-e704a9a5dd4d,Max-Planck-Gesellschaft zur Föderung der Wissenschaften e.V.
+3d13fbe5-5120-4a3d-9731-f772e4dff2cf,Cornell University
+f0e13233-4545-467d-9a30-3daa717df205,"AIR PRODUCTS AND CHEMICALS, INC."
+de238030-15ab-4764-8c34-1cd3dd99483d,Compaq Computer Corporation
+8aa7a101-377c-4009-a9be-c59807ffbeca,"TRINITY NORTH AMERICAN FREIGHT CAR, INC."
+5f6347fe-db73-428d-86ea-be68b72d11fa,"ServiceNow, Inc."
+a60f38d2-f2d5-4f86-bd72-5840b4cff1ab,TOSHIBA TEC KABUSHIKI KAISHA
+f37d65db-cd5f-4df3-b647-58c9d78b0ebb,"STEM CELL & DEVICE LABORATORY, INC."
+00c151c9-6b15-49cc-adb0-1ce8c8e75d58,"RPC, INC."
+3f5db734-b165-4317-8900-0e3a8940ab48,Ultimate Corporation
+bc021517-06b1-451a-8a28-48f479ff9111,"Globespan Technologies, Inc."
+641f21ab-06f5-4779-9691-b7be3517afe5,"Green Torch Solutions, LLC"
+47e2e862-cb1c-4767-a64f-35eb96e4141b,Du Pont Apollo Limited
+aa80b66a-048c-4306-93a2-583e438070f2,HUSQVARNA AB
+7e10ad57-71fe-484a-a45a-05421fe134ae,"DANA AUTOMOTIVE SYSTEMS GROUP, LLC"
+15fd3af1-9e63-473e-9908-ede148433a3f,SNECMA
+86411c95-c118-41ca-98de-90c6976aa667,Robinson Home Products Inc.
+d88fe7f0-055d-4eba-917e-0ceeb49adf5d,"Spectrum Diversified Designs, LLC"
+744d3015-b1b1-4436-bfd7-a864a479f237,NORTHROP GRUMMAN SYSTEMS CORPORATION
+3252ee9a-00de-40a3-8f52-cf21f3407a2b,u-blox AG
+bd67a8c8-1e32-443e-859d-061fc7debf8b,Au Optronics Corporation
+b3d31531-7191-4df1-a993-6fc50cbbe992,KAO CORPORATION
+ad02694e-450f-425a-b1ef-b619ddd14b5c,Tetra Laval Holdings & Finance S.A.
+af4cae2c-b297-4a77-95eb-661fd2f78278,Dentsply Research and Development Corp.
+acf95119-92b4-4264-9a17-0536d20af393,"Mobile Climate Control, Corp."
+81c0b067-00f1-435c-b907-389680979d30,Vacuumschmelze GmbH & Co. KG
+3b739b63-75e8-423f-9882-90e85441ff51,"Peach Wiz, Inc."
+f5a786e8-8920-40e1-874d-80a3da390849,Dell Software Inc.
+0697a5e2-214c-469c-8e78-91687e9dc374,Precision Valve Corporation
+0648cde3-bee8-47fe-9fba-4b267a81ee9f,Connaught Electronics Ltd.
+a7739b39-edc3-4793-8ef7-bb3d9851b7c7,"World Fibers, Inc."
+3c2def6f-0386-462b-ba95-a6775e52fdcc,"Precision Rail and Mfg., Inc."
+579f681a-8b2b-4cf9-8d88-b4750ef93525,DBV TECHNOLOGIES
+6cd1eab3-bd8c-4743-b483-80c5abea57a8,SONY SEMICONDUCTOR SOLUTIONS CORPORATION
+2bbaaa43-4910-467e-8350-8b6b00d7c790,OSAKA UNIVERSITY
+356abfab-bdcd-416b-b893-2edd0618bb80,ALLIED TELESIS HOLDINGS K.K.
+73873044-e4a0-4b84-ada5-95b74f90bdf4,TOKYO ELECTRON LIMITED
+6283043c-8ee2-471f-bb12-5a6db89b50fd,Chr. Haeusler AG
+f8aea8ff-8566-4831-bcb1-e10a970b37d0,E-Z Fill Corporation
+66c9ff65-7d84-4fc0-9461-357097208ada,"BBC Brown, Boveri & Company Ltd."
+fde582c4-77ba-4466-91eb-19ed0eb06b6b,Eaton Corporation
+239f5681-db91-47c1-904c-cb2fccdb53cf,FRAMATOME
+cd1ca579-73a6-4d39-9ae8-064061d47ba5,Steaka-Maka Marketing Pty Limited
+8b5ce984-d08b-4ee1-adde-b734cab39b93,Nalco Fuel Tech
+4063bb55-82ac-4a37-bc18-33685bd3ac97,ARINC Incorporated
+b65ea259-4c8a-484e-892e-17f02a966e98,Ixia
+edb3e22b-736c-47e5-984f-a5ee25ee3fb8,Nektar Therapeutics
+e4b19be5-5d22-4c39-bb91-3171e201e21d,Platt Saco Lowell Corporation
+ad5ac9c5-dade-46c9-8df1-e5b50ee58a95,The Secretary for Defence in Her Britannic Majesty's Government of the United Kingdom of Great Britain and Northern Ireland
+db9f5f3a-bfc7-420b-b218-8331f6759743,Hire Technicians Group Ltd.
+f47f8183-7a1b-4be6-bda0-535b71866567,"Advanced Cardiovascular Systems, Inc."
+a50cc5fa-4dd9-4bbb-a8e7-095f8ce59db6,"Konica Minolta Opto, Inc."
+a0db9861-b008-470a-aca8-dfc457872aec,Volvo Truck Corporation
+eb4c634e-ee0e-43cf-903d-6c73d40e28b8,BOMAG GmbH
+ff7decad-ef6a-4dfc-94a7-5ad0e0e14fa1,DOW GLOBAL TECHNOLOGIES LLC
+617f5b24-4f86-4b4d-a17d-63ca832ef029,Roland Corporation
+3a8dbb0b-43e8-4910-9244-a9026a7471fe,ECO Holding 1 GmbH
+070284d4-9b6e-4dd3-9c9f-3f6d63e92a68,Standard Conveyor Company
+c2bb2e2e-2af2-4893-bd50-e6084ca4e376,"Schwing America, Inc."
+7e87b18c-ee23-405e-b02c-81259dcde36e,"Isis Pharmaceuticals, Inc."
+9883a065-738c-47fc-9003-d91f9fb6d693,WARTSILÄ FINLAND OY
+e7980071-7292-4787-9821-7a5ba6c9a519,NORTHROP GRUMMAN CORPORATION
+12688bee-4576-48c8-8fb2-b958190581b0,Dolby Laboratories Licensing Corporation
+a0d050d8-5c2f-4c1f-9ecb-80a04bf3051e,"SHENZHEN FUTAIHONG PRECISION INDUSTRY CO., LTD."
+9ef963f2-b014-4cf2-8b72-fc6f37337275,"Torrey Pines Logic, Inc."
+6cee9e54-f1aa-4462-afd1-e2d674b5e568,"Roche Diabetes Care, Inc."
+f43e53b0-52d2-4034-9a6a-53dfad273efb,Snowflake Inc.
+f0180c0e-d0be-46d6-923c-60d267410f5c,Kopin Corporation
+cf403815-9b11-4c66-8561-2ad05d8d2825,"iboss, Inc."
+4fcfadf1-259c-43d3-9e30-24f96c2b03b1,WELLA INTERNATIONAL OPERATIONS SWITZERLAND SARL
+eefd583d-bc19-438b-97c7-914913fb654f,Wella Germany GmBH
+7fe90ef1-87a7-4702-83f6-0b1214749b98,Sprague Electric Company
+95fbd235-6e49-49a8-8f04-411219509d95,Donnelly Corporation
+288fd4bf-0cc7-46bc-afef-ee335e502b1c,GEC-Marconi Ltd.
+9f2ed288-b677-47a4-af33-70b49fecfca5,"Minebea Co., Ltd."
+8fc76b1f-6d9e-46de-8591-94fec07cdff5,"First Solar, Inc."
+f4888673-de4e-4aae-abbb-72e0ca8ecf30,Arthur Everett Forseth
+1a182c4d-7b4f-48cd-8a03-a3a79b8b3c63,Sheldon H. Goodman
+aad94d4e-acb3-46b0-b1a3-1fccd59dbf08,Magpul Industries Corp.
+8ab24094-9470-4301-a48f-27c33cf4cce4,"STERIS Instrument Management Services, Inc."
+5218d531-f276-4df7-8330-9bc3bcf0a650,ResMed Pty Ltd
+bf1521a0-0c63-4fd3-b786-0e4d0f3732b6,SRI International
+66025a3b-cb34-49fd-8faa-901fcfe0febc,Lawrence Brothers Inc.
+f67e6775-136a-49cb-b832-f316b21df573,"Aventis Pharma S.A. Deutschland GmbH Genentech, Inc."
+4a24c069-5eb9-4c7f-8486-3c1fd05795ff,"Xradia, Inc."
+47cb6dda-0c1e-46d9-a519-e06cc474b078,"Solar-Tectic, LLC"
+350f2a72-7946-4336-ac7d-8e92bfcabd54,"KKU, INC"
+64f53282-a466-43f2-8cfc-d5c8ac494608,"LM3 Technologies, Inc."
+8bf75c3f-cf51-404f-ae2b-71a16228aad6,Masonite Corporation
+2cbc83e3-235d-4321-b8b9-420538acd9ee,DAICEL CORPORATION
+20b6b81a-93d0-47aa-84d7-99353585eb05,SAINT-GOBAIN EMBALLAGE
+1a2daa97-24e9-492c-bc40-244d90de347e,Trim-A-Lawn Corporation
+66f078c7-0c04-4cb0-b716-4e17cf78ed36,ABB AB
+a5d6d255-2cdc-4010-b443-f8c42cece8e2,Renesas Technology Corporation
+89ce2122-93b1-460a-a0be-af0075865290,"RM Equipment, Inc."
+4c696687-23c6-4587-a3ae-95ef88a84a44,Honeywell Information Systems Inc.
+be1a4fff-e8c1-44f7-964e-f09890d9c01a,SAMSUNG LIFE PUBLIC WELFARE FOUNDATION
+ccac8d29-8811-4e9a-9445-dd5948a853f2,Gruenenthal GmbH
+f56d01bc-ef5f-421c-9bb4-7595dc24ceb8,U-SHIN FRANCE SAS
+2834dc14-3a2d-4194-8e56-85e425a0036d,"Taylor Made Golf Company, Inc."
+1d836c80-3976-4c2e-8be3-3249bfd43e6d,TOSHIBA MITSUBISHI-ELECTRIC INDUSTRIAL SYSTEMS CORPORATION
+75ee23fb-16fb-4fa7-af64-4d67e4c1eb51,NATIONAL UNIVERSITY CORPORATION NARA INSTITUTE OF SCIENCE AND TECHNOLOGY
+9db3ac7e-791e-427c-9b65-05e539987609,"SEKISUI CHEMICAL CO., LTD."
+610a8dab-156d-4d74-be63-fc5df8497cc1,"HEFEI BOE OPTOELECTRONICS TECHNOLOGY CO., LTD."
+4f149f07-c19c-4005-a159-545615e4237c,Social Profit Network
+a4eef04d-74e1-45aa-bc23-b3b5a05ac285,"SONOS, INC."
+8d2e4fa0-7d51-46c8-88b4-60ab9f6fafd3,"MERCK & CO., INC."
+5ae2b8bc-f9f1-4fa5-b30b-541fd8344681,International Flavors & Fragrances Inc.
+f9021bd6-36cf-4f3c-851c-44af2eb24385,Porter-Cable Corporation
+1eb28de2-c6f3-4761-ae3b-de7f30fd80d0,Nobuo Katch
+5ab5560b-f14f-494f-9fda-fec66851ebe8,Elekta AB (publ)
+784b5ac7-b74d-422e-9cc1-922f47801deb,Xerox Corporation
+459e818b-d3a7-4a35-8701-dc725fe3b7ac,Maidware Products Inc.
+fb65591e-83d0-488a-a9a0-a0abce448aa0,"THE GOVERNOR AND COMPANY OF THE BANK OF IRELAND, AS COLLATERAL AGENT"
+350e1f61-75f1-4966-96f0-2239aa2dface,THE REGENTS OF THE UNIVERSITY OF MICHIGAN
+59fcb5c7-6c3b-40de-b5ac-0f097ddc71f1,"S & B Manufacturing, Inc."
+689789b8-fd95-4623-bed3-93ce43c00d80,Virginia Polytechnic Institute and State University
+88492f3b-854b-42eb-a6f5-871050129029,Baker Hughes Holdings LLC
+4b074435-37fe-47b8-9995-f40fa2627816,"RF Micro Devices, Inc."
+794d2b69-5d15-4280-84f5-0bcd10bfa426,INTEL-GE CARE INNOVATIONS LLC
+405000f7-9635-4985-a202-a1c8bef0aa97,Rockstar Consortium US LP
+89ccc2d2-83fc-417f-bb5e-e3b4882a20c3,"Suncast Technologies, LLC"
+a8767289-af0d-4f3b-bba2-375d188b7d95,Dr. Vranjes Firenze S.p.A.
+bb5a05cb-ee57-4751-a497-1904b9e27467,NATIONAL SUN YAT-SEN UNIVERSITY
+1c183386-2ff7-49d1-b638-79442ff14928,"FACEBOOK, INC."
+089ee433-5aa7-435c-969c-0ef039107b07,"Heartflow, Inc."
+a597a46b-808e-4def-8c55-b78ac3051401,HTC Corporation
+b3bad200-5dbe-4d88-94f9-205e2f58dbc1,"MicroVention, Inc."
+efbe9627-1b47-40cf-9526-8bdc8315e562,"Box, Inc."
+049a5012-808b-426d-ba85-3f18de39c7b2,"Qorvo US, Inc."
+973bbf78-d96a-4e93-8da3-b175c5337693,Navitas Semiconductor Limited
+6c206349-d7f6-44a4-81c2-cf38a2e5025a,Ohio University
+8e114b79-3840-48b2-9f1e-e00e175c8e59,Noise Cancellation Tech
+6acd44f6-4ffc-4615-940b-4aaf6e6a9dd5,Agrano AG
+abc88560-1877-47a4-a6dc-9acecd14ab59,"NGK INSULATORS, LTD."
+2543cefd-6e29-4566-804a-d36b910a15de,"Zond, LLC"
+ce0f62c4-456d-44b3-a085-17ffffba4781,Schott Glas
+b1acb940-8c94-4d0f-8c47-c2578bc1c933,"Lockheed Martin Coherent Technologies, Inc."
+be9efdee-a1dd-48eb-a445-d7ba6b115d01,"Keystone Ridge Designs, Inc."
+0fc87f98-fbdd-4a5c-b535-494ce422db44,"Pacific Market International, LLC"
+10c1544e-0f89-4a4f-b293-abc6938ae9f6,Becton Dickinson France
+ed8ac69c-7b50-415c-9b2b-6cb57d40f1a5,Atsuhito Sawabe
+c8e27bbe-d4ff-4031-866e-adfe68248a84,GTE Products Corporation
+a98fd2c1-8f4d-4183-8578-bec76d95595b,"Zimair Welded Wire Products, Inc."
+f6011e45-e6bf-4a74-9cda-0a52e776a0e0,North Carolina State University
+d13e2a8f-7649-476e-9e24-e1454f5e85b7,The John Hopkins University
+67878b3e-6b74-4a59-a7ad-41ed7b0dbaaa,FAIR ISSAC CORPORATION
+2f54862f-a93b-4382-85fb-a310646b5d55,"MicroDexterity Systems, Inc."
+2dcbe1e8-9015-4d0b-aa03-756b0e3dbec3,HY-KO PRODUCTS COMPANY LLC
+f92e8ae6-49b6-49f3-8336-f9d195eb1c54,ROLAND DG CORPORATION
+a8851f64-b0f2-4601-a735-1497619d3644,"BIO-TREE SYSTEMS, INC."
+75cb8194-7d06-4f79-84c6-681c6fa41404,"Lyondell Chemical Technology, L.P."
+b81b1e2a-933f-428c-8075-4930bea046c2,"DANA-FARBER CANCER INSTITUTE, INC."
+00400ffc-2010-42bb-9e3f-bdbbd3ad5dc9,"TOYODA GOSEI CO., LTD."
+bae0684d-dcaa-46ce-8145-dbd52cfd274b,"Plastipak Packaging, Inc."
+fd334d4b-82aa-42f3-b767-4a7ec77ad2ab,NIPPON STEEL & SUMITOMO METAL CORPORATION
+aeab8c96-2e57-4f46-9341-7a1aa3cfadc0,"Clean Harbors Industrial Services, Inc."
+b1eec2da-70af-43b7-9f22-1b0854191276,Corning Glass Works
+93f1e98f-8eb1-475f-8577-3124054b28d9,RKC Corporation
+6a004e14-55fd-44d5-94c3-045edb576f4f,Heterochemical Corporation
+99e9debc-30ae-4b31-a4db-51f95accdcbd,Fuji Jukogyo Kabushiki Kaisha
+e1d9fdd4-512a-429a-8fae-79df9d3ea7a8,Allied Precision Industries Inc.
+a3e521d1-c6c4-4018-a89d-2b8bd733b19a,"DAMAGE CONTROL SURGICAL TECHNOLOGIES, INC."
+680d9468-6983-4dad-a21d-78de7d20a3aa,KING'S FLAIR DEVELOPMENT LTD.
+cacdb3d0-b53f-421c-af52-4d67f7c8fed0,"Goss International Americas, Inc."
+21c41294-2a25-4e64-a12e-93dcbd9c49e6,Snowblade Corporation
+e591c438-cebb-4a13-900e-7a52f37773e1,Esselte Leitz GmbH & Co KG
+fcefae62-fd3f-400a-9ce2-aa0cb8d14930,SAIPEM S.P.A.
+de2862a8-06a7-4fee-9ea3-751b0b19614c,Imagination Technologies Limited
+bea6d428-d83d-4c7a-8fd1-5cd3e6bfc5fa,"Empire Enterprises, Inc."
+87ecb58d-6d19-475d-9b2d-0ba40eddcb78,OrePac Building Products
+c31fa7ec-1a9e-4599-82ff-6361c0c728a7,Rite-Hite Holding Corporation
+b75b6d37-1540-41bc-aac0-f8749a416095,EXXONMOBIL RESEARCH AND ENGINEERING COMPANY
+4638ef7d-9f98-45bc-ad2e-b741f398fe27,"Interface, Inc."
+a3efe06e-9262-46fd-8add-0055f8a398f4,Anest Iwata Corporation
+00bf7255-42b9-4c63-bab4-b85c9f994bda,"Propex Operating Company, LLC"
+acbf37f3-5c1a-4923-8308-260fbe03916e,"Mini-Lap Technologies, Inc."
+76687bcd-5639-4346-a951-c4c9aa109a67,Morphoplant GMBH
+5ebc2c29-d870-43a0-8a95-4e9d0ecb101a,"American Regent, Inc."
+713791a0-b23b-460c-849a-c9760ef1da2b,"ACTA, LLC"
+606695d0-2990-43d4-a40b-2818aa3852bc,Saint-Gobain Vitrage
+dab2c997-6d4a-4a27-af02-381c5745bcf5,POPSOCKETS LLC
+b6a146d1-3daf-4bd3-bf86-5e95f6bdd197,"DOWA Electronics Materials Co., Ltd."
+5b8dd46f-8869-4485-b0ec-be0746ae9433,"City, Universsity of London"
+8e14baac-a410-45ca-acaa-f7ffaf7084c9,Cycles Peugeot
+688e2d56-692e-487c-83fd-57750ff656c7,Norand Corporation
+129ba2c6-fb76-419e-8b6d-4d706e40a891,Algos Pharmaceutical Corporation
+0f49667b-6035-4c89-8abd-5113ebc4fc49,Moria SA
+aeb4a08d-7a1c-4043-bd81-60e3e5b39fd1,"MSTAR SEMICONDUCTOR, INC."
+0694cdda-d32f-4d50-8304-9eb3e4b2c6a8,"Cybex International, Inc."
+cd81a219-36c6-4d54-89e0-7781a487bbde,INDIAN INSTITUTE OF TECHNOLOGY KANPUR
+6f828e3f-1e63-4c93-a6db-9b8f35a7fb17,KOMATSU LTD.
+f65f2b20-7fc1-46ba-a622-c64b6e367192,"BRASSTECH, INC."
+7ab8039f-429f-4215-aee8-12498c9e9ef7,"Taisei Kako Co., Ltd."
+d0c3a368-d31d-48ca-adb7-bad27e1c9a8b,BIONEER CORPORATION
+497fb8db-6134-4e4a-88d4-80719a0527e3,SOUTHEAST UNIVERSITY
+1aed67c7-4def-4cd4-b829-ebf93a2d66c8,MAREL BRASIL COMERCIAL E INDUSTRIAL LTDA
+98027167-90df-4535-85c9-1ba1fb88577a,HARRIS CORPORATION
+27bb2ba4-b4d3-4222-ba61-b988b3de7263,Terry Patterson
+401d27d2-e449-4215-b24f-ba8966d52484,Rapistan Systems Advertising Corp.
+1ef4d94c-b0cd-42ae-b60e-0b9f7bce0fbb,S.O.I. TEC SILICON ON INSULATOR TECHNOLOGIES
+8c889f30-6b20-4b20-b912-c82d8a6fc54c,RISO KAGAKU CORPORATION
+4588dac5-2d15-468e-9a16-2d338ad268c0,SanDisk 3D LLC
+c866a74a-237b-4dcc-be23-c58e6c808858,City of Hope
+6a317ad4-62ef-45f8-882b-dfbbb0b270bd,BSH Home Appliances Corporation
+b55bb019-cbef-47eb-89db-96963e3bb870,Spinchem AB
+714097fa-ce2f-4aa1-b649-0247f2b4ae20,"Stolle Machinery Company, LLC"
+da8207ec-8465-42b4-a4e8-5bf966ce8e0a,Therma-Tru Corporation
+1bff89f5-b5f4-46e8-8fdc-9896e6ce7d2f,WORTHINGTON ARMSTRONG VENTURE
+d699844f-0279-44e8-85e6-33f3d1f27e16,"FURUKAWA CO., LTD."
+4b1771e7-aa33-49e3-8608-a26a200f67ae,Minolta Camera Kabushiki Kaisha
+052666cf-6726-4934-a9c3-85822d7d34bc,Thomson Consumer Electronics
+37e3b7cd-2466-4a60-a489-b6d6dbfa4759,Aviron
+f5d41900-6627-4cf3-bbb6-a63b962ff1e0,"MethylGene, Inc."
+e0815184-f0e0-4b4c-90f9-f34fb1de5034,"Element CXI, LLC"
+36796fd6-5503-4bd9-b878-e89f779a46be,Entrust Datacard Corporation
+d8a9b8db-5156-44d1-afc1-92eefe8a5d75,"State Grid Digital Technology Holding CO., LTD."
+e433ff89-b9c8-49bf-80d1-9353a7010372,Automatic Switch Company
+e24302a3-113b-4b13-9d44-7d529f572ab4,R + S Stanztechnik GmbH
+8082125f-c905-458c-b3c8-19bf69fd5f41,Nephros Inc.
+fe3ac1c2-3bc7-4169-a51b-b0cef95956a9,SolarCity Corporation
+fd033210-11aa-49ba-8c18-e64372068ef1,SHOWA CORPORATION
+84ef0b92-0504-45a1-862e-47cae89db593,"JDA Software Group, Inc."
+fff04731-88c5-4fe7-85c9-429d411a8fb5,"Umax Data Systems, Inc."
+0a448af5-4e97-4a7a-9cea-b03b4133a0b4,"Asahi Irika Co., Ltd."
+35fd0f4e-c817-4328-8216-b44ffa6a2880,Intel IP Corporation
+9f46b69c-ee6c-4572-bf21-bacd46a3db5e,"MIYAMA ELECTRIC CO., LTD."
+41e98bdf-b779-48ff-8eff-b16a195a97b5,"Janssen Pharmaceuticals, Inc."
+1d7b704d-8082-47de-bdc9-ad204f280b76,Robbert Adriaan Schilperoort
+f9fa41ff-ba28-4979-9c7e-58df1787c130,Rijksuniversiteit te Leiden
+37284cbf-c17e-48be-bec7-0c0d3a170d50,Dibra S.p.A.
+1e0b6caa-466d-494d-b4a3-faa37b3f001a,NIREC CORPORATION
+68c4ff86-6cd4-4ef4-8eab-4990e48f853b,"Butterfly Network, Inc."
+64ba87fd-48cb-4a66-a1c5-ff2a59f48807,Linkeet
+0c8a0078-a316-464f-8a7d-a76b749092d0,LAB (XIAMEN) SANITARY FITTINGS INC
+644b8ab6-c9b7-4d8e-96e7-7542ae11e253,Nicoventures Holdings Limited
+63a1b372-8090-409c-ac91-e05b648f8205,Visa International Service Association
+9c0e4e21-cd46-4cb0-824e-71691737955e,"American Air Liquide, Inc."
+95a05519-9d42-4377-84a6-bf798ae43437,"PRELLIS BIOLOGICS, INC."
+cdd244d8-51fe-48ae-ae07-c02b8522ef9f,PAUL WURTH S.A.
+91b26d14-2025-4d85-a2b9-9cfc7aa84261,"Hitachi Ulsi Systems Co., Ltd."
+6b4bd09b-d00e-4bf0-b88d-435af449940d,YISSUM RESEARCH DEVELOPMENT COMPANY OF THE HEBREW UNIVERSITY OF JERUSALEM LTD.
+296f4c93-7b08-4ab6-a46c-c03a0982aaa5,"SMARTLABS, INC."
+be8cf791-2ae5-42fd-a77e-4bb03832709d,"SHIN TAI SPURT WATER OF THE GARDEN TOOLS CO., LTD"
+71e296de-8f95-4420-a83e-f308f763c353,Geico S.p.A.
+f9a3a61f-3e96-49a6-82cb-8a4b03a97519,Durst A.G. Fabrik Fototechnischer Apparate
+458e8ff6-b9fd-44fa-9253-2936fa5bbf64,Nancy Helen Rosaen
+cf80718e-46a1-4327-8e99-4bca41e6a400,RANBAXY LABORATORIES LIMITED
+9003eca5-ecc9-4478-8012-8d31c2b139d0,"Asia Fastening (US), Inc."
+aabb74f5-f81c-4686-b81b-8e2f398931e2,SUN DRILLING PRODUCTS CORPORATION
+55d173d8-d35d-43a9-8fdc-a0e134348ab3,"Yuyama Mfg. Co., Ltd."
+fe477197-d3f2-4b6c-8f88-bfa457bb7951,YEDA RESEARCH AND DEVELOPMENT CO. LTD.
+b77da53e-060a-467a-94b4-414ecee7b2c3,"Securus Technologies, LLC"
+14315499-399a-42b9-bc5b-c6af6126b29b,"PPG Industries, Inc."
+793ce3d3-4584-4efd-8f36-3fa2ecdf5fde,American Home Products Corp. (Del)
+e1242188-dc1b-4e61-9122-bcecb4dcf168,Olin Corporation
+4b5d92f6-45b5-4831-8fc4-f2747f174cdd,"ArvinMeritor Technology, LLC"
+186a524b-c391-4276-a575-4e9f95e26463,Asoka USA Corporation
+58c666ee-9ba5-4268-a4e7-dd97f715db84,"IBT Co.,Ltd"
+b2c7fdf0-ad38-468a-b94c-b94b4e6c1021,DANA CANADA CORPORATION
+4bcaf7ea-fd0d-4979-811e-62e86e2f0193,"TOPPAN PRINTING CO., LTD."
+0d3aea43-d6c9-4f99-b778-afee9eef9d7c,UNITED STATES GYPSUM COMPANY
+bc64b5ea-4618-48c6-8608-67248fc2cbb8,NOKIA SOLUTIONS AND NETWORKS OY
+501af1be-192f-4465-9a14-398a89632c64,Loctite Corporation
+4069d379-ef0d-4f33-8c19-300b3a8ddd20,Patent-Treuhand-Gesellschaft fur elektrische Gluhlampen mbH
+11ec7d34-54de-4406-adef-a1907a389cbd,"SAMSUNG FINE CHEMICALS CO., LTD."
+b912e819-cbb7-4201-9064-884c8ea2fcfb,Vintage Gold Holdings Limited
+927b8939-8f97-4ae7-86cd-e17a2cdba50c,Guy Drapeau
+b40e7ad0-d2fc-41fa-95e3-39362fb5329d,Luc Blanchette
+51d26931-d4d1-41e3-b2c8-bf0cfc7bfaa0,YAHOO ASSETS LLC
+8d717a42-6381-4a09-a91b-2c52a13ab7ae,Topgolf Sweden AB
+9162b182-aa68-429d-9374-ad135a5baff7,United States Department of Energy
+7f495dcc-ede6-4ea7-b7bc-daae2485edfd,"Onoda Construction Materials Co., Ltd."
+395af7d2-4cdd-4c43-96f2-7394382bf2a4,"Symbol Technologies, LLC"
+05fb4937-9e25-4791-b5df-36ecc5e53260,"Boundless Networks, Inc."
+deb7a2c6-1dc1-4d80-bc1a-7dac30023576,Adams Mfg. Corp.
+6f7863e1-766e-440f-ac37-189a4bab0548,"Deep Isolation, Inc."
+a5868b16-0bd4-4e4a-a1d9-0ad1fd0c10cd,TE CONNECTIVITY SERVICES GMBH
+35901134-287f-4716-857f-bbadf0423606,AUTRONICA FIRE & SECURITY AS
+3fed1423-c4d4-4b45-9041-f88a282c22bf,"LG ENERGY SOLUTION, LTD."
+470c57e9-14b7-40dc-b3e0-e4244c5ad016,"Utz Quality Foods, Inc."
+8c545ae7-c8eb-4bb8-9dd2-e1a648060d5a,"Mattel, Inc."
+fa333565-7291-430a-b0c3-3335e75207b6,NELLCOR PURITAN BENNETT LLC
+e7446afa-a245-493b-aa5c-bebcab378be8,J.L. Clark LLC
+9934dbce-ba45-4e29-b90a-2483b624d505,"Citrix Systems, Inc."
+f98733f5-f8cc-4a8e-a70d-eae7bf5ba3d3,ERA ENDOSCOPY S.R.L.
+74a6fe45-b4be-4742-877b-1186bd2be4c1,Beyond Imagination Inc.
+9fd1f1ea-a4e3-46b3-bc31-17ebf23f17e5,"CORELINK, LLC"
+f81245c8-d90b-4a6c-a581-5fd3d97ec248,Willberk Inventions Inc.
+b57d047b-b635-4fcc-9e47-1bad8fd9b340,SUBARU CORPORATION
+f151973a-c296-4bb4-92ca-f3d2af2549b8,Palo Alto Research Center Incorporated
+46f22fd1-f972-4342-ac43-15a4e05eee4c,NIDEC SANKYO CORPORATION
+377e369c-0510-4bea-bfb8-19b45b097c5e,Parker Hannifin Manufacturing (UK) Ltd.
+d07a1e2d-c440-4020-9991-77b3c8fc11e4,Hollingsworth & Vose Company
+c08fe7f6-cffc-4222-867f-f9c2d9919e1c,Shinshu Seiki Kabushiki Kaisha
+c86b4255-a5ec-4038-a802-299f3d2b49a2,Fox Chase Cancer Center
+cad79cba-137c-491a-a5b0-079afa3e676f,VALMET AKTIEBOLAG
+e0300fec-ecc0-4d5a-b9e4-17be7fc8f146,APTAR DORTMUND GMBH
+ab83c959-c2f5-4dbe-848e-e4fe62ebf671,MAKITA CORPORATION
+8220c40c-0786-44a4-a524-207128296831,Fraunhofer-Gesellschaft zur förderung der angewandten Forschung e.V.
+ab0f4574-8070-48d9-a296-90c667ad3282,Encore Medical Asset Corporation
+c11ac0f9-d52c-4b4d-8fa8-9624558ace1a,"BREVILLE USA, INC."
+67ce7c82-0e94-4f9a-af09-af13ef90c9ed,"Precision Research & Development, Inc."
+a906a8f8-e88f-4f5e-a5e5-0ab78fa6bf3b,"S.E.S. Co., Ltd."
+0343abee-c7ab-4f0b-bbb3-28f8983523a8,ConocoPhillips Company
+0c267881-1b30-452e-8571-1f3ba7cd71b5,"Synplicity, Inc."
+658fc3da-18ef-428a-9d2f-e2fe6fb48fd0,Texas Petrochemicals LLC
+869e38c4-3147-476f-b6d8-e82ead31075a,BRACCO IMAGING S.P.A.
+8dd326ae-aa8c-4f8a-b710-711d10f4556e,Masco Corporation
+c8df233c-dc8d-4f84-9e66-fa507131157a,Brown University
+e9a5a5a7-5dfb-4bae-bfc5-e0648b35cbe7,OUTOTEC (FINLAND) OY
+b98760ef-226b-4e58-9a9c-2a000436c164,Battelle Memorial Institute
+6b60ec3e-ea0e-4273-a4a8-37b01512c218,"ARSTROMA CO., LTD."
+c0e67e09-5e20-4023-9c57-c79f3b24c6ba,The Mead Corporation
+80d14c1d-25e2-4df8-9baf-c80092b80a42,Esmeralda Breeding B.V.
+98524217-7297-4a8e-8383-ad40f90fe4bc,Bose Corporation
+30c2e927-7159-4db2-98c4-7b5de27845c8,"MURTA MANUFACTURING CO., LTD."
+4f2d7863-6871-4e8b-af2d-7c28bf6c2546,"Tesseract Structural Innovations, Inc."
+6d91ebe5-72a4-4d96-a6b0-86555c457b15,SAFRAN AIRCRAFT ENGINES
+d51fb8c2-7c02-4c39-9e3c-2a1b1fb755e6,ATR Equipment Industries Limited
+ac56f22a-5031-45d2-b37e-76bc8fdbf204,VLSI Packaging Materials
+facdd563-8bed-48d9-b36a-d42b283a491a,"Foto-Wear, Inc."
+950046cf-324c-4817-8838-a6960c8c95d9,ResMed Corp.
+1ec1ce8a-81fe-4c99-8e78-61745d2f7fe5,Biosense Webster (Israel) Ltd.
+da1671e1-351c-4baf-98c9-de2dbc9a8c91,Enplas Corporation
+363b203d-1c43-4568-a6cd-45b456699085,"UCHIDA YOKO CO., LTD."
+85219838-3054-47a3-8d35-4874e93ccb17,"FREEFLY SYSTEMS, INC."
+4d0d67c2-24b9-4b24-bee8-187ac3a11d82,"Convertidora Industrial, S.A.B., DE C.V."
+890629cd-613f-42b7-81f1-72ea1a3858db,Memjet Technology Limited
+85aa203f-4915-4f8b-b69d-baeea5b95fb0,Allstate Insurance Company
+db168e67-15bf-4a0d-b506-5f25fcf96feb,"ExtraHop Networks, Inc."
+e358872d-a210-48cf-b582-7ff8a99219a6,MOLTZAU PACKAGING AS
+922db15b-1bb0-4483-a339-2dded6dd4ce4,Ektelon
+a65b7d22-4d1c-4a25-b5a0-141509575496,KOSMEK LTD.
+f6037d8b-f07e-4f44-ae19-97a3770f5801,T.A.G. Medical Products Corporation Ltd.
+1c8286e5-184e-472f-a160-d188fa876a1c,"Matsushita Electric Works, Ltd."
+2249a2aa-a218-466a-9458-0391d2bd4ccb,"INTELLISERV, LLC"
+f707cf64-dec7-44fe-8c76-cd880fc6f349,"Align Technology, Inc."
+1a38d02c-6bc0-424b-9c06-df45bedf812e,JSR CORPORATION
+8a243847-8ba8-47ee-8b12-03c5d9ce0f7a,"KARMA MEDICAL PRODUCTS CO., LTD."
+846efea7-5815-4039-b9ed-0b0fec9d3c20,Multimatic Inc.
+e9a4e8c7-0f34-4978-9014-3f2a711c1b6b,"SENSORIANT, INC."
+093b5d89-a33f-4a15-b1a1-8bcf058e9d0b,"Rea.deeming Beauty, Inc."
+00bfa419-5490-4d2f-abf3-97b499459338,Deutsche Gold- und Silber-Scheideanstalt Vormals Roessler
+6f82ca75-45b4-407b-8cd1-9c147e314434,NATIONAL KAOHSIUNG UNIVERSITY OF APPLIED SCIENCES
+431c9edb-557a-4aec-a697-e53d1949d03f,BOBST MEX SA
+c99523b9-ef11-48d9-b6ba-3231eeaac429,Rolls-Royce Corporation
+f28f0b0b-6672-41b4-9da5-c628ed36f6e4,"Afiniti International Holdings, Ltd."
+d423f058-557c-4678-8aaa-6f57ddb55ef8,APTAR FRANCE SAS
+c02b1ad8-1257-45e4-8ac3-0c78e4722b2b,"HEE Solar, L.L.C."
+e5c42a58-55c2-43e0-9ecf-b66c583969a8,Siemens Healthcare Diagnostics Inc.
+0d5beb94-a644-4d74-9990-3f1a95f53db8,Anna Herrmann
+46339327-8f3c-4bc2-9aa9-b8e4e422f604,Christian W. Herrmann
+5832d07f-3f52-4f1f-ba67-01a173dca632,ASM Japan K.K.
+5d75f795-e839-46b3-b6a2-a777a144ed7e,Mustek Systems Inc.
+479e4f62-6d84-4e66-a89d-6ec6e6dd36b4,ClassCo Inc.
+81a3ee68-9061-4a11-b3b5-5055038f0d4b,"Noritake Co., Limited"
+97b00f7b-e8aa-43e4-8d5f-e67d8e92e695,"Noritake Super Abrasive Co., Ltd."
+27456282-2eb7-4137-88b9-6cacf84e72e2,Meld Technology Inc.
+c14e9632-71dd-4efa-aa62-6470f0656215,Moxa Inc.
+7cfcfe1b-64a3-445a-8bff-844a05e74f83,"Traffic Control Technology Co., Ltd"
+52c309fc-15ec-4b39-aa48-e7111ce9b7f0,ProForm Innovation Pty Limited
+9331b30f-1aff-431c-aedb-a4d584520ce7,"SHIN-ETSU CHEMICAL CO., LTD."
+7b52dd7f-9d57-441d-a230-7ae67d541bce,International Telephone and Telegraph Corporation
+1dfb1a28-3d4d-43a6-9f23-f59ea3481c6e,"Arco Chemical Technology, L.P."
+efb0ba11-180f-44fb-bee6-eb4037719570,Stahls' Inc.
+df11c52f-5bed-4dfc-8b98-19a1d2a3ec93,FM MARKETING GMBH
+4226853c-3606-407a-9ca7-fc4ed4cfab36,"Trading Technologies International, Inc."
+c402cbb2-7a20-4c90-9e39-e28bd76b2fcc,"SENGLED CO., LTD."
+d4ccab37-ebff-4283-bd4e-ca284c5eca16,"Honeybee Robotics, LLC"
+7a6f237b-dc8b-4b8f-a459-5fc2e7d7cb1a,IP POWER HOLDINGS LIMITED
+f9665905-cc48-4695-808e-cfa9ee751dae,General Interface Solution Limited
+f55e7728-cb37-4c51-b4e3-53b7f1c3f9a6,UNIVERSITY OF SOUTH CAROLINA
+416a9389-2a52-4d3c-a3ef-31403bc5e04f,DIGNITY HEALTH
+86da1529-0707-4a4d-98ca-87caa01d3d84,"Ovonic Synthetic Materials Company, Inc."
+215fb529-684f-4671-88de-847a01daf54d,"Capella Photonics, Inc."
+dfd51cf4-eeb3-44e3-b23d-db5e414b52c2,EMBRAER - Empresa Brasileira de Aeronautica S.A.
+d265a233-13e0-4663-a581-630c6ca8d9d9,GENERAL ELECTRIC TECHNOLOGY GMBH
+05f9b165-b431-4561-a1ad-8e32bcd2d7b0,"J & M Enterprises, LLC"
+7b1c6dd3-a827-460f-942c-281c44b5ecfe,THE GLAD PRODUCTS COMPANY
+ebeb1846-c7d6-4bff-8b58-be6c2e331263,Gybro Industries Ltd.
+63ccc3ad-1c64-45a4-ab06-acf70d952aac,"MARTAS PRECISION SLIDE CO., LTD."
+41af0b38-d3b1-4e77-a6e6-125112be660e,YKK CORPORATION
+357bd579-32fd-4ca6-9323-484df4630ef9,"MDM PRODUCTIVITY, INC."
+85242c66-8387-45fc-8749-7fd6ef81f5c9,"LIQUID COMBUSTION TECNOLOGY, LLC"
+2427dcd4-f9ed-4d14-bf2f-5e3994a961a9,"SHENZHEN NA YIN TECHNOLOGY CO., LTD."
+5f6b9b54-eda8-4f1f-94a3-9b734b3ea673,"LIFT-ALL COMPANY, INC."
+24d1147e-7682-44e6-8bbf-86dfa192a7d1,"SUZHOU OPPLE LIGHTING CO., LTD."
+f557902b-c176-4ebe-b0a4-7a5e9a865536,"OPPLE LIGHTING CO., LTD."
+4840ab3d-fb01-43aa-9922-5a88f419308d,The Secretary of State for Social Services in Her Britannic Majesty's Government of the United Kingdom of Great Britain and Northern Ireland
+243b5ea3-b0c9-4c8b-b33a-03694740bf48,The Glacier Metal Company Limited
+a5bf5e2c-5ffd-4cda-a03b-d14f1f2cac3c,"Ethicon, Inc."
+1118ca0d-1001-4dfc-88dc-875054b02308,"Walker Digital, LLC"
+6d2ec897-52c8-418e-9e7e-b72d340d34fe,Equipe Technologies
+ec2bbb7d-f9b2-4741-b8b0-3d45f6d90fd4,"STEREOTAXIS, INC."
+f8001997-b5fc-45b6-ad51-635f1ec2f973,IGT
+28bb6027-69a0-47ca-b79f-89395feb52c5,"DataRobot, Inc."
+d6691705-12c4-4f60-812c-76a0b860c9bb,"COMET CAPITAL, LLC"
+b3987e55-9c3b-41d3-9c67-e2b0be084ad5,Duke University
+4bcded17-9085-4d9f-aae0-f022e36153bf,"Toyo Machinery & Metal Co., LTD."
+9ef7f62f-f3f8-4536-9553-dfaeaef91641,Empire Technology Development LLC
+c3d20bcb-236c-4cdd-99c6-177285be37c4,S.T. CORPORATION
+b0f7e9c8-dcff-4e9e-b5e4-17fe61280efd,Thermwood Corporation
+081ab377-75e2-4dd6-bb52-2cad9049970c,"PRYM CONSUMER USA, INC."
+361d3193-169c-49f3-a4ab-3fed806e7d60,UBTECH ROBOTICS CORP LTD
+f12a8002-5a29-4024-8a6d-34fa699ba641,Waters Technologies Corporation
+40504f2b-e38d-4bf9-9e5a-4a30e49cfdaa,"SUNTEC CO., LTD."
+849da2ef-e568-43a2-9b8d-ad0ea852de02,"National Coupling Company, Inc."
+b05c2baf-161a-4693-9b50-f73308e38610,"Nippon Shokubai Co., Ltd."
+fbd9c463-17da-4245-b237-b1b486c5d97d,Shenzhen Tronsin Illuminating Technique Ltd.
+d6e2ed34-aca2-4b2f-b5f1-ecc5e7ac7bda,"MACROBLOCK, INC."
+bfc3a803-0a2f-4792-9a21-89983c484b0d,REXNORD GMBH
+d3b96c66-2bd4-4783-b888-497f44e624c2,"SHANGHAI ZHAOXIN SEMICONDUCTOR CO., LTD."
+15dd6791-4fe0-48e5-a89c-1c5d3f96727d,"OneEvent Technologies, Inc."
+62b64d93-e15e-40fa-9ec7-81724849f3f7,"NuCurrent, Inc."
+fc0bef50-6a5b-4aa9-8a02-10237c8e0fa0,"The United States of America, as represented by the Secretary, Health and Human Services"
+3198552d-065f-48b2-976f-43202a222549,Columbia Body Manufacturing Co.
+b378a7f4-ee16-4f5f-b78f-710a3c658838,TRENCH LIMITED
+b801f72f-0049-4953-931f-c70c62af9a1d,"Tyco Electronics Co., Ltd"
+6c889bed-d3dd-4ace-b2d6-19b01525d1c6,"GRACO CHILDREN'S PRODUCTS, INC."
+3a761b73-0336-409f-8b68-5971bf2e2290,Wayzata
+28d240e7-e7be-44a7-b20a-ab514d6de4ae,"AIR COOL INDUSTRIAL CO., LTD."
+08fb4363-1802-482d-89e1-c0644f58dd2f,POULSEN ROSER A/S
+e6cf7a6b-ae55-4327-ba7f-faa808f748f1,Wayne State University
+9f3663d4-e073-4003-aa75-a27de2fc2848,UNIVERSITY OF CONNECTICUT
+cfb0e33b-439f-4c73-8f9f-d2dc0bdf55c2,"BLUEBIRD BIO, INC."
+edb5e277-c7ef-4d63-92ba-a27b6f4bb8d3,"Xperiel, Inc."
+f50a5324-d8fe-4fe4-a412-64964afaddfd,"YETI Coolers, LLC"
+9e69a7df-9fb6-4153-9266-5b6b2a240ea3,Hitachi Energy Ltd
+611a06aa-b349-47be-a78a-1ca50c70ba12,Aktieselskabet MEC Makanisk Elektrisk Compagni af 1975
+f1763e70-a25f-4ac0-a57a-442dbed6083f,"Cellular Products, Inc."
+33eef417-9ebe-4953-b3c2-6ee80e5ec710,Nokia Telecommunications Oy
+77e2a2b1-84fe-4af6-aea4-3a954531054b,THE WIREMOLD COMPANY
+94b9308e-1bc2-4722-b655-04d84e1a7dcd,"WEBSIDESTORY, INC."
+e6c3b689-d889-4dc7-99c6-09d5b48e5ccf,"FTL Systems, Inc."
+da863dca-d9af-43f9-972f-58a92f053043,"Sierra Scientific Instruments, Inc."
+e379e01e-9a4c-45ea-8029-d1513576d47d,Abbott Medical Optics Inc.
+68d5751f-89ae-4009-a40e-0242e83f407c,"The Regents of the University of Colorado, a Body Corporate"
+6cd05d2b-e25a-4a4b-a61d-03b62aeaa3ef,Saudi Aramco Technologies Company
+e9045102-7b46-4d63-8d7a-3d23ca2f435c,RYU Apparel Inc.
