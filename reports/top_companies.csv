@@ -1,21 +1,21 @@
 company_id,company_name,patent_count
-d1d96a91-c5e6-4090-ba39-4af2494eb35c,"SAMSUNG ELECTRONICS CO., LTD.",96
-6e80a706-ca3c-437b-8a9c-aae8b5efba57,International Business Machines Corporation,86
-61d52265-4aea-4f20-b743-c4a9faef6860,Canon Kabushiki Kaisha,51
-c9398d69-5dbb-4b06-b9ea-757038ca0ea3,FUJITSU LIMITED,37
-6326da5f-8cb5-4e23-8929-4dd62cba64d3,"HITACHI, LTD.",32
-af1c1db8-dc03-4036-a732-d81d2ad09c0c,SONY GROUP CORPORATION,32
-c743e7d8-5290-412a-aeeb-edef2348822a,General Electric Company,30
-47cd060e-60ce-49ab-8623-caf34f5c3860,Intel Corporation,29
-a90e9fd0-52e6-43d3-b861-4a87a6e54cb8,Kabushiki Kaisha Toshiba,29
-5add8615-963b-47fc-bd21-056c0f15b3fa,"Micron Technology, Inc.",29
-95c789e7-1a6d-440a-8077-98c070f83c30,QUALCOMM Incorporated,26
-41f7f170-9cb1-4b67-98bb-bad5de48d30f,SEIKO EPSON CORPORATION,24
-f71249de-0cfb-488f-8a27-f3861dc2d67b,LG ELECTRONICS INC.,23
-c645ee1f-daa2-4665-83dd-bdf222f59683,Robert Bosch GmbH,21
-2990770e-4c22-4129-b365-15bd95b30adb,TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY LTD.,20
-3e5cae88-ed9d-4912-8c9d-de81d98a05f6,Apple Inc.,19
-b6235f56-d610-4345-b438-277f133eb272,TEXAS INSTRUMENTS INCORPORATED,19
-20e63ece-1b0a-4684-bee9-5d9685873cf9,Google LLC,18
-5cbf6cf6-08d1-41e2-aba6-46b689895c03,Microsoft Corporation,18
-cf4da630-d78e-4761-89a4-20c6736ac290,Mitsubishi Electric Corporation,18
+d1d96a91-c5e6-4090-ba39-4af2494eb35c,"SAMSUNG ELECTRONICS CO., LTD.",143
+6e80a706-ca3c-437b-8a9c-aae8b5efba57,International Business Machines Corporation,139
+61d52265-4aea-4f20-b743-c4a9faef6860,Canon Kabushiki Kaisha,88
+c9398d69-5dbb-4b06-b9ea-757038ca0ea3,FUJITSU LIMITED,80
+a90e9fd0-52e6-43d3-b861-4a87a6e54cb8,Kabushiki Kaisha Toshiba,71
+c743e7d8-5290-412a-aeeb-edef2348822a,General Electric Company,68
+6326da5f-8cb5-4e23-8929-4dd62cba64d3,"HITACHI, LTD.",65
+af1c1db8-dc03-4036-a732-d81d2ad09c0c,SONY GROUP CORPORATION,58
+bb7e5a8f-2c56-4a14-8b19-2c204b94a583,"Sumitomo Electric Industries, Ltd.",50
+cf4da630-d78e-4761-89a4-20c6736ac290,Mitsubishi Electric Corporation,46
+47cd060e-60ce-49ab-8623-caf34f5c3860,Intel Corporation,42
+5add8615-963b-47fc-bd21-056c0f15b3fa,"Micron Technology, Inc.",40
+8ea8f29a-3897-4a55-80a9-579e39725345,Siemens Aktiengesellschaft,39
+c645ee1f-daa2-4665-83dd-bdf222f59683,Robert Bosch GmbH,38
+54693776-6f4c-4bc1-9879-d3c783dac569,E.I. DU PONT DE NEMOURS AND COMPANY,35
+95c789e7-1a6d-440a-8077-98c070f83c30,QUALCOMM Incorporated,35
+b6235f56-d610-4345-b438-277f133eb272,TEXAS INSTRUMENTS INCORPORATED,35
+8bc9c640-4f7a-4f76-b47b-d00201e48f15,United States of America as represented by the Secretary of the Air Force,34
+f71249de-0cfb-488f-8a27-f3861dc2d67b,LG ELECTRONICS INC.,32
+9869f621-59bc-474a-9b6e-2ea9a27e080b,"RICOH COMPANY, LTD.",32

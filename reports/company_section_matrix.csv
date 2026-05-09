@@ -1,83 +1,99 @@
 company_name,section,patents
-Canon Kabushiki Kaisha,B,10
-Canon Kabushiki Kaisha,C,4
+Canon Kabushiki Kaisha,B,16
+Canon Kabushiki Kaisha,C,5
 Canon Kabushiki Kaisha,F,2
-Canon Kabushiki Kaisha,G,36
-Canon Kabushiki Kaisha,H,17
-Canon Kabushiki Kaisha,Y,5
-FUJITSU LIMITED,B,3
-FUJITSU LIMITED,C,1
-FUJITSU LIMITED,G,24
-FUJITSU LIMITED,H,15
-FUJITSU LIMITED,Y,6
-General Electric Company,A,3
-General Electric Company,B,4
-General Electric Company,C,7
-General Electric Company,F,9
-General Electric Company,G,9
-General Electric Company,H,5
-General Electric Company,Y,13
-"HITACHI, LTD.",B,1
-"HITACHI, LTD.",C,2
-"HITACHI, LTD.",F,2
-"HITACHI, LTD.",G,22
-"HITACHI, LTD.",H,12
-"HITACHI, LTD.",Y,4
-Intel Corporation,G,20
-Intel Corporation,H,14
+Canon Kabushiki Kaisha,G,62
+Canon Kabushiki Kaisha,H,28
+Canon Kabushiki Kaisha,Y,8
+E.I. DU PONT DE NEMOURS AND COMPANY,A,3
+E.I. DU PONT DE NEMOURS AND COMPANY,B,10
+E.I. DU PONT DE NEMOURS AND COMPANY,C,21
+E.I. DU PONT DE NEMOURS AND COMPANY,D,4
+E.I. DU PONT DE NEMOURS AND COMPANY,G,7
+E.I. DU PONT DE NEMOURS AND COMPANY,H,3
+E.I. DU PONT DE NEMOURS AND COMPANY,Y,11
+FUJITSU LIMITED,A,1
+FUJITSU LIMITED,B,6
+FUJITSU LIMITED,C,5
+FUJITSU LIMITED,F,2
+FUJITSU LIMITED,G,57
+FUJITSU LIMITED,H,28
+FUJITSU LIMITED,Y,14
+General Electric Company,A,5
+General Electric Company,B,9
+General Electric Company,C,16
+General Electric Company,D,1
+General Electric Company,E,1
+General Electric Company,F,15
+General Electric Company,G,15
+General Electric Company,H,24
+General Electric Company,Y,29
+"HITACHI, LTD.",B,5
+"HITACHI, LTD.",C,4
+"HITACHI, LTD.",F,9
+"HITACHI, LTD.",G,37
+"HITACHI, LTD.",H,26
+"HITACHI, LTD.",Y,11
+Intel Corporation,G,29
+Intel Corporation,H,19
 Intel Corporation,Y,4
 International Business Machines Corporation,A,1
-International Business Machines Corporation,B,3
-International Business Machines Corporation,C,2
+International Business Machines Corporation,B,13
+International Business Machines Corporation,C,4
 International Business Machines Corporation,D,1
-International Business Machines Corporation,F,1
-International Business Machines Corporation,G,59
-International Business Machines Corporation,H,36
-International Business Machines Corporation,Y,3
-Kabushiki Kaisha Toshiba,A,1
-Kabushiki Kaisha Toshiba,B,1
-Kabushiki Kaisha Toshiba,C,1
+International Business Machines Corporation,F,2
+International Business Machines Corporation,G,90
+International Business Machines Corporation,H,59
+International Business Machines Corporation,Y,11
+Kabushiki Kaisha Toshiba,A,2
+Kabushiki Kaisha Toshiba,B,2
+Kabushiki Kaisha Toshiba,C,2
 Kabushiki Kaisha Toshiba,F,1
-Kabushiki Kaisha Toshiba,G,19
-Kabushiki Kaisha Toshiba,H,16
-Kabushiki Kaisha Toshiba,Y,3
-LG ELECTRONICS INC.,A,3
-LG ELECTRONICS INC.,B,1
-LG ELECTRONICS INC.,F,4
-LG ELECTRONICS INC.,G,5
-LG ELECTRONICS INC.,H,12
-LG ELECTRONICS INC.,Y,1
-"Micron Technology, Inc.",B,2
-"Micron Technology, Inc.",G,11
-"Micron Technology, Inc.",H,21
-"Micron Technology, Inc.",Y,10
-QUALCOMM Incorporated,G,8
-QUALCOMM Incorporated,H,23
-QUALCOMM Incorporated,Y,4
+Kabushiki Kaisha Toshiba,G,42
+Kabushiki Kaisha Toshiba,H,36
+Kabushiki Kaisha Toshiba,Y,7
+"Micron Technology, Inc.",B,4
+"Micron Technology, Inc.",G,16
+"Micron Technology, Inc.",H,28
+"Micron Technology, Inc.",Y,13
+Mitsubishi Electric Corporation,B,6
+Mitsubishi Electric Corporation,C,4
+Mitsubishi Electric Corporation,F,7
+Mitsubishi Electric Corporation,G,21
+Mitsubishi Electric Corporation,H,20
+Mitsubishi Electric Corporation,Y,9
 Robert Bosch GmbH,A,1
-Robert Bosch GmbH,B,7
+Robert Bosch GmbH,B,9
 Robert Bosch GmbH,C,1
-Robert Bosch GmbH,F,3
-Robert Bosch GmbH,G,7
-Robert Bosch GmbH,H,8
-Robert Bosch GmbH,Y,3
+Robert Bosch GmbH,F,13
+Robert Bosch GmbH,G,12
+Robert Bosch GmbH,H,11
+Robert Bosch GmbH,Y,7
 "SAMSUNG ELECTRONICS CO., LTD.",A,2
-"SAMSUNG ELECTRONICS CO., LTD.",B,4
-"SAMSUNG ELECTRONICS CO., LTD.",C,2
+"SAMSUNG ELECTRONICS CO., LTD.",B,5
+"SAMSUNG ELECTRONICS CO., LTD.",C,3
+"SAMSUNG ELECTRONICS CO., LTD.",D,1
 "SAMSUNG ELECTRONICS CO., LTD.",F,2
-"SAMSUNG ELECTRONICS CO., LTD.",G,53
-"SAMSUNG ELECTRONICS CO., LTD.",H,48
-"SAMSUNG ELECTRONICS CO., LTD.",Y,8
-SEIKO EPSON CORPORATION,B,10
-SEIKO EPSON CORPORATION,C,2
-SEIKO EPSON CORPORATION,D,1
-SEIKO EPSON CORPORATION,G,7
-SEIKO EPSON CORPORATION,H,9
-SEIKO EPSON CORPORATION,Y,2
-SONY GROUP CORPORATION,G,11
-SONY GROUP CORPORATION,H,21
-TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY LTD.,B,3
-TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY LTD.,C,1
-TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY LTD.,G,2
-TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY LTD.,H,20
-TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY LTD.,Y,2
+"SAMSUNG ELECTRONICS CO., LTD.",G,71
+"SAMSUNG ELECTRONICS CO., LTD.",H,78
+"SAMSUNG ELECTRONICS CO., LTD.",Y,15
+SONY GROUP CORPORATION,B,1
+SONY GROUP CORPORATION,C,1
+SONY GROUP CORPORATION,G,25
+SONY GROUP CORPORATION,H,34
+SONY GROUP CORPORATION,Y,6
+Siemens Aktiengesellschaft,A,3
+Siemens Aktiengesellschaft,B,5
+Siemens Aktiengesellschaft,C,2
+Siemens Aktiengesellschaft,F,1
+Siemens Aktiengesellschaft,G,14
+Siemens Aktiengesellschaft,H,19
+Siemens Aktiengesellschaft,Y,1
+"Sumitomo Electric Industries, Ltd.",A,2
+"Sumitomo Electric Industries, Ltd.",B,8
+"Sumitomo Electric Industries, Ltd.",C,7
+"Sumitomo Electric Industries, Ltd.",D,1
+"Sumitomo Electric Industries, Ltd.",F,2
+"Sumitomo Electric Industries, Ltd.",G,16
+"Sumitomo Electric Industries, Ltd.",H,30
+"Sumitomo Electric Industries, Ltd.",Y,12
