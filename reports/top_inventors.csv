@@ -1,21 +1,21 @@
 inventor_id,inventor_name,country,patent_count
-fl:sh_ln:yamazaki-55,Shunpei Yamazaki,JP,5
+fl:sh_ln:yamazaki-55,Shunpei Yamazaki,JP,6
+fl:he_ln:schippers-1,Heinz Schippers,DE,4
+fl:ja_ln:bindra-2,Jasjit S. Bindra,US,4
+fl:ka_ln:cheng-90,Kangguo Cheng,US,4
+fl:ki_ln:silverbrook-1,Kia Silverbrook,AU,4
+fl:sa_ln:akram-1,Salman Akram,US,4
+fl:ak_ln:sato-25,Akira Sato,JP,3
+fl:ar_ln:papasakellariou-1,Aris Papasakellariou,US,3
+fl:ar_ln:vanderlely-1,Ary van der Lely,NL,3
+fl:be_ln:haba-1,Belgacem Haba,US,3
 fl:ch_ln:wang-98,Chih-Hao Wang,TW,3
 fl:ch_ln:lin-1453,Chun Lin,US,3
-fl:ka_ln:cheng-90,Kangguo Cheng,US,3
+fl:fr_ln:ware-7,Frederick A. Ware,US,3
+fl:ge_ln:nowack-1,Gerhard P. Nowack,US,3
+fl:ha_ln:hess-3,Hans-Jurgen E. Hess,US,3
+fl:je_ln:dewanckele-1,Jean-Marie Dewanckele,BE,3
+fl:ju_ln:li-39,Junyi Li,US,3
+fl:ka_ln:idel-1,Karsten-Josef Idel,DE,3
 fl:ky_ln:jeong-68,Kyeong-In Jeong,KR,3
-fl:sa_ln:akram-1,Salman Akram,US,3
-fl:se_ln:hosseini-11,Seyedkianoush Hosseini,US,3
-fl:aa_ln:logan-2,Aaron W. Logan,CA,2
-fl:ak_ln:nishio-3,Akihiko Nishio,JP,2
-fl:ak_ln:kuroda-9,Akira Kuroda,JP,2
-fl:ak_ln:sato-25,Akira Sato,JP,2
-fl:al_ln:cook-22,Alexander Cook,US,2
-fl:al_ln:gorokhov-2,Alexei Yurievitch Gorokhov,US,2
-fl:am_ln:shokrollahi-1,Amin Shokrollahi,CH,2
-fl:an_ln:dabak-1,Anand G. Dabak,US,2
-fl:an_ln:stamper-1,Anthony K. Stamper,US,2
-fl:ar_ln:papasakellariou-1,Aris Papasakellariou,US,2
-fl:ar_ln:kholodenko-1,Arnold Kholodenko,US,2
-fl:ba_ln:asgharian-1,Bahram Asgharian,US,2
-fl:ba_ln:andre-6,Bartley K. Andre,US,2
+fl:ma_ln:johnson-6,Marvin M. Johnson,US,3
