@@ -1,3 +1,26 @@
+12:33:30 | INFO    | analyze:run_query — running q1_top_inventors.sql
+12:33:54 | INFO    | analyze:run_query — running q2_top_companies.sql
+12:34:06 | INFO    | analyze:run_query — running q3_top_countries.sql
+12:34:13 | INFO    | analyze:run_query — running q4_trends_over_time.sql
+12:34:13 | INFO    | analyze:run_query — running q5_join_patents_inventors_companies.sql
+12:34:29 | INFO    | analyze:run_query — running q6_cte_innovation_leaders.sql
+12:34:47 | INFO    | analyze:run_query — running q7_rank_inventors_window.sql
+12:35:09 | INFO    | analyze:run_query — running q8_decade_comparison.sql
+12:35:22 | INFO    | analyze:run_query — running q9_company_cagr.sql
+12:35:38 | INFO    | analyze:run_query — running q10_country_growth_rates.sql
+12:35:52 | INFO    | analyze:run_query — running q11_section_growth.sql
+12:35:58 | INFO    | analyze:run_query — running q12_company_section_matrix.sql
+12:36:15 | INFO    | report:write_csv_reports — wrote top_inventors.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/top_inventors.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote top_companies.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/top_companies.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote country_trends.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/country_trends.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote yearly_trends.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/yearly_trends.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote cpc_breakdown.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/cpc_breakdown.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote decade_comparison.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/decade_comparison.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote company_cagr.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/company_cagr.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote country_growth_rates.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/country_growth_rates.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote section_growth.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/section_growth.csv
+12:36:15 | INFO    | report:write_csv_reports — wrote company_section_matrix.csv → /home/distantlife/CloudComputingProjects/MiniProject/reports/company_section_matrix.csv
+12:36:15 | INFO    | report:write_json_report — wrote JSON report → /home/distantlife/CloudComputingProjects/MiniProject/reports/patent_report.json
 ================== PATENT REPORT ===================
 Total Patents: 9,361,444
 Top Inventors: 1. Shunpei Yamazaki - 6761 2. Kia Silverbrook - 4778 3. Tao Luo - 4336 4. Jonathan P. Ive - 2877 5. Kangguo Cheng - 2819
@@ -127,3 +150,4 @@ Top Countries: 1. US 2. JP 3. DE 4. CN 5. KR
 │ B       │ 546742   │ 1179602  │ 115.8 % │
 │ F       │ 277845   │ 587443   │ 111.4 % │
 └─────────┴──────────┴──────────┴─────────┘
+12:36:18 | INFO    | visualize:run_visualize — wrote 18 figure files → /home/distantlife/CloudComputingProjects/MiniProject/reports/figures

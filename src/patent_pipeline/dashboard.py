@@ -18,6 +18,8 @@ patent PatentsView warehouse a tab renders in well under a second.
 from __future__ import annotations
 
 import contextlib
+import json
+import os
 import time
 from collections import deque
 from datetime import UTC, datetime
@@ -27,6 +29,7 @@ import duckdb
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+import streamlit.components.v1 as components
 
 from patent_pipeline.config import load_settings
 
@@ -1922,6 +1925,103 @@ def _build_pdf_report(filters: dict[str, Any]) -> bytes:
     return buf.getvalue()
 
 
+def _artifact_mode_requested() -> bool:
+    """When true, render precomputed report artifacts instead of live DuckDB queries."""
+    return os.getenv("PATENT_DASHBOARD_SOURCE", "warehouse").strip().lower() == "artifacts"
+
+
+def _load_artifact_payload(settings: Any) -> dict[str, Any] | None:
+    report_json = settings.paths.reports_dir / "patent_report.json"
+    if not report_json.exists():
+        return None
+    try:
+        return json.loads(report_json.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+
+
+def _render_artifact_dashboard(settings: Any, payload: dict[str, Any]) -> None:
+    st.title(":material/public: Global Patent Intelligence Dashboard")
+    st.caption(
+        "Artifact mode · rendering precomputed full-corpus report assets "
+        "(no live DuckDB query execution)."
+    )
+
+    y = payload.get("year_range") or {}
+    m1, m2, m3, m4 = st.columns(4)
+    m1.metric("Patents", f"{int(payload.get('total_patents', 0)):,}")
+    m2.metric("Inventors", f"{int(payload.get('total_inventors', 0)):,}")
+    m3.metric("Companies", f"{int(payload.get('total_companies', 0)):,}")
+    m4.metric(
+        "Year span",
+        f"{y.get('min', '—')} – {y.get('max', '—')}",
+    )
+
+    tabs = st.tabs(["Overview", "Figures", "Downloads"])
+    with tabs[0]:
+        c1, c2 = st.columns(2)
+        with c1:
+            st.subheader(":material/person: Top inventors")
+            inv = pd.DataFrame(payload.get("top_inventors", []))
+            if not inv.empty:
+                st.dataframe(inv, hide_index=True, width="stretch")
+            else:
+                st.info("No inventor records found in report JSON.")
+        with c2:
+            st.subheader(":material/domain: Top companies")
+            comp = pd.DataFrame(payload.get("top_companies", []))
+            if not comp.empty:
+                st.dataframe(comp, hide_index=True, width="stretch")
+            else:
+                st.info("No company records found in report JSON.")
+
+        st.subheader(":material/public: Top countries")
+        ctry = pd.DataFrame(payload.get("top_countries", []))
+        if not ctry.empty:
+            st.dataframe(ctry, hide_index=True, width="stretch")
+        else:
+            st.info("No country records found in report JSON.")
+
+    with tabs[1]:
+        fig_dir = settings.paths.figures_dir
+        figure_files = [
+            ("yearly_trends.html", "Yearly patent trends"),
+            ("country_share.html", "Country share"),
+            ("country_growth.html", "Country growth"),
+            ("cpc_sections.html", "CPC section breakdown"),
+            ("top_companies.html", "Top companies"),
+            ("decade_comparison.html", "Decade comparison"),
+            ("company_cagr.html", "Company CAGR"),
+            ("section_growth.html", "Section growth"),
+            ("company_section_heatmap.html", "Company × section heatmap"),
+        ]
+        for filename, title in figure_files:
+            path = fig_dir / filename
+            if not path.exists():
+                continue
+            st.subheader(title)
+            components.html(path.read_text(encoding="utf-8"), height=620, scrolling=True)
+
+    with tabs[2]:
+        st.subheader(":material/download: Report files")
+        for file_path in sorted(settings.paths.reports_dir.glob("*")):
+            if not file_path.is_file():
+                continue
+            if file_path.suffix not in {".csv", ".json", ".txt"}:
+                continue
+            st.download_button(
+                f"Download {file_path.name}",
+                data=file_path.read_bytes(),
+                file_name=file_path.name,
+                mime="application/octet-stream",
+                key=f"artifact_dl_{file_path.name}",
+                width="stretch",
+            )
+
+    st.sidebar.divider()
+    st.sidebar.caption(f"Reports:\n`{settings.paths.reports_dir}`")
+
+
 def main() -> None:
     st.set_page_config(
         page_title="Patent Intelligence Dashboard",
@@ -1933,6 +2033,16 @@ def main() -> None:
     _hydrate_state_from_url()
 
     _, settings = _connect()
+    if _artifact_mode_requested():
+        payload = _load_artifact_payload(settings)
+        if payload is None:
+            st.error(
+                "Artifact mode is enabled but reports/patent_report.json is missing or invalid."
+            )
+            st.stop()
+        _render_artifact_dashboard(settings, payload)
+        return
+
     db_path = settings.paths.warehouse_db
     db_mtime = datetime.fromtimestamp(db_path.stat().st_mtime, tz=UTC) if db_path.exists() else None
 

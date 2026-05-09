@@ -7,8 +7,7 @@
 #
 # Three stages keep the final image lean:
 #   1. deps     — installs Python deps into a venv via uv (cached layer)
-#   2. warehouse — runs the full pipeline against the bundled sample TSVs
-#                  to produce a small DuckDB warehouse + report artifacts
+#   2. warehouse — copies precomputed data/report artifacts from the repo
 #   3. runtime  — copies just the venv + source + warehouse, runs Streamlit
 #                  on :7860 (the port Hugging Face Spaces expects)
 
@@ -35,16 +34,15 @@ COPY src/ ./src/
 RUN uv sync --frozen --no-dev
 
 # ---------------------------------------------------------------------------
-# Stage 2 — build the DuckDB warehouse from the bundled sample TSVs
+# Stage 2 — copy precomputed report + data artifacts
 # ---------------------------------------------------------------------------
 FROM deps AS warehouse
 
 COPY config/ ./config/
 COPY sql/ ./sql/
-COPY data/sample/ ./data/sample/
-
-RUN mkdir -p data/raw data/clean data/warehouse reports/figures \
- && /app/.venv/bin/patent-pipeline run-all --use-sample --log-level INFO
+COPY data/ ./data/
+COPY reports/ ./reports/
+RUN mkdir -p data/raw data/clean data/warehouse reports/figures
 
 # ---------------------------------------------------------------------------
 # Stage 3 — minimal runtime image
@@ -60,6 +58,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PATH=/app/.venv/bin:$PATH \
     HOME=/home/user \
+    PATENT_DASHBOARD_SOURCE=artifacts \
     STREAMLIT_SERVER_PORT=7860 \
     STREAMLIT_SERVER_ADDRESS=0.0.0.0 \
     STREAMLIT_SERVER_HEADLESS=true \
