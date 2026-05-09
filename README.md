@@ -244,10 +244,10 @@ uv run pre-commit install     # enable git hooks
 The repo ships a **multi-stage `Dockerfile`** (Podman- and Docker-compatible) that:
 
 1. installs locked dependencies into `/app/.venv` via `uv sync --frozen`,
-2. runs `patent-pipeline run-all --use-sample` at build time so the image is shipped
-   with a fresh DuckDB warehouse already loaded from the bundled sample TSVs, and
+2. bakes in precomputed `reports/` + dashboard figure artifacts from this repo
+   (full-corpus values), and
 3. starts Streamlit on **port 7860** (the port Hugging Face Spaces expects) as a
-   non-root UID 1000 user.
+   non-root UID 1000 user in artifact mode (`PATENT_DASHBOARD_SOURCE=artifacts`).
 
 **Build & run with Podman** (or substitute `docker` — same Dockerfile):
 
@@ -263,10 +263,10 @@ podman run --rm -p 7860:7860 patent-dashboard
 2. Push this repo to the Space's git remote. Spaces reads the YAML frontmatter at
    the top of this `README.md` (`sdk: docker`, `app_port: 7860`) and builds the
    `Dockerfile` automatically.
-3. First build takes ~3-5 min (deps + pipeline); subsequent rebuilds are cached.
+3. First build installs dependencies and copies artifacts; subsequent rebuilds are cached.
 
-The `docker-entrypoint.sh` re-runs the pipeline on cold start if a volume mount
-ever shadows the baked-in warehouse, so the dashboard always finds data to render.
+The `docker-entrypoint.sh` validates that `reports/patent_report.json` exists in
+artifact mode before starting Streamlit.
 
 ## Data source
 
