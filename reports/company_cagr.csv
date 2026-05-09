@@ -1,26 +1,16 @@
 company_name,first_year,last_year,span_years,first_year_patents,last_year_patents,total_patents,cagr
-"LG ENERGY SOLUTION, LTD.",2021,2025,4,2,729,2270.0,3.3694
-HL MANDO CORPORATION,2022,2025,3,3,159,371.0,2.7563
-"XIAMEN TIANMA DISPLAY TECHNOLOGY CO., LTD.",2022,2025,3,1,42,84.0,2.476
-SIEMENS HEALTHINEERS INTERNATIONAL AG,2022,2025,3,1,40,134.0,2.42
-"Shenzhen Lute Jiacheng Supply Chain Management Co., Ltd.",2022,2025,3,1,40,63.0,2.42
-"Beijing Zitiao Network Technology Co., Ltd.",2022,2025,3,6,228,431.0,2.362
-"Huizhou China Star Optoelectronics Display Co., Ltd.",2022,2025,3,1,36,94.0,2.3019
-"Oculus VR, LLC",2014,2018,4,1,117,198.0,2.2889
-Continental Automotive Technologies GmbH,2022,2025,3,2,70,124.0,2.2711
-HYTTO PTE. LTD.,2022,2025,3,1,29,62.0,2.0723
-Sanctuary Cognitive Systems Corporation,2022,2025,3,1,28,64.0,2.0366
-"Raytech Optical (Changzhou) Co., Ltd",2021,2024,3,1,28,46.0,2.0366
-Topgolf Callaway Brands Corp.,2022,2025,3,4,108,252.0,2.0
-Celestial AI Inc.,2022,2025,3,1,24,31.0,1.8845
-Sharp Display Technology Corporation,2022,2025,3,4,83,227.0,1.7479
-Adeia Semiconductor Bonding Technologies Inc.,2022,2025,3,3,62,152.0,1.7442
-Archer Aviation Inc.,2022,2025,3,2,41,85.0,1.7369
-"Ubidyne, Inc.",2010,2013,3,1,19,34.0,1.6684
-"HAI ROBOTICS CO., LTD.",2021,2025,4,1,48,143.0,1.6321
-XIA TAI XIN SEMICONDUCTOR (QING DAO) LTD.,2020,2023,3,1,18,61.0,1.6207
-Gen Digital Inc.,2022,2025,3,1,18,61.0,1.6207
-Wyvern Pharmaceuticals Inc.,2022,2025,3,1,18,24.0,1.6207
-UAB 360 IT,2021,2025,4,1,46,324.0,1.6043
-"Genesys Cloud Services, Inc.",2022,2025,3,1,17,37.0,1.5713
-Xocyst Transfer AG L.L.C.,2008,2011,3,1,17,21.0,1.5713
+QUALCOMM Incorporated,2011,2025,14,1,2,26.0,0.0508
+"SAMSUNG ELECTRONICS CO., LTD.",1994,2025,31,2,5,96.0,0.03
+General Electric Company,1976,2019,43,1,2,30.0,0.0163
+International Business Machines Corporation,1979,2024,45,1,2,86.0,0.0155
+Canon Kabushiki Kaisha,1978,2024,46,1,2,51.0,0.0152
+FUJITSU LIMITED,1985,2023,38,1,1,37.0,0.0
+SONY GROUP CORPORATION,1990,2024,34,1,1,32.0,0.0
+Intel Corporation,1997,2023,26,1,1,29.0,0.0
+Kabushiki Kaisha Toshiba,1992,2024,32,1,1,29.0,0.0
+"Micron Technology, Inc.",1991,2025,34,1,1,29.0,0.0
+LG ELECTRONICS INC.,2001,2025,24,2,2,23.0,0.0
+Robert Bosch GmbH,1983,2025,42,1,1,21.0,0.0
+TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY LTD.,2005,2025,20,2,2,20.0,0.0
+"HITACHI, LTD.",1976,2025,49,2,1,32.0,-0.014
+SEIKO EPSON CORPORATION,2000,2024,24,2,1,24.0,-0.0285
