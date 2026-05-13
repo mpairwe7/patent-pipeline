@@ -104,6 +104,8 @@ end-to-end on a laptop in seconds. The **full-corpus clean dataset**
 multi-GB and exceeds GitHub LFS quotas, so it's hosted as a Hugging Face
 Dataset and **not** committed to this repo.
 
+**Dataset:** [`landwind22/patent-pipeline-clean`](https://huggingface.co/datasets/landwind22/patent-pipeline-clean)
+
 | File | CSV | Parquet (zstd) | Rows |
 |---|---|---|---|
 | `clean_patents` | 722 MB | 206 MB | 9,361,444 |
@@ -143,6 +145,8 @@ uv run patent-pipeline clean --parquet     # ~12 min on a laptop SSD
 
 ### Publishing a new version (maintainer)
 
+Uses the new `hf` CLI (replaces the deprecated `huggingface-cli`).
+
 ```bash
 # 1. Regenerate locally
 uv run patent-pipeline clean --parquet
@@ -150,13 +154,24 @@ uv run patent-pipeline clean --parquet
 # 2. Update sha256 + bytes in config/clean_manifest.json
 sha256sum data/clean/parquet/*.parquet data/clean/*.csv
 
-# 3. Upload to HF (one-time: `huggingface-cli login`)
-huggingface-cli upload landwind22/patent-pipeline-clean \
-    data/clean/parquet parquet --repo-type dataset
-huggingface-cli upload landwind22/patent-pipeline-clean \
-    data/clean csv --repo-type dataset --include 'clean_*.csv'
+# 3. Authenticate once (token from https://huggingface.co/settings/tokens, write scope)
+hf auth login
 
-# 4. Commit the updated manifest
+# 4. Create the dataset repo (first time only)
+hf repos create landwind22/patent-pipeline-clean --repo-type dataset
+
+# 5. Upload Parquet bundle (recommended primary format)
+hf upload landwind22/patent-pipeline-clean \
+    data/clean/parquet parquet --repo-type dataset
+
+# 6. Upload CSV bundle (file-by-file is most reliable for the 1.5 GB
+#    relationships.csv; the smaller files dedupe via xet)
+for f in clean_companies clean_inventors clean_cpc clean_patents clean_relationships; do
+  hf upload landwind22/patent-pipeline-clean \
+      "data/clean/$f.csv" "csv/$f.csv" --repo-type dataset
+done
+
+# 7. Commit the updated manifest
 git add config/clean_manifest.json && git commit -m "data: refresh clean dataset manifest"
 ```
 
