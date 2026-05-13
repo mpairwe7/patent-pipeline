@@ -194,77 +194,77 @@
   "top_countries": [
     {
       "country": "US",
-      "patents": 5040109,
-      "share": 0.486
+      "patents": 5040297,
+      "share": 0.4861
     },
     {
       "country": "JP",
-      "patents": 1595232,
+      "patents": 1595144,
       "share": 0.1538
     },
     {
       "country": "DE",
-      "patents": 624195,
+      "patents": 624099,
       "share": 0.0602
     },
     {
       "country": "CN",
-      "patents": 464394,
+      "patents": 464646,
       "share": 0.0448
     },
     {
       "country": "KR",
-      "patents": 431983,
+      "patents": 431972,
       "share": 0.0417
     },
     {
       "country": "TW",
-      "patents": 316889,
+      "patents": 316836,
       "share": 0.0306
     },
     {
       "country": "GB",
-      "patents": 271823,
+      "patents": 271772,
       "share": 0.0262
     },
     {
       "country": "FR",
-      "patents": 245570,
+      "patents": 245466,
       "share": 0.0237
     },
     {
       "country": "CA",
-      "patents": 243124,
-      "share": 0.0234
+      "patents": 243197,
+      "share": 0.0235
     },
     {
       "country": "CH",
-      "patents": 115449,
+      "patents": 115380,
       "share": 0.0111
     },
     {
       "country": "IT",
-      "patents": 110443,
+      "patents": 110478,
       "share": 0.0107
     },
     {
       "country": "IN",
-      "patents": 106481,
+      "patents": 106494,
       "share": 0.0103
     },
     {
       "country": "NL",
-      "patents": 97500,
+      "patents": 97578,
       "share": 0.0094
     },
     {
       "country": "IL",
-      "patents": 96139,
+      "patents": 96158,
       "share": 0.0093
     },
     {
       "country": "SE",
-      "patents": 95278,
+      "patents": 95329,
       "share": 0.0092
     }
   ],
@@ -515,15 +515,15 @@
     },
     {
       "country": "AF",
-      "name": "Cheok-Kei Lei",
+      "name": "Tomas Mecklin",
       "rank": 2,
-      "patents": 20
+      "patents": 12
     },
     {
       "country": "AF",
-      "name": "Tomas Mecklin",
+      "name": "Mats S{dot over (a)}gfors",
       "rank": 3,
-      "patents": 12
+      "patents": 5
     },
     {
       "country": "AG",
@@ -533,14 +533,14 @@
     },
     {
       "country": "AG",
-      "name": "Trenton Hinds",
+      "name": "Fremont Lawrence",
       "rank": 2,
-      "patents": 3
+      "patents": 1
     },
     {
       "country": "AG",
-      "name": "Fremont Lawrence",
-      "rank": 3,
+      "name": "Julie K. Randolph",
+      "rank": 2,
       "patents": 1
     },
     {
@@ -605,15 +605,15 @@
     },
     {
       "country": "AO",
-      "name": "Tana Canda",
+      "name": "Elmer B. Santos",
       "rank": 2,
       "patents": 2
     },
     {
       "country": "AO",
-      "name": "Bernardo Francisco Campos",
-      "rank": 3,
-      "patents": 1
+      "name": "Tana Canda",
+      "rank": 2,
+      "patents": 2
     },
     {
       "country": "AR",
@@ -851,12 +851,6 @@
     },
     {
       "country": "BN",
-      "name": "Abul Kalam Azad",
-      "rank": 1,
-      "patents": 6
-    },
-    {
-      "country": "BN",
       "name": "Pierre Christian Marie Carrette",
       "rank": 1,
       "patents": 6
@@ -864,8 +858,14 @@
     {
       "country": "BN",
       "name": "Saiful A. Husain",
-      "rank": 3,
+      "rank": 2,
       "patents": 5
+    },
+    {
+      "country": "BN",
+      "name": "Lim Chee Ming",
+      "rank": 3,
+      "patents": 4
     },
     {
       "country": "BO",
@@ -929,20 +929,20 @@
     },
     {
       "country": "BW",
-      "name": "Joseph Monamati Chuma",
-      "rank": 1,
-      "patents": 2
-    },
-    {
-      "country": "BW",
       "name": "Adamu Murtala Zungeru",
-      "rank": 2,
+      "rank": 1,
       "patents": 1
     },
     {
       "country": "BW",
       "name": "Ernest Gomolemo Modise",
-      "rank": 2,
+      "rank": 1,
+      "patents": 1
+    },
+    {
+      "country": "BW",
+      "name": "Pharoah Mosupi",
+      "rank": 1,
       "patents": 1
     },
     {
@@ -965,20 +965,20 @@
     },
     {
       "country": "BZ",
-      "name": "Italo Romani de Oliveira",
-      "rank": 1,
-      "patents": 4
-    },
-    {
-      "country": "BZ",
       "name": "Steven J. Lawson",
-      "rank": 2,
+      "rank": 1,
       "patents": 2
     },
     {
       "country": "BZ",
       "name": "Brenno Caetano Troca Cabella",
-      "rank": 3,
+      "rank": 2,
+      "patents": 1
+    },
+    {
+      "country": "BZ",
+      "name": "Chiu-Ying Yu",
+      "rank": 2,
       "patents": 1
     },
     {
@@ -1019,20 +1019,20 @@
     },
     {
       "country": "CF",
-      "name": "Ibrahim Hotan Alsohaimi",
-      "rank": 1,
-      "patents": 2
-    },
-    {
-      "country": "CF",
       "name": "Eva Lindberg",
-      "rank": 2,
+      "rank": 1,
       "patents": 1
     },
     {
       "country": "CF",
       "name": "Norbert Varga",
-      "rank": 2,
+      "rank": 1,
+      "patents": 1
+    },
+    {
+      "country": "CF",
+      "name": "Silla Semballa",
+      "rank": 1,
       "patents": 1
     },
     {
@@ -1085,9 +1085,9 @@
     },
     {
       "country": "CI",
-      "name": "Ferenc Sebok",
+      "name": "Catherine Bouvron nee Ferrenbach",
       "rank": 3,
-      "patents": 6
+      "patents": 1
     },
     {
       "country": "CK",
@@ -1289,14 +1289,8 @@
     },
     {
       "country": "DM",
-      "name": "Liam K. P. M. Rolle",
-      "rank": 1,
-      "patents": 6
-    },
-    {
-      "country": "DM",
       "name": "Michal Kazimir",
-      "rank": 2,
+      "rank": 1,
       "patents": 3
     },
     {
@@ -1325,15 +1319,15 @@
     },
     {
       "country": "DZ",
-      "name": "Faycal FINNOUCHE",
+      "name": "Samuel J. Paton",
       "rank": 2,
-      "patents": 4
+      "patents": 6
     },
     {
       "country": "DZ",
-      "name": "Katsuhisa Suzuki",
+      "name": "Faycal FINNOUCHE",
       "rank": 3,
-      "patents": 3
+      "patents": 4
     },
     {
       "country": "EC",
@@ -1343,15 +1337,15 @@
     },
     {
       "country": "EC",
-      "name": "Santiago Romero",
+      "name": "Arthur Milne",
       "rank": 2,
-      "patents": 11
+      "patents": 13
     },
     {
       "country": "EC",
-      "name": "Alexandr I. Fadeev",
+      "name": "Santiago Romero",
       "rank": 3,
-      "patents": 8
+      "patents": 11
     },
     {
       "country": "EE",
@@ -1499,15 +1493,15 @@
     },
     {
       "country": "FO",
-      "name": "Bergur Vinther",
-      "rank": 2,
-      "patents": 2
+      "name": "Hans Carlsson",
+      "rank": 1,
+      "patents": 5
     },
     {
       "country": "FO",
-      "name": "Arni Hansen",
+      "name": "Bergur Vinther",
       "rank": 3,
-      "patents": 1
+      "patents": 2
     },
     {
       "country": "FR",
@@ -1661,7 +1655,7 @@
     },
     {
       "country": "GL",
-      "name": "Willi Gottlieb",
+      "name": "Poul J\u00f8rgen Holm",
       "rank": 3,
       "patents": 2
     },
@@ -1685,20 +1679,14 @@
     },
     {
       "country": "GN",
-      "name": "Aliou Mamadou Balde",
-      "rank": 1,
-      "patents": 2
-    },
-    {
-      "country": "GN",
       "name": "Attaoulaye Diallo",
-      "rank": 2,
+      "rank": 1,
       "patents": 1
     },
     {
       "country": "GN",
       "name": "Kamrooz Khademazad",
-      "rank": 2,
+      "rank": 1,
       "patents": 1
     },
     {
@@ -1739,9 +1727,9 @@
     },
     {
       "country": "GW",
-      "name": "Martin Greber",
+      "name": "Wolfgang Scheyer",
       "rank": 1,
-      "patents": 13
+      "patents": 12
     },
     {
       "country": "GW",
@@ -2123,15 +2111,15 @@
     },
     {
       "country": "KH",
-      "name": "Su Io Lam",
-      "rank": 1,
-      "patents": 4
+      "name": "Nimol Khim",
+      "rank": 2,
+      "patents": 3
     },
     {
       "country": "KH",
-      "name": "Nimol Khim",
+      "name": "Bunika San",
       "rank": 3,
-      "patents": 3
+      "patents": 2
     },
     {
       "country": "KN",
@@ -2147,9 +2135,9 @@
     },
     {
       "country": "KN",
-      "name": "Douglas Jeffrey Geiger",
+      "name": "Yury Grotov",
       "rank": 3,
-      "patents": 1
+      "patents": 2
     },
     {
       "country": "KP",
@@ -2249,14 +2237,14 @@
     },
     {
       "country": "LA",
-      "name": "Marie Helen Ryan",
+      "name": "Wataru Tanaka",
       "rank": 2,
-      "patents": 2
+      "patents": 3
     },
     {
       "country": "LA",
-      "name": "Masaaki Katagiri",
-      "rank": 2,
+      "name": "Hiroshi Nosaki",
+      "rank": 3,
       "patents": 2
     },
     {
@@ -2405,6 +2393,12 @@
     },
     {
       "country": "LY",
+      "name": "Benoit Vidick",
+      "rank": 1,
+      "patents": 3
+    },
+    {
+      "country": "LY",
       "name": "Nuri A. Zreiba",
       "rank": 1,
       "patents": 3
@@ -2412,13 +2406,7 @@
     {
       "country": "LY",
       "name": "Ahmed Elbakush",
-      "rank": 2,
-      "patents": 1
-    },
-    {
-      "country": "LY",
-      "name": "Jamaleddin Esalah",
-      "rank": 2,
+      "rank": 3,
       "patents": 1
     },
     {
@@ -2537,14 +2525,14 @@
     },
     {
       "country": "ML",
-      "name": "Yuchen Xin",
+      "name": "Arto Juhani Nummelin",
       "rank": 2,
-      "patents": 2
+      "patents": 1
     },
     {
       "country": "ML",
-      "name": "Arto Juhani Nummelin",
-      "rank": 3,
+      "name": "Eng How Cheah",
+      "rank": 2,
       "patents": 1
     },
     {
@@ -2567,20 +2555,20 @@
     },
     {
       "country": "MN",
-      "name": "Mishig Davaadorj",
+      "name": "Alan Puder",
       "rank": 1,
-      "patents": 4
-    },
-    {
-      "country": "MN",
-      "name": "Chuluun Enkhbold",
-      "rank": 2,
       "patents": 2
     },
     {
       "country": "MN",
-      "name": "Jargalsaikhan Shagdar",
-      "rank": 2,
+      "name": "Chuluun Enkhbold",
+      "rank": 1,
+      "patents": 2
+    },
+    {
+      "country": "MN",
+      "name": "James G. Vaske",
+      "rank": 1,
       "patents": 2
     },
     {
@@ -2717,7 +2705,7 @@
     },
     {
       "country": "NE",
-      "name": "Taishi Ogawa",
+      "name": "Okafuji Masaharu",
       "rank": 3,
       "patents": 2
     },
@@ -2741,20 +2729,20 @@
     },
     {
       "country": "NI",
-      "name": "Fernando Torres",
-      "rank": 1,
-      "patents": 8
-    },
-    {
-      "country": "NI",
       "name": "Jayson Vajda",
-      "rank": 2,
+      "rank": 1,
       "patents": 2
     },
     {
       "country": "NI",
       "name": "Carlos E. Gadea Mantilla",
-      "rank": 3,
+      "rank": 2,
+      "patents": 1
+    },
+    {
+      "country": "NI",
+      "name": "Haroldo J. Montealegre",
+      "rank": 2,
       "patents": 1
     },
     {
@@ -2801,14 +2789,14 @@
     },
     {
       "country": "NP",
-      "name": "Kristian Englund",
+      "name": "Sandesh Aryal",
       "rank": 2,
-      "patents": 3
+      "patents": 4
     },
     {
       "country": "NP",
-      "name": "Theera Yaemglin",
-      "rank": 2,
+      "name": "Kristian Englund",
+      "rank": 3,
       "patents": 3
     },
     {
@@ -2956,12 +2944,6 @@
       "patents": 65
     },
     {
-      "country": "PN",
-      "name": "Herbert R. Appell",
-      "rank": 1,
-      "patents": 2
-    },
-    {
       "country": "PS",
       "name": "Ismail Khalil Warad",
       "rank": 1,
@@ -3011,20 +2993,20 @@
     },
     {
       "country": "PY",
-      "name": "Adrian Ebner",
+      "name": "Klaus P. Kaspar",
       "rank": 1,
+      "patents": 8
+    },
+    {
+      "country": "PY",
+      "name": "Adrian Ebner",
+      "rank": 2,
       "patents": 7
     },
     {
       "country": "PY",
       "name": "Hazael Fabrizio Montanaro Ochoa",
-      "rank": 2,
-      "patents": 3
-    },
-    {
-      "country": "PY",
-      "name": "Siegfried Konther",
-      "rank": 2,
+      "rank": 3,
       "patents": 3
     },
     {
@@ -3149,14 +3131,20 @@
     },
     {
       "country": "SC",
-      "name": "Alan D. Woode",
+      "name": "Matthew David Bolsover",
       "rank": 2,
       "patents": 2
     },
     {
       "country": "SC",
-      "name": "Matthew David Bolsover",
+      "name": "Robert G. Kelly",
       "rank": 2,
+      "patents": 2
+    },
+    {
+      "country": "SD",
+      "name": "Mohamed Khalifa",
+      "rank": 1,
       "patents": 2
     },
     {
@@ -3168,13 +3156,7 @@
     {
       "country": "SD",
       "name": "Abdallah A. Abdallah",
-      "rank": 2,
-      "patents": 1
-    },
-    {
-      "country": "SD",
-      "name": "Iman Tag Elsir Abd Alla",
-      "rank": 2,
+      "rank": 3,
       "patents": 1
     },
     {
@@ -3257,13 +3239,13 @@
     },
     {
       "country": "SL",
-      "name": "Kirsti Marjatta Karppinen",
+      "name": "Erlinda Handal Vega",
       "rank": 1,
       "patents": 2
     },
     {
       "country": "SL",
-      "name": "Luis Poma",
+      "name": "Kirsti Marjatta Karppinen",
       "rank": 1,
       "patents": 2
     },
@@ -3275,15 +3257,15 @@
     },
     {
       "country": "SM",
-      "name": "Alessandro Cecchini",
+      "name": "Emanuel Conti",
       "rank": 2,
-      "patents": 2
+      "patents": 7
     },
     {
       "country": "SM",
-      "name": "Andrea Battistoni",
-      "rank": 2,
-      "patents": 2
+      "name": "Aldo Ciavatta",
+      "rank": 3,
+      "patents": 4
     },
     {
       "country": "SN",
@@ -3352,6 +3334,18 @@
       "patents": 1
     },
     {
+      "country": "ST",
+      "name": "Anders Lassus",
+      "rank": 1,
+      "patents": 2
+    },
+    {
+      "country": "ST",
+      "name": "Seppo Syrjala",
+      "rank": 1,
+      "patents": 2
+    },
+    {
       "country": "SV",
       "name": "William W. Sullivan",
       "rank": 1,
@@ -3359,15 +3353,15 @@
     },
     {
       "country": "SV",
-      "name": "Jorge Manuel Garcia",
+      "name": "Oscar Enrique Figueroa",
       "rank": 2,
-      "patents": 5
+      "patents": 4
     },
     {
       "country": "SV",
-      "name": "Oscar Enrique Figueroa",
+      "name": "Carmen Elena Arias",
       "rank": 3,
-      "patents": 4
+      "patents": 3
     },
     {
       "country": "SY",
@@ -3479,8 +3473,14 @@
     },
     {
       "country": "TL",
-      "name": "Chun Man Chen",
+      "name": "Anthony Wai Yuen Lai",
       "rank": 1,
+      "patents": 5
+    },
+    {
+      "country": "TL",
+      "name": "Chun Man Chen",
+      "rank": 2,
       "patents": 1
     },
     {
@@ -3731,7 +3731,7 @@
     },
     {
       "country": "VG",
-      "name": "Hirshol H. Pheir",
+      "name": "Mau Koung Yep",
       "rank": 3,
       "patents": 7
     },
@@ -3749,9 +3749,9 @@
     },
     {
       "country": "VN",
-      "name": "Stefan Strandberg",
+      "name": "Quang Nguyen",
       "rank": 3,
-      "patents": 31
+      "patents": 19
     },
     {
       "country": "VU",
@@ -3839,9 +3839,9 @@
     },
     {
       "country": "ZM",
-      "name": "Kazuyuki Nanaumi",
-      "rank": 2,
-      "patents": 2
+      "name": "Agripa Hamweendo",
+      "rank": 3,
+      "patents": 1
     },
     {
       "country": "ZW",
@@ -4088,131 +4088,139 @@
     "country_growth_rates": [
       {
         "country": "IN",
-        "first_half_patents": 1636,
-        "second_half_patents": 104845,
-        "delta": 103209,
-        "growth_pct": 63.0862,
-        "total_patents": 106481
+        "first_half_patents": 1634,
+        "second_half_patents": 104860,
+        "delta": 103226,
+        "growth_pct": 63.1738,
+        "total_patents": 106494
       },
       {
         "country": "GI",
         "first_half_patents": 1,
-        "second_half_patents": 57,
-        "delta": 56,
-        "growth_pct": 56.0,
-        "total_patents": 58
+        "second_half_patents": 55,
+        "delta": 54,
+        "growth_pct": 54.0,
+        "total_patents": 56
       },
       {
         "country": "SA",
-        "first_half_patents": 289,
-        "second_half_patents": 14106,
-        "delta": 13817,
-        "growth_pct": 47.8097,
-        "total_patents": 14395
+        "first_half_patents": 294,
+        "second_half_patents": 14107,
+        "delta": 13813,
+        "growth_pct": 46.983,
+        "total_patents": 14401
       },
       {
         "country": "CN",
-        "first_half_patents": 9661,
-        "second_half_patents": 454733,
-        "delta": 445072,
-        "growth_pct": 46.0689,
-        "total_patents": 464394
+        "first_half_patents": 9714,
+        "second_half_patents": 454932,
+        "delta": 445218,
+        "growth_pct": 45.8326,
+        "total_patents": 464646
       },
       {
-        "country": "WS",
-        "first_half_patents": 1,
-        "second_half_patents": 37,
-        "delta": 36,
-        "growth_pct": 36.0,
-        "total_patents": 38
+        "country": "QA",
+        "first_half_patents": 11,
+        "second_half_patents": 452,
+        "delta": 441,
+        "growth_pct": 40.0909,
+        "total_patents": 463
+      },
+      {
+        "country": "VN",
+        "first_half_patents": 24,
+        "second_half_patents": 906,
+        "delta": 882,
+        "growth_pct": 36.75,
+        "total_patents": 930
       },
       {
         "country": "GW",
         "first_half_patents": 1,
-        "second_half_patents": 36,
-        "delta": 35,
-        "growth_pct": 35.0,
-        "total_patents": 37
+        "second_half_patents": 35,
+        "delta": 34,
+        "growth_pct": 34.0,
+        "total_patents": 36
+      },
+      {
+        "country": "WS",
+        "first_half_patents": 1,
+        "second_half_patents": 35,
+        "delta": 34,
+        "growth_pct": 34.0,
+        "total_patents": 36
       },
       {
         "country": "AE",
-        "first_half_patents": 56,
-        "second_half_patents": 1968,
-        "delta": 1912,
-        "growth_pct": 34.1429,
+        "first_half_patents": 57,
+        "second_half_patents": 1967,
+        "delta": 1910,
+        "growth_pct": 33.5088,
         "total_patents": 2024
-      },
-      {
-        "country": "VN",
-        "first_half_patents": 28,
-        "second_half_patents": 948,
-        "delta": 920,
-        "growth_pct": 32.8571,
-        "total_patents": 976
-      },
-      {
-        "country": "QA",
-        "first_half_patents": 13,
-        "second_half_patents": 440,
-        "delta": 427,
-        "growth_pct": 32.8462,
-        "total_patents": 453
       },
       {
         "country": "BN",
         "first_half_patents": 2,
-        "second_half_patents": 60,
-        "delta": 58,
-        "growth_pct": 29.0,
-        "total_patents": 62
-      },
-      {
-        "country": "AF",
-        "first_half_patents": 6,
-        "second_half_patents": 161,
-        "delta": 155,
-        "growth_pct": 25.8333,
-        "total_patents": 167
-      },
-      {
-        "country": "BD",
-        "first_half_patents": 6,
-        "second_half_patents": 160,
-        "delta": 154,
-        "growth_pct": 25.6667,
-        "total_patents": 166
+        "second_half_patents": 56,
+        "delta": 54,
+        "growth_pct": 27.0,
+        "total_patents": 58
       },
       {
         "country": "TR",
-        "first_half_patents": 162,
-        "second_half_patents": 3735,
-        "delta": 3573,
-        "growth_pct": 22.0556,
-        "total_patents": 3897
+        "first_half_patents": 148,
+        "second_half_patents": 3709,
+        "delta": 3561,
+        "growth_pct": 24.0608,
+        "total_patents": 3857
       },
       {
         "country": "OM",
         "first_half_patents": 3,
-        "second_half_patents": 69,
-        "delta": 66,
-        "growth_pct": 22.0,
-        "total_patents": 72
+        "second_half_patents": 71,
+        "delta": 68,
+        "growth_pct": 22.6667,
+        "total_patents": 74
+      },
+      {
+        "country": "AF",
+        "first_half_patents": 6,
+        "second_half_patents": 141,
+        "delta": 135,
+        "growth_pct": 22.5,
+        "total_patents": 147
+      },
+      {
+        "country": "BD",
+        "first_half_patents": 7,
+        "second_half_patents": 162,
+        "delta": 155,
+        "growth_pct": 22.1429,
+        "total_patents": 169
       },
       {
         "country": "AM",
         "first_half_patents": 19,
-        "second_half_patents": 423,
-        "delta": 404,
-        "growth_pct": 21.2632,
-        "total_patents": 442
+        "second_half_patents": 429,
+        "delta": 410,
+        "growth_pct": 21.5789,
+        "total_patents": 448
+      },
+      {
+        "country": "EE",
+        "first_half_patents": 42,
+        "second_half_patents": 943,
+        "delta": 901,
+        "growth_pct": 21.4524,
+        "total_patents": 985
       },
       {
         "country": "MT",
         "first_half_patents": 16,
-        "second_half_patents": 330,
-        "delta": 314,
-        "growth_pct": 19.625,
-        "total_patents": 346
+        "second_half_patents": 329,
+        "delta": 313,
+        "growth_pct": 19.5625,
+        "total_patents": 345
       },
       {
         "country": "LT",
@@ -4223,68 +4231,60 @@
         "total_patents": 1056
       },
       {
-        "country": "EE",
-        "first_half_patents": 47,
-        "second_half_patents": 953,
-        "delta": 906,
-        "growth_pct": 19.2766,
-        "total_patents": 1000
-      },
-      {
         "country": "KR",
-        "first_half_patents": 21299,
-        "second_half_patents": 410684,
-        "delta": 389385,
-        "growth_pct": 18.2818,
-        "total_patents": 431983
+        "first_half_patents": 21291,
+        "second_half_patents": 410681,
+        "delta": 389390,
+        "growth_pct": 18.2889,
+        "total_patents": 431972
       },
       {
         "country": "SG",
-        "first_half_patents": 1599,
-        "second_half_patents": 28427,
-        "delta": 26828,
-        "growth_pct": 16.778,
-        "total_patents": 30026
-      },
-      {
-        "country": "MY",
-        "first_half_patents": 423,
-        "second_half_patents": 6963,
-        "delta": 6540,
-        "growth_pct": 15.461,
-        "total_patents": 7386
+        "first_half_patents": 1597,
+        "second_half_patents": 28405,
+        "delta": 26808,
+        "growth_pct": 16.7865,
+        "total_patents": 30002
       },
       {
         "country": "PK",
-        "first_half_patents": 32,
-        "second_half_patents": 497,
-        "delta": 465,
-        "growth_pct": 14.5313,
-        "total_patents": 529
+        "first_half_patents": 29,
+        "second_half_patents": 512,
+        "delta": 483,
+        "growth_pct": 16.6552,
+        "total_patents": 541
       },
       {
-        "country": "RO",
-        "first_half_patents": 161,
-        "second_half_patents": 2480,
-        "delta": 2319,
-        "growth_pct": 14.4037,
-        "total_patents": 2641
+        "country": "MY",
+        "first_half_patents": 417,
+        "second_half_patents": 6967,
+        "delta": 6550,
+        "growth_pct": 15.7074,
+        "total_patents": 7384
       },
       {
         "country": "JO",
-        "first_half_patents": 21,
-        "second_half_patents": 306,
-        "delta": 285,
-        "growth_pct": 13.5714,
-        "total_patents": 327
+        "first_half_patents": 20,
+        "second_half_patents": 313,
+        "delta": 293,
+        "growth_pct": 14.65,
+        "total_patents": 333
+      },
+      {
+        "country": "RO",
+        "first_half_patents": 160,
+        "second_half_patents": 2463,
+        "delta": 2303,
+        "growth_pct": 14.3938,
+        "total_patents": 2623
       },
       {
         "country": "KW",
-        "first_half_patents": 36,
-        "second_half_patents": 524,
-        "delta": 488,
-        "growth_pct": 13.5556,
-        "total_patents": 560
+        "first_half_patents": 35,
+        "second_half_patents": 517,
+        "delta": 482,
+        "growth_pct": 13.7714,
+        "total_patents": 552
       }
     ],
     "section_growth": [
