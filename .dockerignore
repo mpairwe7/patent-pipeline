@@ -30,9 +30,10 @@ data/clean/
 data/warehouse/
 !data/sample/
 
-# --- Generated reports: rebuilt during the warehouse build stage ----------
-reports/*.csv
-reports/*.json
+# --- Reports: artifact mode reads reports/patent_report.json + the CSVs at
+#     runtime, so they must ship in the image. The HTML/PDF/PNG renders under
+#     reports/figures/ are only consumed by humans browsing the repo (not by
+#     the dashboard), so they stay excluded to keep the image lean.
 reports/figures/
 
 # --- Local Streamlit secrets / personal config ----------------------------
