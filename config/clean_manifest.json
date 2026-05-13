@@ -53,6 +53,10 @@
     "csv/clean_cpc.csv": {
       "bytes": 341550252,
       "sha256": "3a45f8ba80a37ee8b017933069cb3b076567e1842f874f15d25f089c13a89e00"
+    },
+    "warehouse/patents.duckdb": {
+      "bytes": 5383925760,
+      "sha256": "ddb10988a71d57b9368f5cfcfac6f96231ef06b6c521772c32575db88e8fc4aa"
     }
   }
 }

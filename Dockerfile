@@ -40,6 +40,7 @@ FROM deps AS warehouse
 
 COPY config/ ./config/
 COPY sql/ ./sql/
+COPY scripts/ ./scripts/
 COPY data/ ./data/
 COPY reports/ ./reports/
 RUN mkdir -p data/raw data/clean data/warehouse reports/figures
@@ -58,7 +59,6 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PATH=/app/.venv/bin:$PATH \
     HOME=/home/user \
-    PATENT_DASHBOARD_SOURCE=artifacts \
     STREAMLIT_SERVER_PORT=7860 \
     STREAMLIT_SERVER_ADDRESS=0.0.0.0 \
     STREAMLIT_SERVER_HEADLESS=true \
@@ -71,6 +71,7 @@ WORKDIR /app
 COPY --from=warehouse --chown=user:user /app/.venv               /app/.venv
 COPY --from=warehouse --chown=user:user /app/src                 /app/src
 COPY --from=warehouse --chown=user:user /app/config              /app/config
+COPY --from=warehouse --chown=user:user /app/scripts             /app/scripts
 COPY --from=warehouse --chown=user:user /app/sql                 /app/sql
 COPY --from=warehouse --chown=user:user /app/data/warehouse      /app/data/warehouse
 COPY --from=warehouse --chown=user:user /app/data/clean          /app/data/clean

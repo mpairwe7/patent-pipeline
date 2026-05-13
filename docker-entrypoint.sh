@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 # Container entrypoint for the Patent Intelligence dashboard.
 #
-# - In artifact mode, require reports/patent_report.json (precomputed full-corpus
-#   report payload) before starting.
-# - In warehouse mode, if the DB is missing, rebuild from bundled sample TSVs.
+# - In artifact mode, require reports/patent_report.json before starting.
+# - In warehouse mode (default), if the DB is missing, download the full-corpus
+#   warehouse from the HF Dataset (landwind22/patent-pipeline-clean → warehouse/)
+#   via scripts/fetch_clean.py, which verifies sha256 against
+#   config/clean_manifest.json. Refuse to fall back to a 10K-patent sample on
+#   the public Space.
 # - Then exec the configured CMD (defaults to `streamlit run`).
 set -euo pipefail
 
@@ -18,8 +21,12 @@ if [ "$DATA_SOURCE" = "artifacts" ]; then
   fi
 else
   if [ ! -s "$WAREHOUSE" ]; then
-    echo "[entrypoint] warehouse missing at $WAREHOUSE — rebuilding from sample data..."
-    /app/.venv/bin/patent-pipeline run-all --use-sample --log-level INFO
+    echo "[entrypoint] warehouse missing at $WAREHOUSE — fetching from HF..."
+    /app/.venv/bin/python /app/scripts/fetch_clean.py --format warehouse
+    if [ ! -s "$WAREHOUSE" ]; then
+      echo "[entrypoint] warehouse download failed — aborting" >&2
+      exit 1
+    fi
   fi
 fi
 

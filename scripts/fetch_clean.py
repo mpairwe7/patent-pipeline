@@ -26,6 +26,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MANIFEST_PATH = REPO_ROOT / "config" / "clean_manifest.json"
 CLEAN_DIR = REPO_ROOT / "data" / "clean"
+WAREHOUSE_DIR = REPO_ROOT / "data" / "warehouse"
 
 
 def _sha256_of(path: Path, chunk: int = 1 << 20) -> str:
@@ -62,22 +63,33 @@ def _select(manifest: dict, formats: set[str]) -> dict[str, dict]:
             out[rel] = meta
         elif rel.startswith("csv/") and "csv" in formats:
             out[rel] = meta
+        elif rel.startswith("warehouse/") and "warehouse" in formats:
+            out[rel] = meta
     return out
 
 
 def _local_path(rel: str) -> Path:
-    # csv/clean_patents.csv → data/clean/clean_patents.csv
-    # parquet/patents.parquet → data/clean/parquet/patents.parquet
-    return CLEAN_DIR / rel.split("/", 1)[1] if rel.startswith("csv/") else CLEAN_DIR / rel
+    # csv/clean_patents.csv         → data/clean/clean_patents.csv
+    # parquet/patents.parquet       → data/clean/parquet/patents.parquet
+    # warehouse/patents.duckdb      → data/warehouse/patents.duckdb
+    if rel.startswith("csv/"):
+        return CLEAN_DIR / rel.split("/", 1)[1]
+    if rel.startswith("warehouse/"):
+        return WAREHOUSE_DIR / rel.split("/", 1)[1]
+    return CLEAN_DIR / rel
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument(
         "--format",
-        choices=["parquet", "csv", "both"],
+        choices=["parquet", "csv", "warehouse", "both", "all"],
         default="parquet",
-        help="Which artifact set to fetch (default: parquet — small + fast).",
+        help=(
+            "Which artifact set to fetch (default: parquet — small + fast). "
+            "'warehouse' pulls the built 5.4 GB DuckDB (used by the HF Space "
+            "container at startup). 'both' = parquet+csv; 'all' = everything."
+        ),
     )
     parser.add_argument(
         "--check",
@@ -93,7 +105,12 @@ def main(argv: list[str] | None = None) -> int:
 
     manifest = json.loads(MANIFEST_PATH.read_text())
     base_url = manifest["base_url"].rstrip("/")
-    formats = {"parquet", "csv"} if args.format == "both" else {args.format}
+    if args.format == "both":
+        formats = {"parquet", "csv"}
+    elif args.format == "all":
+        formats = {"parquet", "csv", "warehouse"}
+    else:
+        formats = {args.format}
     selected = _select(manifest, formats)
 
     failed: list[str] = []

@@ -115,6 +115,13 @@ Dataset and **not** committed to this repo.
 | `clean_cpc` | 326 MB | 102 MB | 17,668,944 |
 | **Bundle** | **≈ 2.7 GB** | **≈ 881 MB** | **56.8 M** |
 
+Alongside the clean tables, a **built DuckDB warehouse** (5.38 GB) lives at
+`warehouse/patents.duckdb` in the same dataset. It contains the five base
+tables plus the twelve materialized summary views (`mv_*`) that power the
+dashboard's hot queries. The HF Space pulls this file on cold start so the
+container can serve the full 8-tab warehouse-mode dashboard without
+re-running `patent-pipeline load`.
+
 ### Download
 
 ```bash
@@ -125,6 +132,12 @@ uv run python scripts/fetch_clean.py
 
 # CSV bundle too (~2.7 GB extra)
 uv run python scripts/fetch_clean.py --format both
+
+# Built DuckDB warehouse (~5.4 GB; skip the load step entirely)
+uv run python scripts/fetch_clean.py --format warehouse
+
+# Everything (parquet + csv + warehouse)
+uv run python scripts/fetch_clean.py --format all
 
 # Verify existing local files against the manifest without re-downloading
 uv run python scripts/fetch_clean.py --check
@@ -171,9 +184,23 @@ for f in clean_companies clean_inventors clean_cpc clean_patents clean_relations
       "data/clean/$f.csv" "csv/$f.csv" --repo-type dataset
 done
 
-# 7. Commit the updated manifest
+# 7. Rebuild the DuckDB warehouse and upload it (the HF Space pulls this
+#    on cold start; without it, the container falls back to artifact mode)
+uv run patent-pipeline load
+hf upload landwind22/patent-pipeline-clean \
+    data/warehouse/patents.duckdb warehouse/patents.duckdb --repo-type dataset
+
+# 8. Commit the updated manifest
 git add config/clean_manifest.json && git commit -m "data: refresh clean dataset manifest"
 ```
+
+### How the HF Space serves the dashboard
+
+The image keeps `/app/data/warehouse/` empty at build time. On first start the
+entrypoint (`docker-entrypoint.sh`) downloads `warehouse/patents.duckdb` from
+this dataset, verifies sha256 against the committed manifest, and starts
+Streamlit. Subsequent restarts reuse the file already on the ephemeral disk
+— only cold rebuilds incur the ~60–90 s pull from HF object store.
 
 ---
 
