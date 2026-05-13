@@ -96,6 +96,72 @@ uv run patent-pipeline ingest --no-use-sample --url https://…/g_patent.tsv.zip
 
 ---
 
+## Full-corpus clean dataset (hosted on Hugging Face)
+
+The bundled `data/sample/` covers ~10K patents — enough to run the pipeline
+end-to-end on a laptop in seconds. The **full-corpus clean dataset**
+(1976 → 2025, 9.36 M patents, 56.8 M rows across the five tables) is
+multi-GB and exceeds GitHub LFS quotas, so it's hosted as a Hugging Face
+Dataset and **not** committed to this repo.
+
+| File | CSV | Parquet (zstd) | Rows |
+|---|---|---|---|
+| `clean_patents` | 722 MB | 206 MB | 9,361,444 |
+| `clean_inventors` | 157 MB | 75 MB | 4,257,666 |
+| `clean_companies` | 35 MB | 18 MB | 567,568 |
+| `clean_relationships` | 1.5 GB | 480 MB | 24,985,193 |
+| `clean_cpc` | 326 MB | 102 MB | 17,668,944 |
+| **Bundle** | **≈ 2.7 GB** | **≈ 881 MB** | **56.8 M** |
+
+### Download
+
+```bash
+# Parquet bundle (~881 MB, recommended — load straight into DuckDB / pandas)
+make fetch-clean
+# or:
+uv run python scripts/fetch_clean.py
+
+# CSV bundle too (~2.7 GB extra)
+uv run python scripts/fetch_clean.py --format both
+
+# Verify existing local files against the manifest without re-downloading
+uv run python scripts/fetch_clean.py --check
+```
+
+The script reads `config/clean_manifest.json` (committed) for the dataset
+URL, file list, byte sizes, and sha256 hashes — any download is verified
+before being trusted. No `huggingface_hub` SDK is required.
+
+### Regenerate from raw
+
+If you have the raw PatentsView TSVs in `data/raw/`, you can regenerate
+the clean bundle locally instead of downloading:
+
+```bash
+uv run patent-pipeline clean --parquet     # ~12 min on a laptop SSD
+```
+
+### Publishing a new version (maintainer)
+
+```bash
+# 1. Regenerate locally
+uv run patent-pipeline clean --parquet
+
+# 2. Update sha256 + bytes in config/clean_manifest.json
+sha256sum data/clean/parquet/*.parquet data/clean/*.csv
+
+# 3. Upload to HF (one-time: `huggingface-cli login`)
+huggingface-cli upload landwind22/patent-pipeline-clean \
+    data/clean/parquet parquet --repo-type dataset
+huggingface-cli upload landwind22/patent-pipeline-clean \
+    data/clean csv --repo-type dataset --include 'clean_*.csv'
+
+# 4. Commit the updated manifest
+git add config/clean_manifest.json && git commit -m "data: refresh clean dataset manifest"
+```
+
+---
+
 ## CLI
 
 ```

@@ -1,8 +1,9 @@
-.PHONY: install clean ingest load analyze run all test lint format dashboard reset help
+.PHONY: install clean ingest load analyze run all test lint format dashboard reset help fetch-clean
 
 help:
 	@echo "Patent Intelligence Pipeline — targets:"
 	@echo "  make install    - uv sync (install deps)"
+	@echo "  make fetch-clean- download full-corpus clean dataset from HF"
 	@echo "  make ingest     - copy sample TSVs into data/raw/"
 	@echo "  make clean      - clean TSVs → data/clean/*.csv"
 	@echo "  make load       - load clean CSVs into DuckDB"
@@ -16,6 +17,9 @@ help:
 
 install:
 	uv sync --all-extras
+
+fetch-clean:
+	uv run python scripts/fetch_clean.py
 
 ingest:
 	uv run patent-pipeline ingest

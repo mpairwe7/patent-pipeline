@@ -1,0 +1,58 @@
+{
+  "version": "1",
+  "description": "Manifest for the full-corpus patent-pipeline clean dataset. The dataset itself lives on Hugging Face; scripts/fetch_clean.py downloads files and verifies sha256 against this manifest.",
+  "dataset_repo": "landwind22/patent-pipeline-clean",
+  "base_url": "https://huggingface.co/datasets/landwind22/patent-pipeline-clean/resolve/main",
+  "generated_at": "2026-05-13",
+  "source_corpus": "PatentsView disambiguated bulk (g_patent / g_inventor_disambiguated / g_assignee_disambiguated / g_location_disambiguated / g_cpc_current)",
+  "year_range": [1976, 2025],
+  "row_counts": {
+    "patents": 9361444,
+    "inventors": 4257666,
+    "companies": 567568,
+    "relationships": 24985193,
+    "cpc": 17668944
+  },
+  "files": {
+    "parquet/patents.parquet": {
+      "bytes": 215025503,
+      "sha256": "e2448ae9e6171ca58684c1e1c7548ada519414786b3dd86904ea58246beca616"
+    },
+    "parquet/inventors.parquet": {
+      "bytes": 77624967,
+      "sha256": "31a0e7be16168ab33965bf1ca197e6d59295d6ec0729ad21da295c8e9b8f3b52"
+    },
+    "parquet/companies.parquet": {
+      "bytes": 18512687,
+      "sha256": "aeb42741a4838c4944dd5905371f9341b64a3d7751c3f077f255372992837f58"
+    },
+    "parquet/relationships.parquet": {
+      "bytes": 502484513,
+      "sha256": "330e292865305046764d9a5ed7e04c41d8839115c36fe7c90f79542ed6ab7f6b"
+    },
+    "parquet/cpc.parquet": {
+      "bytes": 106187325,
+      "sha256": "185cdcc64123bd7a6635b2246eb639fe4e460664869761d3811964752ccce91d"
+    },
+    "csv/clean_patents.csv": {
+      "bytes": 757050250,
+      "sha256": "2a7ba7b9db7a9df55e5fba8c260290fa7064b1c9c7afbd8de64f840288b288ae"
+    },
+    "csv/clean_inventors.csv": {
+      "bytes": 164409627,
+      "sha256": "f6992f3ac41fbf85880ccc9ef61271a154446b90246410191c5041199a81d09a"
+    },
+    "csv/clean_companies.csv": {
+      "bytes": 35801969,
+      "sha256": "72b7e4ba552699bd0a192f7924a8342ebc7b87c88e3b525a46f98e710f118412"
+    },
+    "csv/clean_relationships.csv": {
+      "bytes": 1549056504,
+      "sha256": "1aba66eaa96637a1c9c3c3383d9dc21d1e588dbcebb340524f16e5a8ce38a12e"
+    },
+    "csv/clean_cpc.csv": {
+      "bytes": 341550252,
+      "sha256": "3a45f8ba80a37ee8b017933069cb3b076567e1842f874f15d25f089c13a89e00"
+    }
+  }
+}
