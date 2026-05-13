@@ -2032,7 +2032,7 @@ def main() -> None:
 
     _hydrate_state_from_url()
 
-    _, settings = _connect()
+    settings = load_settings()
     if _artifact_mode_requested():
         payload = _load_artifact_payload(settings)
         if payload is None:
