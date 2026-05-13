@@ -1,4 +1,8 @@
 data/warehouse/*.duckdb filter=lfs diff=lfs merge=lfs -text
 data/raw/*.tsv filter=lfs diff=lfs merge=lfs -text
+MpairweLauben_22_U_21345_DataPipeline/dashboard_snapshots/*.png filter=lfs diff=lfs merge=lfs -text
+MpairweLauben_22_U_21345_DataPipeline/console_report/*.png filter=lfs diff=lfs merge=lfs -text
+reports/figures/*.png filter=lfs diff=lfs merge=lfs -text
+reports/figures/*.pdf filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.pdf filter=lfs diff=lfs merge=lfs -text
