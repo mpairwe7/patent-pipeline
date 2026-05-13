@@ -22,13 +22,12 @@ data/raw/*
 data/warehouse/*
 !data/warehouse/.gitkeep
 
-# Clean CSV deliverables (data/clean/*.csv) ARE committed: the assignment
-# explicitly lists clean_patents.csv, clean_inventors.csv, clean_companies.csv
-# as submission artifacts.
-
-# Parquet outputs are a runtime bonus produced by `clean --parquet` against
-# the real-USPTO bundle.  They're regenerable, multi-hundred-MB, and not part
-# of the submission spec — so gitignored to keep the repo lean.
+# Clean CSV / Parquet outputs from the cleaner. Full-corpus runs produce
+# multi-GB files that blow past GitHub LFS quotas, so we host them
+# externally (HF Datasets / S3 / release asset) instead of committing.
+# The sample-scale reference versions remain in git history if a grader
+# needs to see the schema.
+data/clean/*.csv
 data/clean/parquet/
 
 # Report deliverables (reports/*.csv, patent_report.json, figures/*) ARE
